@@ -1,5 +1,10 @@
 '''
-Fine-tune the wave2vec model on the Torgo dataset.
+Fine-tune the wave2vec model on the Torgo dataset. This script takes in the
+speaker ID as a command line argument. The script will then split the dataset
+into training, validation, and test sets. The model will be fine-tuned on the
+training set and validated on the validation set. The test set will be used to
+evaluate the model after fine-tuning. The model will be fine-tuned for 30 epochs
+by default. The number of epochs can be specified as a command line argument.
 
 This is the main file for the project.
 '''
@@ -43,6 +48,42 @@ print()
 
 '''
 --------------------------------------------------------------------------------
+Constant variables
+--------------------------------------------------------------------------------
+'''
+text_count_threshold = 40
+# For each data, if the total text count across all speakers in the train and
+# validation datasets is less than the threshold and the text exists in the
+# test dataset, remove the corresponding data from the train and validation dataset.
+# Otherwise, remove the corresponding data from the 'test' dataset. This aims to
+# retain 60% to 70% of the test dataset.
+#
+# For example:
+# (1) If "The dog is brown" is spoken 30 times in total across all
+# speakers in the train and validation dataset and the phrase exists in the test
+# dataset, remove the corresponding data from the train and validation datasets.
+# (2) On the other hand, if "The dog is brown" is spoken 30 times in total across all
+# speakers in the train and validation dataset, but the phrase does not exist in
+# the test dataset, the corresponding data does not need to be removed from the
+# train and validation datasets.
+# (3) If "The dog is brown" is spoken 50 times in total across all speakers in
+# the train and validation dataset, remove the corresponding data from the test
+# dataset instead.
+
+# Repository name on Hugging Face
+repo_suffix = ''
+repo_name = f'torgo_xlsr_finetune_{test_speaker}{repo_suffix}'
+repo_path = f'macarious/{repo_name}'
+
+# Path to save model / checkpoints{repo_name}'
+model_save_path_local = f'/content/{repo_name}'
+
+# Model to be fine-tuned with Torgo dataset
+model_name = "facebook/wav2vec2-large-xlsr-53"
+
+
+'''
+--------------------------------------------------------------------------------
 Read the Torgo dataset CSV file and store the data in a dictionary.
 --------------------------------------------------------------------------------
 '''
@@ -74,5 +115,47 @@ torgo_dataset['train'] = dataset_csv['train'].filter(lambda x: x in train_speake
 torgo_dataset['validation'] = dataset_csv['train'].filter(lambda x: x == valid_speaker, input_columns=['speaker_id'])
 torgo_dataset['test'] = dataset_csv['train'].filter(lambda x: x == test_speaker, input_columns=['speaker_id'])
 
-print(torgo_dataset)
 
+'''
+--------------------------------------------------------------------------------
+Count the number of times the text has been spoken in each of the 'train',
+'validation', and 'test' sets. Remove text according to the predetermined
+text_count_threshold.
+--------------------------------------------------------------------------------
+'''
+unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(torgo_dataset['validation'].unique(column='text')) | set(torgo_dataset['test'].unique(column='text'))
+unique_texts_count = {}
+
+for text in unique_texts:
+  unique_texts_count[text] = {'train_validation': 0, 'test': 0}
+
+for text in torgo_dataset['train']['text']:
+  unique_texts_count[text]['train_validation'] += 1
+
+for text in torgo_dataset['validation']['text']:
+  unique_texts_count[text]['train_validation'] += 1
+
+for text in torgo_dataset['test']['text']:
+  unique_texts_count[text]['test'] += 1
+
+texts_to_keep_in_train_validation = []
+texts_to_keep_in_test = []
+for text in unique_texts_count:
+  if unique_texts_count[text]['train_validation'] < text_count_threshold and unique_texts_count[text]['test'] > 0:
+    texts_to_keep_in_test.append(text)
+  else:
+    texts_to_keep_in_train_validation.append(text)
+
+original_data_count = {'train': len(torgo_dataset['train']), 'validation': len(torgo_dataset['validation']), 'test': len(torgo_dataset['test'])}
+
+# Update the three dataset splits
+torgo_dataset['train'] = torgo_dataset['train'].filter(lambda x: x['text'] in texts_to_keep_in_train_validation)
+torgo_dataset['validation'] = torgo_dataset['validation'].filter(lambda x: x['text'] in texts_to_keep_in_train_validation)
+torgo_dataset['test'] = torgo_dataset['test'].filter(lambda x: x['text'] in texts_to_keep_in_test)
+
+print()
+print(f"After applying the text count threshold of {text_count_threshold}, the number of data in each dataset is:")
+print(f'Train:       {len(torgo_dataset["train"])}/{original_data_count["train"]} ({len(torgo_dataset["train"]) * 100 // original_data_count["train"]}%)')
+print(f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
+print(f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)')
+print()
