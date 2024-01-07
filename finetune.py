@@ -19,6 +19,7 @@ import torch
 import pandas as pd
 import numpy as np
 
+from dotenv import load_dotenv
 from transformers import Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor, Wav2Vec2Processor, Wav2Vec2ForCTC, Trainer, TrainingArguments
 from datasets import load_dataset, DatasetDict, Audio
 from dataclasses import dataclass, field
@@ -36,8 +37,8 @@ def main():
     Check if the paths to the Torgo dataset and the Torgo dataset CSV file are valid.
     --------------------------------------------------------------------------------
     '''
-    print(torgo_csv_path)
-    print(torgo_dataset_path)
+    print("Torgo Dataset Path: ", torgo_dataset_path)
+    print("Torgo CSV Path: ", torgo_csv_path)
     if not os.path.exists(torgo_dataset_path):
         print("Please provide a valid path to the Torgo dataset in config.py.")
         sys.exit(1)
@@ -48,6 +49,18 @@ def main():
     if not os.path.exists(torgo_csv_path):
         print("Please provide a valid path to the Torgo dataset CSV file in config.py.")
         sys.exit(1)
+
+    '''
+    --------------------------------------------------------------------------------
+    Load the environment variables from the .env file
+    --------------------------------------------------------------------------------
+    '''
+    load_dotenv()
+    access_token = os.getenv('HF_ACCESS_TOKEN')
+    if access_token is None:
+        print("Please provide a valid Hugging Face access token in the .env file.")
+        sys.exit(1)
+    print("Hugging Face Access Token loaded.")
 
     '''
     --------------------------------------------------------------------------------
@@ -73,7 +86,26 @@ def main():
     print()
     print("Test Speaker: ", test_speaker)
     print("Number of epochs: ", num_epochs)
-    print()
+
+    '''
+    --------------------------------------------------------------------------------
+    Read the Torgo dataset CSV file and store the data in a dictionary.
+    --------------------------------------------------------------------------------
+    '''
+    data_df = pd.read_csv(torgo_csv_path)
+    dataset_csv = load_dataset('csv', data_files=torgo_csv_path)
+
+    # Check if the following columns exist in the dataset ['session', 'audio', 'text', 'speaker_id']
+    expected_columns = ['session', 'audio', 'text', 'speaker_id']
+    not_found_columns = []
+    for column in expected_columns:
+        if column not in dataset_csv['train'].column_names:
+            not_found_columns.append(column)
+
+    if len(not_found_columns) > 0:
+        print("The following columns are not found in the dataset:")
+        print(", ".join(not_found_columns))
+        sys.exit(1)
 
     '''
     --------------------------------------------------------------------------------
@@ -128,12 +160,27 @@ def main():
         os.makedirs('results')
 
     '''
-    --------------------------------------------------------------------------------
-    Read the Torgo dataset CSV file and store the data in a dictionary.
-    --------------------------------------------------------------------------------
+    ********************************************************************************
+    ********************************************************************************
+    DEBUG CODE
+    ********************************************************************************
+    ********************************************************************************
     '''
-    data_df = pd.read_csv(torgo_csv_path)
-    dataset_csv = load_dataset('csv', data_files=torgo_csv_path)
+    # Use 100 random samples from the dataset for debugging
+    print()
+    print("DEBUG CODE")
+    dataset_csv['train'] = dataset_csv['train'].shuffle(
+        seed=42).select(range(100))
+    print(dataset_csv)
+    '''
+    ********************************************************************************
+    ********************************************************************************
+    END OF DEBUG CODE
+    ********************************************************************************
+    ********************************************************************************
+    '''
+
+    # Extract the unique speakers in the dataset
     speakers = data_df['speaker_id'].unique()
 
     print()
@@ -143,8 +190,6 @@ def main():
     if test_speaker not in speakers:
         print("Test Speaker not found in the dataset.")
         sys.exit(1)
-
-    print()
 
     '''
     --------------------------------------------------------------------------------
@@ -214,7 +259,6 @@ def main():
         f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
     print(
         f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)')
-    print()
 
     '''
     --------------------------------------------------------------------------------
@@ -250,7 +294,6 @@ def main():
     print()
     print("Vocab Dictionary:")
     print(vocab_dict)
-    print()
 
     with open('./vocab.json', 'w') as vocab_file:
         json.dump(vocab_dict, vocab_file)
@@ -268,8 +311,9 @@ def main():
     processor = Wav2Vec2Processor(
         feature_extractor=feature_extractor, tokenizer=tokenizer)
 
-    # tokenizer.push_to_hub(repo_path)
-    # feature_extractor.push_to_hub(repo_path)
+    # Save the tokenizer and feature extractor to the repository
+    tokenizer.push_to_hub(repo_path, token=access_token)
+    feature_extractor.push_to_hub(repo_path, token=access_token)
     '''
     --------------------------------------------------------------------------------
     Preprocess the dataset
@@ -317,7 +361,6 @@ def main():
         f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
     print(
         f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)')
-    print()
 
     # Remove the "input_length" column
     torgo_dataset = torgo_dataset.remove_columns(["input_length"])
