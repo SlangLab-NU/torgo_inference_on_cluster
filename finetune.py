@@ -6,6 +6,10 @@ training set and validated on the validation set. The test set will be used to
 evaluate the model after fine-tuning. The model will be fine-tuned for 30 epochs
 by default. The number of epochs can be specified as a command line argument.
 
+This script accepts 2 command line arguments:
+1. Speaker ID (required) -- e.g. F01, F02, F03, F04, M01, M02, M03, M04
+2. Number of epochs (optional) -- default: 30
+
 This is the main file for the project.
 '''
 
@@ -80,6 +84,7 @@ def main():
         sys.exit(1)
 
     test_speaker = sys.argv[1]
+
     if len(sys.argv) == 3:
         if sys.argv[2].isdigit() and int(sys.argv[2]) > 0:
             num_epochs = int(sys.argv[2])
@@ -116,7 +121,7 @@ def main():
 
     logging.info("Test Speaker: " + test_speaker)
     logging.info("Number of epochs: " + str(num_epochs))
-    logging.info("File Path: " + log_file_path + '\n')
+    logging.info("Log File Path: " + log_file_path + '\n')
 
     '''
     --------------------------------------------------------------------------------
@@ -175,17 +180,16 @@ def main():
 
     '''
     --------------------------------------------------------------------------------
-    Create the following directory, if it does not exist:
-    - model
-    - logs
-    - results
+    Use GPU if available
     --------------------------------------------------------------------------------
     '''
-    if not os.path.exists('model'):
-        os.makedirs('model')
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+        logging.info("Using GPU: " + torch.cuda.get_device_name(0) + '\n')
 
-    if not os.path.exists('results'):
-        os.makedirs('results')
+    else:
+        device = torch.device("cpu")
+        logging.info("Using CPU\n")
 
     '''
     ********************************************************************************
@@ -194,13 +198,14 @@ def main():
     ********************************************************************************
     ********************************************************************************
     '''
-    # Use 100 random samples from the dataset for debugging
+    # Use 20 random samples from the dataset for debugging
     logging.info("--------------------------------------------")
     logging.info("DEBUG MODE")
+    dataset_csv_original_size = len(dataset_csv['train'])
     dataset_csv['train'] = dataset_csv['train'].shuffle(
         seed=42).select(range(20))
-    logging.info("Number of samples in the dataset: " +
-                 str(len(dataset_csv['train'])))
+    logging.info("The dataset has been reduced from " + str(dataset_csv_original_size) +
+                 " to " + str(len(dataset_csv['train'])) + " for debugging.")
     logging.info("--------------------------------------------\n")
     '''
     ********************************************************************************
@@ -213,8 +218,8 @@ def main():
     # Extract the unique speakers in the dataset
     speakers = data_df['speaker_id'].unique()
 
-    logging.info("Unique speakers found in the dataset:" +
-                 " [" + ", ".join(speakers) + "]" + '\n')
+    logging.info("Unique speakers found in the dataset:")
+    logging.info(str(speakers) + '\n')
 
     if test_speaker not in speakers:
         logging.error("Test Speaker not found in the dataset.")
@@ -477,7 +482,7 @@ def main():
         label_str = processor.batch_decode(pred.label_ids, group_tokens=False)
         wer = wer_metric.compute(predictions=pred_str, references=label_str)
 
-        logging.info("Word Error Rate: " + str(wer))
+        logging.info("Current Word Error Rate: " + str(wer))
 
         return {"wer": wer}
 
@@ -514,9 +519,14 @@ def main():
     Define the Training Arguments
     --------------------------------------------------------------------------------
     '''
+
     # Load the training arguments from training_args.json
     with open('./training_args.json', 'r') as training_args_file:
         training_args_dict = json.load(training_args_file)
+
+    # Create the model directory, if it does not exist
+    if not os.path.exists('model'):
+        os.makedirs('model')
 
     # Define the training arguments
     training_args = TrainingArguments(
@@ -558,30 +568,180 @@ def main():
     '''
     logging.info("Start Training")
     logging.info("Training Arguments:")
-    logging.info("Training Epochs: " + str(num_epochs))
-    logging.info("Training Batch Size: " +
-                 str(training_args_dict['per_device_train_batch_size']))
-    logging.info("Evaluation Batch Size: " +
-                 str(training_args_dict['per_device_eval_batch_size']))
-    logging.info("Learning Rate: " +
-                 str(training_args_dict['learning_rate']))
-    logging.info("Weight Decay: " +
-                 str(training_args_dict['weight_decay']))
+    training_arg_log_dict = {"Training Epochs": num_epochs,
+                             "Training Batch Size": training_args_dict['per_device_train_batch_size'],
+                             "Evaluation Batch Size": training_args_dict['per_device_eval_batch_size'],
+                             "Learning Rate": training_args_dict['learning_rate'],
+                             "Weight Decay": training_args_dict['weight_decay']}
+    logging.info(str(training_arg_log_dict))
+
+    train_start_time = datetime.now()
 
     # Train from scratch if there is no checkpoint in the repository
     if not trainer.is_model_parallel:
-        logging.info("Training from scratch.\n")
         trainer.train()
     else:
-        logging.info("Training from checkpoint.\n")
         trainer.train(model_path=repo_path)
 
-    logging.info("Training completed.\n")
-    logging.info("Training Metrics:")
-    logging.info(str(trainer.state.log_history) + '\n')
+    train_end_time = datetime.now()
+
+    logging.info("Training completed in " +
+                 str(train_end_time - train_start_time) + '\n')
+
+    logging.info("Training Log Metrics:")
+    for history in trainer.state.log_history:
+        logging.info(str(history) + '\n')
 
     trainer.push_to_hub()
     logging.info("Model pushed to Hugging Face Hub.\n")
+
+    '''
+    --------------------------------------------------------------------------------
+    Prepare for prediction and evaluation
+    --------------------------------------------------------------------------------
+    '''
+    logging.info("Start Evaluation")
+
+    # Create the results directory, if it does not exist
+    if not os.path.exists('results'):
+        os.makedirs('results')
+
+    # Create the results directory for the current speaker, if it does not exist
+    if not os.path.exists(f'./results/{repo_name}'):
+        os.makedirs(f'./results/{repo_name}')
+
+    results_dir = f'./results/{repo_name}'
+
+    # Access the model from the repository
+    model = Wav2Vec2ForCTC.from_pretrained(repo_path)
+    processor = Wav2Vec2Processor.from_pretrained(repo_path)
+
+    # Move model to GPU
+    if torch.cuda.is_available():
+        model.to("cuda")
+
+    def predict_dataset(dataset):
+        '''
+        Predict on the dataset
+
+        Parameters:
+        dataset (datasets.Dataset): Dataset to predict on
+
+        Returns:
+        predictions (list): List of predictions
+        references (list): List of references
+        '''
+
+        predictions = []
+        references = []
+
+        for i in tqdm(range(dataset.num_rows)):
+            inputs = processor(
+                dataset[i]["input_values"], sampling_rate=sampling_rate, return_tensors="pt", padding=True)
+
+            # Move input to GPU
+            if torch.cuda.is_available():
+                inputs = {key: val.to("cuda") for key, val in inputs.items()}
+
+            # Predict
+            with torch.no_grad():
+                logits = model(**inputs).logits
+            predicted_ids = torch.argmax(logits, dim=-1)
+            prediction = processor.batch_decode(predicted_ids)[0].lower()
+
+            label_ids = dataset[i]["labels"]
+            reference = processor.batch_decode(label_ids, group_tokens=False)
+            reference = ''.join(
+                [' ' if c == '' else c for c in reference])  # remove padding
+
+            predictions.append(prediction)
+            references.append(reference)
+
+        return predictions, references
+
+    '''
+    --------------------------------------------------------------------------------
+    Predict and evaluate on the training set
+    --------------------------------------------------------------------------------
+    '''
+    # Predict on the training set
+    logging.info("Predicting on the training set...")
+    train_predictions, train_references = predict_dataset(
+        torgo_dataset['train'])
+    train_wer = wer_metric.compute(
+        predictions=train_predictions, references=train_references)
+    logging.info("Word Error Rate: " + str(train_wer))
+
+    # Save the predictions and references to a CSV file
+    train_df = pd.DataFrame(
+        {'predictions': train_predictions, 'references': train_references})
+    train_df.to_csv(
+        f'{results_dir}/{test_speaker}_predictions_train.csv', index=False)
+    logging.info("Predictions saved to: " +
+                 f'{results_dir}/{test_speaker}_predictions_train.csv' + '\n')
+
+    '''
+    --------------------------------------------------------------------------------
+    Predict and evaluate on the validation set
+    --------------------------------------------------------------------------------
+    '''
+    # Predict on the validation set
+    logging.info("Predicting on the validation set...")
+    validation_predictions, validation_references = predict_dataset(
+        torgo_dataset['validation'])
+    validation_wer = wer_metric.compute(
+        predictions=validation_predictions, references=validation_references)
+    logging.info("Word Error Rate: " +
+                 str(validation_wer))
+
+    # Save the predictions and references to a CSV file
+    validation_df = pd.DataFrame(
+        {'predictions': validation_predictions, 'references': validation_references})
+    validation_df.to_csv(
+        f'{results_dir}/{test_speaker}_predictions_validation.csv', index=False)
+    logging.info("Predictions saved to: " +
+                 f'{results_dir}/{test_speaker}_predictions_validation.csv' + '\n')
+
+    '''
+    --------------------------------------------------------------------------------
+    Predict and evaluate on the test set
+    --------------------------------------------------------------------------------
+    '''
+    # Predict on the test set
+    logging.info("Predicting on the test set...")
+    test_predictions, test_references = predict_dataset(torgo_dataset['test'])
+    test_wer = wer_metric.compute(
+        predictions=test_predictions, references=test_references)
+    logging.info("Word Error Rate: " + str(test_wer))
+
+    # Save the predictions and references to a CSV file
+    test_df = pd.DataFrame(
+        {'predictions': test_predictions, 'references': test_references})
+    test_df.to_csv(
+        f'{results_dir}/{test_speaker}_predictions_test.csv', index=False)
+    logging.info("Predictions saved to: " +
+                 f'{results_dir}/{test_speaker}_predictions_test.csv' + '\n')
+
+    '''
+    --------------------------------------------------------------------------------
+    Summarize the Word Error Rates
+    --------------------------------------------------------------------------------
+    '''
+    # Save the summary to a CSV file
+    summary_df = pd.DataFrame({'Split': ['train', 'validation', 'test'], 'WER': [
+                              train_wer, validation_wer, test_wer]})
+    summary_df.to_csv(
+        f'{results_dir}/{test_speaker}_wer_summary.csv', index=False)
+    logging.info("Summary of Word Error Rates saved to " +
+                 f'{results_dir}/{test_speaker}_wer_summary.csv' + '\n')
+
+    '''
+    --------------------------------------------------------------------------------
+    End of Script
+    --------------------------------------------------------------------------------
+    '''
+
+    logging.info("End of Script")
 
 
 if __name__ == "__main__":
