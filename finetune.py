@@ -24,6 +24,7 @@ from transformers import Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor, Wav2Vec
 from datasets import load_dataset, DatasetDict, Audio
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Union
+from evaluate import load
 from tqdm import tqdm
 from datetime import datetime
 
@@ -137,10 +138,10 @@ def main():
     repo_path = f'macarious/{repo_name}'
 
     # Path to save model / checkpoints{repo_name}'
-    model_save_path_local = f'/model/{repo_name}'
+    model_local_path = f'./model/{repo_name}'
 
     # Model to be fine-tuned with Torgo dataset
-    model_name = "facebook/wav2vec2-large-xlsr-53"
+    pretrained_model_name = "facebook/wav2vec2-large-xlsr-53"
 
     '''
     --------------------------------------------------------------------------------
@@ -364,6 +365,184 @@ def main():
 
     # Remove the "input_length" column
     torgo_dataset = torgo_dataset.remove_columns(["input_length"])
+
+    '''
+    --------------------------------------------------------------------------------
+    Define a DataCollator:
+    wave2vec2 has a much larger input length as compared to the output length. For
+    the input size, it is efficient to pad training batches to the longest sample
+    in the batch (not overall sample)
+    --------------------------------------------------------------------------------
+    '''
+    # Define the data collator
+    @dataclass
+    class DataCollatorCTCWithPadding:
+        """
+        Data collator that will dynamically pad the inputs received.
+        Args:
+            processor (:class:`~transformers.Wav2Vec2Processor`)
+            The processor used for proccessing the data.
+            padding (:obj:`bool`, :obj:`str` or :class:`~transformers.tokenization_utils_base.PaddingStrategy`, `optional`, defaults to :obj:`True`):
+            Select a strategy to pad the returned sequences (according to the model's padding side and padding index)
+            among:
+            * :obj:`True` or :obj:`'longest'`: Pad to the longest sequence in the batch (or no padding if only a single
+                sequence if provided).
+            * :obj:`'max_length'`: Pad to a maximum length specified with the argument :obj:`max_length` or to the
+                maximum acceptable input length for the model if that argument is not provided.
+            * :obj:`False` or :obj:`'do_not_pad'` (default): No padding (i.e., can output a batch with sequences of
+                different lengths).
+        """
+        processor: Wav2Vec2Processor
+        padding: Union[bool, str] = True
+
+        def __call__(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
+            # split inputs and labels since they have to be of different lenghts and need
+            # different padding methods
+            input_features = [{"input_values": feature["input_values"]}
+                              for feature in features]
+            label_features = [{"input_ids": feature["labels"]}
+                              for feature in features]
+
+            batch = self.processor.pad(
+                input_features,
+                padding=self.padding,
+                return_tensors="pt",
+            )
+            with self.processor.as_target_processor():
+                labels_batch = self.processor.pad(
+                    label_features,
+                    padding=self.padding,
+                    return_tensors="pt",
+                )
+
+            # replace padding with -100 to ignore loss correctly
+            labels = labels_batch["input_ids"].masked_fill(
+                labels_batch.attention_mask.ne(1), -100)
+            batch["labels"] = labels
+
+            return batch
+
+    data_collator = DataCollatorCTCWithPadding(
+        processor=processor, padding=True)
+
+    '''
+    --------------------------------------------------------------------------------
+    Define the Evaluation Metrics
+    --------------------------------------------------------------------------------
+    '''
+    wer_metric = load("wer")
+
+    def compute_metrics(pred):
+        """
+            Compute Word Error Rate (WER) for the model predictions.
+
+            Parameters:
+            pred (transformers.file_utils.ModelOutput): Model predictions.
+
+            Returns:
+            dict: A dictionary containing the computed metrics.
+        """
+        pred_logits = pred.predictions
+        pred_ids = np.argmax(pred_logits, axis=-1)
+        pred.label_ids[pred.label_ids == -
+                       100] = processor.tokenizer.pad_token_id
+        pred_str = processor.batch_decode(pred_ids)
+        label_str = processor.batch_decode(pred.label_ids, group_tokens=False)
+        wer = wer_metric.compute(predictions=pred_str, references=label_str)
+        print("WER:", wer)
+
+        return {"wer": wer}
+
+    '''
+    --------------------------------------------------------------------------------
+    Load the model
+    --------------------------------------------------------------------------------
+    '''
+    # Load the model
+    model = Wav2Vec2ForCTC.from_pretrained(
+        pretrained_model_name,
+        ctc_loss_reduction="mean",
+        vocab_size=len(processor.tokenizer),
+        attention_dropout=0.1,
+        hidden_dropout=0.1,
+        feat_proj_dropout=0.0,
+        mask_time_prob=0.05,
+        layerdrop=0.1,
+    )
+
+    # Freeze the feature extractor
+    # (parameters of pre-trained part of the model won't be updated during training)
+    model.freeze_feature_encoder()
+
+    # Load the model to the device
+    model.gradient_checkpointing_enable(
+        gradient_checkpointing_kwargs={"use_reentrant": False})
+
+    # Release unoccupied cache memory
+    torch.cuda.empty_cache()
+
+    '''
+    --------------------------------------------------------------------------------
+    Define the Training Arguments
+    --------------------------------------------------------------------------------
+    '''
+    # Load the training arguments from training_args.json
+    with open('./training_args.json', 'r') as training_args_file:
+        training_args_dict = json.load(training_args_file)
+
+    # Define the training arguments
+    training_args = TrainingArguments(
+        output_dir=model_local_path,
+        hub_model_id=repo_name,
+        num_train_epochs=num_epochs,
+        hub_token=access_token,
+        **training_args_dict
+    )
+
+    '''
+    --------------------------------------------------------------------------------
+    Define the Trainer
+    --------------------------------------------------------------------------------
+    '''
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        train_dataset=torgo_dataset["train"],
+        eval_dataset=torgo_dataset["validation"],
+        tokenizer=processor.feature_extractor,
+        data_collator=data_collator,
+        compute_metrics=compute_metrics,
+    )
+
+    trainer.create_model_card(
+        language="en",
+        tags=["audio", "speech", "wav2vec2"],
+        model_name=repo_name,
+        finetuned_from="facebook/wav2vec2-large-xlsr-53",
+        tasks=["automatic-speech-recognition"],
+        dataset="torgo",
+    )
+
+    '''
+    --------------------------------------------------------------------------------
+    Start Training
+    --------------------------------------------------------------------------------
+    '''
+    print()
+    print("Start Training")
+    print()
+    print("Training Arguments:")
+    print(training_args)
+    print()
+    # Train from scratch if there is no checkpoint in the repository
+    if not trainer.is_model_parallel:
+        print("Training from scratch.")
+        trainer.train()
+    else:
+        print("Training from checkpoint.")
+        trainer.train(model_path=repo_path)
+
+    trainer.push_to_hub()
 
 
 if __name__ == "__main__":
