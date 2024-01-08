@@ -1,3 +1,6 @@
+# Model file; the models are stored in HuggingFace's model hub
+model/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

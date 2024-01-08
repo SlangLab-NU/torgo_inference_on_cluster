@@ -15,7 +15,7 @@ import os
 import re
 import json
 import torch
-
+import logging
 import pandas as pd
 import numpy as np
 
@@ -40,15 +40,18 @@ def main():
     '''
     print("Torgo Dataset Path: ", torgo_dataset_path)
     print("Torgo CSV Path: ", torgo_csv_path)
+    print()
     if not os.path.exists(torgo_dataset_path):
-        print("Please provide a valid path to the Torgo dataset in config.py.")
+        print(
+            "Please provide a valid path to the Torgo dataset in config.py.")
         sys.exit(1)
 
     torgo_dataset_dir_path = torgo_dataset_path + \
         '/' if torgo_dataset_path[-1] != '/' else torgo_dataset_path
 
     if not os.path.exists(torgo_csv_path):
-        print("Please provide a valid path to the Torgo dataset CSV file in config.py.")
+        print(
+            "Please provide a valid path to the Torgo dataset CSV file in config.py.")
         sys.exit(1)
 
     '''
@@ -59,9 +62,10 @@ def main():
     load_dotenv()
     access_token = os.getenv('HF_ACCESS_TOKEN')
     if access_token is None:
-        print("Please provide a valid Hugging Face access token in the .env file.")
+        print(
+            "Please provide a valid Hugging Face access token in the .env file.")
         sys.exit(1)
-    print("Hugging Face Access Token loaded.")
+    print("Hugging Face Access Token successfully loaded.\n")
 
     '''
     --------------------------------------------------------------------------------
@@ -71,7 +75,8 @@ def main():
     --------------------------------------------------------------------------------
     '''
     if len(sys.argv) < 2:
-        print("Please provide the speaker ID and the number of epochs (optional).")
+        print(
+            "Please provide the speaker ID and the number of epochs (optional).")
         sys.exit(1)
 
     test_speaker = sys.argv[1]
@@ -84,9 +89,34 @@ def main():
     else:
         num_epochs = 30
 
-    print()
-    print("Test Speaker: ", test_speaker)
-    print("Number of epochs: ", num_epochs)
+    '''
+    --------------------------------------------------------------------------------
+    Set up the logging configuration
+    --------------------------------------------------------------------------------
+    '''
+    if not os.path.exists('logs'):
+        os.makedirs('logs')
+
+    log_file_name = test_speaker + '_' + \
+        datetime.now().strftime("%Y%m%d_%H%M%S") + '.log'
+    log_file_path = './logs/' + log_file_name
+
+    logging.basicConfig(
+        filename=log_file_path,
+        filemode='a',
+        format='%(asctime)s - %(message)s',
+        datefmt='%d-%b-%y %H:%M:%S',
+        level=logging.INFO
+    )
+
+    # Log to console
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    logging.getLogger().addHandler(console_handler)
+
+    logging.info("Test Speaker: " + test_speaker)
+    logging.info("Number of epochs: " + str(num_epochs))
+    logging.info("File Path: " + log_file_path + '\n')
 
     '''
     --------------------------------------------------------------------------------
@@ -104,8 +134,8 @@ def main():
             not_found_columns.append(column)
 
     if len(not_found_columns) > 0:
-        print("The following columns are not found in the dataset:")
-        print(", ".join(not_found_columns))
+        logging.error(
+            "The following columns are not found in the dataset:" + " [" + ", ".join(not_found_columns) + "]")
         sys.exit(1)
 
     '''
@@ -154,9 +184,6 @@ def main():
     if not os.path.exists('model'):
         os.makedirs('model')
 
-    if not os.path.exists('logs'):
-        os.makedirs('logs')
-
     if not os.path.exists('results'):
         os.makedirs('results')
 
@@ -168,11 +195,13 @@ def main():
     ********************************************************************************
     '''
     # Use 100 random samples from the dataset for debugging
-    print()
-    print("DEBUG CODE")
+    logging.info("--------------------------------------------")
+    logging.info("DEBUG MODE")
     dataset_csv['train'] = dataset_csv['train'].shuffle(
-        seed=42).select(range(100))
-    print(dataset_csv)
+        seed=42).select(range(20))
+    logging.info("Number of samples in the dataset: " +
+                 str(len(dataset_csv['train'])))
+    logging.info("--------------------------------------------\n")
     '''
     ********************************************************************************
     ********************************************************************************
@@ -184,12 +213,11 @@ def main():
     # Extract the unique speakers in the dataset
     speakers = data_df['speaker_id'].unique()
 
-    print()
-    print("Unique speakers found in the dataset:")
-    print(", ".join(speakers))
+    logging.info("Unique speakers found in the dataset:" +
+                 " [" + ", ".join(speakers) + "]" + '\n')
 
     if test_speaker not in speakers:
-        print("Test Speaker not found in the dataset.")
+        logging.error("Test Speaker not found in the dataset.")
         sys.exit(1)
 
     '''
@@ -251,15 +279,14 @@ def main():
     torgo_dataset['test'] = torgo_dataset['test'].filter(
         lambda x: x['text'] in texts_to_keep_in_test)
 
-    print()
-    print(
+    logging.info(
         f"After applying the text count threshold of {text_count_threshold}, the number of data in each dataset is:")
-    print(
+    logging.info(
         f'Train:       {len(torgo_dataset["train"])}/{original_data_count["train"]} ({len(torgo_dataset["train"]) * 100 // original_data_count["train"]}%)')
-    print(
+    logging.info(
         f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
-    print(
-        f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)')
+    logging.info(
+        f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)\n')
 
     '''
     --------------------------------------------------------------------------------
@@ -292,9 +319,8 @@ def main():
     vocab_dict.update({v: k + len(vocab_dict)
                       for k, v in enumerate(vocab_list)})
 
-    print()
-    print("Vocab Dictionary:")
-    print(vocab_dict)
+    logging.info("Vocab Dictionary:")
+    logging.info(str(vocab_dict) + '\n')
 
     with open('./vocab.json', 'w') as vocab_file:
         json.dump(vocab_dict, vocab_file)
@@ -354,14 +380,14 @@ def main():
         input_columns=["input_length"]
     )
 
-    print()
-    print("After filtering audio within a certain length, the number of data in each dataset is:")
-    print(
+    logging.info(
+        "After filtering audio within a certain length, the number of data in each dataset is:")
+    logging.info(
         f'Train:       {len(torgo_dataset["train"])}/{original_data_count["train"]} ({len(torgo_dataset["train"]) * 100 // original_data_count["train"]}%)')
-    print(
+    logging.info(
         f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
-    print(
-        f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)')
+    logging.info(
+        f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)\n')
 
     # Remove the "input_length" column
     torgo_dataset = torgo_dataset.remove_columns(["input_length"])
@@ -449,7 +475,8 @@ def main():
         pred_str = processor.batch_decode(pred_ids)
         label_str = processor.batch_decode(pred.label_ids, group_tokens=False)
         wer = wer_metric.compute(predictions=pred_str, references=label_str)
-        print("WER:", wer)
+
+        logging.info("Word Error Rate: " + str(wer))
 
         return {"wer": wer}
 
@@ -528,21 +555,21 @@ def main():
     Start Training
     --------------------------------------------------------------------------------
     '''
-    print()
-    print("Start Training")
-    print()
-    print("Training Arguments:")
-    print(training_args)
-    print()
+    logging.info("Start Training")
+    logging.info("Training Arguments:")
+    logging.info(str(training_args) + '\n')
     # Train from scratch if there is no checkpoint in the repository
     if not trainer.is_model_parallel:
-        print("Training from scratch.")
+        logging.info("Training from scratch.\n")
         trainer.train()
     else:
-        print("Training from checkpoint.")
+        logging.info("Training from checkpoint.\n")
         trainer.train(model_path=repo_path)
 
+    logging.info("Training completed.\n")
+
     trainer.push_to_hub()
+    logging.info("Model pushed to Hugging Face Hub.\n")
 
 
 if __name__ == "__main__":
