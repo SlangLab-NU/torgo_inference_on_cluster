@@ -327,12 +327,12 @@ def main():
 
     # Build the tokenizer
     tokenizer = Wav2Vec2CTCTokenizer(
-        './vocab.json', unk_token='[UNK]', pad_token='[PAD]', word_delimiter_token='|')
+        './vocab.json', unk_token='[UNK]', pad_token='[PAD]')
 
     # Build the feature extractor
     sampling_rate = 16000
     feature_extractor = Wav2Vec2FeatureExtractor(
-        feature_size=1, sampling_rate=sampling_rate, padding_value=0.0, do_normalize=True, return_attention_mask=True)
+        feature_size=1, sampling_rate=sampling_rate, padding_value=0.0, return_attention_mask=True)
 
     # Build the processor
     processor = Wav2Vec2Processor(
@@ -434,6 +434,7 @@ def main():
                 padding=self.padding,
                 return_tensors="pt",
             )
+
             with self.processor.as_target_processor():
                 labels_batch = self.processor.pad(
                     label_features,
@@ -557,7 +558,16 @@ def main():
     '''
     logging.info("Start Training")
     logging.info("Training Arguments:")
-    logging.info(str(training_args) + '\n')
+    logging.info("Training Epochs: " + str(num_epochs))
+    logging.info("Training Batch Size: " +
+                 str(training_args_dict['per_device_train_batch_size']))
+    logging.info("Evaluation Batch Size: " +
+                 str(training_args_dict['per_device_eval_batch_size']))
+    logging.info("Learning Rate: " +
+                 str(training_args_dict['learning_rate']))
+    logging.info("Weight Decay: " +
+                 str(training_args_dict['weight_decay']))
+
     # Train from scratch if there is no checkpoint in the repository
     if not trainer.is_model_parallel:
         logging.info("Training from scratch.\n")
@@ -567,6 +577,8 @@ def main():
         trainer.train(model_path=repo_path)
 
     logging.info("Training completed.\n")
+    logging.info("Training Metrics:")
+    logging.info(str(trainer.state.log_history) + '\n')
 
     trainer.push_to_hub()
     logging.info("Model pushed to Hugging Face Hub.\n")

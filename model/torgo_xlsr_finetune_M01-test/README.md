@@ -1,12 +1,7 @@
 ---
-language:
-- en
 license: apache-2.0
 base_model: facebook/wav2vec2-large-xlsr-53
 tags:
-- audio
-- speech
-- wav2vec2
 - generated_from_trainer
 model-index:
 - name: torgo_xlsr_finetune_M01-test
@@ -18,7 +13,7 @@ should probably proofread and complete it, then remove this comment. -->
 
 # torgo_xlsr_finetune_M01-test
 
-This model is a fine-tuned version of [facebook/wav2vec2-large-xlsr-53](https://huggingface.co/facebook/wav2vec2-large-xlsr-53) on the torgo dataset.
+This model is a fine-tuned version of [facebook/wav2vec2-large-xlsr-53](https://huggingface.co/facebook/wav2vec2-large-xlsr-53) on an unknown dataset.
 
 ## Model description
 
@@ -45,6 +40,10 @@ The following hyperparameters were used during training:
 - lr_scheduler_type: linear
 - lr_scheduler_warmup_steps: 1000
 - num_epochs: 1
+
+### Training results
+
+
 
 ### Framework versions
 
