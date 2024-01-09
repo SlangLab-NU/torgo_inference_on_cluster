@@ -334,7 +334,8 @@ def main():
     if not os.path.exists('vocab'):
         os.makedirs('vocab')
 
-    vocab_file_path = './vocab/vocab.json'
+    vocab_file_name = repo_name + '_vocab.json'
+    vocab_file_path = './vocab/' + vocab_file_name
 
     # Save the vocab.json file
     with open(vocab_file_path, 'w') as vocab_file:
