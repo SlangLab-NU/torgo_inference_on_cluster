@@ -6,6 +6,9 @@ training set and validated on the validation set. The test set will be used to
 evaluate the model after fine-tuning. The model will be fine-tuned for 30 epochs
 by default. The number of epochs can be specified as a command line argument.
 
+This script uses a leave-one-speaker-out approach. The model will be fine-tuned
+on all the speakers except the speaker specified in the command line argument.
+
 This script accepts 2 command line arguments:
 1. Speaker ID (required) -- e.g. F01, F02, F03, F04, M01, M02, M03, M04
 2. Number of epochs (optional) -- default: 30
@@ -327,12 +330,19 @@ def main():
     logging.info("Vocab Dictionary:")
     logging.info(str(vocab_dict) + '\n')
 
-    with open('./vocab.json', 'w') as vocab_file:
+    # Create a directory to store the vocab.json file
+    if not os.path.exists('vocab'):
+        os.makedirs('vocab')
+
+    vocab_file_path = './vocab/vocab.json'
+
+    # Save the vocab.json file
+    with open(vocab_file_path, 'w') as vocab_file:
         json.dump(vocab_dict, vocab_file)
 
     # Build the tokenizer
     tokenizer = Wav2Vec2CTCTokenizer(
-        './vocab.json', unk_token='[UNK]', pad_token='[PAD]')
+        vocab_file_path, unk_token='[UNK]', pad_token='[PAD]')
 
     # Build the feature extractor
     sampling_rate = 16000
