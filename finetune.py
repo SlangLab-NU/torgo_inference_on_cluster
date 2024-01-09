@@ -29,8 +29,8 @@ import numpy as np
 from dotenv import load_dotenv
 from transformers import Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor, Wav2Vec2Processor, Wav2Vec2ForCTC, Trainer, TrainingArguments
 from datasets import load_dataset, DatasetDict, Audio
-from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Union
+from dataclasses import dataclass
+from typing import Dict, List, Union
 from evaluate import load
 from tqdm import tqdm
 from datetime import datetime
@@ -148,7 +148,7 @@ def main():
 
     '''
     --------------------------------------------------------------------------------
-    List of constants
+    Repository name on Hugging Face and Local Path to save model / checkpoints
     --------------------------------------------------------------------------------
     '''
     text_count_threshold = 40
