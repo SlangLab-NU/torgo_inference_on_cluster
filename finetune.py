@@ -10,8 +10,9 @@ This script uses a leave-one-speaker-out approach. The model will be fine-tuned
 on all the speakers except the speaker specified in the command line argument.
 
 This script accepts 2 command line arguments:
-1. Speaker ID (required) -- e.g. F01, F02, F03, F04, M01, M02, M03, M04
-2. Number of epochs (optional) -- default: 30
+1. Speaker ID (required): e.g. F01
+2. Number of epochs (optional): e.g. --epochs 30
+3. Debug mode (optional): e.g. --debug
 
 This is the main file for the project.
 '''
@@ -85,17 +86,28 @@ def main():
         print(
             "Please provide the speaker ID and the number of epochs (optional).")
         sys.exit(1)
-
+    
+    # Check if the first argument does not start with '--'
+    if not sys.argv[1].startswith('--'):
+        print("Please provide the speaker ID as the first argument.")
+        sys.exit(1)
+        
     test_speaker = sys.argv[1]
-
-    if len(sys.argv) == 3:
-        if sys.argv[2].isdigit() and int(sys.argv[2]) > 0:
-            num_epochs = int(sys.argv[2])
-        else:
-            print("Please provide a valid number of epochs.")
-            sys.exit(1)
-    else:
-        num_epochs = 30
+        
+    # Optional arguments:
+    #   num of epochs (ex. --epochs 30)
+    #   debug mode (ex. --debug)
+    if len(sys.argv) > 2:
+        for i in range(2, len(sys.argv)):
+            if sys.argv[i] == '--epochs':
+                if sys.argv[i+1].isdigit() and int(sys.argv[i+1]) > 0:
+                    num_epochs = int(sys.argv[i+1])
+                else:
+                    print("Please provide a valid number of epochs.")
+                    sys.exit(1)
+            elif sys.argv[i] == '--debug':
+                debug_mode = True
+                print("Debug Mode: " + str(debug_mode))
 
     '''
     --------------------------------------------------------------------------------
@@ -201,15 +213,16 @@ def main():
     ********************************************************************************
     ********************************************************************************
     '''
-    # Use 20 random samples from the dataset for debugging
-    logging.info("--------------------------------------------")
-    logging.info("DEBUG MODE")
-    dataset_csv_original_size = len(dataset_csv['train'])
-    dataset_csv['train'] = dataset_csv['train'].shuffle(
-        seed=42).select(range(20))
-    logging.info("The dataset has been reduced from " + str(dataset_csv_original_size) +
-                 " to " + str(len(dataset_csv['train'])) + " for debugging.")
-    logging.info("--------------------------------------------\n")
+    if debug_mode:
+        # Use 20 random samples from the dataset for debugging
+        logging.info("--------------------------------------------")
+        logging.info("DEBUG MODE")
+        dataset_csv_original_size = len(dataset_csv['train'])
+        dataset_csv['train'] = dataset_csv['train'].shuffle(
+            seed=42).select(range(20))
+        logging.info("The dataset has been reduced from " + str(dataset_csv_original_size) +
+                    " to " + str(len(dataset_csv['train'])) + " for debugging.")
+        logging.info("--------------------------------------------\n")
     '''
     ********************************************************************************
     ********************************************************************************
