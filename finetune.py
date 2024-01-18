@@ -11,8 +11,19 @@ on all the speakers except the speaker specified in the command line argument.
 
 This script accepts 2 command line arguments:
 1. Speaker ID (required): e.g. F01
-2. Number of epochs (optional): e.g. --epochs 30
-3. Debug mode (optional): e.g. --debug
+2. Number of epochs (optional): e.g. --epochs 30; default to 30
+3. Debug mode (optional): e.g. --debug; default to False
+
+Example usage:
+python finetune.py F01
+python finetune.py F01 --epochs 20
+python finetune.py F01 --epochs 1 --debug
+
+Use "python3" instead of "python" depending on your system.
+
+In debug mode, the script will only use 20 random samples from the dataset for
+debugging purposes. The dataset will be reduced from 1,000+ samples to 20. It
+should take less than 5 minutes to run the script in debug mode.
 
 This is the main file for the project.
 '''
@@ -88,11 +99,13 @@ def main():
         sys.exit(1)
     
     # Check if the first argument does not start with '--'
-    if not sys.argv[1].startswith('--'):
-        print("Please provide the speaker ID as the first argument.")
+    if sys.argv[1].startswith('--'):
+        print("Please provide a valid speaker ID.")
         sys.exit(1)
         
     test_speaker = sys.argv[1]
+    num_epochs = 30
+    debug_mode = False
         
     # Optional arguments:
     #   num of epochs (ex. --epochs 30)
