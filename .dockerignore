@@ -1,0 +1,8 @@
+# Ignore the following files and directories
+.git*
+.vscode
+__pycache__
+logs
+model
+results
+vocab
