@@ -1,5 +1,7 @@
 # This file is used to build the docker image for the project
 # Author: Macarious Hui
+
+# Use an official PyTorch runtime as a parent image
 FROM pytorch/pytorch
 
 # Set working directory
@@ -22,4 +24,4 @@ EXPOSE 5000
 ENTRYPOINT ["python", "finetune.py"]
 
 # Default arguments if not specified
-CMD ["F01", "--epochs", "30", "--debug"]
+CMD ["F01", "--epochs", "1", "--debug"]

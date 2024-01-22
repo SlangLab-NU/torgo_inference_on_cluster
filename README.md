@@ -24,4 +24,4 @@ Run the following command to run the dockerfile:
 Load singularity on the Cluster
 `module load singularity/3.5.3`
 
-`singularity pull docker://macarious/finetune:latest`
+`singularity pull docker://[docker_account_name]/finetune:latest`
