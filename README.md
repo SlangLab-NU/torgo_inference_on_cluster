@@ -41,9 +41,9 @@ python3 finetune.py M01 --epochs 1 --debug
 ```
 
 ```
-singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work/van-speech-nlp/hui.mac:/output,/work/van-speech-nlp/hui.mac/torgo_inference_on_cluster:/training_args --pwd /scripts $singularity_image /bin/bash
+singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work/van-speech-nlp/hui.mac:/output,/work/van-speech-nlp/hui.mac/torgo_inference_on_cluster:/training_args --pwd /scripts /work/van-speech-nlp/hui.mac/finetune_latest.sif /bin/bash
 ```
 
 `huggingface-cli login`
 
-`python3 finetune.py M01 --epochs 1 --debug`
+`python3 finetune.py M01`

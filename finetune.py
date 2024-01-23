@@ -628,10 +628,20 @@ def main():
     train_start_time = datetime.now()
 
     # Train from scratch if there is no checkpoint in the repository
-    try:
-        trainer.train(resume_from_checkpoint=True)
-    except:
+    # Check if checkpoint-* files exist in the repository
+    checkpoint_files = os.listdir(model_local_path)
+    checkpoint_files = checkpoint_files.sort()
+    checkpoint_files = [
+        file for file in checkpoint_files if file.startswith('checkpoint-')]
+    if len(checkpoint_files) == 0:
+        logging.info("No checkpoint found in the repository. Training from scratch.")
         trainer.train()
+    else:
+        logging.info(f"Checkpoint found in the repository. Resuming training.")
+        logging.info(f"Checkpoint files found: {checkpoint_files}")
+        resume_from_checkpoint = f"{model_local_path}/checkpoint-{checkpoint_files[-1]}"
+        logging.info(f"Resuming from checkpoint: {resume_from_checkpoint}\n")
+        trainer.train(resume_from_checkpoint=resume_from_checkpoint)
 
     train_end_time = datetime.now()
 
