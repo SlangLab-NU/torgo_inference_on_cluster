@@ -10,6 +10,12 @@ WORKDIR /scripts
 # Copy the current directory contents into the container at /app
 COPY . /scripts
 
+# Install Git and Git LFS
+RUN apt-get update && \
+    apt-get install -y git && \
+    apt-get install -y git-lfs && \
+    git lfs install
+
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
 RUN rm -rf /root/.cache/pip

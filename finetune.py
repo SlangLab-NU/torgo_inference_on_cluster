@@ -58,12 +58,29 @@ def main():
     torgo_csv_path = "./torgo.csv"
     
     # Use --bind option to save to a different directory when running on Cluster
-    torgo_dataset_path = '/torgo_dataset_path'
-    output_path = '/output_path'
+    torgo_dataset_path = '/torgo_dataset'
+    output_path = '/output'
+    training_args_path = '/training_args'
     
     if not os.path.exists(torgo_dataset_path):
-        print(
-            "Please provide a valid path to the Torgo dataset in config.py.")
+        print(f"""
+            Please bind the Torgo dataset directory to the container using the --bind option:
+            --bind [path to Torgo dataset directory]:/torgo_dataset
+            """)
+        sys.exit(1)
+        
+    if not os.path.exists(output_path):
+        print(f"""
+            Please bind the output directory to the container using the --bind option:
+            --bind [path to output directory]:/output
+            """)
+        sys.exit(1)
+        
+    if not os.path.exists(training_args_path):
+        print(f"""
+            Please bind the training_args.json file to the container using the --bind option:
+            --bind [path to training_args.json file]:/training_args.json
+            """)
         sys.exit(1)
 
     torgo_dataset_dir_path = torgo_dataset_path + \
@@ -71,21 +88,8 @@ def main():
 
     if not os.path.exists(torgo_csv_path):
         print(
-            "Please provide a valid path to the Torgo dataset CSV file in config.py.")
+            "Error loading the Torgo dataset CSV file. Please make sure that the Torgo dataset CSV file is in the same directory as this script.")
         sys.exit(1)
-
-    '''
-    --------------------------------------------------------------------------------
-    Load the environment variables from the .env file
-    --------------------------------------------------------------------------------
-    '''
-    load_dotenv()
-    access_token = os.getenv('HF_ACCESS_TOKEN')
-    if access_token is None:
-        print(
-            "Please provide a valid Hugging Face access token in the .env file.")
-        sys.exit(1)
-    print(f"Hugging Face Access Token successfully loaded: {access_token}\n")
 
     '''
     --------------------------------------------------------------------------------
@@ -382,8 +386,8 @@ def main():
         feature_extractor=feature_extractor, tokenizer=tokenizer)
 
     # Save the tokenizer and feature extractor to the repository
-    tokenizer.push_to_hub(repo_path, token=access_token)
-    feature_extractor.push_to_hub(repo_path, token=access_token)
+    tokenizer.push_to_hub(repo_path)
+    feature_extractor.push_to_hub(repo_path)
     '''
     --------------------------------------------------------------------------------
     Preprocess the dataset
@@ -558,10 +562,6 @@ def main():
     # (parameters of pre-trained part of the model won't be updated during training)
     model.freeze_feature_encoder()
 
-    # Load the model to the device
-    model.gradient_checkpointing_enable(
-        gradient_checkpointing_kwargs={"use_reentrant": False})
-
     # Release unoccupied cache memory
     torch.cuda.empty_cache()
 
@@ -572,7 +572,7 @@ def main():
     '''
 
     # Load the training arguments from training_args.json
-    with open('./training_args.json', 'r') as training_args_file:
+    with open(training_args_path + '/training_args.json') as training_args_file:
         training_args_dict = json.load(training_args_file)
 
     # Create the model directory, if it does not exist
@@ -584,7 +584,6 @@ def main():
         output_dir=model_local_path,
         hub_model_id=repo_name,
         num_train_epochs=num_epochs,
-        hub_token=access_token,
         **training_args_dict
     )
 
@@ -643,7 +642,7 @@ def main():
     for history in trainer.state.log_history:
         logging.info(str(history) + '\n')
 
-    trainer.push_to_hub(repo_path, token=access_token)
+    trainer.push_to_hub()
     logging.info("Model pushed to Hugging Face Hub.\n")
 
     '''
