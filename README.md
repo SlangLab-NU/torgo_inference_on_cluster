@@ -47,3 +47,23 @@ singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work
 `huggingface-cli login`
 
 `python3 finetune.py M01`
+
+### Current error
+Currently, when resuming training, an error message regarding the RNG file pops up and then the training starts from scratch again:
+```
+Loading model from /output/model/torgo_xlsr_finetune_M01-test/checkpoint-26500.
+***** Running training *****
+  Num examples = 8937
+  Num Epochs = 30
+  Instantaneous batch size per device = 4
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 2
+  Total optimization steps = 33510
+  Number of trainable parameters = 311261344
+  0%|                                    | 0/33510 [00:00<?, ?it/s]Didn't find an RNG file, if you are resuming a training that was launched in a distributed fashion, reproducibility is not guaranteed.
+```
+  ...
+```
+  {'loss': 0.1183, 'learning_rate': 5e-05, 'epoch': 0.45}
+  1%|▎                       | 500/33510 [06:20<4:06:28,  2.23it/s]
+```

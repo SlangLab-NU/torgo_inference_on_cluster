@@ -47,6 +47,7 @@ from evaluate import load
 from tqdm import tqdm
 from datetime import datetime
 
+
 def main():
     print("Start of Script\n")
     '''
@@ -56,26 +57,26 @@ def main():
     '''
     # Saved in the same directory as this script (inside container)
     torgo_csv_path = "./torgo.csv"
-    
+
     # Use --bind option to save to a different directory when running on Cluster
     torgo_dataset_path = '/torgo_dataset'
     output_path = '/output'
     training_args_path = '/training_args'
-    
+
     if not os.path.exists(torgo_dataset_path):
         print(f"""
             Please bind the Torgo dataset directory to the container using the --bind option:
             --bind [path to Torgo dataset directory]:/torgo_dataset
             """)
         sys.exit(1)
-        
+
     if not os.path.exists(output_path):
         print(f"""
             Please bind the output directory to the container using the --bind option:
             --bind [path to output directory]:/output
             """)
         sys.exit(1)
-        
+
     if not os.path.exists(training_args_path):
         print(f"""
             Please bind the training_args.json file to the container using the --bind option:
@@ -201,7 +202,7 @@ def main():
     # dataset instead.
 
     # Repository name on Hugging Face
-    repo_suffix = '-test'
+    repo_suffix = '-test' if debug_mode else ''
     repo_name = f'torgo_xlsr_finetune_{test_speaker}{repo_suffix}'
     repo_path = f'macarious/{repo_name}'
 
@@ -628,18 +629,17 @@ def main():
     train_start_time = datetime.now()
 
     # Train from scratch if there is no checkpoint in the repository
-    # Check if checkpoint-* files exist in the repository
-    checkpoint_files = os.listdir(model_local_path)
-    checkpoint_files = checkpoint_files.sort()
-    checkpoint_files = [
-        file for file in checkpoint_files if file.startswith('checkpoint-')]
+    # Check if checkpoint-* directories exist in the repository
+    checkpoint_files = [f for f in os.listdir(output_path + '/model/' + repo_name) if f.startswith(
+        'checkpoint-') and os.path.isdir(output_path + '/model/' + repo_name + '/' + f)]
     if len(checkpoint_files) == 0:
-        logging.info("No checkpoint found in the repository. Training from scratch.")
+        logging.info(
+            "No checkpoint found in the repository. Training from scratch.")
         trainer.train()
     else:
-        logging.info(f"Checkpoint found in the repository. Resuming training.")
-        logging.info(f"Checkpoint files found: {checkpoint_files}")
-        resume_from_checkpoint = f"{model_local_path}/checkpoint-{checkpoint_files[-1]}"
+        logging.info(
+            f"Checkpoint found in the repository. Checkpoint files found: {checkpoint_files}")
+        resume_from_checkpoint = f"{model_local_path}/{checkpoint_files[-1]}"
         logging.info(f"Resuming from checkpoint: {resume_from_checkpoint}\n")
         trainer.train(resume_from_checkpoint=resume_from_checkpoint)
 
