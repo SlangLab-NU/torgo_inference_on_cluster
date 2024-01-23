@@ -47,11 +47,6 @@ from evaluate import load
 from tqdm import tqdm
 from datetime import datetime
 
-# Import custom modules
-from config import torgo_csv_path
-# from config import torgo_dataset_path, torgo_csv_path
-
-
 def main():
     print("Start of Script\n")
     '''
@@ -59,12 +54,13 @@ def main():
     Check if the paths to the Torgo dataset and the Torgo dataset CSV file are valid.
     --------------------------------------------------------------------------------
     '''
+    # Saved in the same directory as this script (inside container)
+    torgo_csv_path = "./torgo.csv"
+    
+    # Use --bind option to save to a different directory when running on Cluster
     torgo_dataset_path = '/torgo_dataset_path'
     output_path = '/output_path'
-
-    print("Torgo Dataset Path: ", torgo_dataset_path)
-    print("Torgo CSV Path: ", torgo_csv_path)
-    print()
+    
     if not os.path.exists(torgo_dataset_path):
         print(
             "Please provide a valid path to the Torgo dataset in config.py.")
@@ -647,7 +643,7 @@ def main():
     for history in trainer.state.log_history:
         logging.info(str(history) + '\n')
 
-    trainer.push_to_hub()
+    trainer.push_to_hub(repo_path, token=access_token)
     logging.info("Model pushed to Hugging Face Hub.\n")
 
     '''
