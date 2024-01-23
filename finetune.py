@@ -628,10 +628,10 @@ def main():
     train_start_time = datetime.now()
 
     # Train from scratch if there is no checkpoint in the repository
-    if not trainer.is_model_parallel:
+    try:
+        trainer.train(resume_from_checkpoint=True)
+    except:
         trainer.train()
-    else:
-        trainer.train(model_path=repo_path)
 
     train_end_time = datetime.now()
 
