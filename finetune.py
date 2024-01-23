@@ -48,15 +48,20 @@ from tqdm import tqdm
 from datetime import datetime
 
 # Import custom modules
-from config import torgo_dataset_path, torgo_csv_path
+from config import torgo_csv_path
+# from config import torgo_dataset_path, torgo_csv_path
 
 
 def main():
+    print("Start of Script\n")
     '''
     --------------------------------------------------------------------------------
     Check if the paths to the Torgo dataset and the Torgo dataset CSV file are valid.
     --------------------------------------------------------------------------------
     '''
+    torgo_dataset_path = '/torgo_dataset_path'
+    output_path = '/output_path'
+    
     print("Torgo Dataset Path: ", torgo_dataset_path)
     print("Torgo CSV Path: ", torgo_csv_path)
     print()
@@ -84,7 +89,7 @@ def main():
         print(
             "Please provide a valid Hugging Face access token in the .env file.")
         sys.exit(1)
-    print("Hugging Face Access Token successfully loaded.\n")
+    print(f"Hugging Face Access Token successfully loaded: {access_token}\n")
 
     '''
     --------------------------------------------------------------------------------
@@ -127,12 +132,12 @@ def main():
     Set up the logging configuration
     --------------------------------------------------------------------------------
     '''
-    if not os.path.exists('logs'):
-        os.makedirs('logs')
+    if not os.path.exists(output_path + '/logs'):
+        os.makedirs(output_path + '/logs')
 
     log_file_name = test_speaker + '_' + \
         datetime.now().strftime("%Y%m%d_%H%M%S") + '.log'
-    log_file_path = './logs/' + log_file_name
+    log_file_path = output_path + '/logs/' + log_file_name
 
     logging.basicConfig(
         filename=log_file_path,
@@ -201,7 +206,7 @@ def main():
     repo_path = f'macarious/{repo_name}'
 
     # Path to save model / checkpoints{repo_name}'
-    model_local_path = f'./model/{repo_name}'
+    model_local_path = output_path + '/model/' + repo_name
 
     # Model to be fine-tuned with Torgo dataset
     pretrained_model_name = "facebook/wav2vec2-large-xlsr-53"
@@ -357,11 +362,11 @@ def main():
     logging.info(str(vocab_dict) + '\n')
 
     # Create a directory to store the vocab.json file
-    if not os.path.exists('vocab'):
-        os.makedirs('vocab')
+    if not os.path.exists(output_path + '/vocab'):
+        os.makedirs(output_path + '/vocab')
 
     vocab_file_name = repo_name + '_vocab.json'
-    vocab_file_path = './vocab/' + vocab_file_name
+    vocab_file_path = output_path + '/vocab/' + vocab_file_name
 
     # Save the vocab.json file
     with open(vocab_file_path, 'w') as vocab_file:
@@ -562,8 +567,8 @@ def main():
         training_args_dict = json.load(training_args_file)
 
     # Create the model directory, if it does not exist
-    if not os.path.exists('model'):
-        os.makedirs('model')
+    if not os.path.exists(output_path + '/model'):
+        os.makedirs(output_path + '/model')
 
     # Define the training arguments
     training_args = TrainingArguments(
@@ -640,14 +645,14 @@ def main():
     logging.info("Start Evaluation")
 
     # Create the results directory, if it does not exist
-    if not os.path.exists('results'):
-        os.makedirs('results')
+    if not os.path.exists(output_path + '/results'):
+        os.makedirs(output_path + '/results')
 
     # Create the results directory for the current speaker, if it does not exist
-    if not os.path.exists(f'./results/{repo_name}'):
-        os.makedirs(f'./results/{repo_name}')
+    if not os.path.exists(f'{output_path}/results/{repo_name}'):
+        os.makedirs(f'{output_path}/results/{repo_name}')
 
-    results_dir = f'./results/{repo_name}'
+    results_dir = f'{output_path}/results/{repo_name}'
 
     # Access the model from the repository
     model = Wav2Vec2ForCTC.from_pretrained(repo_path)
