@@ -61,7 +61,7 @@ def main():
     '''
     torgo_dataset_path = '/torgo_dataset_path'
     output_path = '/output_path'
-    
+
     print("Torgo Dataset Path: ", torgo_dataset_path)
     print("Torgo CSV Path: ", torgo_csv_path)
     print()
@@ -102,16 +102,16 @@ def main():
         print(
             "Please provide the speaker ID and the number of epochs (optional).")
         sys.exit(1)
-    
+
     # Check if the first argument does not start with '--'
     if sys.argv[1].startswith('--'):
         print("Please provide a valid speaker ID.")
         sys.exit(1)
-        
+
     test_speaker = sys.argv[1]
     num_epochs = 30
     debug_mode = False
-        
+
     # Optional arguments:
     #   num of epochs (ex. --epochs 30)
     #   debug mode (ex. --debug)
@@ -239,7 +239,7 @@ def main():
         dataset_csv['train'] = dataset_csv['train'].shuffle(
             seed=42).select(range(20))
         logging.info("The dataset has been reduced from " + str(dataset_csv_original_size) +
-                    " to " + str(len(dataset_csv['train'])) + " for debugging.")
+                     " to " + str(len(dataset_csv['train'])) + " for debugging.")
         logging.info("--------------------------------------------\n")
     '''
     ********************************************************************************
@@ -429,12 +429,25 @@ def main():
 
     logging.info(
         "After filtering audio within a certain length, the number of data in each dataset is:")
-    logging.info(
-        f'Train:       {len(torgo_dataset["train"])}/{original_data_count["train"]} ({len(torgo_dataset["train"]) * 100 // original_data_count["train"]}%)')
-    logging.info(
-        f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
-    logging.info(
-        f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)\n')
+
+    if original_data_count['train'] != 0:
+        logging.info(
+            f'Train:       {len(torgo_dataset["train"])}/{original_data_count["train"]} ({len(torgo_dataset["train"]) * 100 // original_data_count["train"]}%)')
+    else:
+        logging.info(f'Train:       {len(torgo_dataset["train"])}/0 (0%)')
+
+    if original_data_count['validation'] != 0:
+        logging.info(
+            f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
+    else:
+        logging.info(
+            f'Validation:  {len(torgo_dataset["validation"])}/0 (0%)')
+
+    if original_data_count['test'] != 0:
+        logging.info(
+            f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)\n')
+    else:
+        logging.info(f'Test:        {len(torgo_dataset["test"])}/0 (0%)\n')
 
     # Remove the "input_length" column
     torgo_dataset = torgo_dataset.remove_columns(["input_length"])
