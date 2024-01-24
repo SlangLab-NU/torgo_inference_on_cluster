@@ -110,7 +110,7 @@ def main():
         sys.exit(1)
 
     test_speaker = sys.argv[1]
-    num_epochs = 30
+    num_epochs = 20
     debug_mode = False
 
     # Optional arguments:
@@ -802,6 +802,7 @@ def main():
     '''
 
     logging.info("End of Script")
+    logging.info("--------------------------------------------\n")
 
 
 if __name__ == "__main__":
