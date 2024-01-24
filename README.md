@@ -37,16 +37,16 @@ Load singularity on the Cluster
 
 ```
 singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work/van-speech-nlp/hui.mac:/output,/work/van-speech-nlp/hui.mac/torgo_inference_on_cluster:/training_args --pwd /scripts $singularity_image \
-python3 finetune.py M01 --epochs 1 --debug
+python3 finetune.py M01
 ```
 
 ```
-singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work/van-speech-nlp/hui.mac:/output,/work/van-speech-nlp/hui.mac/torgo_inference_on_cluster:/training_args --pwd /scripts /work/van-speech-nlp/hui.mac/finetune_latest.sif /bin/bash
+singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work/van-speech-nlp/hui.mac/torgo_inference_on_cluster:/output,/work/van-speech-nlp/hui.mac/torgo_inference_on_cluster:/training_args --pwd /scripts /work/van-speech-nlp/hui.mac/finetune_latest.sif /bin/bash
 ```
 
 `huggingface-cli login`
 
-`python3 finetune.py M01`
+`python3 finetune.py M03 --epochs 20`
 
 ### Current error
 Currently, when resuming training, an error message regarding the RNG file pops up and then the training starts from scratch again:
