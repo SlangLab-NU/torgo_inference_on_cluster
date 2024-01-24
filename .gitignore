@@ -1,14 +1,14 @@
 # Model file; the models are stored in HuggingFace's model hub
-model/
+# model/
 
 # Log file
-logs/
+# logs/
 
 # Results file
-results/
+# results/
 
 # Vocab file
-vocab/
+# vocab/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
