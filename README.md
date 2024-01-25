@@ -4,6 +4,7 @@ This README file is under construction.
 ## Word Error Rates
 | Speaker | Epochs | Train | Validation | Test |
 |---------|--------|-------|------------|------|
+| M01 (severe) | 20 | 0.0104 | 0.3198 | 0.8568 |
 | M01 (severe) | 40 | 0.0035 | 0.3052 | 0.8779 |
 | M02 (severe) | 20 | 0.0107 | 0.3004 | 0.9043 |
 | M03 (mild)   | 20 | 0.0124 | 0.3247 | 0.4194 |
