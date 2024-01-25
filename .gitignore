@@ -1,5 +1,5 @@
 # Model file; the models are stored in HuggingFace's model hub
-# model/
+model/
 
 # Log file
 # logs/
