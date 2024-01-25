@@ -2,7 +2,7 @@ predictions,references
 pat,pat
 up,up
 meat,meat
-no,know
+know,know
 air,air
 swarm,swarm
 no,no
@@ -26,7 +26,7 @@ bat,bat
 sheet,sheet
 chair,chair
 warm,warm
-sip,ship
+ship,ship
 air,air
 goat,goat
 sip,sip
@@ -48,7 +48,7 @@ pat,pat
 up,up
 meat,meat
 meat,meat
-no,know
+know,know
 air,air
 swarm,swarm
 no,no
@@ -71,7 +71,7 @@ bat,bat
 sheet,sheet
 chair,chair
 warm,warm
-sip,ship
+ship,ship
 air,air
 goat,goat
 sip,sip
@@ -114,8 +114,8 @@ yes,yes
 warm,warm
 feed,feed
 swarm,swarm
-wrighte,right
-no,know
+right,right
+know,know
 feet,feet
 ship,ship
 feed,feed
@@ -140,7 +140,7 @@ bad,bad
 bad,bad
 cheer,cheer
 bat,bat
-rite,write
+write,write
 no,no
 tile,tile
 sweet,sweet
@@ -149,7 +149,7 @@ three,three
 pat,pat
 ate,ate
 much,much
-no,know
+know,know
 rock,rock
 knot,knot
 were,were
@@ -170,7 +170,7 @@ floor,floor
 sigh,sigh
 write,write
 write,write
-flouu,four
+fo,four
 witch,witch
 him,him
 spark,spark
@@ -238,10 +238,10 @@ him,him
 bitter,bitter
 ham,ham
 knot,knot
-wright,right
+right,right
 i'm willing to experiment for the first time,i'm willing to experiment for the first time
 witch,witch
-althoughalways alone we survive,although always alone we survive
+although always alone we survive,although always alone we survive
 we have an excellent team,we have an excellent team
 nut,nut
 sell,sell
@@ -336,7 +336,7 @@ knot,knot
 right,right
 i'm willing to experiment for the first time,i'm willing to experiment for the first time
 witch,witch
-although alalways alone we survive,although always alone we survive
+although always alone we survive,although always alone we survive
 we have an excellent team,we have an excellent team
 nut,nut
 sell,sell
@@ -381,7 +381,7 @@ bat,bat
 sip,sip
 two,two
 floor,floor
-wright,right
+right,right
 air,air
 slip,slip
 swarm,swarm
@@ -438,7 +438,7 @@ bat,bat
 sip,sip
 two,two
 floor,floor
-wright,right
+right,right
 air,air
 slip,slip
 swarm,swarm
@@ -466,7 +466,7 @@ left,left
 storm,storm
 swarm,swarm
 swarm,swarm
-wriht,right
+right,right
 sip,sip
 park,park
 rake,rake
@@ -517,12 +517,12 @@ slip,slip
 bad,bad
 knot,knot
 write,write
-ahte,ate
+ate,ate
 much,much
 knew,knew
 ate,ate
 four,four
-rite,write
+write,write
 witch,witch
 witch,witch
 suit,suit
@@ -684,7 +684,7 @@ although always alone we survive,although always alone we survive
 dead,dead
 walk,walk
 whisky,whisky
-wright,right
+right,right
 wit,wit
 i called two different painters,i called two different painters
 air,air
@@ -886,7 +886,7 @@ we have a big house,we have a big house
 mock,mock
 dock,dock
 nice,nice
-see,sea
+sea,sea
 grandmother outgrew her upbringing in petticoats,grandmother outgrew her upbringing in petticoats
 the sun died at night,the sun died at night
 ember,ember
@@ -906,7 +906,7 @@ her position covers a number of daily tasks common to any social director,her po
 the marriage went well from the start,the marriage went well from the start
 i tell you it was wonderful,i tell you it was wonderful
 zero,zero
-two,to
+to,to
 renter,renter
 meat,meat
 row,row
@@ -1263,7 +1263,7 @@ it's impossible to deal with bureaucracy,it's impossible to deal with bureaucrac
 pace,pace
 neat,neat
 call,call
-will you please describe the iddiotic predicament,will you please describe the idiotic predicament
+will you please describe the idiotic predicament,will you please describe the idiotic predicament
 screech,screech
 cable,cable
 ladle,ladle
@@ -1330,7 +1330,7 @@ primitive tribes have an upbeat attitude,primitive tribes have an upbeat attitud
 shut,shut
 retract,retract
 left,left
-displayed as lamps the puppets delight the children and are decorative accents,displayed as lamps the puppets delight the children and are decorative accent
+displayed as lamps the puppets delight the children and are decorative accent,displayed as lamps the puppets delight the children and are decorative accent
 globe,globe
 grave,grave
 bust,bust
@@ -1517,7 +1517,7 @@ although always alone we survive,although always alone we survive
 dead,dead
 walk,walk
 whisky,whisky
-wright,right
+right,right
 wit,wit
 i called two different painters,i called two different painters
 air,air
@@ -1720,7 +1720,7 @@ we have a big house,we have a big house
 mock,mock
 dock,dock
 nice,nice
-see,sea
+sea,sea
 grandmother outgrew her upbringing in petticoats,grandmother outgrew her upbringing in petticoats
 the sun died at night,the sun died at night
 ember,ember
@@ -1740,7 +1740,7 @@ her position covers a number of daily tasks common to any social director,her po
 the marriage went well from the start,the marriage went well from the start
 i tell you it was wonderful,i tell you it was wonderful
 zero,zero
-two,to
+to,to
 renter,renter
 meat,meat
 row,row
@@ -2097,7 +2097,7 @@ it's impossible to deal with bureaucracy,it's impossible to deal with bureaucrac
 pace,pace
 neat,neat
 call,call
-will you please describe the iddiotic predicament,will you please describe the idiotic predicament
+will you please describe the idiotic predicament,will you please describe the idiotic predicament
 screech,screech
 cable,cable
 ladle,ladle
@@ -2230,10 +2230,10 @@ dug,dug
 beat,beat
 sheet,sheet
 slip,slip
-wright,right
+right,right
 feet,feet
 up,up
-no,know
+know,know
 air,air
 swarm,swarm
 storm,storm
@@ -2271,7 +2271,7 @@ bad,bad
 knew,knew
 sigh,sigh
 boot,boot
-no,know
+know,know
 write,write
 sigh,sigh
 lip,lip
@@ -2302,7 +2302,7 @@ pit,pit
 seven,seven
 hat,hat
 leak,leak
-ate,eight
+eight,eight
 at,at
 five,five
 zero,zero
@@ -2345,10 +2345,10 @@ dug,dug
 beat,beat
 sheet,sheet
 slip,slip
-wriht,right
+right,right
 feet,feet
 up,up
-no,know
+know,know
 air,air
 swarm,swarm
 storm,storm
@@ -2386,7 +2386,7 @@ bad,bad
 knew,knew
 sigh,sigh
 boot,boot
-no,know
+know,know
 write,write
 sigh,sigh
 lip,lip
@@ -2417,7 +2417,7 @@ pit,pit
 seven,seven
 hat,hat
 leak,leak
-ate,eight
+eight,eight
 at,at
 five,five
 zero,zero
@@ -2549,7 +2549,7 @@ nobody really expects to evacuate,nobody really expects to evacuate
 spit,spit
 a good attitude is unbeatable,a good attitude is unbeatable
 the prospect of cutting back spending is an unpleasant one for any governor,the prospect of cutting back spending is an unpleasant one for any governor
-rite,right
+right,right
 lock,lock
 neat,neat
 best,best
@@ -2557,7 +2557,7 @@ sheet,sheet
 night,night
 shred,shred
 thread,thread
-etiquette mandates compliance with existin regulation,etiquette mandates compliance with existing regulations
+etiquette mandates compliance with existing regulations,etiquette mandates compliance with existing regulations
 etiquette mandates compliance with existing regulations,etiquette mandates compliance with existing regulations
 blend,blend
 young people participate in athletic activities,young people participate in athletic activities
@@ -2597,7 +2597,7 @@ shoot,shoot
 cheer,cheer
 court,court
 rake,rake
-sea,see
+see,see
 shin,shin
 he played basketball there while working toward a law degree,he played basketball there while working toward a law degree
 old,old
@@ -2630,7 +2630,7 @@ suddenly my reflexes are gone,suddenly my reflexes are gone
 lee,lee
 fort,fort
 show,show
-aq uick touchdown resulted,a quick touchdown resulted
+a quick touchdown resulted,a quick touchdown resulted
 a quick touchdown resulted,a quick touchdown resulted
 rise,rise
 port,port
@@ -2697,7 +2697,7 @@ grandmother outgrew her upbringing in petticoats,grandmother outgrew her upbring
 geese,geese
 it requires no big investment,it requires no big investment
 timber,timber
-aht,eight
+eight,eight
 a fire in straw makes a quick blaze,a fire in straw makes a quick blaze
 cash,cash
 feet,feet
@@ -2915,7 +2915,7 @@ nobody really expects to evacuate,nobody really expects to evacuate
 spit,spit
 a good attitude is unbeatable,a good attitude is unbeatable
 the prospect of cutting back spending is an unpleasant one for any governor,the prospect of cutting back spending is an unpleasant one for any governor
-write,right
+right,right
 lock,lock
 neat,neat
 best,best
@@ -2923,7 +2923,7 @@ sheet,sheet
 night,night
 shred,shred
 thread,thread
-etiquete mandates compliance with existin regulations,etiquette mandates compliance with existing regulations
+etiquette mandates compliance with existing regulations,etiquette mandates compliance with existing regulations
 etiquette mandates compliance with existing regulations,etiquette mandates compliance with existing regulations
 blend,blend
 young people participate in athletic activities,young people participate in athletic activities
@@ -2963,7 +2963,7 @@ shoot,shoot
 cheer,cheer
 court,court
 rake,rake
-sea,see
+see,see
 shin,shin
 he played basketball there while working toward a law degree,he played basketball there while working toward a law degree
 old,old
@@ -3063,7 +3063,7 @@ grandmother outgrew her upbringing in petticoats,grandmother outgrew her upbring
 geese,geese
 it requires no big investment,it requires no big investment
 timber,timber
-ate,eight
+eight,eight
 a fire in straw makes a quick blaze,a fire in straw makes a quick blaze
 cash,cash
 feet,feet
@@ -3098,8 +3098,8 @@ yet he remains the fiercest of competitors,yet he remains the fiercest of compet
 temper,temper
 dock,dock
 sheer,sheer
-ggus,guess
-gues,ok
+guess,guess
+ok,ok
 knife,knife
 her dark hair is combed casually,her dark hair is combed casually
 i also can be quite vocal,i also can be quite vocal
@@ -3291,7 +3291,7 @@ ticks,ticks
 he has played very well,he has played very well
 cheese,cheese
 he'll sell them by the box,he'll sell them by the box
-i,mile
+ii,mile
 mile,mile
 pit,pit
 sheet,sheet
@@ -3348,7 +3348,7 @@ hall,hall
 it was a huge part of my life,it was a huge part of my life
 it was time to go up myself,it was time to go up myself
 we got drenched from the uninterrupted rain,we got drenched from the uninterrupted rain
-we got drenched from the united,we got drenched from the uninterrupted rain
+we got drenched from the uninteruped in,we got drenched from the uninterrupted rain
 we got drenched from the uninterrupted rain,we got drenched from the uninterrupted rain
 wise,wise
 wart,wart
@@ -3536,7 +3536,7 @@ hall,hall
 it was a huge part of my life,it was a huge part of my life
 it was time to go up myself,it was time to go up myself
 we got drenched from the uninterrupted rain,we got drenched from the uninterrupted rain
-we got drenched from the unined i,we got drenched from the uninterrupted rain
+we got drenched from the uninteruped ain,we got drenched from the uninterrupted rain
 we got drenched from the uninterrupted rain,we got drenched from the uninterrupted rain
 wise,wise
 wart,wart
@@ -3606,7 +3606,7 @@ two,two
 side,side
 sigh,sigh
 ate,ate
-rite,write
+write,write
 no,no
 drop,drop
 slip,slip
@@ -3634,7 +3634,7 @@ slip,slip
 tile,tile
 bat,bat
 much,much
-no,know
+know,know
 rock,rock
 sigh,sigh
 feed,feed
@@ -3651,7 +3651,7 @@ i can,i can
 feet,feet
 sticks,sticks
 knew,knew
-now,know
+know,know
 yes,yes
 chair,chair
 swarm,swarm
@@ -3664,7 +3664,7 @@ floor,floor
 left,left
 beat,beat
 knew,knew
-wright,right
+right,right
 sip,sip
 storm,storm
 down,down
@@ -3714,7 +3714,7 @@ slip,slip
 tile,tile
 bat,bat
 much,much
-no,know
+know,know
 rock,rock
 rock,rock
 sigh,sigh
@@ -3732,10 +3732,10 @@ bit,bit
 fill,fill
 pit,pit
 pit,pit
-igh,eight
+eight,eight
 side,side
 him,him
-h,oh
+oh,oh
 yes,yes
 leak,leak
 at,at
@@ -3756,7 +3756,7 @@ leak,leak
 leak,leak
 no,no
 knot,knot
-a good attiue is unbeatable,a good attitude is unbeatable
+a good attitude is unbeatable,a good attitude is unbeatable
 wicked,wicked
 bread,bread
 the owners regularly look for plumbing leak,the owners regularly look for plumbing leaks
@@ -3781,7 +3781,7 @@ fill,fill
 pit,pit
 pit,pit
 pit,pit
-it,eight
+eight,eight
 side,side
 him,him
 relax,relax
@@ -3806,10 +3806,10 @@ leak,leak
 leak,leak
 no,no
 knot,knot
-a good atttiude is unbeatable,a good attitude is unbeatable
+a good attitude is unbeatable,a good attitude is unbeatable
 wicked,wicked
 bread,bread
-the owners  regularly look for plumbing leaks,the owners regularly look for plumbing leaks
+the owners regularly look for plumbing leaks,the owners regularly look for plumbing leaks
 chip,chip
 being able to dance can help too,being able to dance can help too
 hand,hand
@@ -3890,7 +3890,7 @@ witch,witch
 knew,knew
 yes,yes
 sigh,sigh
-,rock
+rock,rock
 boot,boot
 side,side
 much,much
@@ -3976,7 +3976,7 @@ knew,knew
 no,no
 sheet,sheet
 feed,feed
-wright,right
+right,right
 bat,bat
 feet,feet
 pat,pat
@@ -4096,7 +4096,7 @@ each one volunteered to jump first,each one volunteered to jump first
 yankee,yankee
 we bought a brown chair,we bought a brown chair
 slicker,slicker
-wright,right
+right,right
 sand,sand
 the wait for work can be very long,the wait for work can be very long
 wicked,wicked
@@ -4147,14 +4147,14 @@ beat,beat
 down,down
 know,know
 bit,bit
-feed,feet
+feet,feet
 when when,when when
 swarm,swarm
 sheet,sheet
 feet,feet
 slip,slip
 feed,feed
-usually milen min,usually min min
+usually min min,usually min min
 two,two
 sip,sip
 storm,storm
@@ -4208,7 +4208,7 @@ chair,chair
 warm,warm
 bat,bat
 no,no
-knew,know
+know,know
 storm,storm
 boot,boot
 bad,bad
@@ -4220,7 +4220,7 @@ witch,witch
 lip,lip
 slip,slip
 knot,knot
-writ,write
+write,write
 no,no
 suit,suit
 sigh,sigh
@@ -4238,21 +4238,21 @@ ate,ate
 innocence,innocence
 four,four
 pat,pat
-wrihte,write
+write,write
 shoot,shoot
 know,know
 tile,tile
 tile,tile
 yes,yes
 hat,hat
-pit,spit
+spit,spit
 fat,fat
 park,park
 bit,bit
 sticks,sticks
 slip,slip
 left,left
-wright,right
+right,right
 feet,feet
 up,up
 storm,storm
@@ -4344,7 +4344,7 @@ bit,bit
 sheet,sheet
 chair,chair
 sip,sip
-stoormrmm,storm
+storm,storm
 floor,floor
 slip,slip
 slip,slip
@@ -4435,7 +4435,7 @@ ship,ship
 dark,dark
 boot,boot
 sigh,sigh
-knewwo,know
+know,know
 suit,suit
 no,no
 knot,knot
@@ -4487,7 +4487,7 @@ spark,spark
 at,at
 him,him
 chop,chop
-ate,eight
+eight,eight
 park,park
 seven,seven
 sigh,sigh
@@ -4521,8 +4521,8 @@ up,up
 uniform,uniform
 sand,sand
 sin,sin
-in,whisky
-e,sing
+lis,whisky
+sing,sing
 down,down
 best,best
 we have an excellent team,we have an excellent team
@@ -4546,7 +4546,7 @@ ned,ned
 chip,chip
 dread,dread
 said,said
-,nest
+nest,nest
 ,quicker
 sell,sell
 red,red
@@ -4562,7 +4562,7 @@ witch,witch
 a,a
 no,no
 slicker,slicker
-,knot
+not,knot
 knot,knot
 dead,dead
 although always again again,although always again again
@@ -4573,113 +4573,10 @@ only lawyers love millionaires,only lawyers love millionaires
 victor,victor
 he is definitely a notch above us,he is definitely a notch above us
 the hotel man,the hotel man
-the hotel owner shrugged,the hotel owner shrugged
+the hotel owner shruged,the hotel owner shrugged
 one,one
 glitter,glitter
 the pair of shoes was new,the pair of shoes was new
-sspark spark spark,spark spark spark
-spark,spark
-one,one
-feed,feed
-sheet,sheet
-left,left
-park,park
-beat,beat
-beat,beat
-swarm,swarm
-two,two
-chair,chair
-floor,floor
-up,up
-feet,feet
-ship,ship
-no,no
-storm,storm
-bat,bat
-kno,know
-dug,dug
-down,down
-pat,pat
-warm,warm
-air,air
-air,air
-sip,sip
-right,right
-knew,knew
-slip,slip
-chair,chair
-rake,rake
-sip,sip
-goat,goat
-knew,knew
-feet,feet
-feed,feed
-sip,sip
-warm,warm
-sticks,sticks
-yes,yes
-storm,storm
-dark,dark
-meat,meat
-swarm,swarm
-bit,bit
-much,much
-know,know
-write,write
-skip auh slip,skip ah slip
-slip,slip
-ate,ate
-rock,rock
-four,four
-side,side
-floor,floor
-shoot,shoot
-lip,lip
-knot,knot
-sigh,sigh
-no,no
-boot,boot
-knew,knew
-sigh,sigh
-suit,suit
-bat,bat
-bad,bad
-witch,witch
-sigh,sigh
-pat,pat
-bad,bad
-air,air
-three,three
-cheer,cheer
-cheer,cheer
-suit,suit
-tile,tile
-yes,yes
-writ,write
-ate,ate
-slip,slip
-leak,leak
-at,at
-chop,chop
-fat,fat
-six,six
-sell,sell
-yes,yes
-at,at
-hat,hat
-leak,leak
-him,him
-pit,pit
-witch,witch
-spit,spit
-fill,fill
-sigh,sigh
-zero,zero
-seven,seven
-park,park
-eight,eight
-dark,dark
-no,no
 spark spark spark,spark spark spark
 spark,spark
 one,one
@@ -4758,7 +4655,110 @@ cheer,cheer
 suit,suit
 tile,tile
 yes,yes
-rihte,write
+write,write
+ate,ate
+slip,slip
+leak,leak
+at,at
+chop,chop
+fat,fat
+six,six
+sell,sell
+yes,yes
+at,at
+hat,hat
+leak,leak
+him,him
+pit,pit
+witch,witch
+spit,spit
+fill,fill
+sigh,sigh
+zero,zero
+seven,seven
+park,park
+eight,eight
+dark,dark
+no,no
+spark spark spark,spark spark spark
+spark,spark
+one,one
+feed,feed
+sheet,sheet
+left,left
+park,park
+beat,beat
+beat,beat
+swarm,swarm
+two,two
+chair,chair
+floor,floor
+up,up
+feet,feet
+ship,ship
+no,no
+storm,storm
+bat,bat
+know,know
+dug,dug
+down,down
+pat,pat
+warm,warm
+air,air
+air,air
+sip,sip
+right,right
+knew,knew
+slip,slip
+chair,chair
+rake,rake
+sip,sip
+goat,goat
+knew,knew
+feet,feet
+feed,feed
+sip,sip
+warm,warm
+sticks,sticks
+yes,yes
+storm,storm
+dark,dark
+meat,meat
+swarm,swarm
+bit,bit
+muchh,much
+know,know
+write,write
+skip ah slip,skip ah slip
+slip,slip
+ate,ate
+rock,rock
+four,four
+side,side
+floor,floor
+shoot,shoot
+lip,lip
+knot,knot
+sigh,sigh
+no,no
+boot,boot
+knew,knew
+sigh,sigh
+suit,suit
+bat,bat
+bad,bad
+witch,witch
+sigh,sigh
+pat,pat
+bad,bad
+air,air
+three,three
+cheer,cheer
+cheer,cheer
+suit,suit
+tile,tile
+yes,yes
+write,write
 ate,ate
 slip,slip
 leak,leak
@@ -4896,7 +4896,7 @@ flicker,flicker
 dice,dice
 walk,walk
 wicked,wicked
-wright,right
+right,right
 sell,sell
 liquor,liquor
 chip,chip
@@ -5066,7 +5066,7 @@ geese,geese
 those people are much quicker than i am,those people are much quicker than i am
 seven,seven
 they will take a wedding trip together,they will take a wedding trip together
-thyiltake a wedding trip later,they will take a wedding trip later
+they will take a wedding trip later,they will take a wedding trip later
 her classical performance gained critical acclaim,her classical performance gained critical acclaim
 catastrophic economic cutbacks neglect the poor,catastrophic economic cutbacks neglect the poor
 reap,reap
@@ -5197,7 +5197,7 @@ flicker,flicker
 dice,dice
 walk,walk
 wicked,wicked
-wriht,right
+right,right
 sell,sell
 liquor,liquor
 chip,chip
@@ -5273,7 +5273,7 @@ air,air
 he played basketball there while working toward a law degree,he played basketball there while working toward a law degree
 shoot,shoot
 in fact our whole defensive unit did a good job,in fact our whole defensive unit did a good job
-thiltied eniater,toe
+teae,toe
 old,old
 old,old
 sight,sight
@@ -5368,7 +5368,7 @@ geese,geese
 those people are much quicker than i am,those people are much quicker than i am
 seven,seven
 they will take a wedding trip together,they will take a wedding trip together
-thewiltikoedintipater,they will take a wedding trip later
+theilltake a weddingtrip later,they will take a wedding trip later
 her classical performance gained critical acclaim,her classical performance gained critical acclaim
 catastrophic economic cutbacks neglect the poor,catastrophic economic cutbacks neglect the poor
 reap,reap
@@ -5436,7 +5436,7 @@ six,six
 reap,reap
 we just didn't look good,we just didn't look good
 elderly people are often excluded,elderly people are often excluded
-ate,eight
+eight,eight
 beast,beast
 ache,ache
 sheer,sheer
@@ -5444,9 +5444,9 @@ the marriage went well from the start,the marriage went well from the start
 feed,feed
 seven,seven
 guess,guess
-two,to
+to,to
 beam,beam
-two,two
+to,two
 lender,lender
 hash,hash
 nice,nice
@@ -5473,7 +5473,7 @@ bun,bun
 rakes,rakes
 i wanted to be an actress,i wanted to be an actress
 cheese,cheese
-begin by trying to sak up more,begin by trying to speak up more
+begin by trying to speak up more,begin by trying to speak up more
 begin by trying to speak up more,begin by trying to speak up more
 we shelled clams for the chowder,we shelled clams for the chowder
 rake,rake
@@ -5794,7 +5794,7 @@ bender,bender
 basketball can be an entertaining sport,basketball can be an entertaining sport
 pete,pete
 i haven't seen that friend for years,i haven't seen that friend for years
-see,see
+sea,see
 her position covers a number of daily tasks common to any social director,her position covers a number of daily tasks common to any social director
 her position covers a number of daily tasks common to any social director,her position covers a number of daily tasks common to any social director
 the sun died at night,the sun died at night
@@ -5827,7 +5827,7 @@ six,six
 reap,reap
 we just didn't look good,we just didn't look good
 elderly people are often excluded,elderly people are often excluded
-at,eight
+eight,eight
 beast,beast
 ache,ache
 sheer,sheer
@@ -5864,7 +5864,7 @@ bun,bun
 rakes,rakes
 i wanted to be an actress,i wanted to be an actress
 cheese,cheese
-begin by trying to sak up more,begin by trying to speak up more
+begin by trying to seak up more,begin by trying to speak up more
 begin by trying to speak up more,begin by trying to speak up more
 we shelled clams for the chowder,we shelled clams for the chowder
 rake,rake
@@ -5914,7 +5914,7 @@ pet,pet
 hatch,hatch
 hatch,hatch
 ail,ail
-seae,see
+see,see
 leap,leap
 hash,hash
 now i'm living exactly as i chose,now i'm living exactly as i chose
@@ -6217,8 +6217,8 @@ slip,slip
 lip,lip
 cheer,cheer
 four,four
-row,three
-row,know
+know,three
+know,know
 suit,suit
 much,much
 rock,rock
@@ -6317,7 +6317,7 @@ right,right
 air,air
 beat,beat
 feed,feed
-now,know
+know,know
 spark,spark
 bit,bit
 two,two
@@ -6482,7 +6482,7 @@ we bought a brown chair,we bought a brown chair
 bread,bread
 said,said
 dress,dress
-wright,right
+right,right
 victor,victor
 yankee,yankee
 knot,knot
@@ -6741,16 +6741,16 @@ you want him to do well,you want him to do well
 ,nobody really expects to evacuate
 lock,lock
 meat,meat
-the prospect of cutting back spendging   is an unpleasant one for any governor,the prospect of cutting back spending is an unpleasant one for any governor
+the prospect of cutting back spending g is an unpleasant one for any governor,the prospect of cutting back spending is an unpleasant one for any governor
 romeo,romeo
 ship,ship
 uniform,uniform
 wicker,wicker
 quicker,quicker
 two,two
-yyou can ride sta,you can ride stagecoach
+you can ride stagecouk,you can ride stagecoach
 him,him
-sen,tread
+thread,tread
 ,zip
 a,a
 chip,chip
@@ -6769,7 +6769,7 @@ swarm,swarm
 right,right
 sticks,sticks
 chair,chair
-no,know
+know,know
 goat,goat
 meat,meat
 yes,yes
@@ -6808,12 +6808,12 @@ witch,witch
 no,no
 slip,slip
 suit,suit
-wright,write
 write,write
-at,ate
+write,write
+ate,ate
 bat,bat
 floor,floor
-no,know
+know,know
 three,three
 sigh,sigh
 air,air
@@ -6834,7 +6834,7 @@ suit,suit
 yes,yes
 bad,bad
 lip,lip
-wright,write
+write,write
 side,side
 him,him
 leak,leak
@@ -6891,7 +6891,7 @@ hand,hand
 tin,tin
 did dad do academic bidding,did dad do academic bidding
 litter,litter
-supsip,sip
+sip,sip
 sip,sip
 sin,sin
 no,no
@@ -6951,7 +6951,7 @@ two,two
 the pair of shoes was new,the pair of shoes was new
 flicker,flicker
 being able to dance can help too,being able to dance can help too
-wright,right
+right,right
 most young rise early every morning,most young rise early every morning
 best,best
 then we'd really have someplace to go,then we'd really have someplace to go
@@ -6999,7 +6999,7 @@ no,no
 rake,rake
 he asked you for a loan,he asked you for a loan
 toe,toe
-wright,write
+write,write
 mill,mill
 lake,lake
 who knows what you'll discover about yourself,who knows what you'll discover about yourself
@@ -7080,10 +7080,10 @@ bat,bat
 rake,rake
 feed,feed
 swarm,swarm
-wright,right
+right,right
 sticks,sticks
 chair,chair
-no,know
+know,know
 goat,goat
 meat,meat
 yes,yes
@@ -7122,12 +7122,12 @@ witch,witch
 no,no
 slip,slip
 suit,suit
-wrihte,write
-wriht,write
+write,write
+write,write
 ate,ate
 bat,bat
 floor,floor
-no,know
+know,know
 three,three
 sigh,sigh
 air,air
@@ -7314,7 +7314,7 @@ no,no
 rake,rake
 he asked you for a loan,he asked you for a loan
 toe,toe
-wrihte,write
+write,write
 mill,mill
 lake,lake
 who knows what you'll discover about yourself,who knows what you'll discover about yourself
@@ -7497,7 +7497,7 @@ bender,bender
 i don't think it's a good idea,i don't think it's a good idea
 spit,spit
 meat,meat
-the marriage wentfrom the start,the marriage went well from the start
+the marriage went wel from the start,the marriage went well from the start
 the marriage went well from the start,the marriage went well from the start
 hail,hail
 bumper,bumper
@@ -7566,7 +7566,7 @@ even a simple vocabulary contains symbols,even a simple vocabulary contains symb
 academic aptitude guarantees your diploma,academic aptitude guarantees your diploma
 pet,pet
 the legislature met to judge the state of public education,the legislature met to judge the state of public education
-this he added brought about pt    pet,this he added brought about petty jealousies and petty personal grievances
+this he added brought about petyeund pet eanaens,this he added brought about petty jealousies and petty personal grievances
 this he added brought about petty jealousies and petty personal grievances,this he added brought about petty jealousies and petty personal grievances
 hash,hash
 dug,dug
@@ -7602,7 +7602,7 @@ now i'm living exactly as i choose,now i'm living exactly as i choose
 lip,lip
 mile,mile
 i didn't know where they were coming from,i didn't know where they were coming from
-eight,ate
+ate,ate
 ache,ache
 pit,pit
 tall,tall
@@ -7713,7 +7713,7 @@ there is definitely some ligament damage in his knee,there is definitely some li
 said,said
 sport,sport
 read,read
-red,read
+read,read
 snort,snort
 dead,dead
 suddenly my reflexes are gone,suddenly my reflexes are gone
@@ -7734,7 +7734,7 @@ mom strongly dislikes appetizers,mom strongly dislikes appetizers
 tea,tea
 coat,coat
 seven,seven
-see,sea
+sea,sea
 yet he remains the fiercest of competitors,yet he remains the fiercest of competitors
 mock,mock
 her dark hair is combed casually,her dark hair is combed casually
@@ -7782,7 +7782,7 @@ bender,bender
 i don't think it's a good idea,i don't think it's a good idea
 spit,spit
 meat,meat
-the marriage went from the start,the marriage went well from the start
+the marriage went wel from the start,the marriage went well from the start
 the marriage went well from the start,the marriage went well from the start
 hail,hail
 bumper,bumper
@@ -7799,7 +7799,7 @@ zero,zero
 woe,woe
 it requires no big investment,it requires no big investment
 cash,cash
-to,two
+two,two
 leap,leap
 temper,temper
 forks,forks
@@ -7851,7 +7851,7 @@ even a simple vocabulary contains symbols,even a simple vocabulary contains symb
 academic aptitude guarantees your diploma,academic aptitude guarantees your diploma
 pet,pet
 the legislature met to judge the state of public education,the legislature met to judge the state of public education
-this he added brought about pt    pet e,this he added brought about petty jealousies and petty personal grievances
+this he added brought about petyoeousnd pet yesaas,this he added brought about petty jealousies and petty personal grievances
 this he added brought about petty jealousies and petty personal grievances,this he added brought about petty jealousies and petty personal grievances
 hash,hash
 dug,dug
@@ -7893,7 +7893,7 @@ rake,rake
 park,park
 chair,chair
 chair,chair
-wrigt,right
+right,right
 feet,feet
 bat,bat
 dug,dug
@@ -7924,7 +7924,7 @@ up,up
 one,one
 feet,feet
 two,two
-now,know
+know,know
 ship,ship
 swarm,swarm
 beat,beat
@@ -7947,7 +7947,7 @@ suit,suit
 witch,witch
 ate,ate
 much,much
-no,know
+know,know
 write,write
 bad,bad
 knew,knew
@@ -7959,7 +7959,7 @@ floor,floor
 slip,slip
 ate,ate
 three,three
-wrighte,write
+write,write
 suit,suit
 sigh,sigh
 yes,yes
@@ -8086,7 +8086,7 @@ witch,witch
 the owners regularly look for plumbing leaks,the owners regularly look for plumbing leaks
 it's fun to roast marshmallows on a gas burner,it's fun to roast marshmallows on a gas burner
 two,two
-wright,right
+right,right
 wicked,wicked
 in,in
 nobody really expects to evacuate,nobody really expects to evacuate
@@ -8117,7 +8117,7 @@ a quick touchdown resulted,a quick touchdown resulted
 beat,beat
 cheer,cheer
 no,no
-wrihte,write
+write,write
 three,three
 sew,sew
 bill,bill
@@ -8249,7 +8249,7 @@ rake,rake
 park,park
 chair,chair
 chair,chair
-wright,right
+right,right
 feet,feet
 bat,bat
 dug,dug
@@ -8280,7 +8280,7 @@ up,up
 one,one
 feet,feet
 two,two
-no,know
+know,know
 ship,ship
 swarm,swarm
 beat,beat
@@ -8303,7 +8303,7 @@ suit,suit
 witch,witch
 ate,ate
 much,much
-no,know
+know,know
 write,write
 bad,bad
 knew,knew
@@ -8315,7 +8315,7 @@ floor,floor
 slip,slip
 ate,ate
 three,three
-wriht,write
+write,write
 bad,bad
 suit,suit
 sigh,sigh
@@ -8329,7 +8329,7 @@ sigh,sigh
 spit,spit
 witch,witch
 five,five
-ate,eight
+eight,eight
 him,him
 six,six
 spark,spark
@@ -8445,7 +8445,7 @@ witch,witch
 the owners regularly look for plumbing leaks,the owners regularly look for plumbing leaks
 it's fun to roast marshmallows on a gas burner,it's fun to roast marshmallows on a gas burner
 two,two
-wrihte,right
+right,right
 wicked,wicked
 in,in
 nobody really expects to evacuate,nobody really expects to evacuate
@@ -8496,7 +8496,7 @@ there is definitely some ligament damage in his knee,there is definitely some li
 the results were very disappointing,the results were very disappointing
 coat,coat
 said,said
-i've keptit with me ever since,i've kept it with me ever since
+i've kept it with me ever since,i've kept it with me ever since
 i've kept it with me ever since,i've kept it with me ever since
 court,court
 hold,hold
@@ -8584,7 +8584,7 @@ some prefer the traditional steel kind,some prefer the traditional steel kind
 he asked you for a loan,he asked you for a loan
 old,old
 cash,cash
-in fact our wole defensive unit did a good job,in fact our whole defensive unit did a good job
+in fact our whole defensive unit did a good job,in fact our whole defensive unit did a good job
 the four brothers looked identical,the four brothers looked identical
 see,see
 don't do charlie's dirty dishes,don't do charlie's dirty dishes
@@ -8644,7 +8644,7 @@ code,code
 she,she
 we have a big house,we have a big house
 gash,gash
-beat,meat
+meat,meat
 gold can be found anywhere,gold can be found anywhere
 i don't think it's a good idea,i don't think it's a good idea
 meat,meat
@@ -8697,7 +8697,7 @@ row,row
 it,it
 i was pleased with the way things went,i was pleased with the way things went
 it requires no big investment,it requires no big investment
-two,to
+to,to
 leap,leap
 worse luck was still to come,worse luck was still to come
 i haven't seen that friend for years,i haven't seen that friend for years
@@ -8710,7 +8710,7 @@ feet,feet
 spit,spit
 beep,beep
 temper,temper
-see,sea
+sea,sea
 knife,knife
 three,three
 cheer,cheer
@@ -8738,14 +8738,14 @@ the eastern coast is a place for pure pleasure and excitement,the eastern coast 
 i didn't know where they were coming from,i didn't know where they were coming from
 fat,fat
 ache,ache
-there was no confirmation of such massive as,there was no confirmation of such massive assaults from independent sources
-there was no confirmation of such massive assault r,there was no confirmation of such massive assaults from independent sources
+there was no confirmation of such massive assais e ent oes,there was no confirmation of such massive assaults from independent sources
+there was no confirmation of such massive assaults on e e eres,there was no confirmation of such massive assaults from independent sources
 academic aptitude guarantees your diploma,academic aptitude guarantees your diploma
 ease,ease
 full,full
 the plot is laced with mysterious incidents,the plot is laced with mysterious incidents
 row,row
-we experience distress and frustration obtaining,we experience distress and frustration obtaining our degrees
+we experience distress and frustration obtaining our s,we experience distress and frustration obtaining our degrees
 racks,racks
 we all sat down and relaxed,we all sat down and relaxed
 have no fear if you come alone,have no fear if you come alone
@@ -8800,7 +8800,7 @@ tile,tile
 chocolate and roses never fail as a romantic gift,chocolate and roses never fail as a romantic gift
 pill,pill
 begin by trying to speak up more,begin by trying to speak up more
-the structures housing the apartments are of masonry and,the structures housing the apartments are of masonry and frame construction
+the structures housing the apartments are of masonry and oer,the structures housing the apartments are of masonry and frame construction
 arm,arm
 hail,hail
 charm,charm
@@ -8817,8 +8817,8 @@ fat,fat
 had,had
 even a simple vocabulary contains symbols,even a simple vocabulary contains symbols
 even a simple vocabulary contains symbols,even a simple vocabulary contains symbols
-this he added brought about petty ealousies and pet t as,this he added brought about petty jealousies and petty personal grievances
-this he added brought about petty jealousies and e,this he added brought about petty jealousies and petty personal grievances
+this he added brought about petty ealousies and petty eeesssssss,this he added brought about petty jealousies and petty personal grievances
+this he added brought about petty jealousies and et s reecs,this he added brought about petty jealousies and petty personal grievances
 range was a vital detail,range was a vital detail
 leap,leap
 bunch,bunch
@@ -8837,7 +8837,7 @@ chap,chap
 dock,dock
 weave,weave
 porcupines resemble sea urchins,porcupines resemble sea urchins
-the staff deserves a lot of credit working down here under,the staff deserves a lot of credit working down here under real obstacles
+the staff deserves a lot of credit working down here under eaess,the staff deserves a lot of credit working down here under real obstacles
 bed,bed
 the new highway is straight and empty,the new highway is straight and empty
 last year's gas shortage caused steep,last year's gas shortage caused steep
@@ -8885,7 +8885,7 @@ row,row
 continental drift is a geological theory,continental drift is a geological theory
 pant,pant
 waste,waste
-hail,hail
+haild,hail
 whip,whip
 wax,wax
 term,term
@@ -8902,7 +8902,7 @@ hat,hat
 the store serves meals every day,the store serves meals every day
 had,had
 wide,wide
-it was time to go upmyself,it was time to go up myself
+it was time to go up myself,it was time to go up myself
 heat,heat
 we've done it in the past,we've done it in the past
 cold,cold
@@ -8916,7 +8916,7 @@ you have to expect a few bad calls,you have to expect a few bad calls
 there is such a program,there is such a program
 court,court
 hid,hid
-they'l never fit me again,they'll never fit me again
+they'll never fit me again,they'll never fit me again
 bad,bad
 they received all the things they needed,they received all the things they needed
 feed,feed
