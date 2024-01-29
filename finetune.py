@@ -122,7 +122,7 @@ def main():
     debug_mode = False
 
     if len(sys.argv) > 2:
-        for i in range(2, len(sys.argv)):
+        for i in range(2, len(sys.argv), 2):
             if sys.argv[i] == '--num_epochs':
                 if sys.argv[i+1].isdigit() and int(sys.argv[i+1]) > 0:
                     num_epochs = int(sys.argv[i+1])

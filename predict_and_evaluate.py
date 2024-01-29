@@ -83,13 +83,23 @@ def predict_and_evaluate():
     # Default values
     repeated_text_threshold = 40
     keep_all_text = False
+    
+    print(sys.argv)
 
     if len(sys.argv) > 2:
-        for i in range(2, len(sys.argv)):
+        for i in range(2, len(sys.argv), 2):
             if sys.argv[i] == '--repeated_text_threshold':
-                repeated_text_threshold = int(sys.argv[i+1])
+                if sys.argv[i+1].isdigit() and int(sys.argv[i+1]) >= 0:
+                    repeated_text_threshold = int(sys.argv[i+1])
+                else:
+                    print("Please provide a valid number for the repeated text threshold.")
+                    sys.exit(1)
             elif sys.argv[i] == '--keep_all_text':
-                keep_all_text = sys.argv[i+1].lower() == 'true'
+                if sys.argv[i+1].lower() in ['true', 'false']:
+                    keep_all_text = sys.argv[i+1].lower() == 'true'
+                else:
+                    print("Please provide a valid value for the keep all text mode. (True or False)")
+                    sys.exit(1)
             else:
                 print(f"Invalid argument: {sys.argv[i]}")
                 sys.exit(1)
@@ -173,8 +183,9 @@ def predict_and_evaluate():
     --------------------------------------------------------------------------------
     '''
     # Access the model from the repository
+    logging.info("Loading the model and processor from " + repo_path)
     model = Wav2Vec2ForCTC.from_pretrained(repo_path)
-    logging.info("Model loaded from " + repo_path + '\n')
+    logging.info("Model loaded from " + repo_path)
     processor = Wav2Vec2Processor.from_pretrained(repo_path)
     logging.info("Processor loaded from " + repo_path + '\n')
 
