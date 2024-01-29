@@ -241,58 +241,52 @@ def predict_and_evaluate():
     # (3) If "The dog is brown" is spoken 50 times in total across all speakers in
     # the train and validation dataset, remove the corresponding data from the test
     # dataset instead.
+    
+    if not keep_all_text:
+        unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(
+            torgo_dataset['validation'].unique(column='text')) | set(torgo_dataset['test'].unique(column='text'))
+        unique_texts_count = {}
 
-    unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(
-        torgo_dataset['validation'].unique(column='text')) | set(torgo_dataset['test'].unique(column='text'))
-    unique_texts_count = {}
+        for text in unique_texts:
+            unique_texts_count[text] = {'train_validation': 0, 'test': 0}
 
-    for text in unique_texts:
-        unique_texts_count[text] = {'train_validation': 0, 'test': 0}
+        for text in torgo_dataset['train']['text']:
+            unique_texts_count[text]['train_validation'] += 1
 
-    for text in torgo_dataset['train']['text']:
-        unique_texts_count[text]['train_validation'] += 1
+        for text in torgo_dataset['validation']['text']:
+            unique_texts_count[text]['train_validation'] += 1
 
-    for text in torgo_dataset['validation']['text']:
-        unique_texts_count[text]['train_validation'] += 1
+        for text in torgo_dataset['test']['text']:
+            unique_texts_count[text]['test'] += 1
 
-    for text in torgo_dataset['test']['text']:
-        unique_texts_count[text]['test'] += 1
+        texts_to_keep_in_train_validation = []
+        texts_to_keep_in_test = []
 
-    texts_to_keep_in_train_validation = []
-    texts_to_keep_in_test = []
-
-    # Keep all text if keep_all_text is True
-    if keep_all_text:
-        texts_to_keep_in_train_validation = list(unique_texts_count.keys())
-        texts_to_keep_in_test = list(unique_texts_count.keys())
-
-    # Remove text according to the predetermined text_count_threshold
-    else:
         for text in unique_texts_count:
             if unique_texts_count[text]['train_validation'] < text_count_threshold and unique_texts_count[text]['test'] > 0:
                 texts_to_keep_in_test.append(text)
             else:
                 texts_to_keep_in_train_validation.append(text)
 
-    original_data_count = {'train': len(torgo_dataset['train']), 'validation': len(
-        torgo_dataset['validation']), 'test': len(torgo_dataset['test'])}
+        original_data_count = {'train': len(torgo_dataset['train']), 'validation': len(
+            torgo_dataset['validation']), 'test': len(torgo_dataset['test'])}
 
-    # Update the three dataset splits
-    torgo_dataset['train'] = torgo_dataset['train'].filter(
-        lambda x: x['text'] in texts_to_keep_in_train_validation)
-    torgo_dataset['validation'] = torgo_dataset['validation'].filter(
-        lambda x: x['text'] in texts_to_keep_in_train_validation)
-    torgo_dataset['test'] = torgo_dataset['test'].filter(
-        lambda x: x['text'] in texts_to_keep_in_test)
+        # Update the three dataset splits
+        torgo_dataset['train'] = torgo_dataset['train'].filter(
+            lambda x: x['text'] in texts_to_keep_in_train_validation)
+        torgo_dataset['validation'] = torgo_dataset['validation'].filter(
+            lambda x: x['text'] in texts_to_keep_in_train_validation)
+        torgo_dataset['test'] = torgo_dataset['test'].filter(
+            lambda x: x['text'] in texts_to_keep_in_test)
 
-    logging.info(
-        f"After applying the text count threshold of {text_count_threshold}, the number of data in each dataset is:")
-    logging.info(
-        f'Train:       {len(torgo_dataset["train"])}/{original_data_count["train"]} ({len(torgo_dataset["train"]) * 100 // original_data_count["train"]}%)')
-    logging.info(
-        f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
-    logging.info(
-        f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)\n')
+        logging.info(
+            f"After applying the text count threshold of {text_count_threshold}, the number of data in each dataset is:")
+        logging.info(
+            f'Train:       {len(torgo_dataset["train"])}/{original_data_count["train"]} ({len(torgo_dataset["train"]) * 100 // original_data_count["train"]}%)')
+        logging.info(
+            f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
+        logging.info(
+            f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)\n')
 
     '''
     --------------------------------------------------------------------------------
