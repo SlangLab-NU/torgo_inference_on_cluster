@@ -90,13 +90,15 @@ def predict_and_evaluate():
                 if sys.argv[i+1].isdigit() and int(sys.argv[i+1]) >= 0:
                     repeated_text_threshold = int(sys.argv[i+1])
                 else:
-                    print("Please provide a valid number for the repeated text threshold.")
+                    print(
+                        "Please provide a valid number for the repeated text threshold.")
                     sys.exit(1)
             elif sys.argv[i] == '--keep_all_text':
                 if sys.argv[i+1].lower() in ['true', 'false']:
                     keep_all_text = sys.argv[i+1].lower() == 'true'
                 else:
-                    print("Please provide a valid value for the keep all text mode. (True or False)")
+                    print(
+                        "Please provide a valid value for the keep all text mode. (True or False)")
                     sys.exit(1)
             else:
                 print(f"Invalid argument: {sys.argv[i]}")
@@ -187,6 +189,10 @@ def predict_and_evaluate():
     processor = Wav2Vec2Processor.from_pretrained(repo_path)
     logging.info("Processor loaded from " + repo_path + '\n')
 
+    # Move model to GPU
+    if torch.cuda.is_available():
+        model.to("cuda")
+
     '''
     --------------------------------------------------------------------------------
     Split the dataset into training / validation / test sets.
@@ -241,7 +247,7 @@ def predict_and_evaluate():
     # (3) If "The dog is brown" is spoken 50 times in total across all speakers in
     # the train and validation dataset, remove the corresponding data from the test
     # dataset instead.
-    
+
     if not keep_all_text:
         unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(
             torgo_dataset['validation'].unique(column='text')) | set(torgo_dataset['test'].unique(column='text'))
@@ -354,8 +360,6 @@ def predict_and_evaluate():
     # Remove the "input_length" column
     torgo_dataset = torgo_dataset.remove_columns(["input_length"])
 
-
-
     '''
     --------------------------------------------------------------------------------
     Prepare for prediction and evaluation
@@ -367,19 +371,11 @@ def predict_and_evaluate():
     if not os.path.exists(output_path + '/results'):
         os.makedirs(output_path + '/results')
 
+    results_dir = f'{output_path}/results/{repo_name}' if not keep_all_text else f'{output_path}/results/{repo_name}_include_repeated_text'
+
     # Create the results directory for the current speaker, if it does not exist
-    if not os.path.exists(f'{output_path}/results/{repo_name}'):
-        os.makedirs(f'{output_path}/results/{repo_name}')
-
-    results_dir = f'{output_path}/results/{repo_name}'
-
-    # Access the model from the repository
-    model = Wav2Vec2ForCTC.from_pretrained(repo_path)
-    processor = Wav2Vec2Processor.from_pretrained(repo_path)
-
-    # Move model to GPU
-    if torch.cuda.is_available():
-        model.to("cuda")
+    if not os.path.exists(results_dir):
+        os.makedirs(results_dir)
 
     def predict_dataset(dataset):
         '''
@@ -419,7 +415,7 @@ def predict_and_evaluate():
             references.append(reference)
 
         return predictions, references
-    
+
     # Load the WER metric
     wer_metric = load("wer")
 
@@ -474,7 +470,7 @@ def predict_and_evaluate():
     # Predict on the test set
     logging.info("Predicting on the test set...")
     test_predictions, test_references = predict_dataset(torgo_dataset['test'])
-    
+
     test_wer = wer_metric.compute(
         predictions=test_predictions, references=test_references)
     logging.info("Word Error Rate: " + str(test_wer))
@@ -508,6 +504,7 @@ def predict_and_evaluate():
 
     logging.info("End of Script")
     logging.info("--------------------------------------------\n")
-    
+
+
 if __name__ == "__main__":
     predict_and_evaluate()
