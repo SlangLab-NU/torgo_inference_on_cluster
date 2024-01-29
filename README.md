@@ -31,7 +31,7 @@ Use GPU from Cluster
 (see https://github.com/SlangLab-NU/links/wiki/Working-with-sbatch-and-srun-on-the-cluster-with-GPU-nodes)
 `srun --partition=gpu --nodes=1 --gres=gpu:t4:1 --time=08:00:00 --pty /bin/bash`
 
-Execute `finetune.py`` the image with Singularity
+Execute `finetune.py` image with Singularity
 ```
 singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work/van-speech-nlp/hui.mac/torgo_inference_on_cluster:/output,/work/van-speech-nlp/hui.mac/torgo_inference_on_cluster:/training_args --pwd /scripts /work/van-speech-nlp/hui.mac/finetune_latest.sif /bin/bash
 ```
@@ -44,3 +44,7 @@ Example: `python3 finetune.py M03 --num_epochs 40`
 Example: `python3 finetune.py M01`
 Example: `python3 predict_and_evaluate.py M01 --keep_all_text True`
 Example: `python3 predict_and_evaluate.py M01 --repeated_text_threshold 100`
+
+Clear cache if it's full
+`rm -rf /home/hui.mac/.cache/`
+`rm -rf /home/hui.mac/.singularity/cache`
