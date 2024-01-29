@@ -248,6 +248,8 @@ def predict_and_evaluate():
     # (3) If "The dog is brown" is spoken 50 times in total across all speakers in
     # the train and validation dataset, remove the corresponding data from the test
     # dataset instead.
+    
+    original_data_count = {'train': 0, 'validation': 0, 'test': 0}
 
     if not keep_all_text:
         unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(
