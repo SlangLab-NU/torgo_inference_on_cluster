@@ -42,9 +42,10 @@ Log in to Hugging Face
 Run the script
 Example: `python3 finetune.py M03 --num_epochs 40`
 Example: `python3 finetune.py M01`
-Example: `python3 finetune.py M01 repeated_text_threshold 200`
+Example: `python3 finetune.py M01 --repeated_text_threshold 1 --repo_suffix keep_all`
+
+Example: `python3 predict_and_evaluate.py M01`
 Example: `python3 predict_and_evaluate.py M01 --keep_all_text True`
-Example: `python3 predict_and_evaluate.py M01 --repeated_text_threshold 1`
 
 Clear cache if it's full
 `rm -rf /home/hui.mac/.cache/`
