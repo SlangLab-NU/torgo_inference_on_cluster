@@ -28,7 +28,7 @@ Run the following command in the root directory to build the the dockerfile:
 
 #### Running Docker Locally
 Run the following command to run the dockerfile:
-`docker run finetune.py F01 --epochs 1 --debug`
+`docker run finetune.py F01 --num_epochs 1 --debug`
 
 #### Running Docker on the Cluster (on user_name@xfer.discovery.neu.edu)
 Load singularity on the Cluster
@@ -50,5 +50,5 @@ Log in to Hugging Face
 `huggingface-cli login`
 
 Run the script
-Example: `python3 finetune.py M03 --epochs 40`
+Example: `python3 finetune.py M03 --num_epochs 40`
 Example: `python3 finetune.py M01`
