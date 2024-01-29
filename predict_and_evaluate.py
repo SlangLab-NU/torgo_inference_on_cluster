@@ -22,7 +22,7 @@ from datetime import datetime
 
 
 def predict_and_evaluate():
-    print('Evaluating the model...')
+    print('Predict and Evaluate')
     '''
     --------------------------------------------------------------------------------
     Check if the paths to the Torgo dataset and the Torgo dataset CSV file are valid.
@@ -198,6 +198,8 @@ def predict_and_evaluate():
     Split the dataset into training / validation / test sets.
     --------------------------------------------------------------------------------
     '''
+    logging.info(
+        "Splitting the dataset into training / validation / test sets...")
     # Extract the unique speakers in the dataset
     speakers = data_df['speaker_id'].unique()
 
@@ -227,8 +229,7 @@ def predict_and_evaluate():
     text_count_threshold.
     --------------------------------------------------------------------------------
     '''
-    text_count_threshold = 40 if repeated_text_threshold == - \
-        1 else repeated_text_threshold
+    text_count_threshold = repeated_text_threshold
     # For each data, if the total text count across all speakers in the train and
     # validation datasets is less than the threshold and the text exists in the
     # test dataset, remove the corresponding data from the train and validation dataset.
@@ -313,9 +314,6 @@ def predict_and_evaluate():
             audio["array"], sampling_rate=audio["sampling_rate"]).input_values[0]
         batch["input_length"] = len(batch["input_values"])
 
-        # Encode to label ids
-        batch["labels"] = processor.tokenizer(batch["text"]).input_ids
-
         return batch
 
     torgo_dataset = torgo_dataset.map(
@@ -323,7 +321,7 @@ def predict_and_evaluate():
     torgo_dataset = torgo_dataset.cast_column(
         "audio", Audio(sampling_rate=sampling_rate))
     torgo_dataset = torgo_dataset.map(prepare_torgo_dataset, remove_columns=[
-                                      'session', 'audio', 'speaker_id', 'text'], num_proc=4)
+                                      'session', 'audio', 'speaker_id'], num_proc=4)
 
     # Filter audio within a certain length
     min_input_length_in_sec = 1.0
@@ -406,10 +404,7 @@ def predict_and_evaluate():
             predicted_ids = torch.argmax(logits, dim=-1)
             prediction = processor.batch_decode(predicted_ids)[0].lower()
 
-            label_ids = dataset[i]["labels"]
-            reference = processor.batch_decode(label_ids, group_tokens=False)
-            reference = ''.join(
-                [' ' if c == '' else c for c in reference])  # remove padding
+            reference = dataset[i]["text"].lower()
 
             predictions.append(prediction)
             references.append(reference)
