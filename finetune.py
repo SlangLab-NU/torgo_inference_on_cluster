@@ -120,6 +120,7 @@ def main():
     num_epochs = 20
     repeated_text_threshold = -1
     debug_mode = False
+    repo_suffix = '' if not debug_mode else 'test'
 
     if len(sys.argv) > 2:
         for i in range(2, len(sys.argv), 2):
@@ -138,6 +139,8 @@ def main():
             elif sys.argv[i] == '--debug':
                 debug_mode = True
                 print("Debug Mode: " + str(debug_mode))
+            elif sys.argv[i] == '--repo_suffix':
+                repo_suffix = sys.argv[i+1]
             else:
                 print(f"Invalid argument: {sys.argv[i]}")
                 sys.exit(1)
@@ -198,8 +201,7 @@ def main():
     '''
 
     # Repository name on Hugging Face
-    repo_suffix = '-test' if debug_mode else ''
-    repo_name = f'torgo_xlsr_finetune_{test_speaker}{repo_suffix}'
+    repo_name = f'torgo_xlsr_finetune_{test_speaker}_{repo_suffix}'
     repo_path = f'macarious/{repo_name}'
 
     # Path to save model / checkpoints{repo_name}'
