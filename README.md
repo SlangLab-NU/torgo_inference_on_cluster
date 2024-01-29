@@ -5,7 +5,7 @@ This README file is under construction.
 | Speaker | Epochs | Train | Validation | Test | Test (include all text) |
 |---------|--------|-------|------------|------|-----------------|
 | M01 (severe) | 20 | 0.0104 | 0.3198 | 0.8568 |        |
-| M01 (severe) | 40 | 0.0035 | 0.3052 | 0.8779 |        |
+| M01 (severe) | 40 | 0.0035 | 0.3052 | 0.8779 | 0.8039 |
 | M02 (severe) | 20 | 0.0107 | 0.3004 | 0.9043 |        |
 | M03 (mild)   | 20 | 0.0124 | 0.3247 | 0.4194 |        |
 | M04 (severe) | 20 | 0.0101 | 0.2925 | 0.9332 |        |
@@ -42,8 +42,9 @@ Log in to Hugging Face
 Run the script
 Example: `python3 finetune.py M03 --num_epochs 40`
 Example: `python3 finetune.py M01`
+Example: `python3 finetune.py M01 repeated_text_threshold 200`
 Example: `python3 predict_and_evaluate.py M01 --keep_all_text True`
-Example: `python3 predict_and_evaluate.py M01 --repeated_text_threshold 100`
+Example: `python3 predict_and_evaluate.py M01 --repeated_text_threshold 1`
 
 Clear cache if it's full
 `rm -rf /home/hui.mac/.cache/`
