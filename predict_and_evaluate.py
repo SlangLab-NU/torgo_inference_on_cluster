@@ -83,8 +83,6 @@ def predict_and_evaluate():
     # Default values
     repeated_text_threshold = 40
     keep_all_text = False
-    
-    print(sys.argv)
 
     if len(sys.argv) > 2:
         for i in range(2, len(sys.argv), 2):
@@ -427,6 +425,9 @@ def predict_and_evaluate():
             references.append(reference)
 
         return predictions, references
+    
+    # Load the WER metric
+    wer_metric = load("wer")
 
     '''
     --------------------------------------------------------------------------------
@@ -479,9 +480,6 @@ def predict_and_evaluate():
     # Predict on the test set
     logging.info("Predicting on the test set...")
     test_predictions, test_references = predict_dataset(torgo_dataset['test'])
-    
-    # Load the WER metric
-    wer_metric = load("wer")
     
     test_wer = wer_metric.compute(
         predictions=test_predictions, references=test_references)
