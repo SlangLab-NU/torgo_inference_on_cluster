@@ -2,7 +2,7 @@
 This README file is under construction.
 
 ## Word Error Rates
-| Speaker | Epochs | Train | Validation | Test | Test (include all text) |
+| Speaker | Epochs | Train | Validation | Test | Test (include all text in training and evaluation) |
 |---------|--------|-------|------------|------|-----------------|
 | M01 (severe) | 20 | 0.0104 | 0.3198 | 0.8568 |        |
 | M01 (severe) | 40 | 0.0035 | 0.3052 | 0.8779 | 0.4072 |
