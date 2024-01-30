@@ -5,6 +5,7 @@ This script accepts the following arguments:
     - Speaker ID (required): e.g. F01
     - Repeated Text Threshold (optional): e.g. --repeated_text_threshold 20; default is 40
     - Keep All Text Mode (optional): e.g. --keep_all_text True; default is False
+    - Repository Suffix (optional): e.g. --repo_suffix v2; default is empty string
 '''
 
 import os
@@ -83,6 +84,7 @@ def predict_and_evaluate():
     # Default values
     repeated_text_threshold = 40
     keep_all_text = False
+    repo_suffix = ''
 
     if len(sys.argv) > 2:
         for i in range(2, len(sys.argv), 2):
@@ -100,6 +102,8 @@ def predict_and_evaluate():
                     print(
                         "Please provide a valid value for the keep all text mode. (True or False)")
                     sys.exit(1)
+            elif sys.argv[i] == '--repo_suffix':
+                repo_suffix = sys.argv[i+1]
             else:
                 print(f"Invalid argument: {sys.argv[i]}")
                 sys.exit(1)
@@ -160,8 +164,7 @@ def predict_and_evaluate():
     --------------------------------------------------------------------------------
     '''
     # Repository name on Hugging Face
-    repo_suffix = ''
-    repo_name = f'torgo_xlsr_finetune_{test_speaker}{repo_suffix}'
+    repo_name = f'torgo_xlsr_finetune_{test_speaker}_{repo_suffix}'
     repo_path = f'macarious/{repo_name}'
 
     '''
@@ -200,6 +203,7 @@ def predict_and_evaluate():
     '''
     logging.info(
         "Splitting the dataset into training / validation / test sets...")
+    
     # Extract the unique speakers in the dataset
     speakers = data_df['speaker_id'].unique()
 
@@ -248,8 +252,9 @@ def predict_and_evaluate():
     # (3) If "The dog is brown" is spoken 50 times in total across all speakers in
     # the train and validation dataset, remove the corresponding data from the test
     # dataset instead.
-    
-    original_data_count = {'train': 0, 'validation': 0, 'test': 0}
+
+    original_data_count = {'train': len(torgo_dataset['train']), 'validation': len(
+        torgo_dataset['validation']), 'test': len(torgo_dataset['test'])}
 
     if not keep_all_text:
         unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(
@@ -276,9 +281,6 @@ def predict_and_evaluate():
                 texts_to_keep_in_test.append(text)
             else:
                 texts_to_keep_in_train_validation.append(text)
-
-        original_data_count = {'train': len(torgo_dataset['train']), 'validation': len(
-            torgo_dataset['validation']), 'test': len(torgo_dataset['test'])}
 
         # Update the three dataset splits
         torgo_dataset['train'] = torgo_dataset['train'].filter(

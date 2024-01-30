@@ -14,6 +14,7 @@ This script accepts 2 command line arguments:
     - Repeated Text Threshold (optional): e.g. --repeated_text_threshold 20; default is 40
     - Number of epochs (optional): e.g. --num_epochs 20; default is 30
     - Debug mode (optional): e.g. --debug; default is False
+    - Repository Suffix (optional): e.g. --repo_suffix v2; default is empty string
 
 Example usage:
 python finetune.py F01
@@ -118,9 +119,9 @@ def main():
 
     # Default values
     num_epochs = 20
-    repeated_text_threshold = -1
+    repeated_text_threshold = 40
     debug_mode = False
-    repo_suffix = '' if not debug_mode else 'test'
+    repo_suffix = '' if not debug_mode else 'debug'
 
     if len(sys.argv) > 2:
         for i in range(2, len(sys.argv), 2):
@@ -253,6 +254,9 @@ def main():
     Split the dataset into training / validation / test sets.
     --------------------------------------------------------------------------------
     '''
+    logging.info(
+        "Splitting the dataset into training / validation / test sets...")
+    
     # Extract the unique speakers in the dataset
     speakers = data_df['speaker_id'].unique()
 
@@ -282,8 +286,7 @@ def main():
     text_count_threshold.
     --------------------------------------------------------------------------------
     '''
-    text_count_threshold = 40 if repeated_text_threshold == - \
-        1 else repeated_text_threshold
+    text_count_threshold = repeated_text_threshold
     # For each data, if the total text count across all speakers in the train and
     # validation datasets is less than the threshold and the text exists in the
     # test dataset, remove the corresponding data from the train and validation dataset.
@@ -671,148 +674,8 @@ def main():
     for history in trainer.state.log_history:
         logging.info(str(history) + '\n')
 
+    logging.info("Pushing model to Hugging Face...")
     trainer.push_to_hub()
-    logging.info("Model pushed to Hugging Face Hub.\n")
-
-    '''
-    --------------------------------------------------------------------------------
-    Prepare for prediction and evaluation
-    --------------------------------------------------------------------------------
-    '''
-    logging.info("Start Evaluation")
-
-    # Create the results directory, if it does not exist
-    if not os.path.exists(output_path + '/results'):
-        os.makedirs(output_path + '/results')
-
-    # Create the results directory for the current speaker, if it does not exist
-    if not os.path.exists(f'{output_path}/results/{repo_name}'):
-        os.makedirs(f'{output_path}/results/{repo_name}')
-
-    results_dir = f'{output_path}/results/{repo_name}'
-
-    # Access the model from the repository
-    model = Wav2Vec2ForCTC.from_pretrained(repo_path)
-    processor = Wav2Vec2Processor.from_pretrained(repo_path)
-
-    # Move model to GPU
-    if torch.cuda.is_available():
-        model.to("cuda")
-
-    def predict_dataset(dataset):
-        '''
-        Predict on the dataset
-
-        Parameters:
-        dataset (datasets.Dataset): Dataset to predict on
-
-        Returns:
-        predictions (list): List of predictions
-        references (list): List of references
-        '''
-
-        predictions = []
-        references = []
-
-        for i in tqdm(range(dataset.num_rows)):
-            inputs = processor(
-                dataset[i]["input_values"], sampling_rate=sampling_rate, return_tensors="pt", padding=True)
-
-            # Move input to GPU
-            if torch.cuda.is_available():
-                inputs = {key: val.to("cuda") for key, val in inputs.items()}
-
-            # Predict
-            with torch.no_grad():
-                logits = model(**inputs).logits
-            predicted_ids = torch.argmax(logits, dim=-1)
-            prediction = processor.batch_decode(predicted_ids)[0].lower()
-
-            label_ids = dataset[i]["labels"]
-            reference = processor.batch_decode(label_ids, group_tokens=False)
-            reference = ''.join(
-                [' ' if c == '' else c for c in reference])  # remove padding
-
-            predictions.append(prediction)
-            references.append(reference)
-
-        return predictions, references
-
-    '''
-    --------------------------------------------------------------------------------
-    Predict and evaluate on the training set
-    --------------------------------------------------------------------------------
-    '''
-    # Predict on the training set
-    logging.info("Predicting on the training set...")
-    train_predictions, train_references = predict_dataset(
-        torgo_dataset['train'])
-    train_wer = wer_metric.compute(
-        predictions=train_predictions, references=train_references)
-    logging.info("Word Error Rate: " + str(train_wer))
-
-    # Save the predictions and references to a CSV file
-    train_df = pd.DataFrame(
-        {'predictions': train_predictions, 'references': train_references})
-    train_df.to_csv(
-        f'{results_dir}/{test_speaker}_predictions_train.csv', index=False)
-    logging.info("Predictions saved to: " +
-                 f'{results_dir}/{test_speaker}_predictions_train.csv' + '\n')
-
-    '''
-    --------------------------------------------------------------------------------
-    Predict and evaluate on the validation set
-    --------------------------------------------------------------------------------
-    '''
-    # Predict on the validation set
-    logging.info("Predicting on the validation set...")
-    validation_predictions, validation_references = predict_dataset(
-        torgo_dataset['validation'])
-    validation_wer = wer_metric.compute(
-        predictions=validation_predictions, references=validation_references)
-    logging.info("Word Error Rate: " +
-                 str(validation_wer))
-
-    # Save the predictions and references to a CSV file
-    validation_df = pd.DataFrame(
-        {'predictions': validation_predictions, 'references': validation_references})
-    validation_df.to_csv(
-        f'{results_dir}/{test_speaker}_predictions_validation.csv', index=False)
-    logging.info("Predictions saved to: " +
-                 f'{results_dir}/{test_speaker}_predictions_validation.csv' + '\n')
-
-    '''
-    --------------------------------------------------------------------------------
-    Predict and evaluate on the test set
-    --------------------------------------------------------------------------------
-    '''
-    # Predict on the test set
-    logging.info("Predicting on the test set...")
-    test_predictions, test_references = predict_dataset(torgo_dataset['test'])
-    test_wer = wer_metric.compute(
-        predictions=test_predictions, references=test_references)
-    logging.info("Word Error Rate: " + str(test_wer))
-
-    # Save the predictions and references to a CSV file
-    test_df = pd.DataFrame(
-        {'predictions': test_predictions, 'references': test_references})
-    test_df.to_csv(
-        f'{results_dir}/{test_speaker}_predictions_test.csv', index=False)
-    logging.info("Predictions saved to: " +
-                 f'{results_dir}/{test_speaker}_predictions_test.csv' + '\n')
-
-    '''
-    --------------------------------------------------------------------------------
-    Summarize the Word Error Rates
-    --------------------------------------------------------------------------------
-    '''
-    # Save the summary to a CSV file
-    summary_df = pd.DataFrame({'Split': ['train', 'validation', 'test'], 'WER': [
-                              train_wer, validation_wer, test_wer]})
-    summary_df.to_csv(
-        f'{results_dir}/{test_speaker}_wer_summary.csv', index=False)
-    logging.info("Summary of Word Error Rates saved to " +
-                 f'{results_dir}/{test_speaker}_wer_summary.csv' + '\n')
 
     '''
     --------------------------------------------------------------------------------
