@@ -2,13 +2,13 @@
 This README file is under construction.
 
 ## Word Error Rates
-| Speaker | Epochs | Train | Validation | Test | Test (include all text in training and evaluation) |
+| Speaker | Epochs | Train | Validation | Test | Test (trained and evaluated with all text) |
 |---------|--------|-------|------------|------|-----------------|
-| M01 (severe) | 20 | 0.0104 | 0.3198 | 0.8568 |        |
-| M01 (severe) | 40 | 0.0035 | 0.3052 | 0.8779 | 0.4072 |
-| M02 (severe) | 20 | 0.0107 | 0.3004 | 0.9043 |        |
-| M03 (mild)   | 20 | 0.0124 | 0.3247 | 0.4194 |        |
-| M04 (severe) | 20 | 0.0101 | 0.2925 | 0.9332 |        |
+| M01 (severe) | 20 | 0.0104 | 0.3198 | 0.8568 | 0.4072 |
+| M01 (severe) | 40 | 0.0035 | 0.3052 | 0.8779 |  |
+| M02 (severe) | 20 | 0.0107 | 0.3004 | 0.9043 |  |
+| M03 (mild)   | 20 | 0.0124 | 0.3247 | 0.4194 |  |
+| M04 (severe) | 20 | 0.0101 | 0.2925 | 0.9332 |  |
 
 ## Running the Script
 ### Build Docker
