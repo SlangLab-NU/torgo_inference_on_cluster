@@ -1,0 +1,38 @@
+29-Jan-24 18:06:34 - Test Speaker: M01
+29-Jan-24 18:06:34 - Log File Path: /output/logs/M01_evaluate_20240129_180634.log
+
+29-Jan-24 18:06:34 - Keep All Text Mode: True
+29-Jan-24 18:06:35 - Using GPU: Tesla T4
+
+29-Jan-24 18:06:35 - Loading the model and processor from macarious/torgo_xlsr_finetune_M01_keep_all
+29-Jan-24 18:06:45 - Model loaded from macarious/torgo_xlsr_finetune_M01_keep_all
+29-Jan-24 18:06:46 - Processor loaded from macarious/torgo_xlsr_finetune_M01_keep_all
+
+29-Jan-24 18:06:46 - Splitting the dataset into training / validation / test sets...
+29-Jan-24 18:06:46 - Unique speakers found in the dataset:
+29-Jan-24 18:06:46 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+29-Jan-24 18:07:57 - After filtering audio within a certain length, the number of data in each dataset is:
+29-Jan-24 18:07:57 - Train:       14356/14580 (98%)
+29-Jan-24 18:07:57 - Validation:  1017/1075 (94%)
+29-Jan-24 18:07:57 - Test:        709/739 (95%)
+
+29-Jan-24 18:07:57 - Start Evaluation
+29-Jan-24 18:07:58 - Predicting on the training set...
+29-Jan-24 18:23:46 - Word Error Rate: 0.012623475135150435
+29-Jan-24 18:23:46 - Predictions saved to: /output/results/torgo_xlsr_finetune_M01_keep_all_include_repeated_text/M01_predictions_train.csv
+
+29-Jan-24 18:23:46 - Predicting on the validation set...
+29-Jan-24 18:24:51 - Word Error Rate: 0.24742268041237114
+29-Jan-24 18:24:51 - Predictions saved to: /output/results/torgo_xlsr_finetune_M01_keep_all_include_repeated_text/M01_predictions_validation.csv
+
+29-Jan-24 18:24:51 - Predicting on the test set...
+29-Jan-24 18:25:47 - Word Error Rate: 0.4071197411003236
+29-Jan-24 18:25:47 - Predictions saved to: /output/results/torgo_xlsr_finetune_M01_keep_all_include_repeated_text/M01_predictions_test.csv
+
+29-Jan-24 18:25:47 - Summary of Word Error Rates saved to /output/results/torgo_xlsr_finetune_M01_keep_all_include_repeated_text/M01_wer_summary.csv
+
+29-Jan-24 18:25:47 - End of Script
+29-Jan-24 18:25:47 - --------------------------------------------
+

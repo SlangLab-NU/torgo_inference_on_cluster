@@ -1,0 +1,18 @@
+29-Jan-24 02:59:10 - Test Speaker: M01
+29-Jan-24 02:59:10 - Log File Path: /output/logs/M01_evaluate_20240129_025910.log
+
+29-Jan-24 02:59:11 - Using GPU: Tesla T4
+
+29-Jan-24 02:59:11 - Loading the model and processor from macarious/torgo_xlsr_finetune_M01
+29-Jan-24 02:59:38 - Model loaded from macarious/torgo_xlsr_finetune_M01
+29-Jan-24 02:59:39 - Processor loaded from macarious/torgo_xlsr_finetune_M01
+
+29-Jan-24 02:59:40 - Unique speakers found in the dataset:
+29-Jan-24 02:59:40 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+29-Jan-24 02:59:40 - After applying the text count threshold of 5, the number of data in each dataset is:
+29-Jan-24 02:59:40 - Train:       14580/14580 (100%)
+29-Jan-24 02:59:40 - Validation:  1075/1075 (100%)
+29-Jan-24 02:59:40 - Test:        6/739 (0%)
+
