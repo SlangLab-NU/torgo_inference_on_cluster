@@ -3,22 +3,45 @@ Fine-tune the wave2vec model on the Torgo dataset. This script takes in the
 speaker ID as a command line argument. The script will then split the dataset
 into training, validation, and test sets. The model will be fine-tuned on the
 training set and validated on the validation set. The test set will be used to
-evaluate the model after fine-tuning. The model will be fine-tuned for 30 epochs
+evaluate the model after fine-tuning. The model will be fine-tuned for 20 epochs
 by default. The number of epochs can be specified as a command line argument.
 
 This script uses a leave-one-speaker-out approach. The model will be fine-tuned
 on all the speakers except the speaker specified in the command line argument.
 
-This script accepts 2 command line arguments:
-    - Speaker ID (required): e.g. F01
-    - Repeated Text Threshold (optional): e.g. --repeated_text_threshold 20; default is 40
-    - Number of epochs (optional): e.g. --num_epochs 20; default is 30
-    - Debug mode (optional): e.g. --debug; default is False
-    - Repository Suffix (optional): e.g. --repo_suffix v2; default is empty string
+This script accepts the following arguments:
+    positional arguments:
+    speaker_id            Speaker ID in the format [MF]C?[0-9]{2}
+
+    options:
+    -h, --help            show this help message and exit
+    --learning_rate LEARNING_RATE
+                            Learning rate (default: 0.0001)
+    --train_batch_size TRAIN_BATCH_SIZE
+                            Training batch size (default: 4)
+    --eval_batch_size EVAL_BATCH_SIZE
+                            Evaluation batch size (default: 4)
+    --seed SEED           Random seed (default: 42)
+    --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS
+                            Gradient accumulation steps (default: 2)
+    --total_train_batch_size TOTAL_TRAIN_BATCH_SIZE
+                            Total training batch size (default: 8)
+    --optimizer OPTIMIZER
+                            Optimizer type (default: Adam)
+    --lr_scheduler_type LR_SCHEDULER_TYPE
+                            Learning rate scheduler type (default: linear)
+    --lr_scheduler_warmup_steps LR_SCHEDULER_WARMUP_STEPS
+                            Learning rate scheduler warmup steps (default: 1000)
+    --num_epochs NUM_EPOCHS
+                            Number of epochs (default: 20)
+    --repeated_text_threshold REPEATED_TEXT_THRESHOLD
+                            Repeated text threshold (default: 40)
+    --debug               Enable debug mode
+    --repo_suffix REPO_SUFFIX
+                            Repository suffix
 
 Example usage:
 python train.py F01
-python train.py F01 --num_epochs 20
 python train.py F01 --num_epochs 1 --debug
 
 Use "python3" instead of "python" depending on your system.
@@ -27,7 +50,7 @@ In debug mode, the script will only use 20 random samples from the dataset for
 debugging purposes. The dataset will be reduced from 1,000+ samples to 20. It
 should take less than 5 minutes to run the script in debug mode.
 
-This is the main file for the project.
+This is the main training script for the project.
 '''
 
 # Import libraries
@@ -80,14 +103,10 @@ if __name__ == "__main__":
                         help='Random seed (default: 42)')
     parser.add_argument('--gradient_accumulation_steps', type=int,
                         default=2, help='Gradient accumulation steps (default: 2)')
-    parser.add_argument('--total_train_batch_size', type=int,
-                        default=8, help='Total training batch size (default: 8)')
-    parser.add_argument('--optimizer', type=str, default='Adam',
-                        help='Optimizer type (default: Adam)')
+    parser.add_argument('--optimizer', type=str, default='adamw_torch',
+                        help='Optimizer type (default: adamw_torch)')
     parser.add_argument('--lr_scheduler_type', type=str, default='linear',
                         help='Learning rate scheduler type (default: linear)')
-    parser.add_argument('--lr_scheduler_warmup_steps', type=int, default=1000,
-                        help='Learning rate scheduler warmup steps (default: 1000)')
     parser.add_argument('--num_epochs', type=int, default=20,
                         help='Number of epochs (default: 20)')
 
@@ -113,10 +132,8 @@ if __name__ == "__main__":
     eval_batch_size = args.eval_batch_size
     seed = args.seed
     gradient_accumulation_steps = args.gradient_accumulation_steps
-    total_train_batch_size = args.total_train_batch_size
     optimizer = args.optimizer
     lr_scheduler_type = args.lr_scheduler_type
-    lr_scheduler_warmup_steps = args.lr_scheduler_warmup_steps
     num_epochs = args.num_epochs
     repeated_text_threshold = args.repeated_text_threshold
     debug_mode = args.debug
@@ -622,11 +639,9 @@ if __name__ == "__main__":
     training_args_dict['per_device_eval_batch_size'] = eval_batch_size
     training_args_dict['seed'] = seed
     training_args_dict['gradient_accumulation_steps'] = gradient_accumulation_steps
-    training_args_dict['total_train_batch_size'] = total_train_batch_size
-    training_args_dict['optimizer'] = optimizer
+    training_args_dict['optim'] = optimizer
     training_args_dict['lr_scheduler_type'] = lr_scheduler_type
-    training_args_dict['lr_scheduler_warmup_steps'] = lr_scheduler_warmup_steps
-    training_args_dict['num_epochs'] = num_epochs
+    training_args_dict['num_train_epochs'] = num_epochs
 
     # Create the model directory, if it does not exist
     if not os.path.exists(output_path + '/model'):
