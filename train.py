@@ -24,14 +24,10 @@ This script accepts the following arguments:
     --seed SEED           Random seed (default: 42)
     --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS
                             Gradient accumulation steps (default: 2)
-    --total_train_batch_size TOTAL_TRAIN_BATCH_SIZE
-                            Total training batch size (default: 8)
     --optimizer OPTIMIZER
-                            Optimizer type (default: Adam)
+                            Optimizer type (default: adamw_torch)
     --lr_scheduler_type LR_SCHEDULER_TYPE
                             Learning rate scheduler type (default: linear)
-    --lr_scheduler_warmup_steps LR_SCHEDULER_WARMUP_STEPS
-                            Learning rate scheduler warmup steps (default: 1000)
     --num_epochs NUM_EPOCHS
                             Number of epochs (default: 20)
     --repeated_text_threshold REPEATED_TEXT_THRESHOLD

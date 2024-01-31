@@ -58,7 +58,7 @@ singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work
 
 Example: `python3 train.py M01`
 
-Example: `python3 train.py M01 --repeated_text_threshold 1 --repo_suffix keep_all`
+Example: `python3 train.py M03 --repeated_text_threshold 1 --repo_suffix keep_all`
 
 Example: `python3 predict_and_evaluate.py M01`
 
@@ -86,35 +86,31 @@ on all the speakers except the speaker specified in the command line argument.
 
 This script accepts the following arguments:
 ```
-    positional arguments:
-    speaker_id            Speaker ID in the format [MF]C?[0-9]{2}
+positional arguments:
+  speaker_id            Speaker ID in the format [MF]C?[0-9]{2}
 
-    options:
-    -h, --help            show this help message and exit
-    --learning_rate LEARNING_RATE
-                            Learning rate (default: 0.0001)
-    --train_batch_size TRAIN_BATCH_SIZE
-                            Training batch size (default: 4)
-    --eval_batch_size EVAL_BATCH_SIZE
-                            Evaluation batch size (default: 4)
-    --seed SEED           Random seed (default: 42)
-    --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS
-                            Gradient accumulation steps (default: 2)
-    --total_train_batch_size TOTAL_TRAIN_BATCH_SIZE
-                            Total training batch size (default: 8)
-    --optimizer OPTIMIZER
-                            Optimizer type (default: Adam)
-    --lr_scheduler_type LR_SCHEDULER_TYPE
-                            Learning rate scheduler type (default: linear)
-    --lr_scheduler_warmup_steps LR_SCHEDULER_WARMUP_STEPS
-                            Learning rate scheduler warmup steps (default: 1000)
-    --num_epochs NUM_EPOCHS
-                            Number of epochs (default: 20)
-    --repeated_text_threshold REPEATED_TEXT_THRESHOLD
-                            Repeated text threshold (default: 40)
-    --debug               Enable debug mode
-    --repo_suffix REPO_SUFFIX
-                            Repository suffix
+options:
+  -h, --help            show this help message and exit
+  --learning_rate LEARNING_RATE
+                        Learning rate (default: 0.0001)
+  --train_batch_size TRAIN_BATCH_SIZE
+                        Training batch size (default: 4)
+  --eval_batch_size EVAL_BATCH_SIZE
+                        Evaluation batch size (default: 4)
+  --seed SEED           Random seed (default: 42)
+  --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS
+                        Gradient accumulation steps (default: 2)
+  --optimizer OPTIMIZER
+                        Optimizer type (default: adamw_torch)
+  --lr_scheduler_type LR_SCHEDULER_TYPE
+                        Learning rate scheduler type (default: linear)
+  --num_epochs NUM_EPOCHS
+                        Number of epochs (default: 20)
+  --repeated_text_threshold REPEATED_TEXT_THRESHOLD
+                        Repeated text threshold (default: 40)
+  --debug               Enable debug mode
+  --repo_suffix REPO_SUFFIX
+                        Repository suffix
 ```
 
 Example usage:
