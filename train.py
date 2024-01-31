@@ -17,9 +17,9 @@ This script accepts 2 command line arguments:
     - Repository Suffix (optional): e.g. --repo_suffix v2; default is empty string
 
 Example usage:
-python finetune.py F01
-python finetune.py F01 --num_epochs 20
-python finetune.py F01 --num_epochs 1 --debug
+python train.py F01
+python train.py F01 --num_epochs 20
+python train.py F01 --num_epochs 1 --debug
 
 Use "python3" instead of "python" depending on your system.
 
@@ -33,6 +33,7 @@ This is the main file for the project.
 # Import libraries
 import sys
 import os
+import argparse
 import re
 import json
 import torch
@@ -50,8 +51,77 @@ from tqdm import tqdm
 from datetime import datetime
 
 
-def main():
+if __name__ == "__main__":
     print("Start of Script\n")
+    '''
+    --------------------------------------------------------------------------------
+    Store the command line arguments in variables
+    - speaker_id: The speaker ID to fine-tune the model on
+    - num_epochs: The number of epochs to fine-tune the model for
+    --------------------------------------------------------------------------------
+    '''
+
+    parser = argparse.ArgumentParser(
+        description='Process speaker ID and optional parameters.')
+
+    # Required argument: speaker ID
+    parser.add_argument('speaker_id',
+                        type=str,
+                        help='Speaker ID in the format [MF]C?[0-9]{2}')
+
+    # Optional arguments for training parameters
+    parser.add_argument('--learning_rate', type=float,
+                        default=0.0001, help='Learning rate (default: 0.0001)')
+    parser.add_argument('--train_batch_size', type=int,
+                        default=4, help='Training batch size (default: 4)')
+    parser.add_argument('--eval_batch_size', type=int,
+                        default=4, help='Evaluation batch size (default: 4)')
+    parser.add_argument('--seed', type=int, default=42,
+                        help='Random seed (default: 42)')
+    parser.add_argument('--gradient_accumulation_steps', type=int,
+                        default=2, help='Gradient accumulation steps (default: 2)')
+    parser.add_argument('--total_train_batch_size', type=int,
+                        default=8, help='Total training batch size (default: 8)')
+    parser.add_argument('--optimizer', type=str, default='Adam',
+                        help='Optimizer type (default: Adam)')
+    parser.add_argument('--lr_scheduler_type', type=str, default='linear',
+                        help='Learning rate scheduler type (default: linear)')
+    parser.add_argument('--lr_scheduler_warmup_steps', type=int, default=1000,
+                        help='Learning rate scheduler warmup steps (default: 1000)')
+    parser.add_argument('--num_epochs', type=int, default=20,
+                        help='Number of epochs (default: 20)')
+
+    # Other optional arguments
+    parser.add_argument('--repeated_text_threshold', type=int,
+                        default=40, help='Repeated text threshold (default: 40)')
+    parser.add_argument('--debug', action='store_true',
+                        help='Enable debug mode')
+    parser.add_argument('--repo_suffix', type=str,
+                        default='', help='Repository suffix')
+
+    args = parser.parse_args()
+
+    # Check if the speaker ID is valid
+    if not re.match(r'^[MF]C?[0-9]{2}$', args.speaker_id):
+        print("Please provide a valid speaker ID.")
+        sys.exit(1)
+    test_speaker = args.speaker_id
+
+    # Accessing optional arguments
+    learning_rate = args.learning_rate
+    train_batch_size = args.train_batch_size
+    eval_batch_size = args.eval_batch_size
+    seed = args.seed
+    gradient_accumulation_steps = args.gradient_accumulation_steps
+    total_train_batch_size = args.total_train_batch_size
+    optimizer = args.optimizer
+    lr_scheduler_type = args.lr_scheduler_type
+    lr_scheduler_warmup_steps = args.lr_scheduler_warmup_steps
+    num_epochs = args.num_epochs
+    repeated_text_threshold = args.repeated_text_threshold
+    debug_mode = args.debug
+    repo_suffix = args.repo_suffix
+
     '''
     --------------------------------------------------------------------------------
     Check if the paths to the Torgo dataset and the Torgo dataset CSV file are valid.
@@ -96,65 +166,13 @@ def main():
 
     '''
     --------------------------------------------------------------------------------
-    Store the command line arguments in variables
-    - speaker_id: The speaker ID to fine-tune the model on
-    - num_epochs: The number of epochs to fine-tune the model for
-    --------------------------------------------------------------------------------
-    '''
-    # Check if the speaker ID is provided
-    if len(sys.argv) < 2:
-        print(
-            "Please provide the speaker ID and the number of epochs (optional).")
-        sys.exit(1)
-
-    # Check if the speaker ID is valid
-    if not re.match(r'^[MF][0-9]{2}$', sys.argv[1]):
-        print("Please provide a valid speaker ID.")
-        sys.exit(1)
-    test_speaker = sys.argv[1]
-
-    # Optional arguments:
-    #   num of epochs (ex. --epochs 30)
-    #   debug mode (ex. --debug)
-
-    # Default values
-    num_epochs = 20
-    repeated_text_threshold = 40
-    debug_mode = False
-    repo_suffix = '' if not debug_mode else 'debug'
-
-    if len(sys.argv) > 2:
-        for i in range(2, len(sys.argv), 2):
-            if sys.argv[i] == '--num_epochs':
-                if sys.argv[i+1].isdigit() and int(sys.argv[i+1]) > 0:
-                    num_epochs = int(sys.argv[i+1])
-                else:
-                    print("Please provide a valid number of epochs.")
-                    sys.exit(1)
-            elif sys.argv[i] == '--repeated_text_threshold':
-                if sys.argv[i+1].isdigit() and int(sys.argv[i+1]) > 0:
-                    repeated_text_threshold = int(sys.argv[i+1])
-                else:
-                    print("Please provide a valid \"repeated text threshold\".")
-                    sys.exit(1)
-            elif sys.argv[i] == '--debug':
-                debug_mode = True
-                print("Debug Mode: " + str(debug_mode))
-            elif sys.argv[i] == '--repo_suffix':
-                repo_suffix = sys.argv[i+1]
-            else:
-                print(f"Invalid argument: {sys.argv[i]}")
-                sys.exit(1)
-                
-    '''
-    --------------------------------------------------------------------------------
     Set up the logging configuration
     --------------------------------------------------------------------------------
     '''
     if not os.path.exists(output_path + '/logs'):
         os.makedirs(output_path + '/logs')
 
-    log_file_name = test_speaker + '_train_' + \
+    log_file_name = test_speaker + '_train_' + repo_suffix + '_' + \
         datetime.now().strftime("%Y%m%d_%H%M%S") + '.log'
     log_file_path = output_path + '/logs/' + log_file_name
 
@@ -256,7 +274,7 @@ def main():
     '''
     logging.info(
         "Splitting the dataset into training / validation / test sets...")
-    
+
     # Extract the unique speakers in the dataset
     speakers = data_df['speaker_id'].unique()
 
@@ -266,7 +284,7 @@ def main():
     if test_speaker not in speakers:
         logging.error("Test Speaker not found in the dataset.")
         sys.exit(1)
-        
+
     valid_speaker = 'F03' if test_speaker != 'F03' else 'F04'
     train_speaker = [s for s in speakers if s not in [
         test_speaker, valid_speaker]]
@@ -410,7 +428,7 @@ def main():
     # Save the tokenizer and feature extractor to the repository
     tokenizer.push_to_hub(repo_path)
     feature_extractor.push_to_hub(repo_path)
-    
+
     '''
     --------------------------------------------------------------------------------
     Preprocess the dataset
@@ -598,6 +616,18 @@ def main():
     with open(training_args_path + '/training_args.json') as training_args_file:
         training_args_dict = json.load(training_args_file)
 
+    # Replace the default values with the values from the command line arguments
+    training_args_dict['learning_rate'] = learning_rate
+    training_args_dict['per_device_train_batch_size'] = train_batch_size
+    training_args_dict['per_device_eval_batch_size'] = eval_batch_size
+    training_args_dict['seed'] = seed
+    training_args_dict['gradient_accumulation_steps'] = gradient_accumulation_steps
+    training_args_dict['total_train_batch_size'] = total_train_batch_size
+    training_args_dict['optimizer'] = optimizer
+    training_args_dict['lr_scheduler_type'] = lr_scheduler_type
+    training_args_dict['lr_scheduler_warmup_steps'] = lr_scheduler_warmup_steps
+    training_args_dict['num_epochs'] = num_epochs
+
     # Create the model directory, if it does not exist
     if not os.path.exists(output_path + '/model'):
         os.makedirs(output_path + '/model')
@@ -606,7 +636,6 @@ def main():
     training_args = TrainingArguments(
         output_dir=model_local_path,
         hub_model_id=repo_name,
-        num_train_epochs=num_epochs,
         **training_args_dict
     )
 
@@ -685,7 +714,3 @@ def main():
 
     logging.info("End of Script")
     logging.info("--------------------------------------------\n")
-
-
-if __name__ == "__main__":
-    main()

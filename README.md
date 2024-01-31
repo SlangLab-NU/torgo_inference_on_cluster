@@ -31,7 +31,7 @@ Use GPU from Cluster
 (see https://github.com/SlangLab-NU/links/wiki/Working-with-sbatch-and-srun-on-the-cluster-with-GPU-nodes)
 `srun --partition=gpu --nodes=1 --gres=gpu:t4:1 --time=08:00:00 --pty /bin/bash`
 
-Execute `finetune.py` image with Singularity
+Execute `train.py` image with Singularity
 ```
 singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work/van-speech-nlp/hui.mac/torgo_inference_on_cluster:/output,/work/van-speech-nlp/hui.mac/torgo_inference_on_cluster:/training_args --pwd /scripts /work/van-speech-nlp/hui.mac/finetune_latest.sif /bin/bash
 ```
@@ -40,9 +40,9 @@ Log in to Hugging Face
 `huggingface-cli login`
 
 Run the script
-Example: `python3 finetune.py M03 --num_epochs 40`
-Example: `python3 finetune.py M01`
-Example: `python3 finetune.py M01 --repeated_text_threshold 1 --repo_suffix keep_all`
+Example: `python3 train.py M03 --num_epochs 40`
+Example: `python3 train.py M01`
+Example: `python3 train.py M01 --repeated_text_threshold 1 --repo_suffix keep_all`
 
 Example: `python3 predict_and_evaluate.py M01`
 Example: `python3 predict_and_evaluate.py M01 --keep_all_text True`
@@ -51,3 +51,57 @@ Example: `python3 predict_and_evaluate.py M01 --keep_all_text True --repo_suffix
 Clear cache if it's full
 `rm -rf /home/hui.mac/.cache/`
 `rm -rf /home/hui.mac/.singularity/cache`
+
+## The Training Script: `train.py`
+Fine-tune the wave2vec model on the Torgo dataset. This script takes in the
+speaker ID as a command line argument. The script will then split the dataset
+into training, validation, and test sets. The model will be fine-tuned on the
+training set and validated on the validation set. The test set will be used to
+evaluate the model after fine-tuning. The model will be fine-tuned for 20 epochs
+by default. The number of epochs can be specified as a command line argument.
+
+This script uses a leave-one-speaker-out approach. The model will be fine-tuned
+on all the speakers except the speaker specified in the command line argument.
+
+This script accepts the following arguments:
+```
+    positional arguments:
+    speaker_id            Speaker ID in the format [MF]C?[0-9]{2}
+
+    options:
+    -h, --help            show this help message and exit
+    --learning_rate LEARNING_RATE
+                            Learning rate (default: 0.0001)
+    --train_batch_size TRAIN_BATCH_SIZE
+                            Training batch size (default: 4)
+    --eval_batch_size EVAL_BATCH_SIZE
+                            Evaluation batch size (default: 4)
+    --seed SEED           Random seed (default: 42)
+    --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS
+                            Gradient accumulation steps (default: 2)
+    --total_train_batch_size TOTAL_TRAIN_BATCH_SIZE
+                            Total training batch size (default: 8)
+    --optimizer OPTIMIZER
+                            Optimizer type (default: Adam)
+    --lr_scheduler_type LR_SCHEDULER_TYPE
+                            Learning rate scheduler type (default: linear)
+    --lr_scheduler_warmup_steps LR_SCHEDULER_WARMUP_STEPS
+                            Learning rate scheduler warmup steps (default: 1000)
+    --num_epochs NUM_EPOCHS
+                            Number of epochs (default: 20)
+    --repeated_text_threshold REPEATED_TEXT_THRESHOLD
+                            Repeated text threshold (default: 40)
+    --debug               Enable debug mode
+    --repo_suffix REPO_SUFFIX
+                            Repository suffix
+```
+
+Example usage:
+`python train.py F01`
+`python train.py F01 --num_epochs 1 --debug
+
+Use `python3` instead of `python` depending on your system.
+
+In debug mode, the script will only use 20 random samples from the dataset for
+debugging purposes. The dataset will be reduced from 1,000+ samples to 20. It
+should take less than 5 minutes to run the script in debug mode.
