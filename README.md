@@ -115,7 +115,7 @@ options:
 
 Example usage:
 `python train.py F01`
-`python train.py F01 --num_epochs 1 --debug
+`python train.py F01 --num_epochs 1 --debug`
 
 Use `python3` instead of `python` depending on your system.
 

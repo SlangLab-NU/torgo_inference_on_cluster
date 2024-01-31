@@ -20,7 +20,7 @@
   "report_to": "all",
   "seed": 42,
   "eval_steps": 1000,
-  "num_epochs": 20,
+  "num_train_epochs": 20,
   "optim": "adamw_torch",
   "optim_args": null,
   "adafactor": false,
