@@ -7,7 +7,7 @@ This README file is under construction.
 | M01 (severe) | 20 | 0.0104 | 0.3198 | 0.8568 | 0.4072 |
 | M01 (severe) | 40 | 0.0035 | 0.3052 | 0.8779 |  |
 | M02 (severe) | 20 | 0.0107 | 0.3004 | 0.9043 |  |
-| M03 (mild)   | 20 | 0.0124 | 0.3247 | 0.4194 |  |
+| M03 (mild)   | 20 | 0.0124 | 0.3247 | 0.4194 | 0.0317 |
 | M04 (severe) | 20 | 0.0101 | 0.2925 | 0.9332 |  |
 
 ## Building Docker on Local Machine
@@ -58,13 +58,13 @@ singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work
 
 Example: `python3 train.py M01`
 
-Example: `python3 train.py M03 --repeated_text_threshold 1 --repo_suffix keep_all`
+Example: `python3 train.py M03 --keep_all_text --repo_suffix -keep_all`
 
 Example: `python3 predict_and_evaluate.py M01`
 
-Example: `python3 predict_and_evaluate.py M01 --keep_all_text True`
+Example: `python3 predict_and_evaluate.py M01 --keep_all_data`
 
-Example: `python3 predict_and_evaluate.py M01 --keep_all_text True --repo_suffix keep_all`
+Example: `python3 predict_and_evaluate.py M03 --keep_all_data --repo_suffix -keep_all`
 
 
 #### 6. Clear cache cache in cluster if it is full:

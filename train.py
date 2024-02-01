@@ -201,7 +201,7 @@ if __name__ == "__main__":
     if not os.path.exists(output_path + '/logs'):
         os.makedirs(output_path + '/logs')
 
-    log_file_name = test_speaker + '_train_' + repo_suffix + '_' + \
+    log_file_name = test_speaker + '_train' + repo_suffix + '_' + \
         datetime.now().strftime("%Y%m%d_%H%M%S") + '.log'
     log_file_path = output_path + '/logs/' + log_file_name
 
@@ -250,7 +250,7 @@ if __name__ == "__main__":
     '''
 
     # Repository name on Hugging Face
-    repo_name = f'torgo_xlsr_finetune_{test_speaker}_{repo_suffix}'
+    repo_name = f'torgo_xlsr_finetune_{test_speaker}{repo_suffix}'
     repo_path = f'macarious/{repo_name}'
 
     # Path to save model / checkpoints{repo_name}'

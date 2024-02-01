@@ -154,7 +154,7 @@ def predict_and_evaluate():
     --------------------------------------------------------------------------------
     '''
     # Repository name on Hugging Face
-    repo_name = f'torgo_xlsr_finetune_{test_speaker}_{repo_suffix}'
+    repo_name = f'torgo_xlsr_finetune_{test_speaker}{repo_suffix}'
     repo_path = f'macarious/{repo_name}'
 
     '''
