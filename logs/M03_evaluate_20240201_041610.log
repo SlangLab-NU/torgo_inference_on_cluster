@@ -29,3 +29,11 @@
 01-Feb-24 04:34:58 - Predictions saved to: /output/results/torgo_xlsr_finetune_M03_keep_all/M03_predictions_validation.csv
 
 01-Feb-24 04:34:58 - Predicting on the test set...
+01-Feb-24 04:35:57 - Word Error Rate: 0.031746031746031744
+01-Feb-24 04:35:57 - Predictions saved to: /output/results/torgo_xlsr_finetune_M03_keep_all/M03_predictions_test.csv
+
+01-Feb-24 04:35:57 - Summary of Word Error Rates saved to /output/results/torgo_xlsr_finetune_M03_keep_all/M03_wer_summary.csv
+
+01-Feb-24 04:35:57 - End of Script
+01-Feb-24 04:35:57 - --------------------------------------------
+
