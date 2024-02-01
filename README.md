@@ -58,13 +58,13 @@ singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work
 
 Example: `python3 train.py M01`
 
-Example: `python3 train.py M03 --keep_all_text --repo_suffix -keep_all`
+Example: `python3 train.py M04 --keep_all_data --repo_suffix _keep_all`
 
 Example: `python3 predict_and_evaluate.py M01`
 
 Example: `python3 predict_and_evaluate.py M01 --keep_all_data`
 
-Example: `python3 predict_and_evaluate.py M03 --keep_all_data --repo_suffix -keep_all`
+Example: `python3 predict_and_evaluate.py M03 --keep_all_data --repo_suffix _keep_all`
 
 
 #### 6. Clear cache cache in cluster if it is full:
