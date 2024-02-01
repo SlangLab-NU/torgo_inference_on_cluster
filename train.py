@@ -150,6 +150,8 @@ if __name__ == "__main__":
     keep_all_data = args.keep_all_data
     debug_mode = args.debug
     repo_suffix = args.repo_suffix
+    if args.repo_suffix and not re.match(r'^[_-]', args.repo_suffix):
+        repo_suffix = '_' + args.repo_suffix
 
     '''
     --------------------------------------------------------------------------------

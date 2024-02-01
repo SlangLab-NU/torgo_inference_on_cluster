@@ -63,6 +63,8 @@ def predict_and_evaluate():
     repeated_text_threshold = args.repeated_text_threshold
     keep_all_data = args.keep_all_data
     repo_suffix = args.repo_suffix
+    if args.repo_suffix and not re.match(r'^[_-]', args.repo_suffix):
+        repo_suffix = '_' + args.repo_suffix
     
     '''
     --------------------------------------------------------------------------------
