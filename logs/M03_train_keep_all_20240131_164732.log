@@ -1,0 +1,58 @@
+31-Jan-24 16:47:32 - Test Speaker: M03
+31-Jan-24 16:47:32 - Number of epochs: 20
+31-Jan-24 16:47:32 - Log File Path: /output/logs/M03_train_keep_all_20240131_164732.log
+
+31-Jan-24 16:47:33 - Using GPU: Tesla T4
+
+31-Jan-24 16:47:33 - Splitting the dataset into training / validation / test sets...
+31-Jan-24 16:47:33 - Unique speakers found in the dataset:
+31-Jan-24 16:47:33 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+31-Jan-24 16:47:34 - After applying the text count threshold of 1, the number of data in each dataset is:
+31-Jan-24 16:47:34 - Train:       14519/14519 (100%)
+31-Jan-24 16:47:34 - Validation:  1075/1075 (100%)
+31-Jan-24 16:47:34 - Test:        2/800 (0%)
+
+31-Jan-24 16:47:35 - Vocab Dictionary:
+31-Jan-24 16:47:35 - {'[PAD]': 0, '<s>': 1, '</s>': 2, '[UNK]': 3, "'": 4, 'a': 5, 'b': 6, 'c': 7, 'd': 8, 'e': 9, 'f': 10, 'g': 11, 'h': 12, 'i': 13, 'j': 14, 'k': 15, 'l': 16, 'm': 17, 'n': 18, 'o': 19, 'p': 20, 'q': 21, 'r': 22, 's': 23, 't': 24, 'u': 25, 'v': 26, 'w': 27, 'x': 28, 'y': 29, 'z': 30, '|': 31}
+
+31-Jan-24 16:48:16 - num_proc must be <= 2. Reducing num_proc to 2 for dataset of size 2.
+31-Jan-24 16:48:16 - After filtering audio within a certain length, the number of data in each dataset is:
+31-Jan-24 16:48:16 - Train:       14265/14519 (98%)
+31-Jan-24 16:48:16 - Validation:  1017/1075 (94%)
+31-Jan-24 16:48:16 - Test:        2/800 (0%)
+
+31-Jan-24 16:48:22 - Cloning https://huggingface.co/macarious/torgo_xlsr_finetune_M03_keep_all into local empty directory.
+31-Jan-24 16:48:26 - Start Training
+31-Jan-24 16:48:26 - Training Arguments:
+31-Jan-24 16:48:26 - {'Training Epochs': 20, 'Training Batch Size': 4, 'Evaluation Batch Size': 4, 'Learning Rate': 0.0001, 'Weight Decay': 0.005}
+31-Jan-24 16:48:26 - No checkpoint found in the repository. Training from scratch.
+31-Jan-24 17:06:11 - Current Word Error Rate: 1.0
+31-Jan-24 17:22:49 - Current Word Error Rate: 0.936713686618376
+31-Jan-24 17:39:21 - Current Word Error Rate: 0.658787647731605
+31-Jan-24 17:55:47 - Current Word Error Rate: 0.5192527640106748
+31-Jan-24 18:12:19 - Current Word Error Rate: 0.5070529927563858
+31-Jan-24 18:28:50 - Current Word Error Rate: 0.43309187952725886
+31-Jan-24 18:45:25 - Current Word Error Rate: 0.43919176515440334
+31-Jan-24 19:02:05 - Current Word Error Rate: 0.379336637438048
+31-Jan-24 19:18:36 - Current Word Error Rate: 0.33244376667937475
+31-Jan-24 19:35:11 - Current Word Error Rate: 0.3553183377811666
+31-Jan-24 19:51:43 - Current Word Error Rate: 0.3488372093023256
+31-Jan-24 20:08:22 - Current Word Error Rate: 0.3454060236370568
+31-Jan-24 20:24:57 - Current Word Error Rate: 0.30956919557758295
+31-Jan-24 20:41:34 - Current Word Error Rate: 0.2844071673656119
+31-Jan-24 20:58:10 - Current Word Error Rate: 0.28707586732748763
+31-Jan-24 21:14:45 - Current Word Error Rate: 0.31109416698436904
+31-Jan-24 21:31:19 - Current Word Error Rate: 0.30651925276401065
+31-Jan-24 21:47:58 - Current Word Error Rate: 0.28402592451391534
+31-Jan-24 22:04:27 - Current Word Error Rate: 0.30766298131910025
+31-Jan-24 22:21:06 - Current Word Error Rate: 0.2733511246664125
+31-Jan-24 22:37:47 - Current Word Error Rate: 0.279451010293557
+31-Jan-24 22:54:15 - Current Word Error Rate: 0.2943194815097217
+31-Jan-24 23:10:53 - Current Word Error Rate: 0.27258863896301944
+31-Jan-24 23:27:28 - Current Word Error Rate: 0.2722073961113229
+31-Jan-24 23:44:06 - Current Word Error Rate: 0.2619138391155166
+01-Feb-24 00:00:49 - Current Word Error Rate: 0.26915745329775065
+01-Feb-24 00:17:15 - Current Word Error Rate: 0.25390773922988946
+01-Feb-24 00:33:58 - Current Word Error Rate: 0.26648875333587496
