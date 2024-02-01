@@ -2,39 +2,37 @@
 Fine-tune the wave2vec model on the Torgo dataset. This script takes in the
 speaker ID as a command line argument. The script will then split the dataset
 into training, validation, and test sets. The model will be fine-tuned on the
-training set and validated on the validation set. The test set will be used to
-evaluate the model after fine-tuning. The model will be fine-tuned for 20 epochs
-by default. The number of epochs can be specified as a command line argument.
+training set and validated on the validation set.
 
 This script uses a leave-one-speaker-out approach. The model will be fine-tuned
 on all the speakers except the speaker specified in the command line argument.
 
-This script accepts the following arguments:
-    positional arguments:
-    speaker_id            Speaker ID in the format [MF]C?[0-9]{2}
+The number of epochs and other training parameters can be adjusted using the optional
+arguments. The model will be fine-tuned for 20 epochs by default. The model will
+be saved to Huggingface with the repository name:
 
-    options:
-    -h, --help            show this help message and exit
-    --learning_rate LEARNING_RATE
-                            Learning rate (default: 0.0001)
-    --train_batch_size TRAIN_BATCH_SIZE
-                            Training batch size (default: 4)
-    --eval_batch_size EVAL_BATCH_SIZE
-                            Evaluation batch size (default: 4)
-    --seed SEED           Random seed (default: 42)
-    --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS
-                            Gradient accumulation steps (default: 2)
-    --optimizer OPTIMIZER
-                            Optimizer type (default: adamw_torch)
-    --lr_scheduler_type LR_SCHEDULER_TYPE
-                            Learning rate scheduler type (default: linear)
-    --num_epochs NUM_EPOCHS
-                            Number of epochs (default: 20)
-    --repeated_text_threshold REPEATED_TEXT_THRESHOLD
-                            Repeated text threshold (default: 40)
-    --debug               Enable debug mode
-    --repo_suffix REPO_SUFFIX
-                            Repository suffix
+torgo_xlsr_finetune_[speaker_id][repo_suffix]
+
+The model can be evaluated using predict_and_evaluate.py afterwards.
+
+This script accepts the following arguments:
+
+Positional Arguments
+speaker_id	Speaker ID in the format [MF]C?[0-9]{2}
+
+Options	Descriptions
+-h, --help	show this help message and exit
+--learning_rate	Learning rate (default: 0.0001)
+--train_batch_size	Training batch size (default: 4)
+--eval_batch_size	Evaluation batch size (default: 4)
+--seed	Random seed (default: 42)
+--gradient_accumulation_steps	Gradient accumulation steps (default: 2)
+--optimizer	Optimizer type (default: adamw_torch)
+--lr_scheduler_type	Learning rate scheduler type (default: linear)
+--num_epochs	Number of epochs (default: 20)
+--repeated_text_threshold	Repeated text threshold (default: 40)
+--debug	Enable debug mode
+--repo_suffix	Repository suffix
 
 Example usage:
 python train.py F01

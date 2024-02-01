@@ -1,11 +1,18 @@
 '''
 This script is used to evaluate the performance of the model. It will be called by the main.py script.
 It can also be called by the user separately to evaluate the performance of the model on a given dataset.
-This script accepts the following arguments:
-    - Speaker ID (required): e.g. F01
-    - Repeated Text Threshold (optional): e.g. --repeated_text_threshold 20; default is 40
-    - Keep All Text Mode (optional): e.g. --keep_all_data True; default is False
-    - Repository Suffix (optional): e.g. --repo_suffix v2; default is empty string
+The repository name on Hugging Face is in the format torgo_xlsr_finetune_[speaker_id][repo_suffix].
+It outputs the Word Error Rate (WER) for the training, validation, and test sets, and saves the predictions
+and references to CSV files. It also saves a summary of the Word Error Rates to a CSV file.
+
+Positional Arguments
+speaker_id	Speaker ID in the format [MF]C?[0-9]{2}
+
+Options	Descriptions
+-h, --help	show this help message and exit
+--repeated_text_threshold	Threshold for repeated text filtering (default: 40)
+--keep_all_data	Keep all text or only repeated text (default: False)
+--repo_suffix	Repository suffix
 '''
 
 import os

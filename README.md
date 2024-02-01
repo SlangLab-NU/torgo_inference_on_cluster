@@ -64,7 +64,7 @@ Example: `python3 predict_and_evaluate.py M01`
 
 Example: `python3 predict_and_evaluate.py M01 --keep_all_data`
 
-Example: `python3 predict_and_evaluate.py M03 --keep_all_data --repo_suffix _keep_all`
+Example: `python3 predict_and_evaluate.py M04 --keep_all_data --repo_suffix _keep_all`
 
 
 #### 6. Clear cache cache in cluster if it is full:
@@ -77,12 +77,16 @@ Example: `python3 predict_and_evaluate.py M03 --keep_all_data --repo_suffix _kee
 Fine-tune the wave2vec model on the Torgo dataset. This script takes in the
 speaker ID as a command line argument. The script will then split the dataset
 into training, validation, and test sets. The model will be fine-tuned on the
-training set and validated on the validation set. The test set will be used to
-evaluate the model after fine-tuning. The model will be fine-tuned for 20 epochs
-by default. The number of epochs can be specified as a command line argument.
+training set and validated on the validation set.
 
 This script uses a leave-one-speaker-out approach. The model will be fine-tuned
 on all the speakers except the speaker specified in the command line argument.
+
+The number of epochs and other training parameters can be adjusted using the optional
+arguments. The model will be fine-tuned for 20 epochs by default. The model will
+be saved to Huggingface with the repository name:
+
+`torgo_xlsr_finetune_[speaker_id][repo_suffix]`
 
 This script accepts the following arguments:
 
@@ -116,8 +120,17 @@ In debug mode, the script will only use 20 random samples from the dataset for
 debugging purposes. The dataset will be reduced from 1,000+ samples to 20. It
 should take less than 5 minutes to run the script in debug mode.
 
+The model can be evaluated using predict_and_evaluate.py afterwards.
+
 ## The Prediction and Evaluation Script: `predict_and_evaluate.py`
-This script is used to evaluate the performance of the model for a particular speaker.
+This script is used to evaluate the performance of the model. It will be called by the main.py script.
+It can also be called by the user separately to evaluate the performance of the model on a given dataset.
+The repository name on Hugging Face is in the format:
+
+`torgo_xlsr_finetune_[speaker_id][repo_suffix]`
+
+It outputs the Word Error Rate (WER) for the training, validation, and test sets, and saves the predictions
+and references to CSV files. It also saves a summary of the Word Error Rates to a CSV file.
 
 This script accepts the following arguments:
 
