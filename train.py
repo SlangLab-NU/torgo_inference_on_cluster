@@ -74,12 +74,25 @@ if __name__ == "__main__":
     print("Start of Script\n")
     '''
     --------------------------------------------------------------------------------
-    Store the command line arguments in variables
-    - speaker_id: The speaker ID to fine-tune the model on
-    - num_epochs: The number of epochs to fine-tune the model for
+    Store the command line arguments in variables:
+    Positional argument:
+    - Speaker ID: Speaker ID in the format [MF]C?[0-9]{2}
+    Optional arguments:
+    -h, --help: Show help message and exit
+    --learning_rate: Learning rate (default: 0.0001)
+    --train_batch_size: Training batch size (default: 4)
+    --eval_batch_size: Evaluation batch size (default: 4)
+    --seed: Random seed (default: 42)
+    --gradient_accumulation_steps: Gradient accumulation steps (default: 2)
+    --optimizer: Optimizer type (default: adamw_torch)
+    --lr_scheduler_type: Learning rate scheduler type (default: linear)
+    --num_epochs: Number of epochs (default: 20)
+    --repeated_text_threshold: Repeated text threshold (default: 40)
+    --keep_all_data: Keep all data in the test set (default: False)
+    --debug: Enable debug mode
+    --repo_suffix: Repository suffix
     --------------------------------------------------------------------------------
     '''
-
     parser = argparse.ArgumentParser(
         description='Process speaker ID and optional parameters.')
 
@@ -109,8 +122,10 @@ if __name__ == "__main__":
     # Other optional arguments
     parser.add_argument('--repeated_text_threshold', type=int,
                         default=40, help='Repeated text threshold (default: 40)')
+    parser.add_argument('--keep_all_data', action='store_true',
+                        help='Keep all data in the test set (default: False)')
     parser.add_argument('--debug', action='store_true',
-                        help='Enable debug mode')
+                        help='Enable debug mode (default: False)')
     parser.add_argument('--repo_suffix', type=str,
                         default='', help='Repository suffix')
 
@@ -132,6 +147,7 @@ if __name__ == "__main__":
     lr_scheduler_type = args.lr_scheduler_type
     num_epochs = args.num_epochs
     repeated_text_threshold = args.repeated_text_threshold
+    keep_all_data = args.keep_all_data
     debug_mode = args.debug
     repo_suffix = args.repo_suffix
 
@@ -203,8 +219,9 @@ if __name__ == "__main__":
     logging.getLogger().addHandler(console_handler)
 
     logging.info("Test Speaker: " + test_speaker)
-    logging.info("Number of epochs: " + str(num_epochs))
     logging.info("Log File Path: " + log_file_path + '\n')
+    if keep_all_data:
+        logging.info("Keep all data in training/validation/test sets\n")
 
     '''
     --------------------------------------------------------------------------------
@@ -335,50 +352,53 @@ if __name__ == "__main__":
     # train and validation datasets.
     # (3) If "The dog is brown" is spoken 50 times in total across all speakers in
     # the train and validation dataset, remove the corresponding data from the test
-    # dataset instead.
-    unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(
-        torgo_dataset['validation'].unique(column='text')) | set(torgo_dataset['test'].unique(column='text'))
-    unique_texts_count = {}
-
-    for text in unique_texts:
-        unique_texts_count[text] = {'train_validation': 0, 'test': 0}
-
-    for text in torgo_dataset['train']['text']:
-        unique_texts_count[text]['train_validation'] += 1
-
-    for text in torgo_dataset['validation']['text']:
-        unique_texts_count[text]['train_validation'] += 1
-
-    for text in torgo_dataset['test']['text']:
-        unique_texts_count[text]['test'] += 1
-
-    texts_to_keep_in_train_validation = []
-    texts_to_keep_in_test = []
-    for text in unique_texts_count:
-        if unique_texts_count[text]['train_validation'] < text_count_threshold and unique_texts_count[text]['test'] > 0:
-            texts_to_keep_in_test.append(text)
-        else:
-            texts_to_keep_in_train_validation.append(text)
+    # dataset instead.   
 
     original_data_count = {'train': len(torgo_dataset['train']), 'validation': len(
         torgo_dataset['validation']), 'test': len(torgo_dataset['test'])}
+    
+    
+    if not keep_all_data:
+        unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(
+            torgo_dataset['validation'].unique(column='text')) | set(torgo_dataset['test'].unique(column='text'))
+        unique_texts_count = {}
 
-    # Update the three dataset splits
-    torgo_dataset['train'] = torgo_dataset['train'].filter(
-        lambda x: x['text'] in texts_to_keep_in_train_validation)
-    torgo_dataset['validation'] = torgo_dataset['validation'].filter(
-        lambda x: x['text'] in texts_to_keep_in_train_validation)
-    torgo_dataset['test'] = torgo_dataset['test'].filter(
-        lambda x: x['text'] in texts_to_keep_in_test)
+        for text in unique_texts:
+            unique_texts_count[text] = {'train_validation': 0, 'test': 0}
 
-    logging.info(
-        f"After applying the text count threshold of {text_count_threshold}, the number of data in each dataset is:")
-    logging.info(
-        f'Train:       {len(torgo_dataset["train"])}/{original_data_count["train"]} ({len(torgo_dataset["train"]) * 100 // original_data_count["train"]}%)')
-    logging.info(
-        f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
-    logging.info(
-        f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)\n')
+        for text in torgo_dataset['train']['text']:
+            unique_texts_count[text]['train_validation'] += 1
+
+        for text in torgo_dataset['validation']['text']:
+            unique_texts_count[text]['train_validation'] += 1
+
+        for text in torgo_dataset['test']['text']:
+            unique_texts_count[text]['test'] += 1
+
+        texts_to_keep_in_train_validation = []
+        texts_to_keep_in_test = []
+        for text in unique_texts_count:
+            if unique_texts_count[text]['train_validation'] < text_count_threshold and unique_texts_count[text]['test'] > 0:
+                texts_to_keep_in_test.append(text)
+            else:
+                texts_to_keep_in_train_validation.append(text)
+
+        # Update the three dataset splits
+        torgo_dataset['train'] = torgo_dataset['train'].filter(
+            lambda x: x['text'] in texts_to_keep_in_train_validation)
+        torgo_dataset['validation'] = torgo_dataset['validation'].filter(
+            lambda x: x['text'] in texts_to_keep_in_train_validation)
+        torgo_dataset['test'] = torgo_dataset['test'].filter(
+            lambda x: x['text'] in texts_to_keep_in_test)
+
+        logging.info(
+            f"After applying the text count threshold of {text_count_threshold}, the number of data in each dataset is:")
+        logging.info(
+            f'Train:       {len(torgo_dataset["train"])}/{original_data_count["train"]} ({len(torgo_dataset["train"]) * 100 // original_data_count["train"]}%)')
+        logging.info(
+            f'Validation:  {len(torgo_dataset["validation"])}/{original_data_count["validation"]} ({len(torgo_dataset["validation"]) * 100 // original_data_count["validation"]}%)')
+        logging.info(
+            f'Test:        {len(torgo_dataset["test"])}/{original_data_count["test"]} ({len(torgo_dataset["test"]) * 100 // original_data_count["test"]}%)\n')
 
     '''
     --------------------------------------------------------------------------------

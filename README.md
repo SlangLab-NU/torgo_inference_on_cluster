@@ -85,33 +85,26 @@ This script uses a leave-one-speaker-out approach. The model will be fine-tuned
 on all the speakers except the speaker specified in the command line argument.
 
 This script accepts the following arguments:
-```
-positional arguments:
-  speaker_id            Speaker ID in the format [MF]C?[0-9]{2}
 
-options:
-  -h, --help            show this help message and exit
-  --learning_rate LEARNING_RATE
-                        Learning rate (default: 0.0001)
-  --train_batch_size TRAIN_BATCH_SIZE
-                        Training batch size (default: 4)
-  --eval_batch_size EVAL_BATCH_SIZE
-                        Evaluation batch size (default: 4)
-  --seed SEED           Random seed (default: 42)
-  --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS
-                        Gradient accumulation steps (default: 2)
-  --optimizer OPTIMIZER
-                        Optimizer type (default: adamw_torch)
-  --lr_scheduler_type LR_SCHEDULER_TYPE
-                        Learning rate scheduler type (default: linear)
-  --num_epochs NUM_EPOCHS
-                        Number of epochs (default: 20)
-  --repeated_text_threshold REPEATED_TEXT_THRESHOLD
-                        Repeated text threshold (default: 40)
-  --debug               Enable debug mode
-  --repo_suffix REPO_SUFFIX
-                        Repository suffix
-```
+| Positional Arguments | Descriptions |
+|----------------------|--------------|
+| speaker_id | Speaker ID in the format [MF]C?[0-9]{2} |
+
+| Options | Descriptions |
+|---------|--------------|
+| `-h, --help` | show this help message and exit |
+| `--learning_rate` | Learning rate (default: 0.0001) |
+| `--train_batch_size` | Training batch size (default: 4) |
+| `--eval_batch_size` | Evaluation batch size (default: 4) |
+| `--seed` | Random seed (default: 42) |
+| `--gradient_accumulation_steps` | Gradient accumulation steps (default: 2) |
+| `--optimizer` | Optimizer type (default: adamw_torch) |
+| `--lr_scheduler_type` | Learning rate scheduler type (default: linear) |
+| `--num_epochs` | Number of epochs (default: 20) |
+| `--repeated_text_threshold` | Repeated text threshold (default: 40) |
+| `--debug` | Enable debug mode |
+| `--repo_suffix` | Repository suffix |
+
 
 Example usage:
 `python train.py F01`
@@ -124,3 +117,17 @@ debugging purposes. The dataset will be reduced from 1,000+ samples to 20. It
 should take less than 5 minutes to run the script in debug mode.
 
 ## The Prediction and Evaluation Script: `predict_and_evaluate.py`
+This script is used to evaluate the performance of the model for a particular speaker.
+
+This script accepts the following arguments:
+
+| Positional Arguments | Descriptions |
+|----------------------|--------------|
+| speaker_id | Speaker ID in the format [MF]C?[0-9]{2} |
+
+| Options | Descriptions |
+|---------|--------------|
+| `-h, --help` | show this help message and exit |
+| `--repeated_text_threshold` | Threshold for repeated text filtering (default: 40) |
+| `--keep_all_data` | Keep all text or only repeated text (default: False) |
+| `--repo_suffix` | Repository suffix |

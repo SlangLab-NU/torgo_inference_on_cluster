@@ -4,12 +4,13 @@ It can also be called by the user separately to evaluate the performance of the 
 This script accepts the following arguments:
     - Speaker ID (required): e.g. F01
     - Repeated Text Threshold (optional): e.g. --repeated_text_threshold 20; default is 40
-    - Keep All Text Mode (optional): e.g. --keep_all_text True; default is False
+    - Keep All Text Mode (optional): e.g. --keep_all_data True; default is False
     - Repository Suffix (optional): e.g. --repo_suffix v2; default is empty string
 '''
 
 import os
 import sys
+import argparse
 import torch
 import re
 import logging
@@ -24,6 +25,45 @@ from datetime import datetime
 
 def predict_and_evaluate():
     print('Predict and Evaluate')
+    '''
+    --------------------------------------------------------------------------------
+    Store the command line arguments in variables
+    Possible arguments:
+    - Speaker ID: Speaker ID in the format [MF]C?[0-9]{2}
+    Optional arguments:
+    --repeated_text_threshold: Threshold for repeated text filtering (default: 40)
+    --keep_all_data: Keep all text or only repeated text (default: False)
+    --repo_suffix: Repository suffix
+    --------------------------------------------------------------------------------
+    '''
+    parser = argparse.ArgumentParser(
+        description='Fine-tune the model on a specified speaker ID.')
+
+    # Required argument: speaker ID
+    parser.add_argument('speaker_id', type=str,
+                        help='Speaker ID in the format [MF]C?[0-9]{2}')
+
+    # Optional arguments with default values
+    parser.add_argument('--repeated_text_threshold', type=int, default=40,
+                        help='Threshold for repeated text filtering (default: 40)')
+    parser.add_argument('--keep_all_data', action='store_true',
+                        help='Keep all text or only repeated text (default: False)')
+    parser.add_argument('--repo_suffix', type=str,
+                        default='', help='Repository suffix')
+
+    args = parser.parse_args()
+
+    # Check if the speaker ID is valid
+    if not re.match(r'^[MF]C?[0-9]{2}$', args.speaker_id):
+        print("Please provide a valid speaker ID.")
+        sys.exit(1)
+    test_speaker = args.speaker_id
+
+    # Accessing optional arguments
+    repeated_text_threshold = args.repeated_text_threshold
+    keep_all_data = args.keep_all_data
+    repo_suffix = args.repo_suffix
+    
     '''
     --------------------------------------------------------------------------------
     Check if the paths to the Torgo dataset and the Torgo dataset CSV file are valid.
@@ -60,56 +100,6 @@ def predict_and_evaluate():
 
     '''
     --------------------------------------------------------------------------------
-    Store the command line arguments in variables
-    - speaker_id: The speaker ID to fine-tune the model on
-    - repeated_text_threshold: The threshold for repeated text filtering
-    - keep_all_text: Whether to keep all text or only repeated text
-    --------------------------------------------------------------------------------
-    '''
-    # Check if the speaker ID is provided as an argument
-    if len(sys.argv) < 2:
-        print("Please provide the speaker ID as an argument.")
-        sys.exit(1)
-
-    # Check if the speaker ID is valid
-    if not re.match(r'^[MF][0-9]{2}$', sys.argv[1]):
-        print("Please provide a valid speaker ID.")
-        sys.exit(1)
-    test_speaker = sys.argv[1]
-
-    # Optional arguments
-    # repeated_text_threshold (ex. --repeated_text_threshold 20)
-    # keep_all_text (ex. --keep_all_text True)
-
-    # Default values
-    repeated_text_threshold = 40
-    keep_all_text = False
-    repo_suffix = ''
-
-    if len(sys.argv) > 2:
-        for i in range(2, len(sys.argv), 2):
-            if sys.argv[i] == '--repeated_text_threshold':
-                if sys.argv[i+1].isdigit() and int(sys.argv[i+1]) >= 0:
-                    repeated_text_threshold = int(sys.argv[i+1])
-                else:
-                    print(
-                        "Please provide a valid number for the repeated text threshold.")
-                    sys.exit(1)
-            elif sys.argv[i] == '--keep_all_text':
-                if sys.argv[i+1].lower() in ['true', 'false']:
-                    keep_all_text = sys.argv[i+1].lower() == 'true'
-                else:
-                    print(
-                        "Please provide a valid value for the keep all text mode. (True or False)")
-                    sys.exit(1)
-            elif sys.argv[i] == '--repo_suffix':
-                repo_suffix = sys.argv[i+1]
-            else:
-                print(f"Invalid argument: {sys.argv[i]}")
-                sys.exit(1)
-
-    '''
-    --------------------------------------------------------------------------------
     Set up the logging configuration
     --------------------------------------------------------------------------------
     '''
@@ -135,8 +125,8 @@ def predict_and_evaluate():
 
     logging.info("Test Speaker: " + test_speaker)
     logging.info("Log File Path: " + log_file_path + '\n')
-    if keep_all_text:
-        logging.info("Keep All Text Mode: True")
+    if keep_all_data:
+        logging.info("Keep all data in training/validation/test sets\n")
 
     '''
     --------------------------------------------------------------------------------
@@ -203,7 +193,7 @@ def predict_and_evaluate():
     '''
     logging.info(
         "Splitting the dataset into training / validation / test sets...")
-    
+
     # Extract the unique speakers in the dataset
     speakers = data_df['speaker_id'].unique()
 
@@ -256,7 +246,7 @@ def predict_and_evaluate():
     original_data_count = {'train': len(torgo_dataset['train']), 'validation': len(
         torgo_dataset['validation']), 'test': len(torgo_dataset['test'])}
 
-    if not keep_all_text:
+    if not keep_all_data:
         unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(
             torgo_dataset['validation'].unique(column='text')) | set(torgo_dataset['test'].unique(column='text'))
         unique_texts_count = {}
@@ -373,7 +363,7 @@ def predict_and_evaluate():
     if not os.path.exists(output_path + '/results'):
         os.makedirs(output_path + '/results')
 
-    results_dir = f'{output_path}/results/{repo_name}' if not keep_all_text else f'{output_path}/results/{repo_name}_include_repeated_text'
+    results_dir = f'{output_path}/results/{repo_name}'
 
     # Create the results directory for the current speaker, if it does not exist
     if not os.path.exists(results_dir):
