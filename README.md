@@ -44,6 +44,8 @@ Push the dockerfile to Docker Hub:
 
 `singularity pull docker://macarious/finetune:latest`
 
+This pulls docker file and builds the image `finetune.sif`.
+
 ### on `user_name@login.discovery.neu.edu`:
 
 #### 1. Use GPU from Cluster (on user_name@xfer.discovery.neu.edu):
@@ -70,13 +72,13 @@ singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work
 
 Example: `python3 train.py M01`
 
-Example: `python3 train.py M04 --keep_all_data --repo_suffix _keep_all`
+Example: `python3 train.py M02 --keep_all_data --repo_suffix _keep_all`
 
 Example: `python3 predict_and_evaluate.py M01`
 
 Example: `python3 predict_and_evaluate.py M01 --keep_all_data`
 
-Example: `python3 predict_and_evaluate.py M04 --keep_all_data --repo_suffix _keep_all`
+Example: `python3 predict_and_evaluate.py M02 --keep_all_data --repo_suffix _keep_all`
 
 
 #### 6. Clear cache cache in cluster if it is full:
