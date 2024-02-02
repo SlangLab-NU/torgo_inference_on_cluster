@@ -17,7 +17,7 @@ This README file is under construction.
 | M01 (severe) | 20 | 0.0126 | 0.2474 | 0.4072 |
 | M02 (severe) | 20 |        |        |        |
 | M03 (mild)   | 20 | 0.0129 | 0.2375 | 0.0317 |
-| M04 (severe) | 20 |        |        |        | 
+| M04 (severe) | 20 | 0.0115 | 0.2318 | 0.6450 | 
 
 
 
