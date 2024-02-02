@@ -352,12 +352,11 @@ if __name__ == "__main__":
     # train and validation datasets.
     # (3) If "The dog is brown" is spoken 50 times in total across all speakers in
     # the train and validation dataset, remove the corresponding data from the test
-    # dataset instead.   
+    # dataset instead.
 
     original_data_count = {'train': len(torgo_dataset['train']), 'validation': len(
         torgo_dataset['validation']), 'test': len(torgo_dataset['test'])}
-    
-    
+
     if not keep_all_data:
         unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(
             torgo_dataset['validation'].unique(column='text')) | set(torgo_dataset['test'].unique(column='text'))
@@ -569,12 +568,11 @@ if __name__ == "__main__":
                 return_tensors="pt",
             )
 
-            with self.processor.as_target_processor():
-                labels_batch = self.processor.pad(
-                    label_features,
-                    padding=self.padding,
-                    return_tensors="pt",
-                )
+            labels_batch = self.processor(
+                text=label_features,
+                padding=self.padding,
+                return_tensors="pt",
+            )
 
             # replace padding with -100 to ignore loss correctly
             labels = labels_batch["input_ids"].masked_fill(
