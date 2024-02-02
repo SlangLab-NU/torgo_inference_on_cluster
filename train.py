@@ -195,6 +195,22 @@ if __name__ == "__main__":
 
     '''
     --------------------------------------------------------------------------------
+    Repository name on Hugging Face and Local Path to save model / checkpoints
+    --------------------------------------------------------------------------------
+    '''
+
+    # Repository name on Hugging Face
+    repo_name = f'torgo_xlsr_finetune_{test_speaker}{repo_suffix}'
+    repo_path = f'macarious/{repo_name}'
+
+    # Path to save model / checkpoints{repo_name}'
+    model_local_path = output_path + '/model/' + repo_name
+
+    # Model to be fine-tuned with Torgo dataset
+    pretrained_model_name = "facebook/wav2vec2-large-xlsr-53"
+
+    '''
+    --------------------------------------------------------------------------------
     Set up the logging configuration
     --------------------------------------------------------------------------------
     '''
@@ -248,22 +264,6 @@ if __name__ == "__main__":
         logging.error(
             "The following columns are not found in the dataset:" + " [" + ", ".join(not_found_columns) + "]")
         sys.exit(1)
-
-    '''
-    --------------------------------------------------------------------------------
-    Repository name on Hugging Face and Local Path to save model / checkpoints
-    --------------------------------------------------------------------------------
-    '''
-
-    # Repository name on Hugging Face
-    repo_name = f'torgo_xlsr_finetune_{test_speaker}{repo_suffix}'
-    repo_path = f'macarious/{repo_name}'
-
-    # Path to save model / checkpoints{repo_name}'
-    model_local_path = output_path + '/model/' + repo_name
-
-    # Model to be fine-tuned with Torgo dataset
-    pretrained_model_name = "facebook/wav2vec2-large-xlsr-53"
 
     '''
     --------------------------------------------------------------------------------
