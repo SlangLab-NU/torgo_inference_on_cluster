@@ -1,8 +1,0 @@
-01-Feb-24 23:27:01 - Test Speaker: M04
-01-Feb-24 23:27:01 - Log File Path: /output/logs/M04_evaluate_20240201_232701.log
-
-01-Feb-24 23:27:01 - Keep all data in training/validation/test sets
-
-01-Feb-24 23:27:01 - Using GPU: Tesla T4
-
-01-Feb-24 23:27:01 - Loading the model and processor from macarious/torgo_xlsr_finetune_M04_keep_all

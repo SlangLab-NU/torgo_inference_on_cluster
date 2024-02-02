@@ -115,7 +115,7 @@ def predict_and_evaluate():
     if not os.path.exists(output_path + '/logs'):
         os.makedirs(output_path + '/logs')
 
-    log_file_name = test_speaker + '_evaluate_' + \
+    log_file_name = test_speaker + '_evaluate_' + {repo_suffix} + \
         datetime.now().strftime("%Y%m%d_%H%M%S") + '.log'
     log_file_path = output_path + '/logs/' + log_file_name
 
