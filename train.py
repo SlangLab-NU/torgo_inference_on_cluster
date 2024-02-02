@@ -121,7 +121,7 @@ if __name__ == "__main__":
     parser.add_argument('--repeated_text_threshold', type=int,
                         default=40, help='Repeated text threshold (default: 40)')
     parser.add_argument('--keep_all_data', action='store_true',
-                        help='Keep all data in the test set (default: False)')
+                        help='Keep all data in the test set; overrides the repeated_text_threshold')
     parser.add_argument('--debug', action='store_true',
                         help='Enable debug mode (default: False)')
     parser.add_argument('--repo_suffix', type=str,
@@ -200,10 +200,16 @@ if __name__ == "__main__":
     '''
     if not os.path.exists(output_path + '/logs'):
         os.makedirs(output_path + '/logs')
+        
+    log_dir = f'{output_path}/logs/{repo_name}'
+
+    # Create the results directory for the current speaker, if it does not exist
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
 
     log_file_name = test_speaker + '_train' + repo_suffix + '_' + \
         datetime.now().strftime("%Y%m%d_%H%M%S") + '.log'
-    log_file_path = output_path + '/logs/' + log_file_name
+    log_file_path = log_dir + '/' + log_file_name
 
     logging.basicConfig(
         filename=log_file_path,
@@ -568,8 +574,9 @@ if __name__ == "__main__":
                 return_tensors="pt",
             )
 
+            label_texts = [text for feature in label_features for text in feature["input_ids"]]
             labels_batch = self.processor(
-                text=label_features,
+                text=label_texts,
                 padding=self.padding,
                 return_tensors="pt",
             )

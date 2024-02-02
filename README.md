@@ -1,26 +1,27 @@
 # Fine-tune the wave2vec model on the Torgo dataset.
+
 This README file is under construction.
 
 ## Word Error Rates Summary
+
 ### No Repeated Data between the Train/Validation Sets and the Test Set
-| Speaker | Epochs | Train | Validation | Test |
-|---------|--------|-------|------------|------|
-| M01 (severe) | 20 | 0.0104 | 0.3198 | 0.8568 |
-| M01 (severe) | 40 | 0.0035 | 0.3052 | 0.8779 |
-| M02 (severe) | 20 | 0.0107 | 0.3004 | 0.9043 |
-| M03 (mild)   | 20 | 0.0124 | 0.3247 | 0.4194 |
-| M04 (severe) | 20 | 0.0101 | 0.2925 | 0.9332 |
+
+| Speaker      | Epochs | Train  | Validation | Test   |
+| ------------ | ------ | ------ | ---------- | ------ |
+| M01 (severe) | 20     | 0.0104 | 0.3198     | 0.8568 |
+| M01 (severe) | 40     | 0.0035 | 0.3052     | 0.8779 |
+| M02 (severe) | 20     | 0.0107 | 0.3004     | 0.9043 |
+| M03 (mild)   | 20     | 0.0124 | 0.3247     | 0.4194 |
+| M04 (severe) | 20     | 0.0101 | 0.2925     | 0.9332 |
 
 ### All Data are Retained in the Train/Validation/Test Sets
-| Speaker | Epochs | Train | Validation | Test |
-|---------|--------|-------|------------|------|
-| M01 (severe) | 20 | 0.0126 | 0.2474 | 0.4072 |
-| M02 (severe) | 20 | 0.0124 | 0.2463 | 0.5440 |
-| M03 (mild)   | 20 | 0.0129 | 0.2375 | 0.0317 |
-| M04 (severe) | 20 | 0.0115 | 0.2318 | 0.6450 | 
 
-
-
+| Speaker      | Epochs | Train  | Validation | Test   |
+| ------------ | ------ | ------ | ---------- | ------ |
+| M01 (severe) | 20     | 0.0126 | 0.2474     | 0.4072 |
+| M02 (severe) | 20     | 0.0124 | 0.2463     | 0.5440 |
+| M03 (mild)   | 20     | 0.0129 | 0.2375     | 0.0317 |
+| M04 (severe) | 20     | 0.0115 | 0.2318     | 0.6450 |
 
 ## Building Docker on Local Machine
 
@@ -80,7 +81,6 @@ Example: `python3 predict_and_evaluate.py M01 --keep_all_data`
 
 Example: `python3 predict_and_evaluate.py M02 --keep_all_data --repo_suffix _keep_all`
 
-
 #### 6. Clear cache cache in cluster if it is full:
 
 `rm -rf /home/hui.mac/.cache/`
@@ -88,6 +88,7 @@ Example: `python3 predict_and_evaluate.py M02 --keep_all_data --repo_suffix _kee
 `rm -rf /home/hui.mac/.singularity/cache`
 
 ## The Training Script: `train.py`
+
 Fine-tune the wave2vec model on the Torgo dataset. This script takes in the
 speaker ID as a command line argument. The script will then split the dataset
 into training, validation, and test sets. The model will be fine-tuned on the
@@ -104,25 +105,25 @@ be saved to Huggingface with the repository name:
 
 This script accepts the following arguments:
 
-| Positional Arguments | Descriptions |
-|----------------------|--------------|
-| speaker_id | Speaker ID in the format [MF]C?[0-9]{2} |
+| Positional Arguments | Descriptions                            |
+| -------------------- | --------------------------------------- |
+| speaker_id           | Speaker ID in the format [MF]C?[0-9]{2} |
 
-| Options | Descriptions |
-|---------|--------------|
-| `-h, --help` | show this help message and exit |
-| `--learning_rate` | Learning rate (default: 0.0001) |
-| `--train_batch_size` | Training batch size (default: 4) |
-| `--eval_batch_size` | Evaluation batch size (default: 4) |
-| `--seed` | Random seed (default: 42) |
-| `--gradient_accumulation_steps` | Gradient accumulation steps (default: 2) |
-| `--optimizer` | Optimizer type (default: adamw_torch) |
-| `--lr_scheduler_type` | Learning rate scheduler type (default: linear) |
-| `--num_epochs` | Number of epochs (default: 20) |
-| `--repeated_text_threshold` | Repeated text threshold (default: 40) |
-| `--debug` | Enable debug mode |
-| `--repo_suffix` | Repository suffix |
-
+| Options                         | Descriptions                                                         |
+| ------------------------------- | -------------------------------------------------------------------- |
+| `-h, --help`                    | show this help message and exit                                      |
+| `--learning_rate`               | Learning rate (default: 0.0001)                                      |
+| `--train_batch_size`            | Training batch size (default: 4)                                     |
+| `--eval_batch_size`             | Evaluation batch size (default: 4)                                   |
+| `--seed`                        | Random seed (default: 42)                                            |
+| `--gradient_accumulation_steps` | Gradient accumulation steps (default: 2)                             |
+| `--optimizer`                   | Optimizer type (default: adamw_torch)                                |
+| `--lr_scheduler_type`           | Learning rate scheduler type (default: linear)                       |
+| `--num_epochs`                  | Number of epochs (default: 20)                                       |
+| `--repeated_text_threshold`     | Repeated text threshold (default: 40)                                |
+| `--keep_all_data`               | Keep all data in the test set; overrides the repeated_text_threshold |
+| `--debug`                       | Enable debug mode                                                    |
+| `--repo_suffix`                 | Repository suffix                                                    |
 
 Example usage:
 `python train.py F01`
@@ -137,6 +138,7 @@ should take less than 5 minutes to run the script in debug mode.
 The model can be evaluated using predict_and_evaluate.py afterwards.
 
 ## The Prediction and Evaluation Script: `predict_and_evaluate.py`
+
 This script is used to evaluate the performance of the model. It will be called by the main.py script.
 It can also be called by the user separately to evaluate the performance of the model on a given dataset.
 The repository name on Hugging Face is in the format:
@@ -148,13 +150,13 @@ and references to CSV files. It also saves a summary of the Word Error Rates to 
 
 This script accepts the following arguments:
 
-| Positional Arguments | Descriptions |
-|----------------------|--------------|
-| speaker_id | Speaker ID in the format [MF]C?[0-9]{2} |
+| Positional Arguments | Descriptions                            |
+| -------------------- | --------------------------------------- |
+| speaker_id           | Speaker ID in the format [MF]C?[0-9]{2} |
 
-| Options | Descriptions |
-|---------|--------------|
-| `-h, --help` | show this help message and exit |
-| `--repeated_text_threshold` | Threshold for repeated text filtering (default: 40) |
-| `--keep_all_data` | Keep all text or only repeated text (default: False) |
-| `--repo_suffix` | Repository suffix |
+| Options                     | Descriptions                                                               |
+| --------------------------- | -------------------------------------------------------------------------- |
+| `-h, --help`                | show this help message and exit                                            |
+| `--repeated_text_threshold` | Threshold for repeated text filtering (default: 40)                        |
+| `--keep_all_data`           | Keep all text or only repeated text; overrides the repeated_text_threshold |
+| `--repo_suffix`             | Repository suffix                                                          |

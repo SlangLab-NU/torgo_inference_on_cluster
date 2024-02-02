@@ -54,7 +54,7 @@ def predict_and_evaluate():
     parser.add_argument('--repeated_text_threshold', type=int, default=40,
                         help='Threshold for repeated text filtering (default: 40)')
     parser.add_argument('--keep_all_data', action='store_true',
-                        help='Keep all text or only repeated text (default: False)')
+                        help='Keep all text or only repeated text; overrides the repeated_text_threshold')
     parser.add_argument('--repo_suffix', type=str,
                         default='', help='Repository suffix')
 
