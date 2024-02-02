@@ -2,13 +2,25 @@
 This README file is under construction.
 
 ## Word Error Rates Summary
-| Speaker | Epochs | Train | Validation | Test | Test (trained and evaluated with all text) |
-|---------|--------|-------|------------|------|-----------------|
-| M01 (severe) | 20 | 0.0104 | 0.3198 | 0.8568 | 0.4072 |
-| M01 (severe) | 40 | 0.0035 | 0.3052 | 0.8779 |  |
-| M02 (severe) | 20 | 0.0107 | 0.3004 | 0.9043 |  |
-| M03 (mild)   | 20 | 0.0124 | 0.3247 | 0.4194 | 0.0317 |
-| M04 (severe) | 20 | 0.0101 | 0.2925 | 0.9332 |  |
+### No Repeated Data between the Train/Validation Sets and the Test Set
+| Speaker | Epochs | Train | Validation | Test |
+|---------|--------|-------|------------|------|
+| M01 (severe) | 20 | 0.0104 | 0.3198 | 0.8568 |
+| M01 (severe) | 40 | 0.0035 | 0.3052 | 0.8779 |
+| M02 (severe) | 20 | 0.0107 | 0.3004 | 0.9043 |
+| M03 (mild)   | 20 | 0.0124 | 0.3247 | 0.4194 |
+| M04 (severe) | 20 | 0.0101 | 0.2925 | 0.9332 |
+
+### All Data are Retained in the Train/Validation/Test Sets
+| Speaker | Epochs | Train | Validation | Test |
+|---------|--------|-------|------------|------|
+| M01 (severe) | 20 | 0.0126 | 0.2474 | 0.4072 |
+| M02 (severe) | 20 |        |        |        |
+| M03 (mild)   | 20 | 0.0129 | 0.2375 | 0.0317 |
+| M04 (severe) | 20 |        |        |        | 
+
+
+
 
 ## Building Docker on Local Machine
 

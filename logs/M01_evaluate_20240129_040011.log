@@ -1,9 +1,0 @@
-29-Jan-24 04:00:12 - Test Speaker: M01
-29-Jan-24 04:00:12 - Log File Path: /output/logs/M01_evaluate_20240129_040011.log
-
-29-Jan-24 04:00:12 - Using GPU: Tesla T4
-
-29-Jan-24 04:00:12 - Loading the model and processor from macarious/torgo_xlsr_finetune_M01
-29-Jan-24 04:00:15 - Model loaded from macarious/torgo_xlsr_finetune_M01
-29-Jan-24 04:00:15 - Processor loaded from macarious/torgo_xlsr_finetune_M01
-
