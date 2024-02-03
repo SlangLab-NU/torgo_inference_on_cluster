@@ -2,6 +2,34 @@
 
 This README file is under construction.
 
+## Number of Audio Data per Speaker used in Training/Validation/Testing
+
+### No Repeated Data between the Train/Validation Sets and the Test Set
+
+| Speaker      | Train  | Validation | Test   |
+| ------------ | ------ | ---------- | ------ |
+| M01 (severe) | 8937   | 560        | 489    |
+| M02 (severe) | 8738   | 542        | 510    |
+| M03 (mild)   | 8534   | 542        | 573    |
+| M04 (severe) | 10676  | 706        | 369    |
+| M05 (sev/mid)| 8071   | 454        | 328    |
+| F01 (severe) |        |            |        |
+| F03 (mild)   |        |            |        |
+| F04 (mild)   |        |            |        |
+
+### All Data are Retained in the Train/Validation/Test Sets
+
+| Speaker      | Train  | Validation | Test   |
+| ------------ | ------ | ---------- | ------ |
+| M01 (severe) | 14356  | 1017       | 709    |
+| M02 (severe) | 14330  | 1017       | 735    |
+| M03 (mild)   | 14265  | 1017       | 800    |
+| M03 (mild)   | 14487  | 1017       | 578    |
+| M03 (mild)   | 14487  | 1017       | 578    |
+| F01 (severe) | 14555  | 1017       | 510    |
+| F03 (mild)   |        |            |        |
+| F04 (mild)   |        |            |        |
+
 ## Word Error Rates Summary
 
 ### No Repeated Data between the Train/Validation Sets and the Test Set
@@ -9,10 +37,15 @@ This README file is under construction.
 | Speaker      | Epochs | Train  | Validation | Test   |
 | ------------ | ------ | ------ | ---------- | ------ |
 | M01 (severe) | 20     | 0.0104 | 0.3198     | 0.8568 |
-| M01 (severe) | 40     | 0.0035 | 0.3052     | 0.8779 |
 | M02 (severe) | 20     | 0.0107 | 0.3004     | 0.9043 |
 | M03 (mild)   | 20     | 0.0124 | 0.3247     | 0.4194 |
 | M04 (severe) | 20     | 0.0101 | 0.2925     | 0.9332 |
+| M05 (sev/mid)| 20     | 0.0157 | 0.3589     | 0.9191 |
+| F01 (severe) | 20     |        |            |        |
+| F03 (mild)   | 20     |        |            |        |
+| F04 (mild)   | 20     |        |            |        |
+|              |        |        |            |        |
+| M01 (severe) | 40     | 0.0035 | 0.3052     | 0.8779 |
 
 ### All Data are Retained in the Train/Validation/Test Sets
 
@@ -22,6 +55,11 @@ This README file is under construction.
 | M02 (severe) | 20     | 0.0124 | 0.2463     | 0.5440 |
 | M03 (mild)   | 20     | 0.0129 | 0.2375     | 0.0317 |
 | M04 (severe) | 20     | 0.0115 | 0.2318     | 0.6450 |
+| M05 (sev/mid)| 20     | 0.0125 | 0.2245     | 0.5104 |
+| M05 (sev/mid)| 20     |        |            |        |
+| F01 (severe) | 20     |        |            |        |
+| F03 (mild)   | 20     |        |            |        |
+| F04 (mild)   | 20     |        |            |        |
 
 ## Building Docker on Local Machine
 
