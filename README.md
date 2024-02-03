@@ -71,9 +71,9 @@ singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work
 
 #### 5. Run the scripts:
 
-Example: `python3 train.py M01`
+Example: `python3 train.py M05`
 
-Example: `python3 train.py M02 --keep_all_data --repo_suffix _keep_all`
+Example: `python3 train.py M05 --keep_all_data --repo_suffix _keep_all`
 
 Example: `python3 predict_and_evaluate.py M01`
 

@@ -223,7 +223,7 @@ if __name__ == "__main__":
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
-    log_file_name = test_speaker + '_train' + repo_suffix + '_' + \
+    log_file_name = test_speaker + '_train' + '_' + \
         datetime.now().strftime("%Y%m%d_%H%M%S") + '.log'
     log_file_path = log_dir + '/' + log_file_name
 
@@ -573,13 +573,13 @@ if __name__ == "__main__":
                 padding=self.padding,
                 return_tensors="pt",
             )
-
-            label_texts = [text for feature in label_features for text in feature["input_ids"]]
-            labels_batch = self.processor(
-                text=label_texts,
-                padding=self.padding,
-                return_tensors="pt",
-            )
+            
+            with self.processor.as_target_processor():
+                labels_batch = self.processor.pad(
+                    label_features,
+                    padding=self.padding,
+                    return_tensors="pt",
+                )
 
             # replace padding with -100 to ignore loss correctly
             labels = labels_batch["input_ids"].masked_fill(

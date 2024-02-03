@@ -109,15 +109,30 @@ def predict_and_evaluate():
 
     '''
     --------------------------------------------------------------------------------
+    Repository name on Hugging Face
+    --------------------------------------------------------------------------------
+    '''
+    # Repository name on Hugging Face
+    repo_name = f'torgo_xlsr_finetune_{test_speaker}{repo_suffix}'
+    repo_path = f'macarious/{repo_name}'
+
+    '''
+    --------------------------------------------------------------------------------
     Set up the logging configuration
     --------------------------------------------------------------------------------
     '''
     if not os.path.exists(output_path + '/logs'):
         os.makedirs(output_path + '/logs')
+        
+    log_dir = f'{output_path}/logs/{repo_name}'
 
-    log_file_name = test_speaker + '_evaluate_' + repo_suffix + \
+    # Create the results directory for the current speaker, if it does not exist
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+
+    log_file_name = test_speaker + '_evaluate' + '_' + \
         datetime.now().strftime("%Y%m%d_%H%M%S") + '.log'
-    log_file_path = output_path + '/logs/' + log_file_name
+    log_file_path = log_dir + '/' + log_file_name
 
     logging.basicConfig(
         filename=log_file_path,
@@ -156,15 +171,6 @@ def predict_and_evaluate():
         logging.error(
             "The following columns are not found in the dataset:" + " [" + ", ".join(not_found_columns) + "]")
         sys.exit(1)
-
-    '''
-    --------------------------------------------------------------------------------
-    Repository name on Hugging Face
-    --------------------------------------------------------------------------------
-    '''
-    # Repository name on Hugging Face
-    repo_name = f'torgo_xlsr_finetune_{test_speaker}{repo_suffix}'
-    repo_path = f'macarious/{repo_name}'
 
     '''
     --------------------------------------------------------------------------------
