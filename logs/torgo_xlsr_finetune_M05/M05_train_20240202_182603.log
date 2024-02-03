@@ -1,0 +1,481 @@
+02-Feb-24 18:26:03 - Test Speaker: M05
+02-Feb-24 18:26:03 - Log File Path: /output/logs/torgo_xlsr_finetune_M05/M05_train_20240202_182603.log
+
+02-Feb-24 18:26:04 - Using GPU: Tesla T4
+
+02-Feb-24 18:26:04 - Splitting the dataset into training / validation / test sets...
+02-Feb-24 18:26:04 - Unique speakers found in the dataset:
+02-Feb-24 18:26:04 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+02-Feb-24 18:26:04 - After applying the text count threshold of 40, the number of data in each dataset is:
+02-Feb-24 18:26:04 - Train:       8108/14746 (54%)
+02-Feb-24 18:26:04 - Validation:  476/1075 (44%)
+02-Feb-24 18:26:04 - Test:        390/573 (68%)
+
+02-Feb-24 18:26:05 - Vocab Dictionary:
+02-Feb-24 18:26:05 - {'[PAD]': 0, '<s>': 1, '</s>': 2, '[UNK]': 3, "'": 4, 'a': 5, 'b': 6, 'c': 7, 'd': 8, 'e': 9, 'f': 10, 'g': 11, 'h': 12, 'i': 13, 'j': 14, 'k': 15, 'l': 16, 'm': 17, 'n': 18, 'o': 19, 'p': 20, 'q': 21, 'r': 22, 's': 23, 't': 24, 'u': 25, 'v': 26, 'w': 27, 'x': 28, 'y': 29, 'z': 30, '|': 31}
+
+02-Feb-24 18:27:04 - After filtering audio within a certain length, the number of data in each dataset is:
+02-Feb-24 18:27:04 - Train:       8071/14746 (54%)
+02-Feb-24 18:27:04 - Validation:  454/1075 (42%)
+02-Feb-24 18:27:04 - Test:        328/573 (57%)
+
+02-Feb-24 18:27:10 - /output/model/torgo_xlsr_finetune_M05 is already a clone of https://huggingface.co/macarious/torgo_xlsr_finetune_M05. Make sure you pull the latest changes with `repo.git_pull()`.
+02-Feb-24 18:27:12 - Start Training
+02-Feb-24 18:27:12 - Training Arguments:
+02-Feb-24 18:27:12 - {'Training Epochs': 20, 'Training Batch Size': 4, 'Evaluation Batch Size': 4, 'Learning Rate': 0.0001, 'Weight Decay': 0.005}
+02-Feb-24 18:27:12 - No checkpoint found in the repository. Training from scratch.
+02-Feb-24 18:42:18 - Current Word Error Rate: 1.0
+02-Feb-24 18:57:41 - Current Word Error Rate: 0.8971291866028708
+02-Feb-24 19:13:03 - Current Word Error Rate: 0.6818181818181818
+02-Feb-24 19:28:24 - Current Word Error Rate: 0.611244019138756
+02-Feb-24 19:43:47 - Current Word Error Rate: 0.527511961722488
+02-Feb-24 19:59:03 - Current Word Error Rate: 0.47607655502392343
+02-Feb-24 20:14:19 - Current Word Error Rate: 0.4784688995215311
+02-Feb-24 20:22:57 - Several commits (2) will be pushed upstream.
+02-Feb-24 20:29:45 - Current Word Error Rate: 0.45454545454545453
+02-Feb-24 20:30:47 - Several commits (3) will be pushed upstream.
+02-Feb-24 20:38:16 - Several commits (4) will be pushed upstream.
+02-Feb-24 20:45:06 - Current Word Error Rate: 0.4354066985645933
+02-Feb-24 20:46:08 - Several commits (5) will be pushed upstream.
+02-Feb-24 20:53:35 - Several commits (6) will be pushed upstream.
+02-Feb-24 21:00:25 - Current Word Error Rate: 0.4437799043062201
+02-Feb-24 21:01:26 - Several commits (7) will be pushed upstream.
+02-Feb-24 21:08:55 - Several commits (8) will be pushed upstream.
+02-Feb-24 21:15:42 - Current Word Error Rate: 0.39712918660287083
+02-Feb-24 21:16:45 - Several commits (9) will be pushed upstream.
+02-Feb-24 21:24:08 - Several commits (10) will be pushed upstream.
+02-Feb-24 21:30:59 - Current Word Error Rate: 0.3839712918660287
+02-Feb-24 21:32:00 - Several commits (11) will be pushed upstream.
+02-Feb-24 21:39:26 - Several commits (12) will be pushed upstream.
+02-Feb-24 21:46:17 - Current Word Error Rate: 0.39354066985645936
+02-Feb-24 21:47:22 - Several commits (13) will be pushed upstream.
+02-Feb-24 21:54:52 - Several commits (14) will be pushed upstream.
+02-Feb-24 22:01:38 - Current Word Error Rate: 0.37320574162679426
+02-Feb-24 22:02:40 - Several commits (15) will be pushed upstream.
+02-Feb-24 22:10:10 - Several commits (16) will be pushed upstream.
+02-Feb-24 22:17:01 - Current Word Error Rate: 0.38636363636363635
+02-Feb-24 22:18:06 - Several commits (17) will be pushed upstream.
+02-Feb-24 22:25:40 - Several commits (18) will be pushed upstream.
+02-Feb-24 22:32:33 - Current Word Error Rate: 0.37679425837320574
+02-Feb-24 22:33:40 - Several commits (19) will be pushed upstream.
+02-Feb-24 22:41:15 - Several commits (20) will be pushed upstream.
+02-Feb-24 22:48:12 - Current Word Error Rate: 0.3672248803827751
+02-Feb-24 22:49:16 - Several commits (21) will be pushed upstream.
+02-Feb-24 22:56:47 - Several commits (22) will be pushed upstream.
+02-Feb-24 23:03:40 - Current Word Error Rate: 0.3684210526315789
+02-Feb-24 23:04:44 - Several commits (23) will be pushed upstream.
+02-Feb-24 23:12:23 - Several commits (24) will be pushed upstream.
+02-Feb-24 23:19:16 - Current Word Error Rate: 0.3696172248803828
+02-Feb-24 23:20:23 - Several commits (25) will be pushed upstream.
+02-Feb-24 23:28:01 - Several commits (26) will be pushed upstream.
+02-Feb-24 23:34:53 - Current Word Error Rate: 0.3576555023923445
+02-Feb-24 23:35:59 - Several commits (27) will be pushed upstream.
+02-Feb-24 23:38:16 - Training completed in 5:11:03.653167
+
+02-Feb-24 23:38:16 - Training Log Metrics:
+02-Feb-24 23:38:16 - {'loss': 27.182, 'learning_rate': 5e-05, 'epoch': 0.5, 'step': 500}
+
+02-Feb-24 23:38:16 - {'loss': 3.5534, 'learning_rate': 0.0001, 'epoch': 0.99, 'step': 1000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 3.4454543590545654, 'eval_wer': 1.0, 'eval_runtime': 22.8421, 'eval_samples_per_second': 19.876, 'eval_steps_per_second': 4.991, 'epoch': 0.99, 'step': 1000}
+
+02-Feb-24 23:38:16 - {'loss': 3.3077, 'learning_rate': 9.739311783107405e-05, 'epoch': 1.49, 'step': 1500}
+
+02-Feb-24 23:38:16 - {'loss': 2.3481, 'learning_rate': 9.478623566214808e-05, 'epoch': 1.98, 'step': 2000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.8194230794906616, 'eval_wer': 0.8971291866028708, 'eval_runtime': 22.8593, 'eval_samples_per_second': 19.861, 'eval_steps_per_second': 4.987, 'epoch': 1.98, 'step': 2000}
+
+02-Feb-24 23:38:16 - {'loss': 1.3159, 'learning_rate': 9.21793534932221e-05, 'epoch': 2.48, 'step': 2500}
+
+02-Feb-24 23:38:16 - {'loss': 0.9664, 'learning_rate': 8.957247132429615e-05, 'epoch': 2.97, 'step': 3000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.2685197591781616, 'eval_wer': 0.6818181818181818, 'eval_runtime': 22.7785, 'eval_samples_per_second': 19.931, 'eval_steps_per_second': 5.005, 'epoch': 2.97, 'step': 3000}
+
+02-Feb-24 23:38:16 - {'loss': 0.7629, 'learning_rate': 8.696558915537019e-05, 'epoch': 3.47, 'step': 3500}
+
+02-Feb-24 23:38:16 - {'loss': 0.672, 'learning_rate': 8.435870698644421e-05, 'epoch': 3.96, 'step': 4000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.3412058353424072, 'eval_wer': 0.611244019138756, 'eval_runtime': 22.8365, 'eval_samples_per_second': 19.88, 'eval_steps_per_second': 4.992, 'epoch': 3.96, 'step': 4000}
+
+02-Feb-24 23:38:16 - {'loss': 0.5632, 'learning_rate': 8.175182481751825e-05, 'epoch': 4.46, 'step': 4500}
+
+02-Feb-24 23:38:16 - {'loss': 0.5432, 'learning_rate': 7.91449426485923e-05, 'epoch': 4.96, 'step': 5000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.4455136060714722, 'eval_wer': 0.527511961722488, 'eval_runtime': 22.8975, 'eval_samples_per_second': 19.827, 'eval_steps_per_second': 4.979, 'epoch': 4.96, 'step': 5000}
+
+02-Feb-24 23:38:16 - {'loss': 0.453, 'learning_rate': 7.653806047966632e-05, 'epoch': 5.45, 'step': 5500}
+
+02-Feb-24 23:38:16 - {'loss': 0.4393, 'learning_rate': 7.393117831074035e-05, 'epoch': 5.95, 'step': 6000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.3947663307189941, 'eval_wer': 0.47607655502392343, 'eval_runtime': 22.8149, 'eval_samples_per_second': 19.899, 'eval_steps_per_second': 4.997, 'epoch': 5.95, 'step': 6000}
+
+02-Feb-24 23:38:16 - {'loss': 0.4477, 'learning_rate': 7.13242961418144e-05, 'epoch': 6.44, 'step': 6500}
+
+02-Feb-24 23:38:16 - {'loss': 0.3761, 'learning_rate': 6.871741397288844e-05, 'epoch': 6.94, 'step': 7000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.8966730833053589, 'eval_wer': 0.4784688995215311, 'eval_runtime': 22.8635, 'eval_samples_per_second': 19.857, 'eval_steps_per_second': 4.986, 'epoch': 6.94, 'step': 7000}
+
+02-Feb-24 23:38:16 - {'loss': 0.3909, 'learning_rate': 6.611053180396246e-05, 'epoch': 7.43, 'step': 7500}
+
+02-Feb-24 23:38:16 - {'loss': 0.3474, 'learning_rate': 6.35036496350365e-05, 'epoch': 7.93, 'step': 8000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.5481348037719727, 'eval_wer': 0.45454545454545453, 'eval_runtime': 22.7457, 'eval_samples_per_second': 19.96, 'eval_steps_per_second': 5.012, 'epoch': 7.93, 'step': 8000}
+
+02-Feb-24 23:38:16 - {'loss': 0.3349, 'learning_rate': 6.089676746611054e-05, 'epoch': 8.42, 'step': 8500}
+
+02-Feb-24 23:38:16 - {'loss': 0.309, 'learning_rate': 5.8289885297184564e-05, 'epoch': 8.92, 'step': 9000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.7274614572525024, 'eval_wer': 0.4354066985645933, 'eval_runtime': 22.7868, 'eval_samples_per_second': 19.924, 'eval_steps_per_second': 5.003, 'epoch': 8.92, 'step': 9000}
+
+02-Feb-24 23:38:16 - {'loss': 0.3116, 'learning_rate': 5.5683003128258607e-05, 'epoch': 9.42, 'step': 9500}
+
+02-Feb-24 23:38:16 - {'loss': 0.284, 'learning_rate': 5.307612095933264e-05, 'epoch': 9.91, 'step': 10000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.9296586513519287, 'eval_wer': 0.4437799043062201, 'eval_runtime': 22.8533, 'eval_samples_per_second': 19.866, 'eval_steps_per_second': 4.988, 'epoch': 9.91, 'step': 10000}
+
+02-Feb-24 23:38:16 - {'loss': 0.278, 'learning_rate': 5.046923879040668e-05, 'epoch': 10.41, 'step': 10500}
+
+02-Feb-24 23:38:16 - {'loss': 0.2582, 'learning_rate': 4.7862356621480715e-05, 'epoch': 10.9, 'step': 11000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.4894107580184937, 'eval_wer': 0.39712918660287083, 'eval_runtime': 22.8384, 'eval_samples_per_second': 19.879, 'eval_steps_per_second': 4.992, 'epoch': 10.9, 'step': 11000}
+
+02-Feb-24 23:38:16 - {'loss': 0.241, 'learning_rate': 4.5255474452554745e-05, 'epoch': 11.4, 'step': 11500}
+
+02-Feb-24 23:38:16 - {'loss': 0.2426, 'learning_rate': 4.264859228362878e-05, 'epoch': 11.89, 'step': 12000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.6810766458511353, 'eval_wer': 0.3839712918660287, 'eval_runtime': 22.7834, 'eval_samples_per_second': 19.927, 'eval_steps_per_second': 5.004, 'epoch': 11.89, 'step': 12000}
+
+02-Feb-24 23:38:16 - {'loss': 0.2389, 'learning_rate': 4.004171011470282e-05, 'epoch': 12.39, 'step': 12500}
+
+02-Feb-24 23:38:16 - {'loss': 0.2406, 'learning_rate': 3.743482794577685e-05, 'epoch': 12.88, 'step': 13000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.741089105606079, 'eval_wer': 0.39354066985645936, 'eval_runtime': 22.7386, 'eval_samples_per_second': 19.966, 'eval_steps_per_second': 5.013, 'epoch': 12.88, 'step': 13000}
+
+02-Feb-24 23:38:16 - {'loss': 0.2061, 'learning_rate': 3.482794577685089e-05, 'epoch': 13.38, 'step': 13500}
+
+02-Feb-24 23:38:16 - {'loss': 0.2281, 'learning_rate': 3.2221063607924926e-05, 'epoch': 13.88, 'step': 14000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.789391279220581, 'eval_wer': 0.37320574162679426, 'eval_runtime': 22.7696, 'eval_samples_per_second': 19.939, 'eval_steps_per_second': 5.007, 'epoch': 13.88, 'step': 14000}
+
+02-Feb-24 23:38:16 - {'loss': 0.1835, 'learning_rate': 2.9614181438998962e-05, 'epoch': 14.37, 'step': 14500}
+
+02-Feb-24 23:38:16 - {'loss': 0.1874, 'learning_rate': 2.7007299270072995e-05, 'epoch': 14.87, 'step': 15000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.77284574508667, 'eval_wer': 0.38636363636363635, 'eval_runtime': 23.0091, 'eval_samples_per_second': 19.731, 'eval_steps_per_second': 4.955, 'epoch': 14.87, 'step': 15000}
+
+02-Feb-24 23:38:16 - {'loss': 0.1987, 'learning_rate': 2.440041710114703e-05, 'epoch': 15.36, 'step': 15500}
+
+02-Feb-24 23:38:16 - {'loss': 0.1918, 'learning_rate': 2.1793534932221067e-05, 'epoch': 15.86, 'step': 16000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 2.031496286392212, 'eval_wer': 0.37679425837320574, 'eval_runtime': 23.3822, 'eval_samples_per_second': 19.416, 'eval_steps_per_second': 4.876, 'epoch': 15.86, 'step': 16000}
+
+02-Feb-24 23:38:16 - {'loss': 0.1698, 'learning_rate': 1.91866527632951e-05, 'epoch': 16.35, 'step': 16500}
+
+02-Feb-24 23:38:16 - {'loss': 0.1693, 'learning_rate': 1.6579770594369136e-05, 'epoch': 16.85, 'step': 17000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.7023775577545166, 'eval_wer': 0.3672248803827751, 'eval_runtime': 23.3893, 'eval_samples_per_second': 19.411, 'eval_steps_per_second': 4.874, 'epoch': 16.85, 'step': 17000}
+
+02-Feb-24 23:38:16 - {'loss': 0.1586, 'learning_rate': 1.397288842544317e-05, 'epoch': 17.34, 'step': 17500}
+
+02-Feb-24 23:38:16 - {'loss': 0.1551, 'learning_rate': 1.1366006256517207e-05, 'epoch': 17.84, 'step': 18000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.7619705200195312, 'eval_wer': 0.3684210526315789, 'eval_runtime': 23.4586, 'eval_samples_per_second': 19.353, 'eval_steps_per_second': 4.86, 'epoch': 17.84, 'step': 18000}
+
+02-Feb-24 23:38:16 - {'loss': 0.1634, 'learning_rate': 8.759124087591241e-06, 'epoch': 18.33, 'step': 18500}
+
+02-Feb-24 23:38:16 - {'loss': 0.1645, 'learning_rate': 6.1522419186652766e-06, 'epoch': 18.83, 'step': 19000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.7186235189437866, 'eval_wer': 0.3696172248803828, 'eval_runtime': 23.4158, 'eval_samples_per_second': 19.389, 'eval_steps_per_second': 4.869, 'epoch': 18.83, 'step': 19000}
+
+02-Feb-24 23:38:16 - {'loss': 0.1415, 'learning_rate': 3.545359749739312e-06, 'epoch': 19.33, 'step': 19500}
+
+02-Feb-24 23:38:16 - {'loss': 0.1527, 'learning_rate': 9.384775808133474e-07, 'epoch': 19.82, 'step': 20000}
+
+02-Feb-24 23:38:16 - {'eval_loss': 1.7932097911834717, 'eval_wer': 0.3576555023923445, 'eval_runtime': 23.4524, 'eval_samples_per_second': 19.358, 'eval_steps_per_second': 4.861, 'epoch': 19.82, 'step': 20000}
+
+02-Feb-24 23:38:16 - {'train_runtime': 18568.6886, 'train_samples_per_second': 8.693, 'train_steps_per_second': 1.087, 'total_flos': 1.24619014532673e+19, 'train_loss': 1.2124988351751957, 'epoch': 20.0, 'step': 20180}
+
+02-Feb-24 23:38:16 - Pushing model to Hugging Face...
+02-Feb-24 23:39:12 - Several commits (28) will be pushed upstream.
+02-Feb-24 23:39:12 - The progress bars may be unreliable.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 246665 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 247343 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 248032 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 248704 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 249397 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 250158 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 250990 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 251680 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 252630 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 253474 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 254258 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 254837 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 4165 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 4840 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 5722 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 6577 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 8585 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 11335 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 12343 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 13201 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 13992 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 14844 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 15738 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 16597 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 17337 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 18042 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+02-Feb-24 23:39:50 - The push command with PID 19048 failed.
+02-Feb-24 23:39:50 - To https://huggingface.co/macarious/torgo_xlsr_finetune_M05
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://huggingface.co/macarious/torgo_xlsr_finetune_M05'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+

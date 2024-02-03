@@ -1,0 +1,28 @@
+02-Feb-24 15:40:48 - Test Speaker: M05
+02-Feb-24 15:40:48 - Log File Path: /output/logs/M05_train_20240202_154048.log
+
+02-Feb-24 15:40:48 - Using GPU: Tesla T4
+
+02-Feb-24 15:40:48 - Splitting the dataset into training / validation / test sets...
+02-Feb-24 15:40:48 - Unique speakers found in the dataset:
+02-Feb-24 15:40:48 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+02-Feb-24 15:40:49 - After applying the text count threshold of 40, the number of data in each dataset is:
+02-Feb-24 15:40:49 - Train:       8108/14746 (54%)
+02-Feb-24 15:40:49 - Validation:  476/1075 (44%)
+02-Feb-24 15:40:49 - Test:        390/573 (68%)
+
+02-Feb-24 15:40:50 - Vocab Dictionary:
+02-Feb-24 15:40:50 - {'[PAD]': 0, '<s>': 1, '</s>': 2, '[UNK]': 3, "'": 4, 'a': 5, 'b': 6, 'c': 7, 'd': 8, 'e': 9, 'f': 10, 'g': 11, 'h': 12, 'i': 13, 'j': 14, 'k': 15, 'l': 16, 'm': 17, 'n': 18, 'o': 19, 'p': 20, 'q': 21, 'r': 22, 's': 23, 't': 24, 'u': 25, 'v': 26, 'w': 27, 'x': 28, 'y': 29, 'z': 30, '|': 31}
+
+02-Feb-24 15:41:31 - After filtering audio within a certain length, the number of data in each dataset is:
+02-Feb-24 15:41:31 - Train:       8071/14746 (54%)
+02-Feb-24 15:41:31 - Validation:  454/1075 (42%)
+02-Feb-24 15:41:31 - Test:        328/573 (57%)
+
+02-Feb-24 15:41:37 - Cloning https://huggingface.co/macarious/torgo_xlsr_finetune_M05 into local empty directory.
+02-Feb-24 15:41:43 - Start Training
+02-Feb-24 15:41:43 - Training Arguments:
+02-Feb-24 15:41:43 - {'Training Epochs': 20, 'Training Batch Size': 4, 'Evaluation Batch Size': 4, 'Learning Rate': 0.0001, 'Weight Decay': 0.005}
+02-Feb-24 15:41:43 - No checkpoint found in the repository. Training from scratch.
