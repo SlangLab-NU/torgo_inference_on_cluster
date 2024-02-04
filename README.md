@@ -13,7 +13,7 @@ This README file is under construction.
 | M03 (mild)   | 8534   | 542        | 573    |
 | M04 (severe) | 10676  | 706        | 369    |
 | M05 (sev/mid)| 8071   | 454        | 328    |
-| F01 (severe) |        |            |        |
+| F01 (severe) | 13374  | 913        | 122    |
 | F03 (mild)   |        |            |        |
 | F04 (mild)   |        |            |        |
 
@@ -41,7 +41,7 @@ This README file is under construction.
 | M03 (mild)   | 20     | 0.0124 | 0.3247     | 0.4194 |
 | M04 (severe) | 20     | 0.0101 | 0.2925     | 0.9332 |
 | M05 (sev/mid)| 20     | 0.0157 | 0.3589     | 0.9191 |
-| F01 (severe) | 20     |        |            |        |
+| F01 (severe) | 20     | 0.0143 | 0.2408     | 0.7871 |
 | F03 (mild)   | 20     |        |            |        |
 | F04 (mild)   | 20     |        |            |        |
 |              |        |        |            |        |
@@ -56,7 +56,6 @@ This README file is under construction.
 | M03 (mild)   | 20     | 0.0129 | 0.2375     | 0.0317 |
 | M04 (severe) | 20     | 0.0115 | 0.2318     | 0.6450 |
 | M05 (sev/mid)| 20     | 0.0125 | 0.2245     | 0.5104 |
-| M05 (sev/mid)| 20     |        |            |        |
 | F01 (severe) | 20     |        |            |        |
 | F03 (mild)   | 20     |        |            |        |
 | F04 (mild)   | 20     |        |            |        |
