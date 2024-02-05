@@ -737,7 +737,7 @@ if __name__ == "__main__":
 
     logging.info("Training Log Metrics:")
     for history in trainer.state.log_history:
-        logging.info(str(history) + '\n')
+        logging.info(str(history))
 
     logging.info("Pushing model to Hugging Face...")
     trainer.push_to_hub()
