@@ -42,7 +42,7 @@ This README file is under construction.
 | M04 (severe) | 20     | 0.0101 | 0.2925     | 0.9332 |
 | M05 (sev/mid)| 20     | 0.0157 | 0.3589     | 0.9191 |
 | F01 (severe) | 20     | 0.0143 | 0.2408     | 0.7871 |
-| F03 (mild)   | 20     |        |            |        |
+| F03 (mild)   | 20     | 0.0189 | 0.1319     | 0.6930 |
 | F04 (mild)   | 20     |        |            |        |
 |              |        |        |            |        |
 | M01 (severe) | 40     | 0.0035 | 0.3052     | 0.8779 |
@@ -57,7 +57,7 @@ This README file is under construction.
 | M04 (severe) | 20     | 0.0115 | 0.2318     | 0.6450 |
 | M05 (sev/mid)| 20     | 0.0125 | 0.2245     | 0.5104 |
 | F01 (severe) | 20     | 0.0124 | 0.2329     | 0.4645 |
-| F03 (mild)   | 20     |        |            |        |
+| F03 (mild)   | 20     | 0.0135 | 0.0450     | 0.2581 |
 | F04 (mild)   | 20     |        |            |        |
 
 ## Building Docker on Local Machine
