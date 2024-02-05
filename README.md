@@ -56,7 +56,7 @@ This README file is under construction.
 | M03 (mild)   | 20     | 0.0129 | 0.2375     | 0.0317 |
 | M04 (severe) | 20     | 0.0115 | 0.2318     | 0.6450 |
 | M05 (sev/mid)| 20     | 0.0125 | 0.2245     | 0.5104 |
-| F01 (severe) | 20     |        |            |        |
+| F01 (severe) | 20     | 0.0124 | 0.2329     | 0.4645 |
 | F03 (mild)   | 20     |        |            |        |
 | F04 (mild)   | 20     |        |            |        |
 
