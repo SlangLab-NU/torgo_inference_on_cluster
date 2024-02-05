@@ -14,7 +14,7 @@ This README file is under construction.
 | M04 (severe) | 10676  | 706        | 369    |
 | M05 (sev/mid)| 8071   | 454        | 328    |
 | F01 (severe) | 13374  | 913        | 122    |
-| F03 (mild)   |        |            |        |
+| F03 (mild)   | 7567   | 245        | 756    |
 | F04 (mild)   |        |            |        |
 
 ### All Data are Retained in the Train/Validation/Test Sets
@@ -62,7 +62,7 @@ This README file is under construction.
 
 ## Building Docker on Local Machine
 
-Run the following command in the root directory to build the the dockerfile:
+Run the following command in the root directory to build the dockerfile:
 
 `docker build -t macarious/finetune .`
 
@@ -108,15 +108,15 @@ singularity run --nv --bind /work/van-speech-nlp/data/torgo:/torgo_dataset,/work
 
 #### 5. Run the scripts:
 
-Example: `python3 train.py M05`
+Example: `python3 train.py F03`
 
-Example: `python3 train.py M05 --keep_all_data --repo_suffix _keep_all`
+Example: `python3 train.py F03 --keep_all_data --repo_suffix _keep_all`
 
-Example: `python3 predict_and_evaluate.py M01`
+Example: `python3 predict_and_evaluate.py F03`
 
-Example: `python3 predict_and_evaluate.py M01 --keep_all_data`
+Example: `python3 predict_and_evaluate.py F03 --keep_all_data`
 
-Example: `python3 predict_and_evaluate.py M02 --keep_all_data --repo_suffix _keep_all`
+Example: `python3 predict_and_evaluate.py F03 --keep_all_data --repo_suffix _keep_all`
 
 #### 6. Clear cache cache in cluster if it is full:
 
