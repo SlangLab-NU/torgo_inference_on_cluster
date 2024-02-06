@@ -15,7 +15,7 @@ This README file is under construction.
 | M05 (sev/mid)| 8071   | 454        | 328    |
 | F01 (severe) | 13374  | 913        | 122    |
 | F03 (mild)   | 7567   | 245        | 756    |
-| F04 (mild)   |        |            |        |
+| F04 (mild)   | 8457   | 515        | 482    |
 
 ### All Data are Retained in the Train/Validation/Test Sets
 
