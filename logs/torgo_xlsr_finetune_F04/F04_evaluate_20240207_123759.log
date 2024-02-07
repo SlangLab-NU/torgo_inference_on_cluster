@@ -1,0 +1,42 @@
+07-Feb-24 12:37:59 - Test Speaker: F04
+07-Feb-24 12:37:59 - Log File Path: /output/logs/torgo_xlsr_finetune_F04/F04_evaluate_20240207_123759.log
+
+07-Feb-24 12:38:04 - Using GPU: Tesla T4
+
+07-Feb-24 12:38:04 - Loading the model and processor from macarious/torgo_xlsr_finetune_F04
+07-Feb-24 12:38:14 - Model loaded from macarious/torgo_xlsr_finetune_F04
+07-Feb-24 12:38:14 - Processor loaded from macarious/torgo_xlsr_finetune_F04
+
+07-Feb-24 12:38:15 - Splitting the dataset into training / validation / test sets...
+07-Feb-24 12:38:15 - Unique speakers found in the dataset:
+07-Feb-24 12:38:15 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+07-Feb-24 12:38:16 - After applying the text count threshold of 40, the number of data in each dataset is:
+07-Feb-24 12:38:16 - Train:       8501/14652 (58%)
+07-Feb-24 12:38:16 - Validation:  536/1075 (49%)
+07-Feb-24 12:38:16 - Test:        485/667 (72%)
+
+07-Feb-24 12:38:47 - After filtering audio within a certain length, the number of data in each dataset is:
+07-Feb-24 12:38:47 - Train:       8457/14652 (57%)
+07-Feb-24 12:38:47 - Validation:  515/1075 (47%)
+07-Feb-24 12:38:47 - Test:        482/667 (72%)
+
+07-Feb-24 12:38:47 - Start Evaluation
+07-Feb-24 12:38:56 - Predicting on the training set...
+07-Feb-24 12:47:15 - Word Error Rate: 0.014514431333444131
+07-Feb-24 12:47:15 - Predictions saved to: /output/results/torgo_xlsr_finetune_F04/F04_predictions_train.csv
+
+07-Feb-24 12:47:15 - Predicting on the validation set...
+07-Feb-24 12:47:43 - Word Error Rate: 0.33102081268582756
+07-Feb-24 12:47:43 - Predictions saved to: /output/results/torgo_xlsr_finetune_F04/F04_predictions_validation.csv
+
+07-Feb-24 12:47:43 - Predicting on the test set...
+07-Feb-24 12:48:22 - Word Error Rate: 0.40388479571332886
+07-Feb-24 12:48:22 - Predictions saved to: /output/results/torgo_xlsr_finetune_F04/F04_predictions_test.csv
+
+07-Feb-24 12:48:22 - Summary of Word Error Rates saved to /output/results/torgo_xlsr_finetune_F04/F04_wer_summary.csv
+
+07-Feb-24 12:48:22 - End of Script
+07-Feb-24 12:48:22 - --------------------------------------------
+
