@@ -1,0 +1,173 @@
+07-Feb-24 03:39:18 - Test Speaker: F04
+07-Feb-24 03:39:18 - Log File Path: /output/logs/torgo_xlsr_finetune_F04_keep_all/F04_train_20240207_033918.log
+
+07-Feb-24 03:39:18 - Keep all data in training/validation/test sets
+
+07-Feb-24 03:39:20 - Using GPU: Tesla T4
+
+07-Feb-24 03:39:20 - Splitting the dataset into training / validation / test sets...
+07-Feb-24 03:39:20 - Unique speakers found in the dataset:
+07-Feb-24 03:39:20 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+07-Feb-24 03:39:20 - Vocab Dictionary:
+07-Feb-24 03:39:20 - {'[PAD]': 0, '<s>': 1, '</s>': 2, '[UNK]': 3, "'": 4, 'a': 5, 'b': 6, 'c': 7, 'd': 8, 'e': 9, 'f': 10, 'g': 11, 'h': 12, 'i': 13, 'j': 14, 'k': 15, 'l': 16, 'm': 17, 'n': 18, 'o': 19, 'p': 20, 'q': 21, 'r': 22, 's': 23, 't': 24, 'u': 25, 'v': 26, 'w': 27, 'x': 28, 'y': 29, 'z': 30, '|': 31}
+
+07-Feb-24 03:39:24 - After filtering audio within a certain length, the number of data in each dataset is:
+07-Feb-24 03:39:24 - Train:       14408/14652 (98%)
+07-Feb-24 03:39:24 - Validation:  1017/1075 (94%)
+07-Feb-24 03:39:24 - Test:        657/667 (98%)
+
+07-Feb-24 03:39:29 - /output/model/torgo_xlsr_finetune_F04_keep_all is already a clone of https://huggingface.co/macarious/torgo_xlsr_finetune_F04_keep_all. Make sure you pull the latest changes with `repo.git_pull()`.
+07-Feb-24 03:39:32 - Start Training
+07-Feb-24 03:39:32 - Training Arguments:
+07-Feb-24 03:39:32 - {'Training Epochs': 20, 'Training Batch Size': 4, 'Evaluation Batch Size': 4, 'Learning Rate': 0.0001, 'Weight Decay': 0.005}
+07-Feb-24 03:39:32 - Checkpoint found in the repository. Checkpoint files found: ['checkpoint-13000', 'checkpoint-13500', 'checkpoint-14000']
+07-Feb-24 03:39:32 - Resuming from checkpoint: /output/model/torgo_xlsr_finetune_F04_keep_all/checkpoint-14000
+
+07-Feb-24 04:02:15 - Current Word Error Rate: 0.3126191383911552
+07-Feb-24 04:19:52 - Current Word Error Rate: 0.3034693099504384
+07-Feb-24 04:37:29 - Current Word Error Rate: 0.3091879527258864
+07-Feb-24 04:55:12 - Current Word Error Rate: 0.2626763248189096
+07-Feb-24 05:12:56 - Current Word Error Rate: 0.26115135341212353
+07-Feb-24 05:30:31 - Current Word Error Rate: 0.2775447960350743
+07-Feb-24 05:48:12 - Current Word Error Rate: 0.2855508959207015
+07-Feb-24 06:05:45 - Current Word Error Rate: 0.2695386961494472
+07-Feb-24 06:23:20 - Current Word Error Rate: 0.2722073961113229
+07-Feb-24 06:40:57 - Current Word Error Rate: 0.27906976744186046
+07-Feb-24 06:58:30 - Current Word Error Rate: 0.27678231033168127
+07-Feb-24 07:16:05 - Current Word Error Rate: 0.260770110560427
+07-Feb-24 07:33:37 - Current Word Error Rate: 0.27106366755623335
+07-Feb-24 07:51:16 - Current Word Error Rate: 0.2626763248189096
+07-Feb-24 08:08:49 - Current Word Error Rate: 0.23980175371711782
+07-Feb-24 08:26:26 - Current Word Error Rate: 0.24818909645444148
+07-Feb-24 08:43:59 - Current Word Error Rate: 0.24285169653069005
+07-Feb-24 09:01:41 - Current Word Error Rate: 0.2474266107510484
+07-Feb-24 09:19:21 - Current Word Error Rate: 0.2504765535646207
+07-Feb-24 09:36:49 - Current Word Error Rate: 0.24247045367899353
+07-Feb-24 09:54:27 - Current Word Error Rate: 0.24208921082729698
+07-Feb-24 10:12:07 - Current Word Error Rate: 0.23751429660693862
+07-Feb-24 10:13:17 - Training completed in 6:33:45.280616
+
+07-Feb-24 10:13:17 - Training Log Metrics:
+07-Feb-24 10:13:17 - {'epoch': 0.28, 'learning_rate': 5e-05, 'loss': 27.0499, 'step': 500}
+07-Feb-24 10:13:17 - {'epoch': 0.56, 'learning_rate': 0.0001, 'loss': 3.6072, 'step': 1000}
+07-Feb-24 10:13:17 - {'epoch': 0.56, 'eval_loss': 3.339278221130371, 'eval_runtime': 63.3996, 'eval_samples_per_second': 16.041, 'eval_steps_per_second': 4.022, 'eval_wer': 1.0, 'step': 1000}
+07-Feb-24 10:13:17 - {'epoch': 0.83, 'learning_rate': 9.857224443175328e-05, 'loss': 3.3504, 'step': 1500}
+07-Feb-24 10:13:17 - {'epoch': 1.11, 'learning_rate': 9.714448886350658e-05, 'loss': 2.6659, 'step': 2000}
+07-Feb-24 10:13:17 - {'epoch': 1.11, 'eval_loss': 2.2682440280914307, 'eval_runtime': 63.2425, 'eval_samples_per_second': 16.081, 'eval_steps_per_second': 4.032, 'eval_wer': 0.9614944719786505, 'step': 2000}
+07-Feb-24 10:13:17 - {'epoch': 1.39, 'learning_rate': 9.571673329525986e-05, 'loss': 1.5606, 'step': 2500}
+07-Feb-24 10:13:17 - {'epoch': 1.67, 'learning_rate': 9.428897772701314e-05, 'loss': 1.1671, 'step': 3000}
+07-Feb-24 10:13:17 - {'epoch': 1.67, 'eval_loss': 1.5754084587097168, 'eval_runtime': 63.7407, 'eval_samples_per_second': 15.955, 'eval_steps_per_second': 4.001, 'eval_wer': 0.7075867327487609, 'step': 3000}
+07-Feb-24 10:13:17 - {'epoch': 1.94, 'learning_rate': 9.286122215876643e-05, 'loss': 0.964, 'step': 3500}
+07-Feb-24 10:13:17 - {'epoch': 2.22, 'learning_rate': 9.143346659051971e-05, 'loss': 0.8034, 'step': 4000}
+07-Feb-24 10:13:17 - {'epoch': 2.22, 'eval_loss': 1.6181036233901978, 'eval_runtime': 64.1668, 'eval_samples_per_second': 15.849, 'eval_steps_per_second': 3.974, 'eval_wer': 0.5737704918032787, 'step': 4000}
+07-Feb-24 10:13:17 - {'epoch': 2.5, 'learning_rate': 9.000571102227299e-05, 'loss': 0.7598, 'step': 4500}
+07-Feb-24 10:13:17 - {'epoch': 2.78, 'learning_rate': 8.857795545402627e-05, 'loss': 0.681, 'step': 5000}
+07-Feb-24 10:13:17 - {'epoch': 2.78, 'eval_loss': 1.430292010307312, 'eval_runtime': 63.3439, 'eval_samples_per_second': 16.055, 'eval_steps_per_second': 4.026, 'eval_wer': 0.48875333587495234, 'step': 5000}
+07-Feb-24 10:13:17 - {'epoch': 3.05, 'learning_rate': 8.715019988577956e-05, 'loss': 0.6178, 'step': 5500}
+07-Feb-24 10:13:17 - {'epoch': 3.33, 'learning_rate': 8.572244431753284e-05, 'loss': 0.5537, 'step': 6000}
+07-Feb-24 10:13:17 - {'epoch': 3.33, 'eval_loss': 1.6472804546356201, 'eval_runtime': 62.5432, 'eval_samples_per_second': 16.261, 'eval_steps_per_second': 4.077, 'eval_wer': 0.46054136484940905, 'step': 6000}
+07-Feb-24 10:13:17 - {'epoch': 3.61, 'learning_rate': 8.429468874928612e-05, 'loss': 0.5119, 'step': 6500}
+07-Feb-24 10:13:17 - {'epoch': 3.89, 'learning_rate': 8.28669331810394e-05, 'loss': 0.5213, 'step': 7000}
+07-Feb-24 10:13:17 - {'epoch': 3.89, 'eval_loss': 1.511155128479004, 'eval_runtime': 63.0493, 'eval_samples_per_second': 16.13, 'eval_steps_per_second': 4.044, 'eval_wer': 0.43766679374761724, 'step': 7000}
+07-Feb-24 10:13:17 - {'epoch': 4.16, 'learning_rate': 8.14391776127927e-05, 'loss': 0.4986, 'step': 7500}
+07-Feb-24 10:13:17 - {'epoch': 4.44, 'learning_rate': 8.001142204454598e-05, 'loss': 0.4445, 'step': 8000}
+07-Feb-24 10:13:17 - {'epoch': 4.44, 'eval_loss': 1.3817859888076782, 'eval_runtime': 63.3565, 'eval_samples_per_second': 16.052, 'eval_steps_per_second': 4.025, 'eval_wer': 0.41822340831109417, 'step': 8000}
+07-Feb-24 10:13:17 - {'epoch': 4.72, 'learning_rate': 7.858366647629926e-05, 'loss': 0.4388, 'step': 8500}
+07-Feb-24 10:13:17 - {'epoch': 5.0, 'learning_rate': 7.715591090805255e-05, 'loss': 0.4396, 'step': 9000}
+07-Feb-24 10:13:17 - {'epoch': 5.0, 'eval_loss': 1.5069552659988403, 'eval_runtime': 62.7824, 'eval_samples_per_second': 16.199, 'eval_steps_per_second': 4.062, 'eval_wer': 0.4273732367518109, 'step': 9000}
+07-Feb-24 10:13:17 - {'epoch': 5.27, 'learning_rate': 7.572815533980583e-05, 'loss': 0.3886, 'step': 9500}
+07-Feb-24 10:13:17 - {'epoch': 5.55, 'learning_rate': 7.430039977155912e-05, 'loss': 0.4179, 'step': 10000}
+07-Feb-24 10:13:17 - {'epoch': 5.55, 'eval_loss': 1.4717202186584473, 'eval_runtime': 63.0093, 'eval_samples_per_second': 16.14, 'eval_steps_per_second': 4.047, 'eval_wer': 0.39954250857796414, 'step': 10000}
+07-Feb-24 10:13:17 - {'epoch': 5.83, 'learning_rate': 7.28726442033124e-05, 'loss': 0.37, 'step': 10500}
+07-Feb-24 10:13:17 - {'epoch': 6.11, 'learning_rate': 7.144488863506568e-05, 'loss': 0.3641, 'step': 11000}
+07-Feb-24 10:13:17 - {'epoch': 6.11, 'eval_loss': 1.3974145650863647, 'eval_runtime': 62.9371, 'eval_samples_per_second': 16.159, 'eval_steps_per_second': 4.052, 'eval_wer': 0.33587495234464354, 'step': 11000}
+07-Feb-24 10:13:17 - {'epoch': 6.39, 'learning_rate': 7.001713306681896e-05, 'loss': 0.3249, 'step': 11500}
+07-Feb-24 10:13:17 - {'epoch': 6.66, 'learning_rate': 6.858937749857225e-05, 'loss': 0.3264, 'step': 12000}
+07-Feb-24 10:13:17 - {'epoch': 6.66, 'eval_loss': 1.610748291015625, 'eval_runtime': 62.996, 'eval_samples_per_second': 16.144, 'eval_steps_per_second': 4.048, 'eval_wer': 0.36065573770491804, 'step': 12000}
+07-Feb-24 10:13:17 - {'epoch': 6.94, 'learning_rate': 6.716162193032553e-05, 'loss': 0.3458, 'step': 12500}
+07-Feb-24 10:13:17 - {'epoch': 7.22, 'learning_rate': 6.573386636207881e-05, 'loss': 0.3252, 'step': 13000}
+07-Feb-24 10:13:17 - {'epoch': 7.22, 'eval_loss': 1.2007638216018677, 'eval_runtime': 63.0641, 'eval_samples_per_second': 16.126, 'eval_steps_per_second': 4.044, 'eval_wer': 0.3023255813953488, 'step': 13000}
+07-Feb-24 10:13:17 - {'epoch': 7.5, 'learning_rate': 6.43061107938321e-05, 'loss': 0.2946, 'step': 13500}
+07-Feb-24 10:13:17 - {'epoch': 7.77, 'learning_rate': 6.287835522558539e-05, 'loss': 0.2894, 'step': 14000}
+07-Feb-24 10:13:17 - {'epoch': 7.77, 'eval_loss': 1.4290434122085571, 'eval_runtime': 63.0085, 'eval_samples_per_second': 16.141, 'eval_steps_per_second': 4.047, 'eval_wer': 0.30385055280213497, 'step': 14000}
+07-Feb-24 10:13:17 - {'loss': 0.3183, 'learning_rate': 6.145059965733867e-05, 'epoch': 8.05, 'step': 14500}
+07-Feb-24 10:13:17 - {'loss': 0.2959, 'learning_rate': 6.0022844089091946e-05, 'epoch': 8.33, 'step': 15000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.3412010669708252, 'eval_wer': 0.3126191383911552, 'eval_runtime': 60.5281, 'eval_samples_per_second': 16.802, 'eval_steps_per_second': 4.213, 'epoch': 8.33, 'step': 15000}
+07-Feb-24 10:13:17 - {'loss': 0.3002, 'learning_rate': 5.859508852084523e-05, 'epoch': 8.61, 'step': 15500}
+07-Feb-24 10:13:17 - {'loss': 0.2778, 'learning_rate': 5.716733295259852e-05, 'epoch': 8.88, 'step': 16000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.4307360649108887, 'eval_wer': 0.3034693099504384, 'eval_runtime': 60.4639, 'eval_samples_per_second': 16.82, 'eval_steps_per_second': 4.217, 'epoch': 8.88, 'step': 16000}
+07-Feb-24 10:13:17 - {'loss': 0.263, 'learning_rate': 5.5739577384351806e-05, 'epoch': 9.16, 'step': 16500}
+07-Feb-24 10:13:17 - {'loss': 0.2495, 'learning_rate': 5.431182181610509e-05, 'epoch': 9.44, 'step': 17000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.3922489881515503, 'eval_wer': 0.3091879527258864, 'eval_runtime': 60.62, 'eval_samples_per_second': 16.777, 'eval_steps_per_second': 4.207, 'epoch': 9.44, 'step': 17000}
+07-Feb-24 10:13:17 - {'loss': 0.2586, 'learning_rate': 5.2884066247858365e-05, 'epoch': 9.72, 'step': 17500}
+07-Feb-24 10:13:17 - {'loss': 0.2704, 'learning_rate': 5.145631067961165e-05, 'epoch': 9.99, 'step': 18000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.356399416923523, 'eval_wer': 0.2626763248189096, 'eval_runtime': 60.456, 'eval_samples_per_second': 16.822, 'eval_steps_per_second': 4.218, 'epoch': 9.99, 'step': 18000}
+07-Feb-24 10:13:17 - {'loss': 0.2387, 'learning_rate': 5.002855511136494e-05, 'epoch': 10.27, 'step': 18500}
+07-Feb-24 10:13:17 - {'loss': 0.2307, 'learning_rate': 4.860079954311822e-05, 'epoch': 10.55, 'step': 19000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.4332681894302368, 'eval_wer': 0.26115135341212353, 'eval_runtime': 60.6671, 'eval_samples_per_second': 16.764, 'eval_steps_per_second': 4.203, 'epoch': 10.55, 'step': 19000}
+07-Feb-24 10:13:17 - {'loss': 0.2286, 'learning_rate': 4.7173043974871505e-05, 'epoch': 10.83, 'step': 19500}
+07-Feb-24 10:13:17 - {'loss': 0.2211, 'learning_rate': 4.5745288406624784e-05, 'epoch': 11.1, 'step': 20000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.6846212148666382, 'eval_wer': 0.2775447960350743, 'eval_runtime': 60.4064, 'eval_samples_per_second': 16.836, 'eval_steps_per_second': 4.221, 'epoch': 11.1, 'step': 20000}
+07-Feb-24 10:13:17 - {'loss': 0.2355, 'learning_rate': 4.431753283837807e-05, 'epoch': 11.38, 'step': 20500}
+07-Feb-24 10:13:17 - {'loss': 0.1995, 'learning_rate': 4.288977727013135e-05, 'epoch': 11.66, 'step': 21000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.4738140106201172, 'eval_wer': 0.2855508959207015, 'eval_runtime': 60.1902, 'eval_samples_per_second': 16.896, 'eval_steps_per_second': 4.237, 'epoch': 11.66, 'step': 21000}
+07-Feb-24 10:13:17 - {'loss': 0.2094, 'learning_rate': 4.146202170188464e-05, 'epoch': 11.94, 'step': 21500}
+07-Feb-24 10:13:17 - {'loss': 0.2208, 'learning_rate': 4.0034266133637924e-05, 'epoch': 12.22, 'step': 22000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.5382200479507446, 'eval_wer': 0.2695386961494472, 'eval_runtime': 60.275, 'eval_samples_per_second': 16.873, 'eval_steps_per_second': 4.231, 'epoch': 12.22, 'step': 22000}
+07-Feb-24 10:13:17 - {'loss': 0.196, 'learning_rate': 3.860651056539121e-05, 'epoch': 12.49, 'step': 22500}
+07-Feb-24 10:13:17 - {'loss': 0.2087, 'learning_rate': 3.717875499714449e-05, 'epoch': 12.77, 'step': 23000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.316529631614685, 'eval_wer': 0.2722073961113229, 'eval_runtime': 60.1774, 'eval_samples_per_second': 16.9, 'eval_steps_per_second': 4.237, 'epoch': 12.77, 'step': 23000}
+07-Feb-24 10:13:17 - {'loss': 0.1949, 'learning_rate': 3.5750999428897777e-05, 'epoch': 13.05, 'step': 23500}
+07-Feb-24 10:13:17 - {'loss': 0.1769, 'learning_rate': 3.432324386065106e-05, 'epoch': 13.33, 'step': 24000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.9004614353179932, 'eval_wer': 0.27906976744186046, 'eval_runtime': 60.472, 'eval_samples_per_second': 16.818, 'eval_steps_per_second': 4.217, 'epoch': 13.33, 'step': 24000}
+07-Feb-24 10:13:17 - {'loss': 0.2029, 'learning_rate': 3.289548829240434e-05, 'epoch': 13.6, 'step': 24500}
+07-Feb-24 10:13:17 - {'loss': 0.1883, 'learning_rate': 3.146773272415763e-05, 'epoch': 13.88, 'step': 25000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.7298258543014526, 'eval_wer': 0.27678231033168127, 'eval_runtime': 60.4622, 'eval_samples_per_second': 16.82, 'eval_steps_per_second': 4.218, 'epoch': 13.88, 'step': 25000}
+07-Feb-24 10:13:17 - {'loss': 0.1785, 'learning_rate': 3.003997715591091e-05, 'epoch': 14.16, 'step': 25500}
+07-Feb-24 10:13:17 - {'loss': 0.1835, 'learning_rate': 2.8612221587664196e-05, 'epoch': 14.44, 'step': 26000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.6169880628585815, 'eval_wer': 0.260770110560427, 'eval_runtime': 60.1605, 'eval_samples_per_second': 16.905, 'eval_steps_per_second': 4.239, 'epoch': 14.44, 'step': 26000}
+07-Feb-24 10:13:17 - {'loss': 0.1729, 'learning_rate': 2.7184466019417475e-05, 'epoch': 14.71, 'step': 26500}
+07-Feb-24 10:13:17 - {'loss': 0.1829, 'learning_rate': 2.5756710451170762e-05, 'epoch': 14.99, 'step': 27000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.8435543775558472, 'eval_wer': 0.27106366755623335, 'eval_runtime': 60.1514, 'eval_samples_per_second': 16.907, 'eval_steps_per_second': 4.239, 'epoch': 14.99, 'step': 27000}
+07-Feb-24 10:13:17 - {'loss': 0.1677, 'learning_rate': 2.4328954882924042e-05, 'epoch': 15.27, 'step': 27500}
+07-Feb-24 10:13:17 - {'loss': 0.1563, 'learning_rate': 2.2901199314677328e-05, 'epoch': 15.55, 'step': 28000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.798244595527649, 'eval_wer': 0.2626763248189096, 'eval_runtime': 60.2204, 'eval_samples_per_second': 16.888, 'eval_steps_per_second': 4.234, 'epoch': 15.55, 'step': 28000}
+07-Feb-24 10:13:17 - {'loss': 0.1701, 'learning_rate': 2.1473443746430615e-05, 'epoch': 15.82, 'step': 28500}
+07-Feb-24 10:13:17 - {'loss': 0.1474, 'learning_rate': 2.0045688178183898e-05, 'epoch': 16.1, 'step': 29000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.6996382474899292, 'eval_wer': 0.23980175371711782, 'eval_runtime': 60.363, 'eval_samples_per_second': 16.848, 'eval_steps_per_second': 4.224, 'epoch': 16.1, 'step': 29000}
+07-Feb-24 10:13:17 - {'loss': 0.1549, 'learning_rate': 1.861793260993718e-05, 'epoch': 16.38, 'step': 29500}
+07-Feb-24 10:13:17 - {'loss': 0.155, 'learning_rate': 1.7190177041690464e-05, 'epoch': 16.66, 'step': 30000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.6695771217346191, 'eval_wer': 0.24818909645444148, 'eval_runtime': 60.1618, 'eval_samples_per_second': 16.904, 'eval_steps_per_second': 4.239, 'epoch': 16.66, 'step': 30000}
+07-Feb-24 10:13:17 - {'loss': 0.1406, 'learning_rate': 1.5762421473443747e-05, 'epoch': 16.94, 'step': 30500}
+07-Feb-24 10:13:17 - {'loss': 0.1295, 'learning_rate': 1.433466590519703e-05, 'epoch': 17.21, 'step': 31000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.8057316541671753, 'eval_wer': 0.24285169653069005, 'eval_runtime': 60.3162, 'eval_samples_per_second': 16.861, 'eval_steps_per_second': 4.228, 'epoch': 17.21, 'step': 31000}
+07-Feb-24 10:13:17 - {'loss': 0.1472, 'learning_rate': 1.2906910336950315e-05, 'epoch': 17.49, 'step': 31500}
+07-Feb-24 10:13:17 - {'loss': 0.1345, 'learning_rate': 1.1479154768703598e-05, 'epoch': 17.77, 'step': 32000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.8118913173675537, 'eval_wer': 0.2474266107510484, 'eval_runtime': 60.2176, 'eval_samples_per_second': 16.889, 'eval_steps_per_second': 4.235, 'epoch': 17.77, 'step': 32000}
+07-Feb-24 10:13:17 - {'loss': 0.139, 'learning_rate': 1.0051399200456882e-05, 'epoch': 18.05, 'step': 32500}
+07-Feb-24 10:13:17 - {'loss': 0.1475, 'learning_rate': 8.623643632210165e-06, 'epoch': 18.32, 'step': 33000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.801551342010498, 'eval_wer': 0.2504765535646207, 'eval_runtime': 60.6994, 'eval_samples_per_second': 16.755, 'eval_steps_per_second': 4.201, 'epoch': 18.32, 'step': 33000}
+07-Feb-24 10:13:17 - {'loss': 0.1269, 'learning_rate': 7.1958880639634504e-06, 'epoch': 18.6, 'step': 33500}
+07-Feb-24 10:13:17 - {'loss': 0.1246, 'learning_rate': 5.7681324957167336e-06, 'epoch': 18.88, 'step': 34000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.7388927936553955, 'eval_wer': 0.24247045367899353, 'eval_runtime': 60.2299, 'eval_samples_per_second': 16.885, 'eval_steps_per_second': 4.234, 'epoch': 18.88, 'step': 34000}
+07-Feb-24 10:13:17 - {'loss': 0.1171, 'learning_rate': 4.3403769274700176e-06, 'epoch': 19.16, 'step': 34500}
+07-Feb-24 10:13:17 - {'loss': 0.1395, 'learning_rate': 2.912621359223301e-06, 'epoch': 19.43, 'step': 35000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.724918007850647, 'eval_wer': 0.24208921082729698, 'eval_runtime': 60.2079, 'eval_samples_per_second': 16.891, 'eval_steps_per_second': 4.235, 'epoch': 19.43, 'step': 35000}
+07-Feb-24 10:13:17 - {'loss': 0.1492, 'learning_rate': 1.484865790976585e-06, 'epoch': 19.71, 'step': 35500}
+07-Feb-24 10:13:17 - {'loss': 0.1223, 'learning_rate': 5.711022272986865e-08, 'epoch': 19.99, 'step': 36000}
+07-Feb-24 10:13:17 - {'eval_loss': 1.6927776336669922, 'eval_wer': 0.23751429660693862, 'eval_runtime': 60.2498, 'eval_samples_per_second': 16.88, 'eval_steps_per_second': 4.232, 'epoch': 19.99, 'step': 36000}
+07-Feb-24 10:13:17 - {'train_runtime': 23435.7523, 'train_samples_per_second': 12.296, 'train_steps_per_second': 1.537, 'total_flos': 2.5081092115336147e+19, 'train_loss': 0.11766008147261396, 'epoch': 20.0, 'step': 36020}
+07-Feb-24 10:13:17 - Pushing model to Hugging Face...
+07-Feb-24 10:14:04 - Several commits (2) will be pushed upstream.
+07-Feb-24 10:14:04 - The progress bars may be unreliable.
+07-Feb-24 10:14:39 - To https://huggingface.co/macarious/torgo_xlsr_finetune_F04_keep_all
+   cffb3cc..a9c89fe  main -> main
+
+07-Feb-24 10:14:43 - To https://huggingface.co/macarious/torgo_xlsr_finetune_F04_keep_all
+   a9c89fe..cbc5035  main -> main
+
+07-Feb-24 10:14:46 - End of Script
+07-Feb-24 10:14:46 - --------------------------------------------
+
