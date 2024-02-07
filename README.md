@@ -43,8 +43,12 @@ This README file is under construction.
 | M05 (sev/mid)| 20     | 0.0157 | 0.3589     | 0.9191 |
 | F01 (severe) | 20     | 0.0143 | 0.2408     | 0.7871 |
 | F03 (mild)   | 20     | 0.0189 | 0.1319     | 0.6930 |
-| F04 (mild)   | 20     |        |            |        |
-|              |        |        |            |        |
+| F04 (mild)   | 20     | 0.0145 | 0.3310     | 0.4039 |
+
+M01 was also tested with 40 epochs.
+
+| Speaker      | Epochs | Train  | Validation | Test   |
+| ------------ | ------ | ------ | ---------- | ------ |
 | M01 (severe) | 40     | 0.0035 | 0.3052     | 0.8779 |
 
 ### All Data are Retained in the Train/Validation/Test Sets
