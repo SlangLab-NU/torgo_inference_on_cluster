@@ -28,7 +28,7 @@ This README file is under construction.
 | M03 (mild)   | 14487  | 1017       | 578    |
 | F01 (severe) | 14555  | 1017       | 510    |
 | F03 (mild)   | 14408  | 657        | 1017   |
-| F04 (mild)   |        |            |        |
+| F04 (mild)   | 14408  | 1017       | 657    |
 
 ## Word Error Rates Summary
 
