@@ -13,7 +13,7 @@ This README file is under construction.
 | F04 (mild)   | 8457   | 515        | 482    |
 | M01 (severe) | 8937   | 560        | 489    |
 | M02 (severe) | 8738   | 542        | 510    |
-| M03 (mild)   | 8534   | 542        | 573    |
+| M03 (mild)   | 8479   | 520        | 573    |
 | M04 (severe) | 10676  | 706        | 369    |
 | M05 (sev/mid)| 8071   | 454        | 328    |
 
