@@ -58,7 +58,7 @@ This README file is under construction.
 | M05 (sev/mid)| 20     | 0.0125 | 0.2245     | 0.5104 |
 | F01 (severe) | 20     | 0.0124 | 0.2329     | 0.4645 |
 | F03 (mild)   | 20     | 0.0135 | 0.0450     | 0.2581 |
-| F04 (mild)   | 20     |        |            |        |
+| F04 (mild)   | 20     | 0.0137 | 0.2386     | 0.0492 |
 
 ## Building Docker on Local Machine
 
