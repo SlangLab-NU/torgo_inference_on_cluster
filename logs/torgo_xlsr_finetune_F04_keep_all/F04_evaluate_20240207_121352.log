@@ -1,0 +1,39 @@
+07-Feb-24 12:13:52 - Test Speaker: F04
+07-Feb-24 12:13:52 - Log File Path: /output/logs/torgo_xlsr_finetune_F04_keep_all/F04_evaluate_20240207_121352.log
+
+07-Feb-24 12:13:52 - Keep all data in training/validation/test sets
+
+07-Feb-24 12:13:54 - Using GPU: Tesla T4
+
+07-Feb-24 12:13:54 - Loading the model and processor from macarious/torgo_xlsr_finetune_F04_keep_all
+07-Feb-24 12:14:33 - Model loaded from macarious/torgo_xlsr_finetune_F04_keep_all
+07-Feb-24 12:14:34 - Processor loaded from macarious/torgo_xlsr_finetune_F04_keep_all
+
+07-Feb-24 12:14:34 - Splitting the dataset into training / validation / test sets...
+07-Feb-24 12:14:34 - Unique speakers found in the dataset:
+07-Feb-24 12:14:34 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+07-Feb-24 12:15:19 - After filtering audio within a certain length, the number of data in each dataset is:
+07-Feb-24 12:15:19 - Train:       14408/14652 (98%)
+07-Feb-24 12:15:19 - Validation:  1017/1075 (94%)
+07-Feb-24 12:15:19 - Test:        657/667 (98%)
+
+07-Feb-24 12:15:19 - Start Evaluation
+07-Feb-24 12:15:20 - Predicting on the training set...
+07-Feb-24 12:30:51 - Word Error Rate: 0.013690070438536697
+07-Feb-24 12:30:51 - Predictions saved to: /output/results/torgo_xlsr_finetune_F04_keep_all/F04_predictions_train.csv
+
+07-Feb-24 12:30:51 - Predicting on the validation set...
+07-Feb-24 12:31:54 - Word Error Rate: 0.23864070255822833
+07-Feb-24 12:31:54 - Predictions saved to: /output/results/torgo_xlsr_finetune_F04_keep_all/F04_predictions_validation.csv
+
+07-Feb-24 12:31:54 - Predicting on the test set...
+07-Feb-24 12:32:43 - Word Error Rate: 0.049160671462829736
+07-Feb-24 12:32:43 - Predictions saved to: /output/results/torgo_xlsr_finetune_F04_keep_all/F04_predictions_test.csv
+
+07-Feb-24 12:32:43 - Summary of Word Error Rates saved to /output/results/torgo_xlsr_finetune_F04_keep_all/F04_wer_summary.csv
+
+07-Feb-24 12:32:43 - End of Script
+07-Feb-24 12:32:43 - --------------------------------------------
+
