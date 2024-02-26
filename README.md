@@ -5,6 +5,22 @@ This README file is under construction.
 ## Number of Audio Data per Speaker used in Training/Validation/Testing
 
 ### No Repeated Data between the Train/Validation Sets and the Test Set
+Some prompts are left out in order to avoid having prompt overlaps between train/validation set and test set. The target speakers refer to the data in the test set.
+
+For each data, if the total text count across all speakers in the train and validation datasets is less than the threshold and the text exists in the test dataset, remove the corresponding data from the train and validation dataset. Otherwise, remove the corresponding data from the 'test' dataset. This aims to retain 60% to 70% of the test dataset.
+
+For example:
+
+Using the default value of 40 for the text_count_threshold:
+
+1. If "The dog is brown" is spoken 30 times in total across all speakers in the train and validation dataset and the phrase exists in the test
+dataset, remove the corresponding data from the train and validation datasets.
+
+2. On the other hand, if "The dog is brown" is spoken 30 times in total across all speakers in the train and validation dataset, but the phrase does not exist in the test dataset, the corresponding data does not need to be removed from the train and validation datasets.
+
+3. If "The dog is brown" is spoken 50 times in total across all speakers in the train and validation dataset, remove the corresponding data from the test dataset instead.
+
+Statistics on the effect of the threshold value can be found here for each scenario: https://drive.google.com/drive/folders/1bQw87pVD63N-T_pS_yJo7UOrmVJFa5fY?usp=sharing
 
 | Speaker      | Train  | Validation | Test   |
 | ------------ | ------ | ---------- | ------ |
