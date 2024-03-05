@@ -238,11 +238,11 @@ def predict_and_evaluate():
 
         # Update the three dataset splits (if ['test_data'] == 1, keep in test, if ['test_data'] == 0, keep in train and validation)
         torgo_dataset['train'] = torgo_dataset['train'].filter(
-            lambda x: x['test_data'] == 0, input_columns=['test_data'])
+            lambda x: x['test_data'] == 0)
         torgo_dataset['validation'] = torgo_dataset['validation'].filter(
-            lambda x: x['test_data'] == 0, input_columns=['test_data'])
+            lambda x: x['test_data'] == 0)
         torgo_dataset['test'] = torgo_dataset['test'].filter(
-            lambda x: x['test_data'] == 1, input_columns=['test_data'])
+            lambda x: x['test_data'] == 1)
 
         # Drop the 'test_data' column
         torgo_dataset['train'] = torgo_dataset['train'].remove_columns([
