@@ -7,6 +7,19 @@ This README file is under construction.
 ### No Repeated Data between the Train/Validation Sets and the Test Set
 Some prompts are left out in order to avoid having prompt overlaps between train/validation set and test set. The target speakers refer to the data in the test set.
 
+| Speaker       | Train | Validation | Test |
+| ------------- | ----- | ---------- | ---- |
+| F01 (severe)  |       |            |      |
+| F03 (mild)    |       |            |      |
+| F04 (mild)    |       |            |      |
+| M01 (severe)  |       |            |      |
+| M02 (severe)  |       |            |      |
+| M03 (mild)    |       |            |      |
+| M04 (severe)  |       |            |      |
+| M05 (sev/mid) |       |            |      |
+
+---- The following is to be superseded by the table above ----
+
 For each data, if the total text count across all speakers in the train and validation datasets is less than the threshold and the text exists in the test dataset, remove the corresponding data from the train and validation dataset. Otherwise, remove the corresponding data from the 'test' dataset. This aims to retain 60% to 70% of the test dataset.
 
 For example:
@@ -52,6 +65,20 @@ Statistics on the effect of the threshold value can be found here for each scena
 
 | Speaker       | Epochs | Train  | Validation | Test   |
 | ------------- | ------ | ------ | ---------- | ------ |
+| F01 (severe)  | 20     |        |            |        |
+| F03 (mild)    | 20     |        |            |        |
+| F04 (mild)    | 20     |        |            |        |
+| M01 (severe)  | 20     |        |            |        |
+| M02 (severe)  | 20     |        |            |        |
+| M03 (mild)    | 20     |        |            |        |
+| M04 (severe)  | 20     |        |            |        |
+| M05 (sev/mid) | 20     |        |            |        |
+
+### No Repeated Data between the Train/Validation Sets and the Test Set
+
+# Superseded by the above table
+| Speaker       | Epochs | Train  | Validation | Test   |
+| ------------- | ------ | ------ | ---------- | ------ |
 | F01 (severe)  | 20     | 0.0143 | 0.2408     | 0.7871 |
 | F03 (mild)    | 20     | 0.0189 | 0.1319     | 0.6930 |
 | F04 (mild)    | 20     | 0.0145 | 0.3310     | 0.4039 |
@@ -88,7 +115,7 @@ Run the following command in the root directory to build the dockerfile:
 
 Push the dockerfile to Docker Hub:
 
-`docker push macarious/finetune:latest`
+`docker push macarious/finetune:latestdocker push macarious/finetune:latest`
 
 ## Running Script from Docker on the Cluster
 
@@ -137,6 +164,8 @@ Example: `python3 predict_and_evaluate.py F03`
 Example: `python3 predict_and_evaluate.py F03 --keep_all_data`
 
 Example: `python3 predict_and_evaluate.py F03 --keep_all_data --repo_suffix _keep_all`
+
+Example: `python3 train.py F01 & python3 train.py F03 & python3 train.py F04 & python3 train.py M01`
 
 #### 6. Clear cache cache in cluster if it is full:
 
