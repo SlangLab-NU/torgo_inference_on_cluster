@@ -30,7 +30,6 @@ Options	Descriptions
 --optimizer	Optimizer type (default: adamw_torch)
 --lr_scheduler_type	Learning rate scheduler type (default: linear)
 --num_epochs	Number of epochs (default: 20)
---repeated_text_threshold	Repeated text threshold (default: 40)
 --debug	Enable debug mode
 --repo_suffix	Repository suffix
 
@@ -85,7 +84,6 @@ if __name__ == "__main__":
     --optimizer: Optimizer type (default: adamw_torch)
     --lr_scheduler_type: Learning rate scheduler type (default: linear)
     --num_epochs: Number of epochs (default: 20)
-    --repeated_text_threshold: Repeated text threshold (default: 40)
     --keep_all_data: Keep all data in the test set (default: False)
     --debug: Enable debug mode
     --repo_suffix: Repository suffix
@@ -118,10 +116,8 @@ if __name__ == "__main__":
                         help='Number of epochs (default: 20)')
 
     # Other optional arguments
-    parser.add_argument('--repeated_text_threshold', type=int,
-                        default=40, help='Repeated text threshold (default: 40)')
     parser.add_argument('--keep_all_data', action='store_true',
-                        help='Keep all data in the test set; overrides the repeated_text_threshold')
+                        help='Keep all data in the test set')
     parser.add_argument('--debug', action='store_true',
                         help='Enable debug mode (default: False)')
     parser.add_argument('--repo_suffix', type=str,
@@ -144,7 +140,6 @@ if __name__ == "__main__":
     optimizer = args.optimizer
     lr_scheduler_type = args.lr_scheduler_type
     num_epochs = args.num_epochs
-    repeated_text_threshold = args.repeated_text_threshold
     keep_all_data = args.keep_all_data
     debug_mode = args.debug
     repo_suffix = args.repo_suffix
@@ -216,7 +211,7 @@ if __name__ == "__main__":
     '''
     if not os.path.exists(output_path + '/logs'):
         os.makedirs(output_path + '/logs')
-        
+
     log_dir = f'{output_path}/logs/{repo_name}'
 
     # Create the results directory for the current speaker, if it does not exist
@@ -335,69 +330,32 @@ if __name__ == "__main__":
 
     '''
     --------------------------------------------------------------------------------
-    Count the number of times the text has been spoken in each of the 'train',
-    'validation', and 'test' sets. Remove text according to the predetermined
-    text_count_threshold.
+    Remove text according to the overlapped-prompt-removal protocol
     --------------------------------------------------------------------------------
     '''
-    text_count_threshold = repeated_text_threshold
-    # For each data, if the total text count across all speakers in the train and
-    # validation datasets is less than the threshold and the text exists in the
-    # test dataset, remove the corresponding data from the train and validation dataset.
-    # Otherwise, remove the corresponding data from the 'test' dataset. This aims to
-    # retain 60% to 70% of the test dataset.
-    #
-    # For example:
-    # Using the default value of 40 for the text_count_threshold:
-    # (1) If "The dog is brown" is spoken 30 times in total across all
-    # speakers in the train and validation dataset and the phrase exists in the test
-    # dataset, remove the corresponding data from the train and validation datasets.
-    # (2) On the other hand, if "The dog is brown" is spoken 30 times in total across all
-    # speakers in the train and validation dataset, but the phrase does not exist in
-    # the test dataset, the corresponding data does not need to be removed from the
-    # train and validation datasets.
-    # (3) If "The dog is brown" is spoken 50 times in total across all speakers in
-    # the train and validation dataset, remove the corresponding data from the test
-    # dataset instead.
-
     original_data_count = {'train': len(torgo_dataset['train']), 'validation': len(
         torgo_dataset['validation']), 'test': len(torgo_dataset['test'])}
 
     if not keep_all_data:
-        unique_texts = set(torgo_dataset['train'].unique(column='text')) | set(
-            torgo_dataset['validation'].unique(column='text')) | set(torgo_dataset['test'].unique(column='text'))
-        unique_texts_count = {}
 
-        for text in unique_texts:
-            unique_texts_count[text] = {'train_validation': 0, 'test': 0}
-
-        for text in torgo_dataset['train']['text']:
-            unique_texts_count[text]['train_validation'] += 1
-
-        for text in torgo_dataset['validation']['text']:
-            unique_texts_count[text]['train_validation'] += 1
-
-        for text in torgo_dataset['test']['text']:
-            unique_texts_count[text]['test'] += 1
-
-        texts_to_keep_in_train_validation = []
-        texts_to_keep_in_test = []
-        for text in unique_texts_count:
-            if unique_texts_count[text]['train_validation'] < text_count_threshold and unique_texts_count[text]['test'] > 0:
-                texts_to_keep_in_test.append(text)
-            else:
-                texts_to_keep_in_train_validation.append(text)
-
-        # Update the three dataset splits
+        # Update the three dataset splits (if ['test_data'] == 1, keep in test, if ['test_data'] == 0, keep in train and validation)
         torgo_dataset['train'] = torgo_dataset['train'].filter(
-            lambda x: x['text'] in texts_to_keep_in_train_validation)
+            lambda x: x['test_data'] == 0, input_columns=['test_data'])
         torgo_dataset['validation'] = torgo_dataset['validation'].filter(
-            lambda x: x['text'] in texts_to_keep_in_train_validation)
+            lambda x: x['test_data'] == 0, input_columns=['test_data'])
         torgo_dataset['test'] = torgo_dataset['test'].filter(
-            lambda x: x['text'] in texts_to_keep_in_test)
+            lambda x: x['test_data'] == 1, input_columns=['test_data'])
+
+        # Drop the 'test_data' column
+        torgo_dataset['train'] = torgo_dataset['train'].remove_columns([
+                                                                       'test_data'])
+        torgo_dataset['validation'] = torgo_dataset['validation'].remove_columns([
+                                                                                 'test_data'])
+        torgo_dataset['test'] = torgo_dataset['test'].remove_columns([
+                                                                     'test_data'])
 
         logging.info(
-            f"After applying the text count threshold of {text_count_threshold}, the number of data in each dataset is:")
+            f"After removal of repeated prompts, the number of data in each dataset is:")
         logging.info(
             f'Train:       {len(torgo_dataset["train"])}/{original_data_count["train"]} ({len(torgo_dataset["train"]) * 100 // original_data_count["train"]}%)')
         logging.info(
@@ -573,7 +531,7 @@ if __name__ == "__main__":
                 padding=self.padding,
                 return_tensors="pt",
             )
-            
+
             with self.processor.as_target_processor():
                 labels_batch = self.processor.pad(
                     label_features,

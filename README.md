@@ -6,44 +6,44 @@ This README file is under construction.
 
 ### No Repeated Data between the Train/Validation Sets and the Test Set
 
-| Speaker      | Train  | Validation | Test   |
-| ------------ | ------ | ---------- | ------ |
-| F01 (severe) | 13374  | 913        | 122    |
-| F03 (mild)   | 7567   | 245        | 756    |
-| F04 (mild)   | 8457   | 515        | 482    |
-| M01 (severe) | 8937   | 560        | 489    |
-| M02 (severe) | 8738   | 542        | 510    |
-| M03 (mild)   | 8479   | 520        | 573    |
-| M04 (severe) | 10676  | 706        | 369    |
-| M05 (sev/mid)| 8071   | 454        | 328    |
+| Speaker       | Train | Validation | Test |
+| ------------- | ----- | ---------- | ---- |
+| F01 (severe)  | 13374 | 913        | 122  |
+| F03 (mild)    | 7567  | 245        | 756  |
+| F04 (mild)    | 8457  | 515        | 482  |
+| M01 (severe)  | 8937  | 560        | 489  |
+| M02 (severe)  | 8738  | 542        | 510  |
+| M03 (mild)    | 8479  | 520        | 573  |
+| M04 (severe)  | 10676 | 706        | 369  |
+| M05 (sev/mid) | 8071  | 454        | 328  |
 
 ### All Data are Retained in the Train/Validation/Test Sets
 
-| Speaker      | Train  | Validation | Test   |
-| ------------ | ------ | ---------- | ------ |
-| F01 (severe) | 14854  | 1017       | 211    |
-| F03 (mild)   | 14408  | 657        | 1017   |
-| F04 (mild)   | 14408  | 1017       | 657    |
-| M01 (severe) | 14356  | 1017       | 709    |
-| M02 (severe) | 14330  | 1017       | 735    |
-| M03 (mild)   | 14265  | 1017       | 800    |
-| M04 (severe) | 14487  | 1017       | 578    |
-| M05 (sev/mid)| 14555  | 510        | 510    |
+| Speaker       | Train | Validation | Test |
+| ------------- | ----- | ---------- | ---- |
+| F01 (severe)  | 14854 | 1017       | 211  |
+| F03 (mild)    | 14408 | 657        | 1017 |
+| F04 (mild)    | 14408 | 1017       | 657  |
+| M01 (severe)  | 14356 | 1017       | 709  |
+| M02 (severe)  | 14330 | 1017       | 735  |
+| M03 (mild)    | 14265 | 1017       | 800  |
+| M04 (severe)  | 14487 | 1017       | 578  |
+| M05 (sev/mid) | 14555 | 510        | 510  |
 
 ## Word Error Rates Summary
 
 ### No Repeated Data between the Train/Validation Sets and the Test Set
 
-| Speaker      | Epochs | Train  | Validation | Test   |
-| ------------ | ------ | ------ | ---------- | ------ |
-| F01 (severe) | 20     | 0.0143 | 0.2408     | 0.7871 |
-| F03 (mild)   | 20     | 0.0189 | 0.1319     | 0.6930 |
-| F04 (mild)   | 20     | 0.0145 | 0.3310     | 0.4039 |
-| M01 (severe) | 20     | 0.0104 | 0.3198     | 0.8568 |
-| M02 (severe) | 20     | 0.0107 | 0.3004     | 0.9043 |
-| M03 (mild)   | 20     | 0.0124 | 0.3247     | 0.4194 |
-| M04 (severe) | 20     | 0.0101 | 0.2925     | 0.9332 |
-| M05 (sev/mid)| 20     | 0.0157 | 0.3589     | 0.9191 |
+| Speaker       | Epochs | Train  | Validation | Test   |
+| ------------- | ------ | ------ | ---------- | ------ |
+| F01 (severe)  | 20     | 0.0143 | 0.2408     | 0.7871 |
+| F03 (mild)    | 20     | 0.0189 | 0.1319     | 0.6930 |
+| F04 (mild)    | 20     | 0.0145 | 0.3310     | 0.4039 |
+| M01 (severe)  | 20     | 0.0104 | 0.3198     | 0.8568 |
+| M02 (severe)  | 20     | 0.0107 | 0.3004     | 0.9043 |
+| M03 (mild)    | 20     | 0.0124 | 0.3247     | 0.4194 |
+| M04 (severe)  | 20     | 0.0101 | 0.2925     | 0.9332 |
+| M05 (sev/mid) | 20     | 0.0157 | 0.3589     | 0.9191 |
 
 M01 was also tested with 40 epochs.
 
@@ -53,16 +53,16 @@ M01 was also tested with 40 epochs.
 
 ### All Data are Retained in the Train/Validation/Test Sets
 
-| Speaker      | Epochs | Train  | Validation | Test   |
-| ------------ | ------ | ------ | ---------- | ------ |
-| F01 (severe) | 20     | 0.0124 | 0.2329     | 0.4645 |
-| F03 (mild)   | 20     | 0.0135 | 0.0450     | 0.2581 |
-| F04 (mild)   | 20     | 0.0137 | 0.2386     | 0.0492 |
-| M01 (severe) | 20     | 0.0126 | 0.2474     | 0.4072 |
-| M02 (severe) | 20     | 0.0124 | 0.2463     | 0.5440 |
-| M03 (mild)   | 20     | 0.0129 | 0.2375     | 0.0317 |
-| M04 (severe) | 20     | 0.0115 | 0.2318     | 0.6450 |
-| M05 (sev/mid)| 20     | 0.0125 | 0.2245     | 0.5104 |
+| Speaker       | Epochs | Train  | Validation | Test   |
+| ------------- | ------ | ------ | ---------- | ------ |
+| F01 (severe)  | 20     | 0.0124 | 0.2329     | 0.4645 |
+| F03 (mild)    | 20     | 0.0135 | 0.0450     | 0.2581 |
+| F04 (mild)    | 20     | 0.0137 | 0.2386     | 0.0492 |
+| M01 (severe)  | 20     | 0.0126 | 0.2474     | 0.4072 |
+| M02 (severe)  | 20     | 0.0124 | 0.2463     | 0.5440 |
+| M03 (mild)    | 20     | 0.0129 | 0.2375     | 0.0317 |
+| M04 (severe)  | 20     | 0.0115 | 0.2318     | 0.6450 |
+| M05 (sev/mid) | 20     | 0.0125 | 0.2245     | 0.5104 |
 
 ## Building Docker on Local Machine
 
@@ -150,21 +150,20 @@ This script accepts the following arguments:
 | -------------------- | --------------------------------------- |
 | speaker_id           | Speaker ID in the format [MF]C?[0-9]{2} |
 
-| Options                         | Descriptions                                                         |
-| ------------------------------- | -------------------------------------------------------------------- |
-| `-h, --help`                    | show this help message and exit                                      |
-| `--learning_rate`               | Learning rate (default: 0.0001)                                      |
-| `--train_batch_size`            | Training batch size (default: 4)                                     |
-| `--eval_batch_size`             | Evaluation batch size (default: 4)                                   |
-| `--seed`                        | Random seed (default: 42)                                            |
-| `--gradient_accumulation_steps` | Gradient accumulation steps (default: 2)                             |
-| `--optimizer`                   | Optimizer type (default: adamw_torch)                                |
-| `--lr_scheduler_type`           | Learning rate scheduler type (default: linear)                       |
-| `--num_epochs`                  | Number of epochs (default: 20)                                       |
-| `--repeated_text_threshold`     | Repeated text threshold (default: 40)                                |
-| `--keep_all_data`               | Keep all data in the test set; overrides the repeated_text_threshold |
-| `--debug`                       | Enable debug mode                                                    |
-| `--repo_suffix`                 | Repository suffix                                                    |
+| Options                         | Descriptions                                   |
+| ------------------------------- | ---------------------------------------------- |
+| `-h, --help`                    | show this help message and exit                |
+| `--learning_rate`               | Learning rate (default: 0.0001)                |
+| `--train_batch_size`            | Training batch size (default: 4)               |
+| `--eval_batch_size`             | Evaluation batch size (default: 4)             |
+| `--seed`                        | Random seed (default: 42)                      |
+| `--gradient_accumulation_steps` | Gradient accumulation steps (default: 2)       |
+| `--optimizer`                   | Optimizer type (default: adamw_torch)          |
+| `--lr_scheduler_type`           | Learning rate scheduler type (default: linear) |
+| `--num_epochs`                  | Number of epochs (default: 20)                 |
+| `--keep_all_data`               | Keep all data in the test set                  |
+| `--debug`                       | Enable debug mode                              |
+| `--repo_suffix`                 | Repository suffix                              |
 
 Example usage:
 `python train.py F01`
@@ -195,9 +194,8 @@ This script accepts the following arguments:
 | -------------------- | --------------------------------------- |
 | speaker_id           | Speaker ID in the format [MF]C?[0-9]{2} |
 
-| Options                     | Descriptions                                                               |
-| --------------------------- | -------------------------------------------------------------------------- |
-| `-h, --help`                | show this help message and exit                                            |
-| `--repeated_text_threshold` | Threshold for repeated text filtering (default: 40)                        |
-| `--keep_all_data`           | Keep all text or only repeated text; overrides the repeated_text_threshold |
-| `--repo_suffix`             | Repository suffix                                                          |
+| Options           | Descriptions                        |
+| ----------------- | ----------------------------------- |
+| `-h, --help`      | show this help message and exit     |
+| `--keep_all_data` | Keep all text or only repeated text |
+| `--repo_suffix`   | Repository suffix                   |
