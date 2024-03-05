@@ -1,0 +1,32 @@
+04-Mar-24 22:00:25 - Test Speaker: F03
+04-Mar-24 22:00:25 - Log File Path: /output/logs/torgo_xlsr_finetune_F03/F03_train_20240304_220025.log
+
+04-Mar-24 22:00:26 - Using GPU: Tesla T4
+
+04-Mar-24 22:00:26 - Splitting the dataset into training / validation / test sets...
+04-Mar-24 22:00:26 - Unique speakers found in the dataset:
+04-Mar-24 22:00:26 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+04-Mar-24 22:00:27 - After removal of repeated prompts, the number of data in each dataset is:
+04-Mar-24 22:00:27 - Train:       9248/14652 (63%)
+04-Mar-24 22:00:27 - Validation:  380/667 (56%)
+04-Mar-24 22:00:27 - Test:        461/1075 (42%)
+
+04-Mar-24 22:00:30 - Vocab Dictionary:
+04-Mar-24 22:00:30 - {'[PAD]': 0, '<s>': 1, '</s>': 2, '[UNK]': 3, "'": 4, 'a': 5, 'b': 6, 'c': 7, 'd': 8, 'e': 9, 'f': 10, 'g': 11, 'h': 12, 'i': 13, 'j': 14, 'k': 15, 'l': 16, 'm': 17, 'n': 18, 'o': 19, 'p': 20, 'q': 21, 'r': 22, 's': 23, 't': 24, 'u': 25, 'v': 26, 'w': 27, 'x': 28, 'y': 29, 'z': 30, '|': 31}
+
+04-Mar-24 22:04:11 - After filtering audio within a certain length, the number of data in each dataset is:
+04-Mar-24 22:04:11 - Train:       9094/14652 (62%)
+04-Mar-24 22:04:11 - Validation:  372/667 (55%)
+04-Mar-24 22:04:11 - Test:        421/1075 (39%)
+
+04-Mar-24 22:04:30 - /output/model/torgo_xlsr_finetune_F03 is already a clone of https://huggingface.co/macarious/torgo_xlsr_finetune_F03. Make sure you pull the latest changes with `repo.git_pull()`.
+04-Mar-24 22:04:32 - Start Training
+04-Mar-24 22:04:32 - Training Arguments:
+04-Mar-24 22:04:32 - {'Training Epochs': 20, 'Training Batch Size': 4, 'Evaluation Batch Size': 4, 'Learning Rate': 0.0001, 'Weight Decay': 0.005}
+04-Mar-24 22:04:32 - Checkpoint found in the repository. Checkpoint files found: ['checkpoint-17500', 'checkpoint-18000', 'checkpoint-18500']
+04-Mar-24 22:04:32 - Resuming from checkpoint: /output/model/torgo_xlsr_finetune_F03/checkpoint-18500
+
+04-Mar-24 22:21:25 - Current Word Error Rate: 0.2740021574973031
+04-Mar-24 22:22:22 - Several commits (45) will be pushed upstream.

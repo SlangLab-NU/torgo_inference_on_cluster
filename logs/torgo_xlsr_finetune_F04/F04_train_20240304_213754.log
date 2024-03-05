@@ -1,0 +1,10 @@
+04-Mar-24 21:37:54 - Test Speaker: F04
+04-Mar-24 21:37:54 - Log File Path: /output/logs/torgo_xlsr_finetune_F04/F04_train_20240304_213754.log
+
+04-Mar-24 21:37:55 - Using GPU: Tesla T4
+
+04-Mar-24 21:37:55 - Splitting the dataset into training / validation / test sets...
+04-Mar-24 21:37:55 - Unique speakers found in the dataset:
+04-Mar-24 21:37:55 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
