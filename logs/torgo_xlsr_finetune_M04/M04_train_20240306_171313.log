@@ -1,0 +1,18 @@
+06-Mar-24 17:13:13 - Test Speaker: M04
+06-Mar-24 17:13:13 - Log File Path: /output/logs/torgo_xlsr_finetune_M04/M04_train_20240306_171313.log
+
+06-Mar-24 17:13:25 - Using GPU: Tesla T4
+
+06-Mar-24 17:13:25 - Splitting the dataset into training / validation / test sets...
+06-Mar-24 17:13:26 - Unique speakers found in the dataset:
+06-Mar-24 17:13:26 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+06-Mar-24 17:13:26 - After removal of repeated prompts, the number of data in each dataset is:
+06-Mar-24 17:13:26 - Train:       9559/14667 (65%)
+06-Mar-24 17:13:26 - Validation:  483/1075 (44%)
+06-Mar-24 17:13:26 - Test:        360/652 (55%)
+
+06-Mar-24 17:13:27 - Vocab Dictionary:
+06-Mar-24 17:13:27 - {'[PAD]': 0, '<s>': 1, '</s>': 2, '[UNK]': 3, "'": 4, 'a': 5, 'b': 6, 'c': 7, 'd': 8, 'e': 9, 'f': 10, 'g': 11, 'h': 12, 'i': 13, 'j': 14, 'k': 15, 'l': 16, 'm': 17, 'n': 18, 'o': 19, 'p': 20, 'q': 21, 'r': 22, 's': 23, 't': 24, 'u': 25, 'v': 26, 'w': 27, 'x': 28, 'y': 29, 'z': 30, '|': 31}
+
