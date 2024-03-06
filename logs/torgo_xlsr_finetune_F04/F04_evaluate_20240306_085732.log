@@ -1,0 +1,42 @@
+06-Mar-24 08:57:32 - Test Speaker: F04
+06-Mar-24 08:57:32 - Log File Path: /output/logs/torgo_xlsr_finetune_F04/F04_evaluate_20240306_085732.log
+
+06-Mar-24 08:57:32 - Using GPU: Tesla T4
+
+06-Mar-24 08:57:32 - Loading the model and processor from macarious/torgo_xlsr_finetune_F04
+06-Mar-24 08:57:50 - Model loaded from macarious/torgo_xlsr_finetune_F04
+06-Mar-24 08:57:50 - Processor loaded from macarious/torgo_xlsr_finetune_F04
+
+06-Mar-24 08:57:51 - Splitting the dataset into training / validation / test sets...
+06-Mar-24 08:57:51 - Unique speakers found in the dataset:
+06-Mar-24 08:57:51 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+06-Mar-24 08:57:51 - After removal of repeated prompts, the number of data in each dataset is:
+06-Mar-24 08:57:51 - Train:       9551/14652 (65%)
+06-Mar-24 08:57:51 - Validation:  483/1075 (44%)
+06-Mar-24 08:57:51 - Test:        367/667 (55%)
+
+06-Mar-24 08:58:26 - After filtering audio within a certain length, the number of data in each dataset is:
+06-Mar-24 08:58:26 - Train:       9440/14652 (64%)
+06-Mar-24 08:58:26 - Validation:  460/1075 (42%)
+06-Mar-24 08:58:26 - Test:        363/667 (54%)
+
+06-Mar-24 08:58:26 - Start Evaluation
+06-Mar-24 08:58:26 - Predicting on the training set...
+06-Mar-24 09:08:25 - Word Error Rate: 0.011383500319761245
+06-Mar-24 09:08:26 - Predictions saved to: /output/results/torgo_xlsr_finetune_F04/F04_predictions_train.csv
+
+06-Mar-24 09:08:26 - Predicting on the validation set...
+06-Mar-24 09:08:54 - Word Error Rate: 0.22789115646258504
+06-Mar-24 09:08:54 - Predictions saved to: /output/results/torgo_xlsr_finetune_F04/F04_predictions_validation.csv
+
+06-Mar-24 09:08:54 - Predicting on the test set...
+06-Mar-24 09:09:21 - Word Error Rate: 0.4505844845908608
+06-Mar-24 09:09:21 - Predictions saved to: /output/results/torgo_xlsr_finetune_F04/F04_predictions_test.csv
+
+06-Mar-24 09:09:21 - Summary of Word Error Rates saved to /output/results/torgo_xlsr_finetune_F04/F04_wer_summary.csv
+
+06-Mar-24 09:09:21 - End of Script
+06-Mar-24 09:09:21 - --------------------------------------------
+

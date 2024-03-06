@@ -1,0 +1,42 @@
+06-Mar-24 09:13:36 - Test Speaker: M05
+06-Mar-24 09:13:36 - Log File Path: /output/logs/torgo_xlsr_finetune_M05/M05_evaluate_20240306_091336.log
+
+06-Mar-24 09:13:37 - Using GPU: Tesla T4
+
+06-Mar-24 09:13:37 - Loading the model and processor from macarious/torgo_xlsr_finetune_M05
+06-Mar-24 09:13:54 - Model loaded from macarious/torgo_xlsr_finetune_M05
+06-Mar-24 09:13:55 - Processor loaded from macarious/torgo_xlsr_finetune_M05
+
+06-Mar-24 09:13:56 - Splitting the dataset into training / validation / test sets...
+06-Mar-24 09:13:56 - Unique speakers found in the dataset:
+06-Mar-24 09:13:56 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+06-Mar-24 09:13:56 - After removal of repeated prompts, the number of data in each dataset is:
+06-Mar-24 09:13:56 - Train:       9594/14746 (65%)
+06-Mar-24 09:13:56 - Validation:  483/1075 (44%)
+06-Mar-24 09:13:56 - Test:        316/573 (55%)
+
+06-Mar-24 09:14:34 - After filtering audio within a certain length, the number of data in each dataset is:
+06-Mar-24 09:14:34 - Train:       9502/14746 (64%)
+06-Mar-24 09:14:34 - Validation:  460/1075 (42%)
+06-Mar-24 09:14:34 - Test:        278/573 (48%)
+
+06-Mar-24 09:14:34 - Start Evaluation
+06-Mar-24 09:14:35 - Predicting on the training set...
+06-Mar-24 09:24:23 - Word Error Rate: 0.012401210694467799
+06-Mar-24 09:24:23 - Predictions saved to: /output/results/torgo_xlsr_finetune_M05/M05_predictions_train.csv
+
+06-Mar-24 09:24:23 - Predicting on the validation set...
+06-Mar-24 09:24:49 - Word Error Rate: 0.2457482993197279
+06-Mar-24 09:24:49 - Predictions saved to: /output/results/torgo_xlsr_finetune_M05/M05_predictions_validation.csv
+
+06-Mar-24 09:24:49 - Predicting on the test set...
+06-Mar-24 09:25:12 - Word Error Rate: 0.9038461538461539
+06-Mar-24 09:25:12 - Predictions saved to: /output/results/torgo_xlsr_finetune_M05/M05_predictions_test.csv
+
+06-Mar-24 09:25:12 - Summary of Word Error Rates saved to /output/results/torgo_xlsr_finetune_M05/M05_wer_summary.csv
+
+06-Mar-24 09:25:12 - End of Script
+06-Mar-24 09:25:12 - --------------------------------------------
+
