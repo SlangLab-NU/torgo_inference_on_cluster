@@ -18,23 +18,7 @@ Some prompts are left out in order to avoid having prompt overlaps between train
 | M04 (severe)  | 9475  | 460        | 319  |
 | M05 (sev/mid) | 9502  | 460        | 278  |
 
----- The following is to be superseded by the table above ----
-
-For each data, if the total text count across all speakers in the train and validation datasets is less than the threshold and the text exists in the test dataset, remove the corresponding data from the train and validation dataset. Otherwise, remove the corresponding data from the 'test' dataset. This aims to retain 60% to 70% of the test dataset.
-
-For example:
-
-Using the default value of 40 for the text_count_threshold:
-
-1. If "The dog is brown" is spoken 30 times in total across all speakers in the train and validation dataset and the phrase exists in the test
-dataset, remove the corresponding data from the train and validation datasets.
-
-2. On the other hand, if "The dog is brown" is spoken 30 times in total across all speakers in the train and validation dataset, but the phrase does not exist in the test dataset, the corresponding data does not need to be removed from the train and validation datasets.
-
-3. If "The dog is brown" is spoken 50 times in total across all speakers in the train and validation dataset, remove the corresponding data from the test dataset instead.
-
-Statistics on the effect of the threshold value can be found here for each scenario: https://drive.google.com/drive/folders/1bQw87pVD63N-T_pS_yJo7UOrmVJFa5fY?usp=sharing
-
+---- The following table is superseded by the table above ----
 | Speaker       | Train | Validation | Test |
 | ------------- | ----- | ---------- | ---- |
 | F01 (severe)  | 13374 | 913        | 122  |
@@ -70,13 +54,13 @@ Statistics on the effect of the threshold value can be found here for each scena
 | F04 (mild)    | 20     | 0.0114 | 0.2279     | 0.4506 |
 | M01 (severe)  | 20     | 0.0126 | 0.2313     | 0.8507 |
 | M02 (severe)  | 20     | 0.0107 | 0.3004     | 0.9043 |
-| M03 (mild)    | 20     | 0.0133 | 0.2466     | 0.4530 |
+| M03 (mild)    | 20     | 0.0128 | 0.2143     | 0.4521 |
 | M04 (severe)  | 20     | 0.0119 | 0.2679     | 0.9375 |
 | M05 (sev/mid) | 20     | 0.0124 | 0.2457     | 0.9038 |
 
 ### No Repeated Data between the Train/Validation Sets and the Test Set
 
-# Superseded by the above table
+---- The following table is superseded by the table above ----
 | Speaker       | Epochs | Train  | Validation | Test   |
 | ------------- | ------ | ------ | ---------- | ------ |
 | F01 (severe)  | 20     | 0.0143 | 0.2408     | 0.7871 |
