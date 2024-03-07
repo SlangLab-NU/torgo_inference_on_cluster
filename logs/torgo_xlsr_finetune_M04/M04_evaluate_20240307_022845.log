@@ -24,3 +24,19 @@
 
 07-Mar-24 02:29:40 - Start Evaluation
 07-Mar-24 02:29:41 - Predicting on the training set...
+07-Mar-24 02:39:41 - Word Error Rate: 0.011912278486340869
+07-Mar-24 02:39:41 - Predictions saved to: /output/results/torgo_xlsr_finetune_M04/M04_predictions_train.csv
+
+07-Mar-24 02:39:41 - Predicting on the validation set...
+07-Mar-24 02:40:08 - Word Error Rate: 0.26785714285714285
+07-Mar-24 02:40:08 - Predictions saved to: /output/results/torgo_xlsr_finetune_M04/M04_predictions_validation.csv
+
+07-Mar-24 02:40:08 - Predicting on the test set...
+07-Mar-24 02:40:32 - Word Error Rate: 0.9375
+07-Mar-24 02:40:32 - Predictions saved to: /output/results/torgo_xlsr_finetune_M04/M04_predictions_test.csv
+
+07-Mar-24 02:40:32 - Summary of Word Error Rates saved to /output/results/torgo_xlsr_finetune_M04/M04_wer_summary.csv
+
+07-Mar-24 02:40:32 - End of Script
+07-Mar-24 02:40:32 - --------------------------------------------
+
