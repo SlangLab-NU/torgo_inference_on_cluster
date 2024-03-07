@@ -9,14 +9,14 @@ Some prompts are left out in order to avoid having prompt overlaps between train
 
 | Speaker       | Train | Validation | Test |
 | ------------- | ----- | ---------- | ---- |
-| F01 (severe)  |       |            |      |
-| F03 (mild)    |       |            |      |
-| F04 (mild)    |       |            |      |
-| M01 (severe)  |       |            |      |
-| M02 (severe)  |       |            |      |
-| M03 (mild)    |       |            |      |
-| M04 (severe)  |       |            |      |
-| M05 (sev/mid) |       |            |      |
+| F01 (severe)  | 9638  | 460        | 115  |
+| F03 (mild)    | 9440  | 294        | 557  |
+| F04 (mild)    | 9440  | 460        | 367  |
+| M01 (severe)  | 9413  | 460        | 388  |
+| M02 (severe)  | 9508  | 483        | 423  |
+| M03 (mild)    | 9376  | 460        | 442  |
+| M04 (severe)  | 9475  | 460        | 319  |
+| M05 (sev/mid) | 9502  | 460        | 278  |
 
 ---- The following is to be superseded by the table above ----
 
@@ -65,14 +65,14 @@ Statistics on the effect of the threshold value can be found here for each scena
 
 | Speaker       | Epochs | Train  | Validation | Test   |
 | ------------- | ------ | ------ | ---------- | ------ |
-| F01 (severe)  | 20     |        |            |        |
+| F01 (severe)  | 20     | 0.0120 | 0.2517     | 0.8000 |
 | F03 (mild)    | 20     |        |            |        |
 | F04 (mild)    | 20     |        |            |        |
-| M01 (severe)  | 20     |        |            |        |
+| M01 (severe)  | 20     | 0.0126 | 0.2313     | 0.8507 |
 | M02 (severe)  | 20     |        |            |        |
 | M03 (mild)    | 20     |        |            |        |
 | M04 (severe)  | 20     |        |            |        |
-| M05 (sev/mid) | 20     |        |            |        |
+| M05 (sev/mid) | 20     | 0.0124 | 0.2457     | 0.9038 |
 
 ### No Repeated Data between the Train/Validation Sets and the Test Set
 
