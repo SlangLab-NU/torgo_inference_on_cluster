@@ -1,6 +1,0 @@
-06-Mar-24 16:59:18 - Test Speaker: M02
-06-Mar-24 16:59:18 - Log File Path: /output/logs/torgo_xlsr_finetune_M02/M02_evaluate_20240306_165918.log
-
-06-Mar-24 16:59:28 - Using GPU: Tesla T4
-
-06-Mar-24 16:59:28 - Loading the model and processor from macarious/torgo_xlsr_finetune_M02

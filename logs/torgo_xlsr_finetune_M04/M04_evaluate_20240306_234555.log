@@ -1,6 +1,0 @@
-06-Mar-24 23:45:55 - Test Speaker: M04
-06-Mar-24 23:45:55 - Log File Path: /output/logs/torgo_xlsr_finetune_M04/M04_evaluate_20240306_234555.log
-
-06-Mar-24 23:45:57 - Using GPU: Tesla T4
-
-06-Mar-24 23:45:57 - Loading the model and processor from macarious/torgo_xlsr_finetune_M04

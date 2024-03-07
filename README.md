@@ -66,12 +66,12 @@ Statistics on the effect of the threshold value can be found here for each scena
 | Speaker       | Epochs | Train  | Validation | Test   |
 | ------------- | ------ | ------ | ---------- | ------ |
 | F01 (severe)  | 20     | 0.0120 | 0.2517     | 0.8000 |
-| F03 (mild)    | 20     |        |            |        |
-| F04 (mild)    | 20     |        |            |        |
+| F03 (mild)    | 20     | 0.0126 | 0.0481     | 0.6514 |
+| F04 (mild)    | 20     | 0.0114 | 0.2279     | 0.4506 |
 | M01 (severe)  | 20     | 0.0126 | 0.2313     | 0.8507 |
-| M02 (severe)  | 20     |        |            |        |
-| M03 (mild)    | 20     |        |            |        |
-| M04 (severe)  | 20     |        |            |        |
+| M02 (severe)  | 20     | 0.0107 | 0.3004     | 0.9043 |
+| M03 (mild)    | 20     | 0.0133 | 0.2466     | 0.4530 |
+| M04 (severe)  | 20     | 0.0119 | 0.2679     | 0.9375 |
 | M05 (sev/mid) | 20     | 0.0124 | 0.2457     | 0.9038 |
 
 ### No Repeated Data between the Train/Validation Sets and the Test Set
