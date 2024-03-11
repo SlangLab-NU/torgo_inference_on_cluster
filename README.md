@@ -61,6 +61,9 @@ Some prompts are left out in order to avoid having prompt overlaps between train
 ### No Repeated Data between the Train/Validation Sets and the Test Set
 
 ---- The following table is superseded by the table above ----
+
+This table uses an old algorithm that eliminates prompt overlaps.
+
 | Speaker       | Epochs | Train  | Validation | Test   |
 | ------------- | ------ | ------ | ---------- | ------ |
 | F01 (severe)  | 20     | 0.0143 | 0.2408     | 0.7871 |
@@ -93,7 +96,6 @@ This table uses the same prompts for the test set as the previous experiment (wh
 | M04 (severe)  | 20     | 0.0115 | 0.2318     | 0.6581 |
 | M05 (sev/mid) | 20     | 0.0125 | 0.2245     | 0.5620 |
 
----- The following table is superseded by the table above ----
 This table uses all the data in the Test set.
 | Speaker       | Epochs | Train  | Validation | Test   |
 | ------------- | ------ | ------ | ---------- | ------ |
