@@ -1,0 +1,42 @@
+11-Mar-24 04:42:26 - Test Speaker: M02
+11-Mar-24 04:42:26 - Log File Path: /output/logs/torgo_xlsr_finetune_M02_keep_all/M02_evaluate_20240311_044226.log
+
+11-Mar-24 04:42:27 - Using GPU: Tesla T4
+
+11-Mar-24 04:42:27 - Loading the model and processor from macarious/torgo_xlsr_finetune_M02_keep_all
+11-Mar-24 04:42:30 - Model loaded from macarious/torgo_xlsr_finetune_M02_keep_all
+11-Mar-24 04:42:30 - Processor loaded from macarious/torgo_xlsr_finetune_M02_keep_all
+
+11-Mar-24 04:42:31 - Splitting the dataset into training / validation / test sets...
+11-Mar-24 04:42:31 - Unique speakers found in the dataset:
+11-Mar-24 04:42:31 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+11-Mar-24 04:42:31 - After removal of repeated prompts, the number of data in each dataset is:
+11-Mar-24 04:42:31 - Train:       9508/14553 (65%)
+11-Mar-24 04:42:31 - Validation:  483/1075 (44%)
+11-Mar-24 04:42:31 - Test:        423/766 (55%)
+
+11-Mar-24 04:43:06 - After filtering audio within a certain length, the number of data in each dataset is:
+11-Mar-24 04:43:06 - Train:       9402/14553 (64%)
+11-Mar-24 04:43:06 - Validation:  460/1075 (42%)
+11-Mar-24 04:43:06 - Test:        403/766 (52%)
+
+11-Mar-24 04:43:06 - Start Evaluation
+11-Mar-24 04:43:07 - Predicting on the training set...
+11-Mar-24 04:52:54 - Word Error Rate: 0.011376224968044312
+11-Mar-24 04:52:54 - Predictions saved to: /output/results/torgo_xlsr_finetune_M02_keep_all/M02_predictions_train.csv
+
+11-Mar-24 04:52:54 - Predicting on the validation set...
+11-Mar-24 04:53:21 - Word Error Rate: 0.2542517006802721
+11-Mar-24 04:53:21 - Predictions saved to: /output/results/torgo_xlsr_finetune_M02_keep_all/M02_predictions_validation.csv
+
+11-Mar-24 04:53:21 - Predicting on the test set...
+11-Mar-24 04:53:52 - Word Error Rate: 0.5521885521885522
+11-Mar-24 04:53:52 - Predictions saved to: /output/results/torgo_xlsr_finetune_M02_keep_all/M02_predictions_test.csv
+
+11-Mar-24 04:53:52 - Summary of Word Error Rates saved to /output/results/torgo_xlsr_finetune_M02_keep_all/M02_wer_summary.csv
+
+11-Mar-24 04:53:52 - End of Script
+11-Mar-24 04:53:52 - --------------------------------------------
+
