@@ -1,0 +1,19 @@
+11-Mar-24 04:05:04 - Test Speaker: M04
+11-Mar-24 04:05:04 - Log File Path: /output/logs/torgo_xlsr_finetune_M04_keep_all/M04_evaluate_20240311_040504.log
+
+11-Mar-24 04:05:05 - Using GPU: Tesla T4
+
+11-Mar-24 04:05:05 - Loading the model and processor from macarious/torgo_xlsr_finetune_M04_keep_all
+11-Mar-24 04:05:36 - Model loaded from macarious/torgo_xlsr_finetune_M04_keep_all
+11-Mar-24 04:05:37 - Processor loaded from macarious/torgo_xlsr_finetune_M04_keep_all
+
+11-Mar-24 04:05:38 - Splitting the dataset into training / validation / test sets...
+11-Mar-24 04:05:38 - Unique speakers found in the dataset:
+11-Mar-24 04:05:38 - ['F01' 'F03' 'F04' 'FC01' 'FC02' 'FC03' 'M01' 'M02' 'M03' 'M04' 'M05'
+ 'MC01' 'MC02' 'MC03' 'MC04']
+
+11-Mar-24 04:05:38 - After removal of repeated prompts, the number of data in each dataset is:
+11-Mar-24 04:05:38 - Train:       9559/14667 (65%)
+11-Mar-24 04:05:38 - Validation:  483/1075 (44%)
+11-Mar-24 04:05:38 - Test:        360/652 (55%)
+
