@@ -80,6 +80,21 @@ M01 was also tested with 40 epochs.
 
 ### All Data are Retained in the Train/Validation/Test Sets
 
+This table uses the same prompts for the test set as the previous experiment (where there is no repeated data between the train/validation sets and the test set).
+
+| Speaker       | Epochs | Train  | Validation | Test   |
+| ------------- | ------ | ------ | ---------- | ------ |
+| F01 (severe)  | 20     | 0.0124 | 0.2329     | 0.4727 |
+| F03 (mild)    | 20     | 0.0135 | 0.0450     | 0.2543 |
+| F04 (mild)    | 20     | 0.0137 | 0.2386     | 0.0446 |
+| M01 (severe)  | 20     | 0.0126 | 0.2474     | 0.4328 |
+| M02 (severe)  | 20     | 0.0124 | 0.2463     | 0.5521 |
+| M03 (mild)    | 20     | 0.0129 | 0.2375     | 0.0376 |
+| M04 (severe)  | 20     | 0.0115 | 0.2318     | 0.6581 |
+| M05 (sev/mid) | 20     | 0.0125 | 0.2245     | 0.5620 |
+
+---- The following table is superseded by the table above ----
+This table uses all the data in the Test set.
 | Speaker       | Epochs | Train  | Validation | Test   |
 | ------------- | ------ | ------ | ---------- | ------ |
 | F01 (severe)  | 20     | 0.0124 | 0.2329     | 0.4645 |
