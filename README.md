@@ -7,6 +7,13 @@ This README file is under construction.
 ### No Repeated Data between the Train/Validation Sets and the Test Set
 Some prompts are left out in order to avoid having prompt overlaps between train/validation set and test set. The target speakers refer to the data in the test set.
 
+Prompt Split Analysis:
+Version 1 (without linear programming:
+(https://drive.google.com/drive/folders/1ZuPQNjbS5CNgaagOP9R3WEi-Aywfq1Y2?usp=sharing)
+
+Version 2 (with linear programming):
+(https://drive.google.com/drive/folders/1p7ZDf32QmcDCxSSOdvr15ZjuupIsjuMV?usp=sharing)
+
 | Speaker       | Train | Validation | Test |
 | ------------- | ----- | ---------- | ---- |
 | F01 (severe)  | 9638  | 460        | 115  |
