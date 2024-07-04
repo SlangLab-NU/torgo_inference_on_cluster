@@ -39,6 +39,7 @@ def predict_and_evaluate():
     Optional arguments:
     --keep_all_data: Keep all text or only repeated text (default: False)
     --repo_suffix: Repository suffix
+    --n_best: Number of best hypothesis to be inferred
     --------------------------------------------------------------------------------
     '''
     parser = argparse.ArgumentParser(
@@ -48,11 +49,14 @@ def predict_and_evaluate():
     parser.add_argument('speaker_id', type=str,
                         help='Speaker ID in the format [MF]C?[0-9]{2}')
 
+
     # Optional arguments with default values
     parser.add_argument('--keep_all_data', action='store_true',
                         help='Keep all text or only repeated text')
     parser.add_argument('--repo_suffix', type=str,
                         default='', help='Repository suffix')
+    parser.add_argument('--n_best', type=str, default="1",
+                        help='Number of best hypothesis to be inferred')
 
     args = parser.parse_args()
 
@@ -335,7 +339,7 @@ def predict_and_evaluate():
     if not os.path.exists(output_path + '/results'):
         os.makedirs(output_path + '/results')
 
-    results_dir = f'{output_path}/results/{repo_name}'
+    results_dir = f'{output_path}/results/{repo_name}_nbest_{args.n_best}'
 
     # Create the results directory for the current speaker, if it does not exist
     if not os.path.exists(results_dir):
@@ -365,15 +369,22 @@ def predict_and_evaluate():
                 inputs = {key: val.to("cuda") for key, val in inputs.items()}
 
             # Predict
+            reference = dataset[i]["text"].lower()
             with torch.no_grad():
                 logits = model(**inputs).logits
-            predicted_ids = torch.argmax(logits, dim=-1)
-            prediction = processor.batch_decode(predicted_ids)[0].lower()
+                top_n_predicted_ids = torch.topk(logits, int(args.n_best), dim=-1).indices
 
-            reference = dataset[i]["text"].lower()
+            for j in range(int(args.n_best)):
+                predicted_ids = top_n_predicted_ids[:, :, j]
+                prediction = processor.batch_decode(predicted_ids)[0].lower()
+                predictions.append(prediction)
+                references.append(reference)
 
-            predictions.append(prediction)
-            references.append(reference)
+            # predicted_ids = torch.argmax(logits, dim=-1)
+            # prediction = processor.batch_decode(predicted_ids)[0].lower()
+
+            # predictions.append(prediction)
+            # references.append(reference)
 
         return predictions, references
 
