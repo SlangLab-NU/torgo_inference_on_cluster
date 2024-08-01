@@ -1,0 +1,1265 @@
+audio_path,references,speaker,predictions
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0006.wav,jagged,M04,la
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0006.wav,jagged,M04,ja
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0006.wav,jagged,M04,nay
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0006.wav,jagged,M04,ta
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0006.wav,jagged,M04,na
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0007.wav,grandfather likes to be modern in his language,M04,god grant posin like to be my modeling in an his leg in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0007.wav,grandfather likes to be modern in his language,M04,god grant posin like to be my madeline in an his leg in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0007.wav,grandfather likes to be modern in his language,M04,god grant posin like to be my motoring in an his leg in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0007.wav,grandfather likes to be modern in his language,M04,god grant posin like to be my modeling in an his leg an
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0007.wav,grandfather likes to be modern in his language,M04,god grant posin like to be my modeling in an his leg en
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0008.wav,sticks,M04,did
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0008.wav,sticks,M04,in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0008.wav,sticks,M04,di
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0008.wav,sticks,M04,din
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0008.wav,sticks,M04,i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0009.wav,slip,M04,flip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0009.wav,slip,M04,lip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0009.wav,slip,M04,limp
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0009.wav,slip,M04,lib
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0009.wav,slip,M04,flop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0010.wav,left,M04,let
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0010.wav,left,M04,lett
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0010.wav,left,M04,lat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0010.wav,left,M04,lit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0010.wav,left,M04,lot
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0011.wav,right,M04,wait
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0012.wav,feet,M04,fit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0012.wav,feet,M04,fet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0012.wav,feet,M04,fred
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0012.wav,feet,M04,ted
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0012.wav,feet,M04,find
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0013.wav,form,M04,one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0013.wav,form,M04,on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0013.wav,form,M04,o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0013.wav,form,M04,an
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0013.wav,form,M04,or
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0014.wav,she had your dark suit in greasy wash water all year,M04,she had you done punin goodly while what what are you
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0014.wav,she had your dark suit in greasy wash water all year,M04,she had yet done punin goodly while what what are you
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0014.wav,she had your dark suit in greasy wash water all year,M04,she had you done punin goodly well what what are you
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0014.wav,she had your dark suit in greasy wash water all year,M04,she had yet done punin goodly well what what are you
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0014.wav,she had your dark suit in greasy wash water all year,M04,she had you done bonin goodly while what what are you
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0015.wav,up,M04,up
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0016.wav,jacket,M04,jack and
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0016.wav,jacket,M04,jacket
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0016.wav,jacket,M04,jake
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0016.wav,jacket,M04,jacot
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0016.wav,jacket,M04,dagont
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0017.wav,storm,M04,dom
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0017.wav,storm,M04,tom
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0017.wav,storm,M04,come
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0017.wav,storm,M04,com
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0017.wav,storm,M04,don
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0018.wav,go,M04,go
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0019.wav,sheet,M04,ut
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0019.wav,sheet,M04,u
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0019.wav,sheet,M04,
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0019.wav,sheet,M04,up
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0019.wav,sheet,M04,o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0020.wav,spark,M04,berg
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0020.wav,spark,M04,bug
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0020.wav,spark,M04,beg
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0020.wav,spark,M04,burg
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0020.wav,spark,M04,big
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0021.wav,yes,M04,yet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0021.wav,yes,M04,yes
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0022.wav,fee,M04,death
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0022.wav,fee,M04,teeth
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0022.wav,fee,M04,beth
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0022.wav,fee,M04,that
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0022.wav,fee,M04,beat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0023.wav,swarm,M04,gum
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0023.wav,swarm,M04,cum
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0023.wav,swarm,M04,com
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0023.wav,swarm,M04,come
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0023.wav,swarm,M04,gom
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0024.wav,giving those who observe him a pronounced feeling of the utmost respect,M04,giving those who had torn him ah pornell feeling of an that i am going to repent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0024.wav,giving those who observe him a pronounced feeling of the utmost respect,M04,giving those who had torn him ah pornell feeling of an that i'm going to repent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0024.wav,giving those who observe him a pronounced feeling of the utmost respect,M04,giving those who had torn him ah pornell feeling of an that am going to repent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0024.wav,giving those who observe him a pronounced feeling of the utmost respect,M04,giving those who had torn him ah pornell feeling of am that am going to repent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0024.wav,giving those who observe him a pronounced feeling of the utmost respect,M04,giving those who had torn him ah pornell feeling of a that am going to repent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0026.wav,stubble,M04,dame
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0026.wav,stubble,M04,the man
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0026.wav,stubble,M04,then mon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0026.wav,stubble,M04,dan me
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0026.wav,stubble,M04,dan mot
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0028.wav,rage,M04,rage
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0028.wav,rage,M04,race
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0028.wav,rage,M04,rice
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0028.wav,rage,M04,age
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0028.wav,rage,M04,ach
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0029.wav,when he speaks his voice is just a bit cracked and quivers a trifle,M04,when when you beat a hit void is in god get a bit gorgo and anquetil i am dread to triton
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0029.wav,when he speaks his voice is just a bit cracked and quivers a trifle,M04,when when he beat you hit void is in god get a bit gorgo and anquetil i am dread to triton
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0029.wav,when he speaks his voice is just a bit cracked and quivers a trifle,M04,when when you beat a hit void is in god get a bit gorgo and anquetil i am dread to troon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0029.wav,when he speaks his voice is just a bit cracked and quivers a trifle,M04,when when you beat a hit void is in god get a bit gorgo and anquetil i am dread to trebon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0029.wav,when he speaks his voice is just a bit cracked and quivers a trifle,M04,when when he beat you hit void is in god get a bit gorgo and anquetil i am dread to troon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0030.wav,park,M04,bug
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0030.wav,park,M04,the bug
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0030.wav,park,M04,a bug
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0030.wav,park,M04,the bog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0030.wav,park,M04,a bog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0031.wav,hair,M04,
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0031.wav,hair,M04,a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0031.wav,hair,M04,e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0031.wav,hair,M04,an
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0031.wav,hair,M04,he
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0032.wav,don't ask me to carry an oily rag like that,M04,don't ask me don't ye a a an he laying like that
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0032.wav,don't ask me to carry an oily rag like that,M04,don't ask me don't ye a a or he laying like that
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0032.wav,don't ask me to carry an oily rag like that,M04,don't ask me don't you a a or he laying like that
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0032.wav,don't ask me to carry an oily rag like that,M04,don't ask me don't ye a a an he lying like that
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0032.wav,don't ask me to carry an oily rag like that,M04,don't ask me don't ye a a or he lying like that
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0033.wav,except in the winter when the ooze or snow or ice prevents,M04,it's that in that wonder when that tha own or no or in it
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0033.wav,except in the winter when the ooze or snow or ice prevents,M04,it's that in that wonder when that tha own or no or i in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0033.wav,except in the winter when the ooze or snow or ice prevents,M04,it's that in that wonder when that tha own or no or in in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0033.wav,except in the winter when the ooze or snow or ice prevents,M04,it's that in that wonder when that tha own or no or i'd bin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0033.wav,except in the winter when the ooze or snow or ice prevents,M04,it's that in that wonder when that tha own or no or i'd pin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0034.wav,down,M04,down
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0034.wav,down,M04,don
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0034.wav,down,M04,downe
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0034.wav,down,M04,doun
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0034.wav,down,M04,dawn
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0035.wav,sip,M04,flip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0035.wav,sip,M04,tip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0035.wav,sip,M04,pip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0035.wav,sip,M04,ship
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0035.wav,sip,M04,hip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0036.wav,knew,M04,now
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0036.wav,knew,M04,no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0036.wav,knew,M04,new
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0036.wav,knew,M04,ne
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0036.wav,knew,M04,now o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0037.wav,sip,M04,ship
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0037.wav,sip,M04,tip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0037.wav,sip,M04,chip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0037.wav,sip,M04,thip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0037.wav,sip,M04,slip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0038.wav,the quick brown fox jumps over the lazy dog,M04,that got blown fun jump over on an that lazy dog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0038.wav,the quick brown fox jumps over the lazy dog,M04,that got blown fun jump over on an that lady dog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0038.wav,the quick brown fox jumps over the lazy dog,M04,that got blown fun jump over on a that lazy dog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0038.wav,the quick brown fox jumps over the lazy dog,M04,that got blown fun jump over on a that lady dog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0038.wav,the quick brown fox jumps over the lazy dog,M04,that got blown fun jump over on an the lazy dog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0039.wav,i can,M04,a makkin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0039.wav,i can,M04,a magian
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0039.wav,i can,M04,makkin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0039.wav,i can,M04,magican
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0039.wav,i can,M04,a magican
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0041.wav,trade,M04,dread
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0041.wav,trade,M04,read
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0041.wav,trade,M04,dried
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0041.wav,trade,M04,red
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0041.wav,trade,M04,dred
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0042.wav,rate,M04,read
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0042.wav,rate,M04,red
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0042.wav,rate,M04,reat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0042.wav,rate,M04,ret
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0042.wav,rate,M04,reid
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0043.wav,meat,M04,meat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0043.wav,meat,M04,meet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0044.wav,yet he still thinks as swiftly as ever,M04,yet she to lin and wildly at the aber
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0044.wav,yet he still thinks as swiftly as ever,M04,yet she to in and wildly at the aber
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0044.wav,yet he still thinks as swiftly as ever,M04,yet she to lin and wildly at the haber
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0044.wav,yet he still thinks as swiftly as ever,M04,yet she to in and wildly at the haber
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0044.wav,yet he still thinks as swiftly as ever,M04,yet she to lin and wildly at the nebber
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0045.wav,we have often urged him to walk more and smoke less,M04,we are a tin ear jim to wilmore and molten
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0045.wav,we have often urged him to walk more and smoke less,M04,we are a tin ear jim to wilmore and muggleton
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0045.wav,we have often urged him to walk more and smoke less,M04,we are a tin ear jim to wilmore and smuggled
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0045.wav,we have often urged him to walk more and smoke less,M04,we are a tin ear tim to wilmore and muggleton
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0045.wav,we have often urged him to walk more and smoke less,M04,we are a tin ear tim to wilmore and smuggled
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0046.wav,we have often urged him to walk more and smoke less,M04,we we have a eart in to doing to one more an an an some more left
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0046.wav,we have often urged him to walk more and smoke less,M04,we we have a eart in to doin to one more an an an some more left
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0046.wav,we have often urged him to walk more and smoke less,M04,we we have a eart in to don to one more an an an some more left
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0046.wav,we have often urged him to walk more and smoke less,M04,we we have a tin ear im to doing to one more an an an some more left
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0046.wav,we have often urged him to walk more and smoke less,M04,we we have a eart in to doing to one more an an an some more les
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0047.wav,train,M04,dream
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0048.wav,a long flowing beard clings to his chin,M04,a low along a long flowing and bear go cling to in gen
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0048.wav,a long flowing beard clings to his chin,M04,a low along a long flowing and bear go cling to in g
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0048.wav,a long flowing beard clings to his chin,M04,a la alone a long flowing and bear go cling to in gen
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0048.wav,a long flowing beard clings to his chin,M04,a low along a long flowing and bear go clean doing
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0048.wav,a long flowing beard clings to his chin,M04,a la alone a long flowing and bear go cling to in g
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0049.wav,feed,M04,feed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0050.wav,feed,M04,feed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0050.wav,feed,M04,fed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0050.wav,feed,M04,fid
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0050.wav,feed,M04,fied
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0050.wav,feed,M04,fig
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0051.wav,farm,M04,fons
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0051.wav,farm,M04,from
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0051.wav,farm,M04,fans
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0051.wav,farm,M04,fan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0051.wav,farm,M04,fine
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0052.wav,usually minus several buttons,M04,u u gen farwell ben
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0052.wav,usually minus several buttons,M04,u u gen five ben
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0052.wav,usually minus several buttons,M04,u u gen farwell bun
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0052.wav,usually minus several buttons,M04,u u gen farwell ban
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0052.wav,usually minus several buttons,M04,u u gen farwell bon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0053.wav,dug,M04,dog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0053.wav,dug,M04,du
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0053.wav,dug,M04,dug
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0053.wav,dug,M04,gug
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0053.wav,dug,M04,dag
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0054.wav,bit,M04,dick
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0054.wav,bit,M04,dic
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0054.wav,bit,M04,di
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0054.wav,bit,M04,vick
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0054.wav,bit,M04,tick
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0055.wav,race,M04,rage
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0055.wav,race,M04,wage
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0055.wav,race,M04,age
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0055.wav,race,M04,rege
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0055.wav,race,M04,rag
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0056.wav,sip,M04,sip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0056.wav,sip,M04,a sip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0056.wav,sip,M04,slip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0056.wav,sip,M04,i sip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0056.wav,sip,M04,cip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0057.wav,range,M04,rank
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0057.wav,range,M04,ren
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0057.wav,range,M04,rang
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0057.wav,range,M04,eng
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0057.wav,range,M04,ring
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0058.wav,share,M04,the
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0058.wav,share,M04,te
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0058.wav,share,M04,tu
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0058.wav,share,M04,ther
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0058.wav,share,M04,ter
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0059.wav,chair,M04,jim
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0059.wav,chair,M04,go
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0059.wav,chair,M04,je
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0059.wav,chair,M04,gil
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0059.wav,chair,M04,gen
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0060.wav,he slowly takes a short walk in the open air each day,M04,he's only think of juno in at the open air he i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0060.wav,he slowly takes a short walk in the open air each day,M04,he's only think of juno in at the open air he d
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0060.wav,he slowly takes a short walk in the open air each day,M04,he's only think a juno in at the open air he d
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0060.wav,he slowly takes a short walk in the open air each day,M04,he's only think o juno in at the open air he d
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0060.wav,he slowly takes a short walk in the open air each day,M04,he's only think a juno in at the open air he i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0061.wav,grow,M04,go
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0061.wav,grow,M04,goo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0061.wav,grow,M04,g o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0061.wav,grow,M04,go o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0061.wav,grow,M04,goa
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0062.wav,the,M04,the
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0062.wav,the,M04,that
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0062.wav,the,M04,tha
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0062.wav,the,M04,tho
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0062.wav,the,M04,ta
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0063.wav,for,M04,four
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0063.wav,for,M04,four a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0064.wav,tear up that paper,M04,the unentebat be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0064.wav,tear up that paper,M04,the unentebat bi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0064.wav,tear up that paper,M04,the unentebab bi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0064.wav,tear up that paper,M04,the unentebad bi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0064.wav,tear up that paper,M04,the unentebat big
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0066.wav,beat,M04,beat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0066.wav,beat,M04,bit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0066.wav,beat,M04,bet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0066.wav,beat,M04,bed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0066.wav,beat,M04,bid
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0067.wav,ship,M04,chip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0067.wav,ship,M04,strip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0067.wav,ship,M04,ship
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0067.wav,ship,M04,scrip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0067.wav,ship,M04,tip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0068.wav,rake,M04,make
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0068.wav,rake,M04,wake
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0068.wav,rake,M04,mak
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0068.wav,rake,M04,rake
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0068.wav,rake,M04,bake
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0069.wav,trouble,M04,to table
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0069.wav,trouble,M04,to tabor
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0069.wav,trouble,M04,to tame
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0069.wav,trouble,M04,to tribe
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0069.wav,trouble,M04,to treble
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0070.wav,feet,M04,beat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0070.wav,feet,M04,deat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0070.wav,feet,M04,deet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0070.wav,feet,M04,det
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0070.wav,feet,M04,deep
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0071.wav,trace,M04,ruth
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0071.wav,trace,M04,truth
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0071.wav,trace,M04,druth
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0071.wav,trace,M04,troth
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0071.wav,trace,M04,doth
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0072.wav,floor,M04,flor
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0072.wav,floor,M04,for
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0072.wav,floor,M04,lor
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0072.wav,floor,M04,floor
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0072.wav,floor,M04,or
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0073.wav,dark,M04,dot
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0073.wav,dark,M04,dead
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0073.wav,dark,M04,dod
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0073.wav,dark,M04,dat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0073.wav,dark,M04,des
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0074.wav,rave,M04,grave
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0074.wav,rave,M04,rave
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0074.wav,rave,M04,rafe
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0074.wav,rave,M04,raife
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0074.wav,rave,M04,rav
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0075.wav,swore,M04,four
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0075.wav,swore,M04,for
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0075.wav,swore,M04,toi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0075.wav,swore,M04,to
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0075.wav,swore,M04,thou
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0076.wav,air,M04,eh
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0076.wav,air,M04,e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0076.wav,air,M04,he
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0076.wav,air,M04,
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0076.wav,air,M04,a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0077.wav,you wished to know all about my grandfather,M04,you what rule do no all all upon my my mind don't grown butter
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0077.wav,you wished to know all about my grandfather,M04,you want one i do no all all upon my my mind don't grown butter
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0077.wav,you wished to know all about my grandfather,M04,you what rule do no all all upon my my mind don't growl butter
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0077.wav,you wished to know all about my grandfather,M04,you want one i do no all all upon my my mind don't growl butter
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0077.wav,you wished to know all about my grandfather,M04,you what rule do no all all upon my my mind don't ground butter
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0078.wav,store,M04,don
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0078.wav,store,M04,down
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0078.wav,store,M04,dan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0078.wav,store,M04,ton
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0078.wav,store,M04,doing
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0079.wav,feed,M04,i feed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0079.wav,feed,M04,i tied
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0079.wav,feed,M04,i fed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0079.wav,feed,M04,sie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0079.wav,feed,M04,sipped
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0080.wav,goat,M04,got
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0080.wav,goat,M04,god
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0080.wav,goat,M04,gold
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0080.wav,goat,M04,gut
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0080.wav,goat,M04,good
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0081.wav,born,M04,born
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0081.wav,born,M04,borden
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0081.wav,born,M04,bordin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0081.wav,born,M04,borla
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0081.wav,born,M04,boring
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0082.wav,one,M04,on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0082.wav,one,M04,one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0082.wav,one,M04,en
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0082.wav,one,M04,an
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0082.wav,one,M04,when
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0083.wav,he dresses himself in an ancient black frock coat,M04,he gritted and thrown in in there and then on did then but like or bog could
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0083.wav,he dresses himself in an ancient black frock coat,M04,he gritted and thrown in in there and then on did then but like poor bog could
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0083.wav,he dresses himself in an ancient black frock coat,M04,he gritted and thrown in in there and then on did then but like for bog could
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0083.wav,he dresses himself in an ancient black frock coat,M04,he gritted and thrown in in there and then on did in brute like or bog could
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0083.wav,he dresses himself in an ancient black frock coat,M04,he gritted and thrown in in there and then on did in brute like for bog could
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0084.wav,tip,M04,dip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0084.wav,tip,M04,tip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0084.wav,tip,M04,dib
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0084.wav,tip,M04,gip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0084.wav,tip,M04,tib
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0085.wav,car,M04,father
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0085.wav,car,M04,brother
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0085.wav,car,M04,other
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0085.wav,car,M04,bother
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0085.wav,car,M04,tother
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0087.wav,swarm,M04,warm
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0087.wav,swarm,M04,swarm
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0087.wav,swarm,M04,worm
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0087.wav,swarm,M04,s warm
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0087.wav,swarm,M04,swam
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0090.wav,warm,M04,one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0090.wav,warm,M04,on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0090.wav,warm,M04,a one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0090.wav,warm,M04,o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0090.wav,warm,M04,at one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0091.wav,fair,M04,the
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0091.wav,fair,M04,fer
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0091.wav,fair,M04,ten
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0091.wav,fair,M04,then
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0091.wav,fair,M04,te
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0092.wav,gadget,M04,get in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0092.wav,gadget,M04,get rid
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0092.wav,gadget,M04,get it
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0092.wav,gadget,M04,get bit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0092.wav,gadget,M04,get rin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0093.wav,but he always answers banana oil,M04,but he all we depended the been than that oro
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0093.wav,but he always answers banana oil,M04,but he all we depended the been than that oriole
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0093.wav,but he always answers banana oil,M04,but he all we depended the ben than that oro
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0093.wav,but he always answers banana oil,M04,but he all we depended the ben than that oriole
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0093.wav,but he always answers banana oil,M04,but he all we depended the been than that ore
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0094.wav,double,M04,don
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0094.wav,double,M04,bon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0094.wav,double,M04,bo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0094.wav,double,M04,ben
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0094.wav,double,M04,be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0095.wav,beta,M04,bison
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0095.wav,beta,M04,besar
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0095.wav,beta,M04,basel
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0095.wav,beta,M04,i bison
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0095.wav,beta,M04,i besar
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0096.wav,glow,M04,lo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0096.wav,glow,M04,low
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0096.wav,glow,M04,l o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0096.wav,glow,M04,olo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0096.wav,glow,M04,l lo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0097.wav,air,M04,en
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0097.wav,air,M04,then
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0097.wav,air,M04,hen
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0097.wav,air,M04,an
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0097.wav,air,M04,ten
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0098.wav,well he is nearly ninety-three years old,M04,why he be he is really may tree is all
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0098.wav,well he is nearly ninety-three years old,M04,why he be he is really made three is all
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0098.wav,well he is nearly ninety-three years old,M04,why he be he is really may three is all
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0098.wav,well he is nearly ninety-three years old,M04,why he be he is really many tree is all
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0098.wav,well he is nearly ninety-three years old,M04,why he be he is really mad three is all
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0099.wav,alpha,M04,a va
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0099.wav,alpha,M04,a voi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0099.wav,alpha,M04,a fo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0099.wav,alpha,M04,au fo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0099.wav,alpha,M04,arva
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0100.wav,twice each day he plays skillfully and with zest upon our small organ,M04,to it now i am eight d e he played skilfully and well with that mabon an out mommogan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0100.wav,twice each day he plays skillfully and with zest upon our small organ,M04,to it now i am eight d e he played skilfully and we with that mabon an out mommogan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0100.wav,twice each day he plays skillfully and with zest upon our small organ,M04,to it now i am eight d e he played skilfully and well with that mabon out mommogan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0100.wav,twice each day he plays skillfully and with zest upon our small organ,M04,to it now i am eight d e he played skilfully and well with that mabon an out mammogan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0100.wav,twice each day he plays skillfully and with zest upon our small organ,M04,to it now i am eight d e he played skilfully and well with that mabon an out mummagan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0101.wav,horn,M04,on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0101.wav,horn,M04,one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0101.wav,horn,M04,when
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0101.wav,horn,M04,an
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0101.wav,horn,M04,ho
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0102.wav,horn,M04,on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0102.wav,horn,M04,ho
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0102.wav,horn,M04,hun
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0102.wav,horn,M04,hum
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0102.wav,horn,M04,one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0103.wav,torn,M04,don
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0103.wav,torn,M04,in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0103.wav,torn,M04,do i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0103.wav,torn,M04,dan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0103.wav,torn,M04,do in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0104.wav,two,M04,do
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0104.wav,two,M04,to
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0104.wav,two,M04,de
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0104.wav,two,M04,doo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0104.wav,two,M04,do o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0105.wav,corn,M04,clay
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0105.wav,corn,M04,lay
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0105.wav,corn,M04,cly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0105.wav,corn,M04,la
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0105.wav,corn,M04,cla
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0106.wav,stick,M04,dickon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0106.wav,stick,M04,deacon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0106.wav,stick,M04,dicon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0106.wav,stick,M04,dico
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0106.wav,stick,M04,dion
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0107.wav,raid,M04,read
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0107.wav,raid,M04,red
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0107.wav,raid,M04,lead
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0107.wav,raid,M04,reed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0107.wav,raid,M04,rad
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0110.wav,weed,M04,weed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0110.wav,weed,M04,we'd
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0110.wav,weed,M04,wed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0110.wav,weed,M04,we d
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0111.wav,pat,M04,bad
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0111.wav,pat,M04,at
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0111.wav,pat,M04,bat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0111.wav,pat,M04,but
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0111.wav,pat,M04,ad
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0112.wav,beat,M04,beat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0113.wav,knee,M04,me
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0113.wav,knee,M04,ne
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0113.wav,knee,M04,my
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0113.wav,knee,M04,e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0113.wav,knee,M04,mi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0114.wav,trait,M04,great
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0114.wav,trait,M04,greet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0114.wav,trait,M04,greek
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0114.wav,trait,M04,gret
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0114.wav,trait,M04,grat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0115.wav,rain,M04,rin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0115.wav,rain,M04,ren
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0115.wav,rain,M04,re
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0115.wav,rain,M04,ri
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0115.wav,rain,M04,run
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0116.wav,bubble,M04,deb
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0116.wav,bubble,M04,dep
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0116.wav,bubble,M04,dab
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0116.wav,bubble,M04,deve
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0116.wav,bubble,M04,debl
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0117.wav,knew,M04,now
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0117.wav,knew,M04,new
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0117.wav,knew,M04,no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0117.wav,knew,M04,ne
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0117.wav,knew,M04,neu
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0119.wav,chair,M04,je
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0119.wav,chair,M04,gee
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0119.wav,chair,M04,ger
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0119.wav,chair,M04,der
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0119.wav,chair,M04,ge
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0120.wav,bug,M04,but
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0121.wav,warm,M04,one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0121.wav,warm,M04,on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0122.wav,bat,M04,at
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0122.wav,bat,M04,mat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0122.wav,bat,M04,not
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0122.wav,bat,M04,aunt
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0122.wav,bat,M04,and
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0123.wav,no,M04,no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0123.wav,no,M04,o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0123.wav,no,M04,n
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0123.wav,no,M04,
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0125.wav,know,M04,no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0125.wav,know,M04,non
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0125.wav,know,M04,o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0125.wav,know,M04,on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0126.wav,storm,M04,gone
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0126.wav,storm,M04,don
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0126.wav,storm,M04,go on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0126.wav,storm,M04,done
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0126.wav,storm,M04,one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0128.wav,dagger,M04,dag
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0128.wav,dagger,M04,dagger
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0128.wav,dagger,M04,dago
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0128.wav,dagger,M04,da
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0128.wav,dagger,M04,de ge
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0130.wav,whoop,M04,one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0130.wav,whoop,M04,on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0130.wav,whoop,M04,o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0130.wav,whoop,M04,oe
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0130.wav,whoop,M04,un
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0131.wav,wish,M04,with
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0131.wav,wish,M04,wide
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0131.wav,wish,M04,white
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0131.wav,wish,M04,wid
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0131.wav,wish,M04,wie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0132.wav,boot,M04,good
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0132.wav,boot,M04,wood
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0132.wav,boot,M04,but
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0132.wav,boot,M04,bud
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0132.wav,boot,M04,god
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0133.wav,they carried me off on the stretcher,M04,they they give me on and on on and on and on in tratroom
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0133.wav,they carried me off on the stretcher,M04,they they give me on and on on and on and on in trathroom
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0133.wav,they carried me off on the stretcher,M04,they they give me on and on on and on and on in traitroom
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0133.wav,they carried me off on the stretcher,M04,they they give me on and on on and on and on in tratrom
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0133.wav,they carried me off on the stretcher,M04,they they give me on and on on and on and on in teatro
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0134.wav,sprinkle,M04,gone
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0134.wav,sprinkle,M04,begone
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0134.wav,sprinkle,M04,be gone
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0134.wav,sprinkle,M04,by gone
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0134.wav,sprinkle,M04,e gone
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0135.wav,though,M04,though
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0135.wav,though,M04,thou
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0135.wav,though,M04,tough
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0136.wav,tie,M04,die
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0136.wav,tie,M04,di
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0136.wav,tie,M04,i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0136.wav,tie,M04,ie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0136.wav,tie,M04,ti
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0137.wav,back,M04,mark
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0137.wav,back,M04,mak
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0137.wav,back,M04,mac
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0137.wav,back,M04,marc
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0137.wav,back,M04,ma
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0138.wav,back,M04,back
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0138.wav,back,M04,bac
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0139.wav,bad,M04,cat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0139.wav,bad,M04,cath
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0139.wav,bad,M04,beth
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0139.wav,bad,M04,pat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0139.wav,bad,M04,bath
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0140.wav,bear,M04,there
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0141.wav,bear,M04,ber
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0141.wav,bear,M04,bel
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0141.wav,bear,M04,be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0141.wav,bear,M04,but
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0141.wav,bear,M04,b
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0142.wav,floor,M04,flora
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0142.wav,floor,M04,for
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0142.wav,floor,M04,flor
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0142.wav,floor,M04,lor
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0142.wav,floor,M04,nor
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0143.wav,near,M04,near
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0143.wav,near,M04,nearer
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0143.wav,near,M04,a near
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0143.wav,near,M04,ner
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0143.wav,near,M04,neer
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0144.wav,bad,M04,bad
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0144.wav,bad,M04,ban
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0144.wav,bad,M04,bad a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0144.wav,bad,M04,bad o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0144.wav,bad,M04,bad n
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0145.wav,three,M04,three
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0145.wav,three,M04,tree
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0145.wav,three,M04,threes
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0146.wav,hate,M04,
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0146.wav,hate,M04,a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0146.wav,hate,M04,at
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0146.wav,hate,M04,and
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0146.wav,hate,M04,an
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0147.wav,two other cases also were under advisement,M04,to ther negate hoover under and there be mint
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0147.wav,two other cases also were under advisement,M04,to ther negate hoover under and there be men
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0147.wav,two other cases also were under advisement,M04,to ther negate hoover under and there be mit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0147.wav,two other cases also were under advisement,M04,to ther negate hoover under and there be mind
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0147.wav,two other cases also were under advisement,M04,to ther negate hoover under and there be ment
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0148.wav,pile,M04,by all
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0148.wav,pile,M04,by al
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0148.wav,pile,M04,by a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0148.wav,pile,M04,by l
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0148.wav,pile,M04,buy all
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0149.wav,we're,M04,where
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0149.wav,we're,M04,were
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0149.wav,we're,M04,wer
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0149.wav,we're,M04,wher
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0149.wav,we're,M04,we're
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0150.wav,we're,M04,a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0150.wav,we're,M04,
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0150.wav,we're,M04,o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0150.wav,we're,M04,e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0150.wav,we're,M04,ye
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0151.wav,we're,M04,u a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0151.wav,we're,M04,u i a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0151.wav,we're,M04,o a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0151.wav,we're,M04,o i a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0151.wav,we're,M04,a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0152.wav,steer,M04,de
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0152.wav,steer,M04,der
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0152.wav,steer,M04,dear
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0152.wav,steer,M04,die
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0152.wav,steer,M04,di
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0153.wav,one validated acts of school districts,M04,an velidin an me a doin pon de didi di tre
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0153.wav,one validated acts of school districts,M04,an velidin an me a doin pon de ditti di tre
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0153.wav,one validated acts of school districts,M04,an velidin an me a doin pon de ditti did try
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0153.wav,one validated acts of school districts,M04,an velidin an me a doin pon de ditti did tui
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0153.wav,one validated acts of school districts,M04,an velidin an me a doin pon de didi titre
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0155.wav,i was conscious all the time,M04,i what what was continued on the the diamond
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0155.wav,i was conscious all the time,M04,i what what was continued on that the diamond
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0155.wav,i was conscious all the time,M04,i what what what continue on that the diamond
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0155.wav,i was conscious all the time,M04,i w what what was continued on the the diamond
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0155.wav,i was conscious all the time,M04,i w what what was continued on that the diamond
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0156.wav,i was conscious all the time,M04,i would go to nuoro all the time
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0156.wav,i was conscious all the time,M04,i would go to numero all the time
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0156.wav,i was conscious all the time,M04,i would go to nuoro a the time
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0156.wav,i was conscious all the time,M04,i would go to nuoro or the time
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0156.wav,i was conscious all the time,M04,i would go to nuoro al the time
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0157.wav,she is thinner than i am,M04,to you boy wood ten then i am
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0157.wav,she is thinner than i am,M04,to you boy wooden then i am
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0157.wav,she is thinner than i am,M04,to you boy within then i am
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0157.wav,she is thinner than i am,M04,to you boy wood then i am
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0157.wav,she is thinner than i am,M04,to you boy wood ten ten i am
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0158.wav,i just try to do my best,M04,i did i'd go good twin to be the tomb of my bed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0158.wav,i just try to do my best,M04,i did i'd go good twin tomb be the tomb of my bed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0158.wav,i just try to do my best,M04,i did i did good twin tomb be the tomb of my bed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0158.wav,i just try to do my best,M04,i did i'd go good twin to be the tomb my bed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0158.wav,i just try to do my best,M04,i did i'd go good twin to be the tomb o my bed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0159.wav,pad,M04,bad
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0159.wav,pad,M04,gad
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0159.wav,pad,M04,glad
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0159.wav,pad,M04,blad
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0159.wav,pad,M04,bat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0160.wav,are your grades higher or lower than nancy's,M04,are you are you a green higher or loan than man tied
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0160.wav,are your grades higher or lower than nancy's,M04,are you are you a green higher or lorn than man tied
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0160.wav,are your grades higher or lower than nancy's,M04,are you are you a green higher or loan than tanti
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0160.wav,are your grades higher or lower than nancy's,M04,are you are you a green higher or loan than man tid
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0160.wav,are your grades higher or lower than nancy's,M04,are you are you a green higher or lorn than tanti
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0161.wav,group,M04,p
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0161.wav,group,M04,up
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0161.wav,group,M04,gip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0161.wav,group,M04,i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0161.wav,group,M04,lip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0162.wav,sigh,M04,si e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0162.wav,sigh,M04,say e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0162.wav,sigh,M04,so e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0162.wav,sigh,M04,s e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0162.wav,sigh,M04,sa e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0163.wav,snoop,M04,slope
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0163.wav,snoop,M04,sloop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0163.wav,snoop,M04,slop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0163.wav,snoop,M04,loop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0163.wav,snoop,M04,lop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0164.wav,slay,M04,lay
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0164.wav,slay,M04,flat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0164.wav,slay,M04,la
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0164.wav,slay,M04,flay
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0164.wav,slay,M04,play
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0165.wav,peer,M04,beer
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0165.wav,peer,M04,bear
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0165.wav,peer,M04,ber
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0165.wav,peer,M04,bee
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0165.wav,peer,M04,be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0166.wav,witch,M04,which
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0166.wav,witch,M04,witch
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0166.wav,witch,M04,with
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0166.wav,witch,M04,wich
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0166.wav,witch,M04,wie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0167.wav,lip,M04,lip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0168.wav,i tried to tell people in the community,M04,i dread to tell people in the dog men in die
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0168.wav,i tried to tell people in the community,M04,i dread to tell people in the dog meine
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0168.wav,i tried to tell people in the community,M04,i dread to tell people in the dog men indite
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0168.wav,i tried to tell people in the community,M04,i dread to tell people in the dog minded
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0168.wav,i tried to tell people in the community,M04,i dread to tell people in the dog men in dede
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0169.wav,area,M04,alia
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0169.wav,area,M04,elia
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0169.wav,area,M04,aia
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0169.wav,area,M04,adia
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0169.wav,area,M04,ali
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0170.wav,sway,M04,three
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0171.wav,slip,M04,slip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0171.wav,slip,M04,flip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0171.wav,slip,M04,lip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0171.wav,slip,M04,shlip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0172.wav,my sister made the flowered curtains,M04,mamma it it it got mad bout bein bet flower and countin dinin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0172.wav,my sister made the flowered curtains,M04,mamma it it it god made that bet bet flower and countin dinin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0172.wav,my sister made the flowered curtains,M04,mamma it it it got mad bout bein bet flower and count ten dinin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0172.wav,my sister made the flowered curtains,M04,mamma it it it got mad bout bein bet flower and counting dinin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0172.wav,my sister made the flowered curtains,M04,mamma it it it god made that bet bet flower and counting dinin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0173.wav,knot,M04,not
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0173.wav,knot,M04,no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0173.wav,knot,M04,nat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0173.wav,knot,M04,note
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0173.wav,knot,M04,nut
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0174.wav,we gathered shells on the beach,M04,we we get shot on on the bee beach
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0174.wav,we gathered shells on the beach,M04,we we get shot on on the beam beach
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0174.wav,we gathered shells on the beach,M04,we we get shot on on the beat beach
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0174.wav,we gathered shells on the beach,M04,we we get shot on on the bead beach
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0174.wav,we gathered shells on the beach,M04,we we get shot one on the bee beach
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0175.wav,explore,M04,a blond
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0175.wav,explore,M04,a tin plon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0175.wav,explore,M04,a tin blom
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0175.wav,explore,M04,a tin blond
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0175.wav,explore,M04,a blan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0176.wav,galore,M04,he got em
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0176.wav,galore,M04,he got en
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0176.wav,galore,M04,he got er
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0176.wav,galore,M04,he gather
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0176.wav,galore,M04,he got hen
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0177.wav,root,M04,wood
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0177.wav,root,M04,wot
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0177.wav,root,M04,vot
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0177.wav,root,M04,but
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0177.wav,root,M04,rod
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0178.wav,gnaw,M04,love
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0178.wav,gnaw,M04,move
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0178.wav,gnaw,M04,mo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0178.wav,gnaw,M04,mud
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0178.wav,gnaw,M04,lo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0179.wav,cheer,M04,he
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0179.wav,cheer,M04,her
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0179.wav,cheer,M04,she
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0179.wav,cheer,M04,here
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0179.wav,cheer,M04,e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0180.wav,write,M04,red
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0182.wav,he will allow a rare lie,M04,he wore a long a man ritolie a very red like
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0182.wav,he will allow a rare lie,M04,he was a long a man ritolie a very red like
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0182.wav,he will allow a rare lie,M04,he was a long hard man ritolie a very red like
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0182.wav,he will allow a rare lie,M04,he wore a long a man ratolie a very red like
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0182.wav,he will allow a rare lie,M04,he wore a long a man ritolie a very red lie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0183.wav,he will allow a rare lie,M04,he will allow a literary lie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0183.wav,he will allow a rare lie,M04,he will i allow a literary lie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0183.wav,he will allow a rare lie,M04,he will will allow a literary lie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0183.wav,he will allow a rare lie,M04,he will allow a a literary lie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0183.wav,he will allow a rare lie,M04,he will wallow a literary lie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0184.wav,briar,M04,be be be but be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0184.wav,briar,M04,be be be be be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0184.wav,briar,M04,ben but but be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0184.wav,briar,M04,be be be but bel
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0184.wav,briar,M04,be be be but ben
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0185.wav,briar,M04,bobbin be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0185.wav,briar,M04,he bemmon be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0185.wav,briar,M04,he mammon be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0185.wav,briar,M04,he bambo be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0185.wav,briar,M04,he bobbin be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0186.wav,just one side got wet,M04,gen worn by he got aware
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0186.wav,just one side got wet,M04,gen worn by he got ware
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0186.wav,just one side got wet,M04,gen worn by he got away
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0186.wav,just one side got wet,M04,gen worn by e got aware
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0186.wav,just one side got wet,M04,gen worn by he got war
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0187.wav,why yell or worry over silly items,M04,why ye are or were we and a burn philly idem
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0187.wav,why yell or worry over silly items,M04,why ye are or were we and a burne philly idem
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0187.wav,why yell or worry over silly items,M04,why ye are or were we and a burned philly idem
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0187.wav,why yell or worry over silly items,M04,why ye are or were we and a burn phil idem
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0187.wav,why yell or worry over silly items,M04,why ye are or were we and a burn philly item
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0188.wav,no,M04,no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0189.wav,bright sunshine shimmers on the ocean,M04,bit font get women and then the odin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0189.wav,bright sunshine shimmers on the ocean,M04,bit font get women and then the holding
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0189.wav,bright sunshine shimmers on the ocean,M04,bit fanti get women and then the odin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0189.wav,bright sunshine shimmers on the ocean,M04,bit fantine get women and then the odin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0189.wav,bright sunshine shimmers on the ocean,M04,bit fanti get women and then the holding
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0190.wav,where were you while we were away,M04,well bob were you on what i one we were away
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0190.wav,where were you while we were away,M04,well bob were you on what wine we were away
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0190.wav,where were you while we were away,M04,well bob were you on what i one we wear away
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0190.wav,where were you while we were away,M04,well bob were you on what wine we wear away
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0190.wav,where were you while we were away,M04,well bob were you on what wane we were away
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0191.wav,will robin wear a yellow lily,M04,alaman where a year lidy
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0191.wav,will robin wear a yellow lily,M04,alaman why a year lidy
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0191.wav,will robin wear a yellow lily,M04,alaman where a year liddy
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0191.wav,will robin wear a yellow lily,M04,walaban why a year lidy
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0191.wav,will robin wear a yellow lily,M04,walaban where a year lidy
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0192.wav,white,M04,what
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0192.wav,white,M04,what it
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0192.wav,white,M04,what t
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0192.wav,white,M04,want
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0192.wav,white,M04,wait
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0193.wav,delta,M04,dot
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0193.wav,delta,M04,dolt
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0193.wav,delta,M04,dent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0193.wav,delta,M04,deut
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0193.wav,delta,M04,det
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0194.wav,if you destroy confidence in banks you do something to the economy he said,M04,if you intended to camden in in ben you do someting to diccon then
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0194.wav,if you destroy confidence in banks you do something to the economy he said,M04,if you intended to cobden in in ben you do someting to diccon then
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0194.wav,if you destroy confidence in banks you do something to the economy he said,M04,if you intended to camden in in ben you do someting to diccon he then
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0194.wav,if you destroy confidence in banks you do something to the economy he said,M04,if you intended to camden in in ben you do someting to diomed he then
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0194.wav,if you destroy confidence in banks you do something to the economy he said,M04,if you intended to cobden in in ben you do someting to diccon he then
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0195.wav,suit,M04,it
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0195.wav,suit,M04,et
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0195.wav,suit,M04,bit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0195.wav,suit,M04,did
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0195.wav,suit,M04,id
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0196.wav,menu,M04,manu
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0196.wav,menu,M04,menu
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0196.wav,menu,M04,men
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0196.wav,menu,M04,man
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0196.wav,menu,M04,mene
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0197.wav,error,M04,he the
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0197.wav,error,M04,heather
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0197.wav,error,M04,he ther
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0197.wav,error,M04,ether
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0197.wav,error,M04,the
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0198.wav,light,M04,lake
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0198.wav,light,M04,like
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0198.wav,light,M04,late
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0199.wav,hear,M04,here
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0199.wav,hear,M04,her
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0200.wav,sigh,M04,f
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0200.wav,sigh,M04,fa
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0200.wav,sigh,M04,fi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0200.wav,sigh,M04,ta
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0200.wav,sigh,M04,to
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0201.wav,here,M04,here
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0202.wav,everything went real smooth the sheriff said,M04,every tint want on moon bondage said
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0202.wav,everything went real smooth the sheriff said,M04,every tent want on moon bondage said
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0202.wav,everything went real smooth the sheriff said,M04,every dint want on moon bondage said
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0202.wav,everything went real smooth the sheriff said,M04,every tint want won't moon bondage said
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0202.wav,everything went real smooth the sheriff said,M04,every tint want we on moon bondage said
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0203.wav,prior,M04,peter
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0203.wav,prior,M04,water
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0203.wav,prior,M04,pater
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0203.wav,prior,M04,pete
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0203.wav,prior,M04,pitter
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0204.wav,slip,M04,slip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0204.wav,slip,M04,flip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0204.wav,slip,M04,lip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0204.wav,slip,M04,clip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0204.wav,slip,M04,shlip
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0205.wav,rock,M04,rock
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0205.wav,rock,M04,roc
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0206.wav,i scrubbed the floors thoroughly,M04,i scrub exploring thrillingly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0206.wav,i scrubbed the floors thoroughly,M04,i scrub deploring thrillingly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0206.wav,i scrubbed the floors thoroughly,M04,i scrub declaring thrillingly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0206.wav,i scrubbed the floors thoroughly,M04,i scrub explorin thrillingly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0206.wav,i scrubbed the floors thoroughly,M04,i scrub declarin thrillingly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0207.wav,pay,M04,ben
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0207.wav,pay,M04,be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0207.wav,pay,M04,e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0207.wav,pay,M04,
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0207.wav,pay,M04,en
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0208.wav,all the big baseball players get traded,M04,or the big big ball playing kid drill
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0208.wav,all the big baseball players get traded,M04,of the big big ball playing kid drill
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0208.wav,all the big baseball players get traded,M04,oh the big big ball playing kid drill
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0208.wav,all the big baseball players get traded,M04,or the big big ball playing kid trill
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0208.wav,all the big baseball players get traded,M04,or the big big ball playing kid dill
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0209.wav,mut,M04,mud
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0209.wav,mut,M04,mut
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0209.wav,mut,M04,mudd
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0209.wav,mut,M04,mund
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0209.wav,mut,M04,mu
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0210.wav,knew,M04,no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0210.wav,knew,M04,o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0210.wav,knew,M04,no o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0212.wav,urgent,M04,forget it
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0212.wav,urgent,M04,forget
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0212.wav,urgent,M04,forget i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0212.wav,urgent,M04,forgetting
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0212.wav,urgent,M04,forget e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0213.wav,urgent,M04,regent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0213.wav,urgent,M04,vent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0213.wav,urgent,M04,dent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0213.wav,urgent,M04,event
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0213.wav,urgent,M04,vint
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0214.wav,of,M04,on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0214.wav,of,M04,ong
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0214.wav,of,M04,o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0214.wav,of,M04,one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0214.wav,of,M04,n
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0215.wav,ate,M04,eight
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0215.wav,ate,M04,eighty
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0215.wav,ate,M04,eight e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0215.wav,ate,M04,eight o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0215.wav,ate,M04,eight n
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0216.wav,mother sews yellow gingham aprons,M04,mullet it to yellow gang in em or bon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0216.wav,mother sews yellow gingham aprons,M04,mullet it to yellow gang in em abon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0216.wav,mother sews yellow gingham aprons,M04,mullet it to yellow gang in em or bun
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0216.wav,mother sews yellow gingham aprons,M04,mullet it to yellow gang in em or bone
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0216.wav,mother sews yellow gingham aprons,M04,mullet it to yellow gang in em or bong
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0217.wav,i feel i can play this weekend,M04,i feel hagablat it wigan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0217.wav,i feel i can play this weekend,M04,i feel hagablit it wigan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0217.wav,i feel i can play this weekend,M04,i feel hagablat bit wigan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0217.wav,i feel i can play this weekend,M04,i feel hagablit bit wigan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0217.wav,i feel i can play this weekend,M04,i feel hignblat it wigan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0218.wav,air,M04,er
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0218.wav,air,M04,r
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0218.wav,air,M04,her
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0218.wav,air,M04,ere
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0218.wav,air,M04,eh
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0219.wav,both figures would go higher in later years,M04,bolting and wouldn't go higher in in litter year
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0219.wav,both figures would go higher in later years,M04,bolting and would go higher in in litter year
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0219.wav,both figures would go higher in later years,M04,bolting and wouldn't go higher in an litter year
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0219.wav,both figures would go higher in later years,M04,bolting and wouldn't go higher in in letter year
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0219.wav,both figures would go higher in later years,M04,bolting and would go higher in an litter year
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0220.wav,jane may earn more money by working hard,M04,gen may earn more money by old we wigging heart
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0220.wav,jane may earn more money by working hard,M04,gen may earn more money by old we wiggin heart
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0220.wav,jane may earn more money by working hard,M04,gen may earn more money by old we wigging hard
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0220.wav,jane may earn more money by working hard,M04,gen may earn more money by old bluggy heart
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0220.wav,jane may earn more money by working hard,M04,gen may earn more money by old we wigging heard
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0221.wav,sigh,M04,thy
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0221.wav,sigh,M04,ti
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0221.wav,sigh,M04,si
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0221.wav,sigh,M04,thi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0221.wav,sigh,M04,tha
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0222.wav,rocks,M04,luck
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0222.wav,rocks,M04,luc
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0222.wav,rocks,M04,luk
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0222.wav,rocks,M04,lu
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0222.wav,rocks,M04,buck
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0223.wav,rocks,M04,that
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0223.wav,rocks,M04,tak
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0223.wav,rocks,M04,la
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0223.wav,rocks,M04,to
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0223.wav,rocks,M04,tha
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0224.wav,rocks,M04,luck
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0224.wav,rocks,M04,la
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0224.wav,rocks,M04,lac
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0224.wav,rocks,M04,luc
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0224.wav,rocks,M04,tak
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0226.wav,you'd be better off taking a cold shower,M04,bitter beer you you b b b better ha dogging bethink i a corda
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0226.wav,you'd be better off taking a cold shower,M04,bitter beer you you b b b better ha dogging bethink i acota
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0226.wav,you'd be better off taking a cold shower,M04,bitter beer you you b b better ha dogging bethink i acota
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0226.wav,you'd be better off taking a cold shower,M04,bitter beer you you b b b better ha dogging bethink a acota
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0226.wav,you'd be better off taking a cold shower,M04,bitter beer you you b b b better a dogging bethink i acota
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0227.wav,side,M04,five
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0228.wav,side,M04,fred
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0228.wav,side,M04,fine
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0228.wav,side,M04,five
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0228.wav,side,M04,fed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0228.wav,side,M04,fin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0229.wav,play,M04,posey
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0229.wav,play,M04,pete
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0229.wav,play,M04,pusey
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0229.wav,play,M04,post
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0229.wav,play,M04,poses
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0230.wav,cycle,M04,flag or
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0230.wav,cycle,M04,flag of
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0230.wav,cycle,M04,flag o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0230.wav,cycle,M04,flag
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0230.wav,cycle,M04,flagon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0231.wav,the train approached the depot slowly,M04,the drain a boding than the divotlodly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0231.wav,the train approached the depot slowly,M04,the drain a boon din than the divotlodly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0231.wav,the train approached the depot slowly,M04,the drain a boon gin than the divotlodly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0231.wav,the train approached the depot slowly,M04,the drain a bon din than the divotlodly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0231.wav,the train approached the depot slowly,M04,the drain a boon din that the divotlodly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0232.wav,suit,M04,said
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0232.wav,suit,M04,soit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0232.wav,suit,M04,sit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0232.wav,suit,M04,seit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0232.wav,suit,M04,set
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0233.wav,bat,M04,mac
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0233.wav,bat,M04,ma
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0233.wav,bat,M04,man
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0233.wav,bat,M04,mak
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0233.wav,bat,M04,monk
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0234.wav,ate,M04,e
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0234.wav,ate,M04,egg
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0234.wav,ate,M04,i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0234.wav,ate,M04,eg
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0234.wav,ate,M04,e g
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0235.wav,troop,M04,coop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0235.wav,troop,M04,coup
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0235.wav,troop,M04,cop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0235.wav,troop,M04,cope
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0235.wav,troop,M04,chop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0236.wav,their house is grey and white,M04,then down go and white
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0236.wav,their house is grey and white,M04,then down get and white
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0236.wav,their house is grey and white,M04,then down great and white
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0236.wav,their house is grey and white,M04,then down i get and white
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0236.wav,their house is grey and white,M04,then down go in white
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0238.wav,loop,M04,loop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0238.wav,loop,M04,loup
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0238.wav,loop,M04,lop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0239.wav,jungle,M04,dango
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0239.wav,jungle,M04,ganga
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0239.wav,jungle,M04,danger
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0239.wav,jungle,M04,ganges
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0239.wav,jungle,M04,jango
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0240.wav,deer,M04,dear
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0240.wav,deer,M04,der
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0240.wav,deer,M04,dea
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0240.wav,deer,M04,de
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0240.wav,deer,M04,deare
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0241.wav,shear,M04,sheer
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0241.wav,shear,M04,sher
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0241.wav,shear,M04,shear
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0241.wav,shear,M04,ser
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0241.wav,shear,M04,shir
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0242.wav,i looked up and noticed two old men,M04,i let the b and now i didn't know it to all men
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0242.wav,i looked up and noticed two old men,M04,i lit a b and now i didn't know it to all men
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0242.wav,i looked up and noticed two old men,M04,i let the b and now it didn't know it to all men
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0242.wav,i looked up and noticed two old men,M04,i lit a b and now it didn't know it to all men
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0242.wav,i looked up and noticed two old men,M04,i let the b and now he didn't know it to all men
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0243.wav,fruit,M04,but
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0243.wav,fruit,M04,fred
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0243.wav,fruit,M04,food
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0243.wav,fruit,M04,vot
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0243.wav,fruit,M04,fruit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0244.wav,fear,M04,fie
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0244.wav,fear,M04,fer
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0244.wav,fear,M04,friar
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0244.wav,fear,M04,fier
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0244.wav,fear,M04,fi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0245.wav,droop,M04,good
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0245.wav,droop,M04,go
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0245.wav,droop,M04,goo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0245.wav,droop,M04,gob
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0245.wav,droop,M04,god
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0246.wav,nothing is as offensive as innocence,M04,never in and and and he a dim then a dein
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0246.wav,nothing is as offensive as innocence,M04,never in and and and he a dim then a dewin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0246.wav,nothing is as offensive as innocence,M04,never in and and and he a dim then a derin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0246.wav,nothing is as offensive as innocence,M04,never in and and and he a dim then a denin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0246.wav,nothing is as offensive as innocence,M04,never in and and and he a dim then a degen
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0247.wav,innocence,M04,ingin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0247.wav,innocence,M04,in in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0247.wav,innocence,M04,ingen
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0247.wav,innocence,M04,in gin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0247.wav,innocence,M04,hingin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0248.wav,nothing is as offensive as innocence,M04,nothing in i had prevented the athenian
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0248.wav,nothing is as offensive as innocence,M04,nothing in i had prevented her at ain
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0248.wav,nothing is as offensive as innocence,M04,nothing in i had prevented her athenian
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0248.wav,nothing is as offensive as innocence,M04,nothing in i had prevented her adding
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0248.wav,nothing is as offensive as innocence,M04,nothing in i had prevented the adding
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0249.wav,single,M04,they no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0249.wav,single,M04,they now
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0249.wav,single,M04,the no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0249.wav,single,M04,then no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0249.wav,single,M04,they know
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0250.wav,four,M04,boy
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0250.wav,four,M04,for
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0250.wav,four,M04,bo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0250.wav,four,M04,bor
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0250.wav,four,M04,vor
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0251.wav,select,M04,red
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0251.wav,select,M04,ten
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0251.wav,select,M04,men
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0251.wav,select,M04,then
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0251.wav,select,M04,read
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0252.wav,dot,M04,dat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0252.wav,dot,M04,dad
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0252.wav,dot,M04,dag
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0252.wav,dot,M04,that
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0252.wav,dot,M04,at
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0253.wav,this was easy for us,M04,the way he neber
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0253.wav,this was easy for us,M04,the way he never
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0253.wav,this was easy for us,M04,the wan he neber
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0253.wav,this was easy for us,M04,the way he knew be
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0253.wav,this was easy for us,M04,the wain he neber
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0254.wav,mere,M04,mere
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0254.wav,mere,M04,mer
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0254.wav,mere,M04,me
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0254.wav,mere,M04,mir
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0254.wav,mere,M04,meer
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0255.wav,you're used to being on the field,M04,you you you you too being a one in on feeling
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0255.wav,you're used to being on the field,M04,you you you you too being a one on on feeling
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0255.wav,you're used to being on the field,M04,you you you and you too being a one in on feeling
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0255.wav,you're used to being on the field,M04,you you you you too being a one in an feeling
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0255.wav,you're used to being on the field,M04,you you you you too being a one in an feelin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0256.wav,coupe,M04,ob
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0256.wav,coupe,M04,gob
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0256.wav,coupe,M04,b
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0256.wav,coupe,M04,cob
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0256.wav,coupe,M04,cub
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0257.wav,pot,M04,but
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0260.wav,sleep,M04,fleet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0260.wav,sleep,M04,fleete
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0260.wav,sleep,M04,sleet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0260.wav,sleep,M04,sleep
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0260.wav,sleep,M04,fleets
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0261.wav,toot,M04,tod
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0261.wav,toot,M04,to
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0261.wav,toot,M04,tug
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0261.wav,toot,M04,tu
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0261.wav,toot,M04,tog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0262.wav,pat,M04,had to
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0262.wav,pat,M04,ad to
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0262.wav,pat,M04,i had to
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0262.wav,pat,M04,had
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0262.wav,pat,M04,had t
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0263.wav,write,M04,wait
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0263.wav,write,M04,wat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0263.wav,write,M04,ait
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0263.wav,write,M04,wit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0263.wav,write,M04,at
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0264.wav,the humidity is overwhelming there,M04,but she meant her waiting it overwhelming there
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0264.wav,the humidity is overwhelming there,M04,but she meant her wailing it overwhelming there
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0264.wav,the humidity is overwhelming there,M04,but she meant he waiting it overwhelming there
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0264.wav,the humidity is overwhelming there,M04,but she meant he waiting in overwhelming there
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0264.wav,the humidity is overwhelming there,M04,but she meant her waiting in overwhelming there
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0265.wav,shoot,M04,tut
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0265.wav,shoot,M04,cut
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0265.wav,shoot,M04,tot
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0265.wav,shoot,M04,toute
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0265.wav,shoot,M04,cute
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0266.wav,fate,M04,fata
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0266.wav,fate,M04,fatal
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0266.wav,fate,M04,fat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0266.wav,fate,M04,fate
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0266.wav,fate,M04,pat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0267.wav,know,M04,no
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0267.wav,know,M04,o
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0267.wav,know,M04,n
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0267.wav,know,M04,
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0268.wav,charlie,M04,surely
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0268.wav,charlie,M04,purely
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0268.wav,charlie,M04,curly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0268.wav,charlie,M04,surly
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0268.wav,charlie,M04,sorely
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0269.wav,thigh,M04,a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0269.wav,thigh,M04,say
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0269.wav,thigh,M04,fa
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0269.wav,thigh,M04,ha
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0269.wav,thigh,M04,hay
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0270.wav,tile,M04,fedor
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0270.wav,tile,M04,ted
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0270.wav,tile,M04,fido
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0270.wav,tile,M04,pede
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0270.wav,tile,M04,tao
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0271.wav,tile,M04,i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0271.wav,tile,M04,die
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0271.wav,tile,M04,di
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0271.wav,tile,M04,a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0271.wav,tile,M04,ay
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0272.wav,yes,M04,you
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0272.wav,yes,M04,yi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0272.wav,yes,M04,yoi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0272.wav,yes,M04,ye i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0272.wav,yes,M04,i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0273.wav,forward,M04,pon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0273.wav,forward,M04,poem
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0273.wav,forward,M04,pan
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0273.wav,forward,M04,po en
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0273.wav,forward,M04,po
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0274.wav,the islands are sparsely populated,M04,the island i am blind but ably did
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0274.wav,the islands are sparsely populated,M04,the island i am balin bob popley i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0274.wav,the islands are sparsely populated,M04,the island i am balin bob popley a
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0274.wav,the islands are sparsely populated,M04,the island i am blind but ably in
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0274.wav,the islands are sparsely populated,M04,the island i am blind but ably i
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0275.wav,juliet,M04,thicker one two three stop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0275.wav,juliet,M04,tucker one two three stop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0275.wav,juliet,M04,tripper one two three stop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0275.wav,juliet,M04,trippe one two three stop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0275.wav,juliet,M04,tipper one two three stop
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0276.wav,papa,M04,do yet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0276.wav,papa,M04,you let
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0276.wav,papa,M04,do let
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0276.wav,papa,M04,go yet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0276.wav,papa,M04,glen
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0277.wav,brawn,M04,baba
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0277.wav,brawn,M04,barba
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0277.wav,brawn,M04,bobo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0277.wav,brawn,M04,by bo
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0277.wav,brawn,M04,babu
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0278.wav,brawn,M04,bon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0278.wav,brawn,M04,on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0278.wav,brawn,M04,un
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0278.wav,brawn,M04,one
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0278.wav,brawn,M04,bun
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0279.wav,loyal,M04,marry on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0279.wav,loyal,M04,mary on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0279.wav,loyal,M04,marry an
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0279.wav,loyal,M04,marion
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0279.wav,loyal,M04,larry on
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0280.wav,hat,M04,hot
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0280.wav,hat,M04,hat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0280.wav,hat,M04,at
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0280.wav,hat,M04,had
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0280.wav,hat,M04,hut
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0281.wav,aluminum silverware can often be flimsy,M04,hot linum fever aware cannot then be b plenty
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0281.wav,aluminum silverware can often be flimsy,M04,hot linum fever aware cannot then b b plenty
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0281.wav,aluminum silverware can often be flimsy,M04,hot linum tevil aware cannot then be b plenty
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0281.wav,aluminum silverware can often be flimsy,M04,hot linum tevil aware cannot then b b plenty
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0281.wav,aluminum silverware can often be flimsy,M04,hot linum fever aware cannot then be be plenty
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0282.wav,it also provides for funds to clear slums and help colleges build dormitories,M04,it was a otompvain for fun tu tu tu r flam an el colin pilin do done tin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0282.wav,it also provides for funds to clear slums and help colleges build dormitories,M04,it was a otompvain for fun tu tu tu r flam an el colin pilin do done ten
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0282.wav,it also provides for funds to clear slums and help colleges build dormitories,M04,it was a otompvain for fun tu tu tu r flam an el colin pilin do done den
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0282.wav,it also provides for funds to clear slums and help colleges build dormitories,M04,it was a otompvain for fun tu tu tu r flam an el colin pilin do done din
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0282.wav,it also provides for funds to clear slums and help colleges build dormitories,M04,it was a otompvain for fun tu tu tu r flam an el colin pilin do donatin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0283.wav,it was a good win for us,M04,it were a wall with a green wing buon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0283.wav,it was a good win for us,M04,it were a wall with a green wing pon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0283.wav,it was a good win for us,M04,it were a wall with a green wing pron
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0283.wav,it was a good win for us,M04,it were a wall with a green wing peon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0283.wav,it was a good win for us,M04,it were a wall with a green wing peron
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0284.wav,kitten,M04,you didn't
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0284.wav,kitten,M04,he didn't
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0284.wav,kitten,M04,ye didn't
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0284.wav,kitten,M04,you didn
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0284.wav,kitten,M04,he didn
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0285.wav,i expect we'll bounce back this week,M04,i been bone i i bet what way will we will ben ban and did we
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0285.wav,i expect we'll bounce back this week,M04,i been bone i i bet what way will we will ben bun and did we
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0285.wav,i expect we'll bounce back this week,M04,i been bone i i bet what way will we will ben ban and he did we
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0285.wav,i expect we'll bounce back this week,M04,i been bone i i bet what way will we will ben bun and he did we
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0285.wav,i expect we'll bounce back this week,M04,i been bone i i bet what way will we will ben ban and he did wi
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0286.wav,she wore warm fleecy woolen overalls,M04,she wore a worm an de woman all le wrong
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0286.wav,she wore warm fleecy woolen overalls,M04,she wore a worm an de woman all le long
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0286.wav,she wore warm fleecy woolen overalls,M04,she wore a worm an de woman all le ronge
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0286.wav,she wore warm fleecy woolen overalls,M04,she wore a worm an de woman all le ron
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0286.wav,she wore warm fleecy woolen overalls,M04,she wore a worm an de woman all le rond
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0287.wav,spit,M04,bit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0287.wav,spit,M04,but
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0287.wav,spit,M04,it
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0287.wav,spit,M04,bet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0287.wav,spit,M04,pit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0288.wav,this is not a program of socialized medicine,M04,did i no i am benham to the linn and melvin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0288.wav,this is not a program of socialized medicine,M04,did i no i am benham to the linn and me melvin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0288.wav,this is not a program of socialized medicine,M04,did i no i am benham to the linn and mamevin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0288.wav,this is not a program of socialized medicine,M04,did i no i am benham to the linn and m melvin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0288.wav,this is not a program of socialized medicine,M04,did i no i am benham to the linn and memevin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0289.wav,pitting,M04,be be biding biding
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0289.wav,pitting,M04,bebe biding biding
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0289.wav,pitting,M04,be be bidin bidding
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0289.wav,pitting,M04,be be biddin bidding
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0289.wav,pitting,M04,be be bidin biting
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0290.wav,pitting,M04,i dine
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0290.wav,pitting,M04,eden
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0290.wav,pitting,M04,edin
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0290.wav,pitting,M04,i din
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0290.wav,pitting,M04,iden
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0291.wav,nothing has been done yet to take advantage of the enabling legislation,M04,nothing and had been done and to do to think of and then i am tontine with the boom
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0291.wav,nothing has been done yet to take advantage of the enabling legislation,M04,nothing and had been done and to do to think of and then i am done tant with the boom
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0291.wav,nothing has been done yet to take advantage of the enabling legislation,M04,nothing and had been done and to do to think of and then i am tontine with the bon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0291.wav,nothing has been done yet to take advantage of the enabling legislation,M04,nothing and had been done and to do to think of and then i am done tant with the bon
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0291.wav,nothing has been done yet to take advantage of the enabling legislation,M04,nothing and had been done and to do to think of and then i am tontine with the bum
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0293.wav,fat,M04,bad
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0293.wav,fat,M04,but
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0293.wav,fat,M04,at
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0293.wav,fat,M04,that
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0293.wav,fat,M04,bat
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0294.wav,park,M04,by hugh
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0294.wav,park,M04,bug
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0294.wav,park,M04,hugh
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0294.wav,park,M04,bog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0294.wav,park,M04,a hog
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0295.wav,there is a treehouse up above,M04,he is on it doonabove
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0295.wav,there is a treehouse up above,M04,he is on it douabove
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0295.wav,there is a treehouse up above,M04,he is on it dotabove
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0295.wav,there is a treehouse up above,M04,he is on doonabove
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0295.wav,there is a treehouse up above,M04,he is on douabove
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0296.wav,vat,M04,gent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0296.wav,vat,M04,get
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0296.wav,vat,M04,gen
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0296.wav,vat,M04,bent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0296.wav,vat,M04,but
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0297.wav,bit,M04,bent
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0297.wav,bit,M04,bet
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0297.wav,bit,M04,bend
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0297.wav,bit,M04,bit
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0297.wav,bit,M04,bed
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0298.wav,both injuries were to the same leg,M04,both indian or two then the din like
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0298.wav,both injuries were to the same leg,M04,both indian or two then the den like
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0298.wav,both injuries were to the same leg,M04,both indian or two then the dim like
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0298.wav,both injuries were to the same leg,M04,both indian or two then the dim lake
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//M04/Session2/wav_headMic/0298.wav,both injuries were to the same leg,M04,both indian or two then the den lak

@@ -1,0 +1,343 @@
+audio_path,references,speaker,predictions,test_data
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0020.wav,boot,F04,blot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0156.wav,leak,F04,leake,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0090.wav,zero,F04,deri,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0072.wav,night after night they received annoying phone calls,F04,night after night they received annoying fond calls,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0096.wav,i expect we'll bounce back this week,F04,i expect will bounce back this week,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0136.wav,nine,F04,gnawing,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0104.wav,pit,F04,pitt,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0171.wav,vat,F04,that,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0039.wav,lip,F04,lipp,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0184.wav,leak,F04,lek,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0136.wav,nine,F04,nari,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0082.wav,sell,F04,cell,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0082.wav,sell,F04,sel,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0185.wav,spain,F04,spinning,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0247.wav,please open the window quickly,F04,please open the window quickly,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0013.wav,all the big baseball players get traded,F04,all the big baseball player's get traded,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0249.wav,sin,F04,then,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0115.wav,it also provides for funds to clear slums and help colleges build dormitories,F04,it also provides for funds to clear slums and hel colleges build dormitories,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0187.wav,fat,F04,hot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0232.wav,x-ray,F04,x wa,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0106.wav,seed,F04,feed,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0210.wav,shell,F04,she,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0067.wav,four,F04,four h,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0027.wav,galore,F04,gelmgallore,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0211.wav,sin,F04,thin,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0220.wav,the pair of shoes was new,F04,the pair of shoes was new,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0197.wav,at,F04,tat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0120.wav,aluminum silverware can often be flimsy,F04,aluminum silver ware can often be flimsy,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0126.wav,this is a period of transition for me,F04,this is a period of transition for me,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0115.wav,it also provides for funds to clear slums and help colleges build dormitories,F04,it also provides for funds to clear slams and help colleges build dormitories,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0060.wav,yes,F04,yes,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0246.wav,sell,F04,thou,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0159.wav,the job provides many benefits,F04,the job provides many benefits,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0243.wav,although always alone we survive,F04,although always though always alone we survive,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0200.wav,he wrapped the package hastily,F04,he rapped the package hastily,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0159.wav,the job provides many benefits,F04,the job provides many benefit,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0027.wav,galore,F04,gellogelore,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0027.wav,galore,F04,gelmgellore,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0150.wav,take,F04,take,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0233.wav,lock,F04,rock,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0066.wav,write,F04,write,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0021.wav,boot,F04,bote,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0115.wav,it also provides for funds to clear slums and help colleges build dormitories,F04,it also provides for funds to clear slums and help colleges build dormitories,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0090.wav,zero,F04,dere,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0196.wav,leak,F04,lek,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0037.wav,menu,F04,mano,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0120.wav,aluminum silverware can often be flimsy,F04,aluminum silver were can often be flimsy,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0242.wav,witch,F04,which,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0052.wav,their house is grey and white,F04,their house is gray and white,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0013.wav,all the big baseball players get traded,F04,all the big base ball players get trated,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0038.wav,peer,F04,pere,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0032.wav,she is thinner than i am,F04,she is thinner than i am,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0136.wav,nine,F04,nai,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0218.wav,tin,F04,tin,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0207.wav,did dad do academic bidding,F04,did dad do academic bidding,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0038.wav,peer,F04,peter,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0066.wav,write,F04,right,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0082.wav,sell,F04,cel,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0143.wav,this is not a program of socialized medicine,F04,this is not a programme of socialized medicine,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0094.wav,darn,F04,darn,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0246.wav,sell,F04,so,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0070.wav,witch,F04,write,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0081.wav,oscar,F04,oskar,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0196.wav,leak,F04,leake,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0022.wav,rocks,F04,rocks,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0196.wav,leak,F04,leek,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0072.wav,night after night they received annoying phone calls,F04,night after night they received annoying fon calls,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0233.wav,lock,F04,rak,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0070.wav,witch,F04,rich,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0245.wav,nut,F04,nutt,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0224.wav,sheet,F04,h a sheet,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0046.wav,mere,F04,mere,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0019.wav,i scrubbed the floors thoroughly,F04,i scrubbed the floors thoroughly,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0079.wav,alfalfa is healthy for you,F04,alfalfa is healthy for you,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0213.wav,ticker,F04,ticker,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0127.wav,there is a treehouse up above,F04,there is a tree house up above,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0228.wav,the owners regularly look for plumbing leaks,F04,the owners regularly look for plumbing leak,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0013.wav,all the big baseball players get traded,F04,all the big base ball players get traded,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0065.wav,write,F04,wright,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0136.wav,nine,F04,naring,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0186.wav,fill,F04,phi,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0143.wav,this is not a program of socialized medicine,F04,this is not a programme of socialized medicines,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0038.wav,peer,F04,peer,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0221.wav,no,F04,no,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0223.wav,he really crucified him he nailed it for a yard loss,F04,he really crucified him he nailed it for a yard wot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0052.wav,their house is grey and white,F04,their house is gray and wite,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0146.wav,at,F04,ot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0224.wav,sheet,F04,sha sheet,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0228.wav,the owners regularly look for plumbing leaks,F04,the owners regularly look for plumbing leaks,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0232.wav,x-ray,F04,exway,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0171.wav,vat,F04,tat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0090.wav,zero,F04,dire,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0013.wav,all the big baseball players get traded,F04,all the big baseball players get trated,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0048.wav,pad,F04,pad,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0123.wav,cake,F04,cake,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0243.wav,although always alone we survive,F04,although always s although always alone we survive,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0145.wav,league,F04,leg,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0184.wav,leak,F04,leek,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0238.wav,ham,F04,ham,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0066.wav,write,F04,rate,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0001.wav,shoot,F04,shoot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0233.wav,lock,F04,rack,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0089.wav,pit,F04,pet,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0185.wav,spain,F04,sprang,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0169.wav,lima,F04,ayme,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0193.wav,a roll of wire lay near the wall,F04,a row of wire lay near the wall,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0118.wav,it was a good win for us,F04,it was a good win for us,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0013.wav,all the big baseball players get traded,F04,all the big baseball players get traded,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0021.wav,boot,F04,but,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0186.wav,fill,F04,phil,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0207.wav,did dad do academic bidding,F04,de dad to academic bidding,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0091.wav,much,F04,much,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0100.wav,six,F04,sixth,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0169.wav,lima,F04,oime,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0036.wav,nothing is as offensive as innocence,F04,nothing is as offensive as innocent,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0174.wav,blow,F04,blew,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0243.wav,although always alone we survive,F04,although always although always alone we survive,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0187.wav,fat,F04,what,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0213.wav,ticker,F04,picker,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0169.wav,lima,F04,o ima,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0174.wav,blow,F04,blow,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0186.wav,fill,F04,phill,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0206.wav,the books are very expensive,F04,the books are very expensive,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0065.wav,write,F04,write,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0096.wav,i expect we'll bounce back this week,F04,i expect we ll bounce back this week,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0243.wav,although always alone we survive,F04,although always a although always alone we survive,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0031.wav,delta,F04,tata,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0066.wav,write,F04,rite,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0185.wav,spain,F04,spring,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0153.wav,no,F04,no,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0240.wav,right,F04,writ,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0092.wav,fat,F04,that,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0003.wav,slay,F04,flay,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0156.wav,leak,F04,leek,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0186.wav,fill,F04,philo,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0089.wav,pit,F04,pit,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0147.wav,it eventually became a rather proud claim,F04,it eventually became a rather proud claim,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0233.wav,lock,F04,wal,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0241.wav,i'm willing to experiment for the first time,F04,i am willing to experiment for the first time,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0146.wav,at,F04,att,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0048.wav,pad,F04,pad h,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0146.wav,at,F04,at,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0092.wav,fat,F04,tat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0120.wav,aluminum silverware can often be flimsy,F04,aluminum silverware can often be flimsy,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0080.wav,mush,F04,mush,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0072.wav,night after night they received annoying phone calls,F04,night after night they received annoying fong calls,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0228.wav,the owners regularly look for plumbing leaks,F04,the owners regularly look for plumbing weeks,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0174.wav,blow,F04,brow,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0054.wav,urgent,F04,urgent,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0003.wav,slay,F04,fly,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0031.wav,delta,F04,delta,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0081.wav,oscar,F04,oscar,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0117.wav,bloat,F04,trot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0232.wav,x-ray,F04,ex way,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0084.wav,five,F04,five,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0121.wav,shy,F04,say,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0228.wav,the owners regularly look for plumbing leaks,F04,the owners regularly look for plumbing leek,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0105.wav,hat,F04,hat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0197.wav,at,F04,that,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0027.wav,galore,F04,gelmgelore,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0163.wav,eight,F04,eight,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0210.wav,shell,F04,shell,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0041.wav,we gathered shells on the beach,F04,we gathered shells on the beach,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0100.wav,six,F04,sixt,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0210.wav,shell,F04,shawl,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0104.wav,pit,F04,pet,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0037.wav,menu,F04,mene,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0101.wav,when all else fails use force,F04,when all else fails us fore,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0184.wav,leak,F04,leake,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0065.wav,write,F04,right,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0240.wav,right,F04,right,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0197.wav,at,F04,at,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0001.wav,shoot,F04,sut,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0155.wav,seven,F04,seven,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0020.wav,boot,F04,boot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0243.wav,although always alone we survive,F04,although always a though always alone we survive,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0223.wav,he really crucified him he nailed it for a yard loss,F04,he really crucified him he nailed it for a yard at,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0038.wav,peer,F04,petar,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0156.wav,leak,F04,leak,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0072.wav,night after night they received annoying phone calls,F04,night after night they received annoying fan calls,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0228.wav,the owners regularly look for plumbing leaks,F04,the owners regularly look for plumbing leeks,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0144.wav,this is not a program of socialized medicine,F04,this is not a program of socialized medicine,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0121.wav,shy,F04,sie,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0092.wav,fat,F04,bat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0052.wav,their house is grey and white,F04,their house is grey and wite,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0094.wav,darn,F04,dar,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0073.wav,and,F04,and,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0027.wav,galore,F04,gemogellore,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0094.wav,darn,F04,dan,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0200.wav,he wrapped the package hastily,F04,he wrapped the package hastily,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0185.wav,spain,F04,spang,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0101.wav,when all else fails use force,F04,when all else fails used force,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0221.wav,no,F04,o,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0020.wav,boot,F04,bot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0052.wav,their house is grey and white,F04,their house is grey and whit,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0121.wav,shy,F04,si,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0115.wav,it also provides for funds to clear slums and help colleges build dormitories,F04,it also provides for funds to clear slums and hep colleges build dormitories,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0090.wav,zero,F04,deril,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0089.wav,pit,F04,pith,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0218.wav,tin,F04,tim,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0119.wav,nothing has been done yet to take advantage of the enabling legislation,F04,nothing has been done yet to take advantage of the enabling legislation,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0169.wav,lima,F04,aime,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0227.wav,people who value themselves are life's winners,F04,people who value themselves are lifes winners,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0096.wav,i expect we'll bounce back this week,F04,i expect we'll bounce back this week,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0094.wav,darn,F04,dare,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0187.wav,fat,F04,but,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0037.wav,menu,F04,menu,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0117.wav,bloat,F04,wot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0223.wav,he really crucified him he nailed it for a yard loss,F04,he really crucified him he nailed it for a yard wat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0001.wav,shoot,F04,soit,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0187.wav,fat,F04,at,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0218.wav,tin,F04,ten,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0245.wav,nut,F04,nut,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0104.wav,pit,F04,pett,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0188.wav,fat,F04,fat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0090.wav,zero,F04,duri,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0210.wav,shell,F04,shall,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0146.wav,at,F04,not,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0145.wav,league,F04,league,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0246.wav,sell,F04,the,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0096.wav,i expect we'll bounce back this week,F04,i expect well bounce back this week,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0171.wav,vat,F04,what,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0094.wav,darn,F04,garn,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0039.wav,lip,F04,lip,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0201.wav,chop,F04,chop,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0146.wav,at,F04,ott,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0234.wav,sand,F04,sand,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0232.wav,x-ray,F04,x ray,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0197.wav,at,F04,hot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0166.wav,top,F04,top,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0117.wav,bloat,F04,blot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0120.wav,aluminum silverware can often be flimsy,F04,aluminum silver war can often be flimsy,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0092.wav,fat,F04,fat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0136.wav,nine,F04,gnaring,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0218.wav,tin,F04,time,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0207.wav,did dad do academic bidding,F04,did dad to academic bidding,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0104.wav,pit,F04,pit,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0001.wav,shoot,F04,shot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0240.wav,right,F04,rite,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0227.wav,people who value themselves are life's winners,F04,people who value themselves are life's winners,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0223.wav,he really crucified him he nailed it for a yard loss,F04,he really crucified him he nailed it for a yard was,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0240.wav,right,F04,wright,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0067.wav,four,F04,four,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0073.wav,and,F04,an,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0145.wav,league,F04,lige,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0066.wav,write,F04,rat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0121.wav,shy,F04,sy,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0089.wav,pit,F04,pitt,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0003.wav,slay,F04,flat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0184.wav,leak,F04,leak,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0037.wav,menu,F04,mane,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0143.wav,this is not a program of socialized medicine,F04,this is not a program of socialized medicine,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0157.wav,both injuries were to the same leg,F04,both injuries were to the same leg,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0238.wav,ham,F04,him,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0233.wav,lock,F04,walk,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0210.wav,shell,F04,shal,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0078.wav,november,F04,november,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0046.wav,mere,F04,meere,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0224.wav,sheet,F04,a sheet,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0193.wav,a roll of wire lay near the wall,F04,a roll of wire lay near the wall,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0169.wav,lima,F04,oima,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0117.wav,bloat,F04,boat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0007.wav,play,F04,play,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0003.wav,slay,F04,la,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0089.wav,pit,F04,pic,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0003.wav,slay,F04,lay,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0115.wav,it also provides for funds to clear slums and help colleges build dormitories,F04,it also provides for fund to clear slums and help colleges build dormitories,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0070.wav,witch,F04,wit,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0046.wav,mere,F04,mear,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0031.wav,delta,F04,galta,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0021.wav,boot,F04,brute,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0021.wav,boot,F04,bot,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0038.wav,peer,F04,per,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0121.wav,shy,F04,shay,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0240.wav,right,F04,write,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0223.wav,he really crucified him he nailed it for a yard loss,F04,he really crucified him he nailed it for a yard of,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0100.wav,six,F04,six,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0197.wav,at,F04,hat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0021.wav,boot,F04,bute,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0207.wav,did dad do academic bidding,F04,di dad do academic bidding,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0244.wav,we have an excellent team,F04,we have an excellent team,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0145.wav,league,F04,lege,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0198.wav,harm,F04,arm,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0112.wav,pitting,F04,petting,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0224.wav,sheet,F04,sh a sheet,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0185.wav,spain,F04,spin,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0174.wav,blow,F04,bro,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0120.wav,aluminum silverware can often be flimsy,F04,aluminum silver wire can often be flimsy,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0117.wav,bloat,F04,bloat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0037.wav,menu,F04,manu,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0249.wav,sin,F04,ten,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0225.wav,two,F04,to,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0198.wav,harm,F04,harm,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0023.wav,witch,F04,wich,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0046.wav,mere,F04,meer,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0127.wav,there is a treehouse up above,F04,there's a tree house up above,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0082.wav,sell,F04,sell,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0019.wav,i scrubbed the floors thoroughly,F04,i scrubbed the floor thoroughly,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0238.wav,ham,F04,heim,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0224.wav,sheet,F04,s a sheet,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0072.wav,night after night they received annoying phone calls,F04,night after night they received annoying fang calls,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0227.wav,people who value themselves are life's winners,F04,people who value themselves are lives winners,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0186.wav,fill,F04,phyl,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0196.wav,leak,F04,leak,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0052.wav,their house is grey and white,F04,their house is grey and white,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0046.wav,mere,F04,mer,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0144.wav,this is not a program of socialized medicine,F04,this is not a programme of socialized medicine,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0101.wav,when all else fails use force,F04,when all else fails us force,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0156.wav,leak,F04,lek,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0232.wav,x-ray,F04,x way,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0238.wav,ham,F04,haim,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0145.wav,league,F04,leagu,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0070.wav,witch,F04,with,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0023.wav,witch,F04,which,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0070.wav,witch,F04,writ,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0207.wav,did dad do academic bidding,F04,de dad do academic bidding,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0238.wav,ham,F04,hem,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0101.wav,when all else fails use force,F04,when all else fails us forte,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0230.wav,and,F04,and,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0001.wav,shoot,F04,shut,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0065.wav,write,F04,writ,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0242.wav,witch,F04,wich,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0067.wav,four,F04,four a,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0173.wav,yes,F04,yes,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0246.wav,sell,F04,few,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0246.wav,sell,F04,to,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0101.wav,when all else fails use force,F04,when all else fails use force,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0187.wav,fat,F04,cat,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0065.wav,write,F04,rite,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0041.wav,we gathered shells on the beach,F04,we gathered shelves on the beach,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0031.wav,delta,F04,data,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0218.wav,tin,F04,tine,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0174.wav,blow,F04,be,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0031.wav,delta,F04,dalta,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0082.wav,sell,F04,se,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0249.wav,sin,F04,tin,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0249.wav,sin,F04,thin,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0048.wav,pad,F04,pad a,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0112.wav,pitting,F04,pitting,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0023.wav,witch,F04,rich,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0225.wav,two,F04,two,0
+/home/rao/projects/torgo_inference_on_cluster/torgo_dataset/torgo//F04/Session2/wav_headMic/0118.wav,it was a good win for us,F04,it was a good wind for us,0

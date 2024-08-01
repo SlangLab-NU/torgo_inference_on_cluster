@@ -1,0 +1,9 @@
+15-Jul-24 14:45:02 - Test Speaker: F01
+15-Jul-24 14:45:02 - Log File Path: /home/rao/projects/torgo_inference_on_cluster/results//logs/torgo_xlsr_finetune_F01/F01_evaluate_20240715_144502.log
+
+15-Jul-24 14:45:02 - Using GPU: NVIDIA GeForce RTX 2070 with Max-Q Design
+
+15-Jul-24 14:45:02 - Loading the model and processor from macarious/torgo_xlsr_finetune_F01
+15-Jul-24 14:45:05 - Model loaded from macarious/torgo_xlsr_finetune_F01
+15-Jul-24 14:45:06 - kenlm python bindings are not installed. Most likely you want to install it using: pip install https://github.com/kpu/kenlm/archive/master.zip
+15-Jul-24 14:45:06 - kenlm python bindings are not installed. Most likely you want to install it using: pip install https://github.com/kpu/kenlm/archive/master.zip

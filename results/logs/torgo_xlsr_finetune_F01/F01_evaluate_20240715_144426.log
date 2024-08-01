@@ -1,0 +1,7 @@
+15-Jul-24 14:44:26 - Test Speaker: F01
+15-Jul-24 14:44:26 - Log File Path: /home/rao/projects/torgo_inference_on_cluster/results//logs/torgo_xlsr_finetune_F01/F01_evaluate_20240715_144426.log
+
+15-Jul-24 14:44:26 - Using GPU: NVIDIA GeForce RTX 2070 with Max-Q Design
+
+15-Jul-24 14:44:26 - Loading the model and processor from macarious/torgo_xlsr_finetune_F01
+15-Jul-24 14:44:30 - Model loaded from macarious/torgo_xlsr_finetune_F01
